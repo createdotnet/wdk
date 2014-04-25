@@ -5,8 +5,9 @@
 }
 
 body {
-	background-color: #f3f3f4;
+	background-color: white;
 	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 0.9em;
 }
 
 h1, h2, h3 {
@@ -17,17 +18,17 @@ h1, h2, h3 {
 
 
 header {
-	height: 80px;
 	width: 100%;
 	background-color: #3A4356;
 	color: white;
-	position: fixed;
-	text-align: center;
+	padding: 50px 20px;
+	background: linear-gradient(to bottom, #1a1d25 0%,#282e3d 100%);
+	border-bottom: 5px solid #FFC731;
 }
 
 header h1 {
 	color: white;
-	font-size: 22px;
+	font-size: 3em;
 	margin-top: 15px;
 }
 
@@ -44,15 +45,19 @@ header a {
 
 
 .side-nav {
-	width: 250px;
 	float: left;
-	position: fixed;
-	margin-top: 80px;
-	padding: 10px;
+	width: 220px;
+	padding: 0px 5px 0px 10px;
+	margin: 30px 0px;
+	border-right: 1px dotted #b6b8ba;
 }
 
 .side-nav h1 {
 	margin: 15px 0;
+}
+
+.side-nav ul {
+	list-style-type: none;
 }
 
 .side-nav a {
@@ -62,29 +67,22 @@ header a {
 }
 
 
+
 main {
-	padding-left: 250px;
 	max-width: 900px;
-	padding-bottom: 150px;
+	margin-left: 250px;
+	padding: 20px 10px;
 }
 
 .article {
-	padding: 100px 20px 20px;
-	margin-bottom: -60px;
+	padding: 20px;
 }
 
-hr {
-	margin-top: 60px;
-	margin-bottom: -60px;
-	margin-left: 10px;
-	width: 80%;
-	max-width: 720px;
-}
 
 code {
 	font-family: consolas, courier, monospace;
 	background-color: #3A4356;
 	color: #e9b631;
 	border: 1px solid #666;
-	
+
 }

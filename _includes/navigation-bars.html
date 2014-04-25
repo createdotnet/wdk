@@ -1,16 +1,46 @@
 	<header>
-		<img class="logo" src="{{ site.baseurl }}images/Logo.png"/>
-	    <h1>Web Designers' Development Kit Documentation</h1>
-	    <p>Print Page</p>
+	    <h1>Web Designer's Kit Documentation</h1>
+	    <p>A fantastic tool for web designers to design website templates to work with the Create system.</p>
 	</header>
 
-	<nav class="side-nav" role="navigation">
-		<h1>Navigation</h1>
-		<ul>
-		  {% for post in site.posts reversed %}
-		    <li>
-		      <a href="#{{ post.title }}">{{ post.title }}</a>
-		    </li>
-		  {% endfor %}
-		</ul>
-	</nav>
+<nav class="side-nav" role="navigation">
+
+	<h1>Getting Started</h1>
+	<ul>
+	{% for node in site.pages %}
+	    {% if 'getting-started' == node.group %}
+	    <li><a href="{{node.url}}">{{node.title}}</a></li>
+	    {% endif %}
+	{% endfor %}
+	</ul>
+
+    <h1>Support</h1>
+    <ul>
+    {% for node in site.pages %}
+        {% if 'support' == node.group %}
+        <li><a href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+
+	<h1>Glossary</h1>
+	<ul>
+	{% for node in site.pages %}
+	    {% if 'glossary' == node.group %}
+	    <li><a href="{{node.url}}">{{node.title}}</a></li>
+	    {% endif %}
+	{% endfor %}
+	</ul>
+
+
+    <h1>Tutorials</h1>
+    <ul>
+    {% for node in site.pages %}
+        {% if 'tutorials' == node.group %}
+        <li><a href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+
+</nav>
