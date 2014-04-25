@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WDK Documentation</title>
+    <link rel="stylesheet" href="/css/main.css" >
+</head>
+
+<body>
+	<header>
+		<img class="logo" src="/images/Logo.png"/>
+	    <h1>Web Designers' Development Kit Documentation</h1>
+	    <p>Print Page</p>
+	</header>
+
+	<nav class="side-nav" role="navigation">
+		<h1>Navigation</h1>
+		<ul>
+		  
+		    <li>
+		      <a href="#Introduction">Introduction</a>
+		    </li>
+		  
+		    <li>
+		      <a href="#What is the WDK?">What is the WDK?</a>
+		    </li>
+		  
+		    <li>
+		      <a href="#How it Works">How it Works</a>
+		    </li>
+		  
+		    <li>
+		      <a href="#Building a template">Building a template</a>
+		    </li>
+		  
+		    <li>
+		      <a href="#Installing a Template">Installing a Template</a>
+		    </li>
+		  
+		    <li>
+		      <a href="#Logic and Conditional Statements">Logic and Conditional Statements</a>
+		    </li>
+		  
+		    <li>
+		      <a href="#Requirements and Restrictions">Requirements and Restrictions</a>
+		    </li>
+		  
+		    <li>
+		      <a href="#Glossary and Tag List">Glossary and Tag List</a>
+		    </li>
+		  
+		</ul>
+	</nav>
+
+	<main>
+
+
+    	  
+    	  <div id="Introduction" class="article">
+    	    <h1>Introduction</h1>
+<h3 id="some_kind_of_additional_subheading_at_h3_size">Some kind of additional subheading at h3 size</h3>
+
+<p>This document provides instructions for web designers to create custom designs for Create users.</p>
+
+<p>Please note that a certain amount of technical knowledge is required to understand these instructions, and we recommend that you familiarise yourself with the Create system. You can set up a 30 day free trial if you require.</p>
+
+<p>All the necessary information is supplied below and because this feature is not intended for users without technical experience, support queries relating to it will only be answered if relating to a malfunction of our own systems.</p>
+
+<p>We do however welcome feedback on this feature and how we might improve it.</p>
+    	  </div>
+    	  <HR>
+    	  
+    	  <div id="What is the WDK?" class="article">
+    	    <h1>What is the WDK?</h1>
+<p>The Web Designers’ Development Kit (or WDK), is a framework that allows designers to create custom templates for use within the Create system.</p>
+
+<p>It enables the use of the Create colour schemes, so the design can not only have dynamic content, but dynamic colours and styles.</p>
+
+<p>Spend just minutes editing a pre-made design and making it compatible with Create to create your completely customized, and controllable website.</p>
+    	  </div>
+    	  <HR>
+    	  
+    	  <div id="How it Works" class="article">
+    	    <h1>How it Works</h1>
+<p>The WDK requires only 1 file; index.html</p>
+
+<p>It works by parsing HTML comments, formatted in a certain way, to determine where you want to place particular elements on a page. For instance, if you wanted to place the page title within a h1 tag, you would do the following;</p>
+
+<p><code>&lt;h1&gt;&lt;!--WDK:display:pagetitle--&gt;&lt;/h1&gt;</code></p>
+
+<p>Automatically, our system would read this comment tag, and generate the correct code to show the relevant page title.</p>
+
+<p>Although only requiring 1 file, you can include all kinds of useful files such as javascript libraries, flash, images and css files.</p>
+    	  </div>
+    	  <HR>
+    	  
+    	  <div id="Building a template" class="article">
+    	    <h1>Building a template</h1>
+<p>We have created an example template for you to use either as a base for your template, or just for reference. It uses a variety of tags so that you can see them in use.</p>
+
+<p>Included in the example templates is a file called index.html which contains an HTML5 template which was then converted to be run using the WDK. Also included are the corresponding CSS Stylesheets and Javascript files.</p>
+
+<ol>
+<li>The Basics Each template is split into 3 areas; Header, Content and Footer.</li>
+</ol>
+
+<p>Within your template, you will need to have the following basic structure;</p>
+
+<p><code>&lt;!--WDK:header:start--&gt;</code> <code>&lt;html&gt;</code> <code>&lt;head&gt; &lt;/head&gt;</code> <code>&lt;body&gt;</code> <code>YOUR MENU HTML</code> <code>YOUR PAGE TITLE</code> <code>&lt;!--WDK:header:end--&gt;</code></p>
+
+<p>Content is automatically put between the header and footer.</p>
+
+<p><code>&lt;!--WDK:footer:start--&gt;</code> <code>FOOTER INFORMATION</code> <code>&lt;/body&gt;</code> <code>&lt;/html&gt;</code> <code>&lt;!--WDK:footer:end--&gt;</code></p>
+    	  </div>
+    	  <HR>
+    	  
+    	  <div id="Installing a Template" class="article">
+    	    <h1>Installing a Template</h1>
+<p>To install a template, go to the “WDK” button which is found on the “Design” screen, click “New Custom Template”, give the template a name and click “Add Custom Template”.</p>
+
+<p>Now go to the “Upload” box, and upload all of t he files relating to that template. You can upload either all the files individually or as a collection inside of a zip file.</p>
+
+<p>All the files you upload will now be displayed in the files box where you can delete them if you need to.</p>
+
+<p>N.B. You cannot delete index.html or thumb.jpg, however you can overwrite them by uploading new versions.</p>
+
+<p>Once the files have been uploaded and index.html has been successfuly processed, you will be able to choose your template on the “Design” screen under “Custom” on the “Templates” tab.</p>
+    	  </div>
+    	  <HR>
+    	  
+    	  <div id="Logic and Conditional Statements" class="article">
+    	    <h1>Logic and Conditional Statements</h1>
+<p>To help with creating a more dynamic and reliable template, the WDK contains various logic / conditional tags.</p>
+
+<p>You can use our collection of if, ifnot, elseif, elsifnot, else and endif to allow your template to act according to the way the site is set up.</p>
+
+<p>Example 1 You want to prevent flash banners on your template. You could use the following statement to check if a flash header is selected or not, and display either the full width image, or just the site title.</p>
+
+<p><code>&lt;!--WDK:comment:If header 3 is flash... --&gt;</code> <code>&lt;!--WDK:if:header3:isFlash--&gt;</code></p>
+
+<pre><code>`&lt;!--WDK:comment:... just display the site name--&gt;`
+`&lt;h1&gt;&lt;!--WDK:display:site_name--&gt;&lt;/h1&gt;`</code></pre>
+
+<p><code>&lt;!--WDK:else--&gt;</code></p>
+
+<pre><code>`&lt;!--WDK:comment:... display the header as an image--&gt;`
+`&lt;!--WDK:display:header3--&gt;`</code></pre>
+
+<p><code>&lt;!--WDK:endif--&gt;</code></p>
+
+<p>As in the majority of programming languages, each if statement, MUST have a matching endif statement.</p>
+
+<p>Example 2 You wish to give menu items a “selected” style when on that page.</p>
+
+<pre><code>`&lt;!--WDK:comment:Loop through all the menu items--&gt;`
+`&lt;!--WDK:menu:start--&gt;`
+
+    `&lt;!--WDK:comment:If the current item isn&#39;t the first, show a &#39;|&#39; seperator--&gt;`
+    `&lt;!--WDK:ifnot:firstMenuItem--&gt; | &lt;!--WDK:endif--&gt;`
+	
+    `&lt;!--WDK:comment:Display the link with the text - if it is the current menu item, add the &#39;selected&#39; class--&gt;`
+	`&lt;a &lt;!--WDK:if:currentMenuItem--&gt; class=&#39;selected&#39; &lt;!--WDK:endif--&gt; href=&quot;&lt;!--WDK:menu:link--&gt;&quot;&gt;`
+        `&lt;!--WDK:menu:text--&gt;`
+	`&lt;/a&gt;`
+	
+`&lt;!--WDK:comment:End the menu loop--&gt;`
+`&lt;!--WDK:menu:end--&gt;`</code></pre>
+
+<p>Similarly, each loop (menu:start / column:start), MUST have a matching (menu:end / column:end) statement.</p>
+
+<p>Refer to the Glossary for a full list of tags and conditional tags.</p>
+    	  </div>
+    	  <HR>
+    	  
+    	  <div id="Requirements and Restrictions" class="article">
+    	    <h1>Requirements and Restrictions</h1>
+<p>There are certain elements of the WDK that are required so that your template can be processed correctly.</p>
+
+<p>• The template must contain both the header and footer tags.</p>
+
+<p>• Within either the header or footer tags, the display:sitefooter must also be present, if you do not place this tag within your template, it will automatically get added to the begining of your footer area.</p>
+
+<p>• Any WDK:if and WDK:ifnot tags MUST be closed with WDK:endif.</p>
+
+<p>• Any WDK:menu:start and WDK:column:start tags MUST be closed with the appropriate WDK:menu:end and WDK:column:end tags respectively.</p>
+
+<p>When uploading your index.html the system will check the syntax of your template, providing you with any errors(fatal) and warnings(non-fatal).</p>
+    	  </div>
+    	  <HR>
+    	  
+    	  <div id="Glossary and Tag List" class="article">
+    	    <h1>Glossary and Tag List</h1>
+<p>Below is a list of tags that can be used with the WDK and an explanation of what they do.</p>
+
+<h2 id="basics">Basics</h2>
+
+<p><code>&lt;!--WDK:templateinfo:notes:value--&gt;</code> value <code>&lt;String&gt;</code> Sets the notes/description of the current template to the specified value. <code>&lt;!--WDK:comment:value--&gt;</code> value <code>&lt;String&gt;</code> Include your own comments in the original WDK code. These comments will not appear in the code on the published site.</p>
+    	  </div>
+    	  <HR>
+    	  
+
+  
+
+	</main>
+
+
+</body>
+</html>
