@@ -3,6 +3,7 @@ README
 Guide to using the markdown files;
 
 Adding / Editing Artciles
+
 - Pages are organised into folders inside the 'pages' folder. These folders to not enforce the navigation layout. In order that the page appears in the correct part of the navigation pane, ensure that that 'Group:' is correctly labelled at the top of each file. Within each group they are sorted numerically.
 - The pages are compiled in the 'Markup' language.
 
