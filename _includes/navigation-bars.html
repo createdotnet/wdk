@@ -1,0 +1,16 @@
+	<header>
+		<img class="logo" src="{{ site.baseurl }}images/Logo.png"/>
+	    <h1>Web Designers' Development Kit Documentation</h1>
+	    <p>Print Page</p>
+	</header>
+
+	<nav class="side-nav" role="navigation">
+		<h1>Navigation</h1>
+		<ul>
+		  {% for post in site.posts reversed %}
+		    <li>
+		      <a href="#{{ post.title }}">{{ post.title }}</a>
+		    </li>
+		  {% endfor %}
+		</ul>
+	</nav>

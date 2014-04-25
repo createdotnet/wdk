@@ -1,0 +1,19 @@
+{% include head.html %}
+{% include navigation-bars.html %}
+
+	<main>
+
+
+    	  {% for post in site.posts reversed %}
+    	  <div id="{{ post.title }}" class="article">
+    	    {{ post.content }}
+    	  </div>
+    	  <HR>
+    	  {% endfor %}
+
+  
+
+	</main>
+
+
+{% include foot.html %}
