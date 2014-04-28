@@ -1,7 +1,7 @@
 Welcome to the Create.net Web Designer's Kit Documentation.
 This guide should help enable you to fully customise your site. The guide is built using jekyll for github pages. It can be contributed to, edited and improved using github.
 
-##Adding / Editing Artciles
+##Adding / Editing Articles
 
 - Pages are organised into folders inside the 'pages' folder. These folders to not enforce the navigation layout. In order that the page appears in the correct part of the navigation pane, ensure that that 'Group:' is correctly labelled at the top of each file. Within each group they are sorted numerically.
 - The pages are compiled in the 'Markup' language.
