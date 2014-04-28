@@ -8,14 +8,40 @@ body {
 	background-color: white;
 	font-family: Helvetica, Arial, Sans-Serif;
 	font-size: 0.9em;
+	color: #7b7c7f;
 }
+
+.container {
+	max-width: 960px;
+	margin: auto;
+}
+
+main {
+	margin-left: 250px;
+	padding: 20px 10px;
+}
+
+
+
+/* Default Text */
 
 h1, h2, h3 {
 	font-family: "Arial Black", Helvetica, Arial, Sans-Serif;
 	color: #3A4356;
 }
 
+p, ol, ul {
+	line-height: 1.5em;
+}
 
+p {
+	padding: 10px 0px;
+}
+
+
+
+
+/* Header */
 
 header {
 	width: 100%;
@@ -44,6 +70,12 @@ header a {
 
 
 
+
+
+
+
+/* Side Navigation Bar */
+
 .side-nav {
 	float: left;
 	width: 220px;
@@ -54,10 +86,12 @@ header a {
 
 .side-nav h1 {
 	margin: 15px 0;
+	color: #4560A2;
 }
 
 .side-nav ul {
 	list-style-type: none;
+	margin-left: 30px;
 }
 
 .side-nav a {
@@ -66,23 +100,37 @@ header a {
 	line-height: 1.4;
 }
 
-
-
-main {
-	max-width: 900px;
-	margin-left: 250px;
-	padding: 20px 10px;
+.side-nav a:hover {
+	color: #5f7bbf;
 }
 
-.article {
-	padding: 20px;
+.side-nav .active {
+	font-weight:bold;
 }
 
+
+
+
+
+
+/* Content Styling */
 
 code {
 	font-family: consolas, courier, monospace;
 	background-color: #3A4356;
 	color: #e9b631;
 	border: 1px solid #666;
-
+	padding: 20px;
 }
+
+main ol, 
+main ul {
+	padding-left: 20px;
+}
+
+hr {
+	color: #fff;
+	border-top: 1px dotted #b6b8ba;
+}
+
+
