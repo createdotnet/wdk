@@ -14,7 +14,9 @@ The WDK uses tags to determine dynamic content on your page. Tags are HTML comme
 
 For example, if you wanted to place the page title within a HTML heading, you would do the following:
 
-`<h1><!--WDK:display:pagetitle--></h1>`
+```
+<h1><!--WDK:display:pagetitle--></h1>
+```
 
 Automatically, the WDK reads this tag and shows the relevant page title within the HTML heading.
 

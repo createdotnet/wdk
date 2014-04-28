@@ -115,12 +115,9 @@ header a {
 
 /* Content Styling */
 
-code {
-	font-family: consolas, courier, monospace;
-	background-color: #3A4356;
-	color: #e9b631;
-	border: 1px solid #666;
-	padding: 20px;
+pre {
+	background-color: #f5f2f0;
+	padding: 0px 10px 15px;
 }
 
 main ol, 

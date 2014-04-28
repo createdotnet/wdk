@@ -13,7 +13,8 @@ Page Titles
 ##A short guide to the Markup language
 ###A better guide can be found at [Here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
- - When writing any code, place it between two (`) (this is the key next to the left shift on a mac keyboard...) - `<code goes here>`
+ - When writing any code, wrap it between three backwards apostrophes (next to the left shit on a mac), three on the line above and three on the line below.
+
  - Headers can be created using #
  	#header1 (biggest)
  	##header2 (big)
