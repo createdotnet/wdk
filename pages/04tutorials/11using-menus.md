@@ -157,7 +157,7 @@ The class "first" removes the left border on the first item, so that the borders
 
 The class "current" changes the background colour and text colour, indicating which menu item page the user is currently viewing.
 
-``` css
+```html
 <style type="text/css">
   li.menu-item {
     padding: 0 10px;
