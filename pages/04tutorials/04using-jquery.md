@@ -12,7 +12,7 @@ In the `<!--WDK:display:headstuff-->` tag is a `<script>` tag loading in "loader
 
 /include/js/loader.js
 
-```
+```javascript
 function jsload( src ) {
 	document.write(unescape('%3Cscript src="' + src + '"%3E%3C/script%3E'));
 }

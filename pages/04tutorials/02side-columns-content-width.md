@@ -14,7 +14,7 @@ Side columns must be opened and closed with `<!--WDK:column:start-->` and `<!--W
 
 The example below is suitable markup for the left side column.
 
-```
+```html
 <!--WDK:column:start:left-->
   <!--WDK:column:width:150-->
   <aside class="sidebar left">
@@ -34,7 +34,7 @@ After opening our side column we're using `<!--WDK:column:width-->` to set the w
 
 If we had 2 items in our side columns, a product search and shopping basket the markup returned would be (the widget contents have been shortened):
 
-```
+```html
 <aside class="sidebar left">
 
   <div id="column-item-id-1" class="column-item column-item-n-1">
@@ -56,7 +56,7 @@ We're using the tag `<!--WDK:column:item:id-->` to create a unique id for each m
 
 The Create WDK has a tag to return the number of side columns being used. This is useful in making sure your content is the appropriate width. A simplified version of our markup would be:
 
-```
+```html
 <div id="main">
   <aside class="sidebar left"> </aside>
 
@@ -77,25 +77,34 @@ If the user had two side columns, the markup returned would be:
 `<div id="content" class="column-count-2"> </div>`
 If our template is 1000px wide and the sidebars are 150px each, heres how we could set the width by using the .column-count- classes.
 
-```
+```html
 div#content {<br />}<br /><br />div.column-count-0 {<br />  width:1000px;<br />}<br /><br />div.column-count-1 {<br /> width:850px;<br />}<br /><br />div.column-count-2 {<br /> width:700px;<br />}
 ```
 
 All other styling for this should be applied to our #content. The `<aside>` and content `<div>` could be displayed inline or floated so they sit next to each other.
 
-```
+```html
 aside.sidebar, div#content {<br />  float:left;<br />}<br /><br />aside.sidebar, div#content {<br />  display:inline;<br />}
 ```
 
 ##Links & Further Reading
 
 Tag: `<!--WDK:column:start-->`
+
 Tag: `<!--WDK:column:end-->`
+
 Tag: `<!--WDK:column:width-->`
+
 Tag: `<!--WDK:column:item:start-->`
+
 Tag: `<!--WDK:column:item:end-->`
+
 Tag: `<!--WDK:column:item:id-->`
+
 Tag: `<!--WDK:column:item:nth-->`
+
 Tag: `<!--WDK:column:item:title-->`
+
 Tag: `<!--WDK:column:item:content-->`
+
 Tag: `<!--WDK:column:count-->`

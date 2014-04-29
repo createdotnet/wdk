@@ -16,7 +16,7 @@ Pseudo Equivalent: if ( pageFilename == value ) {
 
 In the following example we're checking to see if we're on a page named contact, and then including a div for a map.
 
-```
+```html
 <!--WDK:if:pageFilenameIs:contact-->
 	<div id="map"></div>
 <!--WDK:endif-->

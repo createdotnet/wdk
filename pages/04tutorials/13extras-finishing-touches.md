@@ -24,7 +24,7 @@ To obtain the id of a HTML fragment, login to your Create account and click on S
 
 For example we may wish to include a shopping basket in our header, next to the logo instead of the side column. After creating a Widget and obtaining its id, we could write our markup like the following:
 
-```
+```html
 <header>
   <div id="logo"> </div>
   <div class="widget">
@@ -39,4 +39,5 @@ When using widget a type, you may also use a secondary type, instead of an id. I
 Links & Further Reading
 
 Tag: `<!--WDK:dynamic:type:id-->`
+
 Tag: `<!--WDK:dynamic:widget:youtube-->`

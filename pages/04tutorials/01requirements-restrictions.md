@@ -29,7 +29,9 @@ You are permitted to use other files outside of index.html. These can be Stylesh
 To use external files or images you will need to use the following path tags:
 
 Tag: `<!--WDK:path:template-->`
+
 Tag: `<!--WDK:path:images-->`
+
 Tag: `<!--WDK:path:file-->`
 
 ###Required Tags
@@ -43,9 +45,13 @@ Your index.html file must contain all of the header and footer tags. These tags 
 These tags are:
 
 Tag: `<!--WDK:header:start-->`
+
 Tag: `<!--WDK:header:end-->`
+
 Tag: `<!--WDK:footer:start-->`
+
 Tag: `<!--WDK:footer:end-->`
+
 For more information please see the basics tutorial.
 
 Display Site Footer
@@ -60,7 +66,9 @@ We offer 2 methods for creating menus: our drop down menu tag returns a full `<u
 If you opt to build your own, you must include the `<!--WDK:menu:start-->` and `<!--WDK:menu:end-->` tags.
 
 Tag: `<!--WDK:menu:start-->`
+
 Tag: `<!--WDK:menu:end-->`
+
 Please see the glossary for examples on individual tags and for more information please read the tutorial on creating menu loops.
 
 Side Column Loops
@@ -74,6 +82,9 @@ Conditional Tags
 The WDK supports conditional statements. Any `<!--WDK:if-->` tag must be ended with `<!--WDK:endif-->`.
 
 Tag: `<!--WDK:if-->`
+
 Tag: `<!--WDK:else-->`
+
 Tag: `<!--WDK:endif-->`
+
 For more information, please read the Using Conditional Tags tutorial.

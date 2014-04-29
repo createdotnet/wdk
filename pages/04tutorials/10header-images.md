@@ -26,7 +26,7 @@ If you wish to only display a specific image, you may use `<!--WDK:display:heade
 
 If you only wanted to display a small logo, in your markup you could simply put:
 
-```
+```html
 <div id="logo">
   <!--WDK:display:header4-->
 </div>
@@ -59,7 +59,7 @@ The Create WDK has some conditional tags which can allow you to apply different 
 
 Using `<!--WDK:if:headerX-->` you may check to see if a specific header image is being used. In the following example, we set the width of the containing `<div>` to be the same width as the image using this tag:
 
-```
+```html
 <div
   <!--WDK:if:header3-->
     style="min-width:750px; max-width:1000px; width:auto;"
@@ -82,7 +82,7 @@ We have conditional tags which can be used to determine this, which helps you to
 
 In the example below we have a conditional check to see if header 3 is a flash file.  If true, we're placing it in a HTML `<object>` tag. If false, the else condition is used and an image is diplayed instead.
 
-```
+```html
 <div id="logo">
   <!--WDK:if:header3:isFlash-->    <object
       data="<!--WDK:display:header3src-->"
@@ -105,21 +105,35 @@ In the example below we have a conditional check to see if header 3 is a flash f
 As you can check to see if a specific header image is a flash file, you may also check for file type, using the following tags, replacing "X" with your desired header number.
 
 `<!--WDK:if:headerX:isPng-->`
+
 `<!--WDK:if:headerX:isJpg-->`
+
 `<!--WDK:if:headerX:isGif-->`
 
 Links & Further Reading
 
 Tag: `<!--WDK:display:header-->`
+
 Tag: `<!--WDK:display:headerX-->`
+
 Tag: `<!--WDK:display:headerXsrc-->`
+
 Tag: `<!--WDK:display:headerXwidth-->`
+
 Tag: `<!--WDK:display:headerXheight-->`
+
 Tag: `<!--WDK:else-->`
+
 Tag: `<!--WDK:endif-->`
+
 Tag: `<!--WDK:if:headerX-->`
+
 Tag: `<!--WDK:if:header3:isFlash-->`
+
 Tag: `<!--WDK:if:headerX:isPng-->`
+
 Tag: `<!--WDK:if:headerX:isJpg-->`
+
 Tag: `<!--WDK:if:headerX:isGif-->`
+
 Tutorial: Conditional Tags

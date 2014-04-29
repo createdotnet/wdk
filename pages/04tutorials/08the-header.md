@@ -14,7 +14,7 @@ It can also optionally contain styling for Create's dynamic colours, side column
 
 Below is a simplified version of a header.
 
-```
+```html
 <!DOCTYPE html>
 <!--WDK:header:start-->
 <html>
@@ -66,13 +66,21 @@ As the dynamic page content is automatically inserted between the `<!--WDK:heade
 Links & Further Reading
 
 Tag: `<!--WDK:header:start-->`
+
 Tag: `<!--WDK:display:headinfo-->`
+
 Tag: `<!--WDK:path:template-->`
+
 Tag: `<!--WDK:column:start:left-->`
+
 Tag: `<!--WDK:column:end:left-->`
+
 Tag: `<!--WDK:column:count-->`
+
 Tag: `<!--WDK:display:pagetitle-->`
+
 Tag: `<!--WDK:header:end-->`
+
 Tutorial: The Basics
 Tutorial: Create's Dynamic Styling
 Tutorial: Logos, Banners & Header Images

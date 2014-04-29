@@ -20,7 +20,7 @@ This tag returns the actual ID of the current side column item. This is useful f
 
 In the following example we using the tag to give each side column item a unique class.
 
-```
+```html
 <!--WDK:column:start:left-->
 <aside id="sidebar-left" class="sidebar">
 

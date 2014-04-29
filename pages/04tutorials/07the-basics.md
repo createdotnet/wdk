@@ -10,7 +10,7 @@ A Create WDK template should be split into three sections: header, content and f
 
 ##Example
 
-```
+```html
 <!doctype html>
 <!--WDK:header:start-->
 <html>
@@ -30,9 +30,14 @@ The footer is opened with `<!--WDK:footer:start-->`, signifying the end of your 
 ##Links & Further Reading
 
 Tag: `<!--WDK:header:start-->`
+
 Tag: `<!--WDK:header:end-->`
+
 Tag: `<!--WDK:footer:start-->`
+
 Tag: `<!--WDK:footer:end-->`
+
 Tag: `<!--WDK:display:sitefooter-->`
+
 Tutorial: The Header
 Tutorial: The Footer

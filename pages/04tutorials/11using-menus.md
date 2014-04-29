@@ -300,16 +300,29 @@ All second level menu items `<li>` are given the following classes: "wdk_menu-it
 ##Links & Further Reading
 
 Tag: `<!--WDK:menu:start-->`
+
 Tag: `<!--WDK:menu:id-->`
+
 Tag: `<!--WDK:menu:link-->`
+
 Tag: `<!--WDK:menu:text-->`
+
 Tag: `<!--WDK:menu:end-->`
+
 Tag: `<!--WDK:if:firstMenuItem-->`
+
 Tag: `<!--WDK:if:lastMenuItem-->`
+
 Tag: `<!--WDK:if:currentMenuItem-->`
+
 Tag: `<!--WDK:else-->`
+
 Tag: `<!--WDK:endif-->`
+
 Tag: `<!--WDK:javascript:jquery-->`
+
 Tag: `<!--WDK:templateoption:dropdownMenu:[top]-->`
+
 Tag: `<!--WDK:display:navigation-->`
+
 Tutorial: Conditional Tags

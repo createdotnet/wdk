@@ -18,7 +18,7 @@ WDK Tags are only processed on index.html so you'll need to declare the CSS in t
 
 In this example we declare the styles and elements in the `<head>` and have included the relevant elements in the `<body>` for you to see.
 
-```
+```html
 <head>
   <style type="text/css">
     body {
@@ -69,7 +69,7 @@ In this example we declare the styles and elements in the `<head>` and have incl
 
 Although we are using these tags with selectors such as #menu and #page, they can be applied to anything you like. For example you could use the HTML5 `<nav>` tag with `<!--WDK:display:menubg-->`.
 
-```
+```html
 <head>
   <style type="text/css">
     nav {

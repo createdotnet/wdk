@@ -20,7 +20,7 @@ index.html
 
 <!doctype html>
 
-```
+```html
 <html>
 
 <head>
@@ -104,13 +104,13 @@ index.html
 
 style.css
 
-```
+```html
 /* Typography */<br />body {<br />    font-size: 16px;<br />    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;<br />    color: #686B6E;<br />}<br /><br />p {<br />    line-height: 20px;<br />    margin-bottom: 10px;<br />}<br /><br />strong {<br />    font-weight: 800;<br />}<br /><br />em {<br />    font-style: italic;<br />}<br /><br />h1, h2, h3, h4, h5, h6 {<br />    font-family: Georgia, Times, "Times New Roman", serif;<br />    margin-bottom: 10px;<br />    color: #18191A;<br />}<br /><br />h1 {<br />    font-size: 28px;<br />}<br /><br />h2 {<br />    font-size: 26px;<br />}<br /><br />h3 {<br />    font-size: 24px;<br />}<br /><br />h4 {<br />    font-size: 22px;<br />}<br /><br />h5 {<br />    font-size: 20px;<br />}<br /><br />h6 {<br />    font-size: 18px;<br />}<br /><br />a {<br />    text-decoration: none;<br />    color: #54B2FF;<br />}<br /><br />a:hover {<br />    text-decoration: underline;<br />    color: #4FA7F0;<br />}<br /><br />ul {<br />    <br />}<br /><br />ul li {<br />    list-style-type: circle;<br />    margin: 0 0 3px 15px;<br />}<br /><br />/* Layout */<br />body {<br />    width: 100%;<br />    height: 100%;<br />    padding: 0;<br />    margin: 0;<br />    background-color: #F5F5F5;<br />}<br /><br />body#top {<br />    /* Used as page anchor */<br />}<br /><br />#wrapper {<br />    width: 1000px;<br />    margin: 30px auto;<br />    padding: 10px;<br />    background-color: #FFFFFF;<br />    border-radius: 5px;<br />    border: 1px solid #E8E8E8;<br />    box-shadow: 0px 0px 20px #EBEBEB;<br />}<br /><br />header {<br />    <br />}<br /><br />header #logo {<br />    width: 1000px;<br />}<br /><br />header nav {<br />    font-family: "Arial Narrow", Arial, sans-serif;<br />    text-transform: uppercase;<br />    font-size: 14px;<br />    line-height: 20px;<br />    margin-top: 10px;<br />    border-top: 1px solid #F7F7F7;<br />    border-bottom: 1px solid #F7F7F7;<br />    padding: 20px 10px;<br />    height: 20px;<br />    <br />}<br /><br />header nav ul {<br />    <br />}<br /><br />header nav ul li {<br />    list-style-type: none;<br />    float: left;<br />    padding: 0 15px;<br />    border-left: 1px solid #F7F7F7;<br />    margin: 0;<br />}<br /><br />header nav ul li a {<br /><br />}<br /><br />header nav ul li:first-child {<br />    border-left: 0;<br />    padding-left: 0;<br />}<br /><br />div#main {<br />    margin: 20px 0;<br />}<br /><br />article {<br />    float: left;<br />    padding: 0 20px 0 10px;<br />    width: 750px;<br />}<br /><br />aside {<br />    width: 189px;<br />    padding: 0 10px 0 20px;<br />    float: right;<br />    border-left: 1px solid #E6E6E6;<br />    font-size: 14px;<br />}<br /><br />.widget {<br />    margin-bottom: 20px;<br />}<br /><br />footer {<br />    border-top: 1px solid #F7F7F7;<br />    height: 20px;<br />    line-height: 20px;<br />    padding: 20px 10px 10px;<br />}<br /><br />footer small {<br />    width: 480px;<br />    margin-right: 10px;<br />    float: left;<br />    font-size: 12px;<br />}<br /><br />footer nav {<br />    font-family: "Arial Narrow", Arial, sans-serif;<br />    width: 480px;<br />    margin-left: 10px;<br />    float: right;<br />    text-transform: uppercase;<br />    font-size: 12px;<br />}<br /><br />footer nav ul {<br />    <br />}<br /><br />footer nav ul li {<br />    list-style-type: none;<br />    float: right;<br />    padding: 0 10px;<br />    border-right: 1px solid #F7F7F7;<br />    margin: 0;<br />}<br /><br />footer nav ul li a {<br />    <br />}<br /><br />footer nav ul li:first-child {<br />    border-right: 0;<br />    padding-right: 0;<br />}<br /><br />.clear {<br />    clear: both;<br />}
 ```
 
 reset.css
 
-```
+```html
 /* http://meyerweb.com/eric/tools/css/reset/ <br />   v2.0 | 20110126<br />   License: none (public domain)<br />*/<br /><br />html, body, div, span, applet, object, iframe,<br />h1, h2, h3, h4, h5, h6, p, blockquote, pre,<br />a, abbr, acronym, address, big, cite, code,<br />del, dfn, em, img, ins, kbd, q, s, samp,<br />small, strike, strong, sub, sup, tt, var,<br />b, u, i, center,<br />dl, dt, dd, ol, ul, li,<br />fieldset, form, label, legend,<br />table, caption, tbody, tfoot, thead, tr, th, td,<br />article, aside, canvas, details, embed, <br />figure, figcaption, footer, header, hgroup, <br />menu, nav, output, ruby, section, summary,<br />time, mark, audio, video {<br />    margin: 0;<br />    padding: 0;<br />    border: 0;<br />    font-size: 100%;<br />    font: inherit;<br />    vertical-align: baseline;<br />}<br />/* HTML5 display-role reset for older browsers */<br />article, aside, details, figcaption, figure, <br />footer, header, hgroup, menu, nav, section {<br />    display: block;<br />}<br />body {<br />    line-height: 1;<br />}<br />ol, ul {<br />    list-style: none;<br />}<br />blockquote, q {<br />    quotes: none;<br />}<br />blockquote:before, blockquote:after,<br />q:before, q:after {<br />    content: '';<br />    content: none;<br />}<br />table {<br />    border-collapse: collapse;<br />    border-spacing: 0;<br />}
 ```
 
@@ -128,7 +128,7 @@ Your page content is written within Create's system, and dynamically inserted in
 
 Replacing:
 
-```
+```html
 <article>
   <h1>Welcome to my example website.</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lacus est, sed varius odio. Mauris arcu felis, scelerisque eget congue ut, semper eu enim. Proin sit amet nisi quam, porta fermentum lectus. Sed feugiat semper eros ac dignissim. Fusce elit ipsum, dapibus eget faucibus posuere, blandit non lectus. Sed odio justo, volutpat et tincidunt id, commodo et metus. Cras sit amet felis velit, id ultricies sem. Donec in consequat lorem. Integer orci elit, ultrices eget aliquam ac, luctus in diam. In auctor lacus eu lacus egestas volutpat. Proin eu tellus sed nisl elementum ultricies vitae at mi. Mauris ac sodales quam. Proin et nisi nunc, et gravida tellus.</p>
@@ -137,7 +137,7 @@ Replacing:
 
 With:
 
-```
+```html
 <article>
   <h1>Welcome to my example website.</h1>
   <!--WDK:header:end-->
@@ -151,7 +151,7 @@ The last required tag we must insert is the `<!--WDK:display:sitefooter-->` tag.
 
 Replacing:
 
-```
+```html
 <footer>
   <small>
     &copy; 2013 My Example Website.
@@ -169,7 +169,7 @@ Replacing:
 
 With:
 
-```
+```html
 <footer>
   <!--WDK:display:sitefooter-->
 </footer>
@@ -183,7 +183,7 @@ To display our sites meta values, we're going to use the `<!--WDK:display:headin
 
 Replacing:
 
-```
+```html
 <title>Home | My Example Website</title>
 <meta name="description" content="Welcome to my example website.">
 <meta name="keywords" content="My, Keywords, Here">
@@ -199,14 +199,14 @@ We are linking to a few external stylesheets. We will be uploading these along w
 
 Replacing:
 
-```
+```html
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="style.css">
 ```
 
 With:
 
-```
+```html
 <link rel="stylesheet" href="<!--WDK:path:template-->reset.css">
 <link rel="stylesheet" href="<!--WDK:path:template-->style.css">
 ```
@@ -217,7 +217,7 @@ We can upload our logo image to the "Design Screen". We can display this using t
 
 Replacing:
 
-```
+```html
 <div id="logo">
   <a href="/">
     <img src="images/logo.png" alt="My Example Logo" width="881" height="142">
@@ -227,7 +227,7 @@ Replacing:
 
 With:
 
-```
+```html
 <div id="logo">
   <a href="/">
     <!--WDK:display:header-->
@@ -241,7 +241,7 @@ For the navigation, we can write a loop to process all of the menus items on a C
 
 Replacing:
 
-```
+```html
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -256,7 +256,7 @@ Replacing:
 
 With:
 
-```
+```html
 <nav>
   <ul>
     <!--WDK:menu:start-->
@@ -288,7 +288,7 @@ Sidebar content is managed using Side Columns from the "Design Screen". Sidebars
 
 Replacing:
 
-```
+```html
 <aside>
   <div class="widget">
     <h3>Recent Posts</h3>
@@ -303,7 +303,7 @@ Replacing:
 
 With:
 
-```
+```html
 <!--WDK:column:start:right-->
 <!--WDK:column:width:189-->
 <aside>
@@ -326,7 +326,7 @@ Replacing:
 `<link rel="stylesheet" href="style.css">`
 With:
 
-```
+```html
 <style type="text/css">
     (style.css content here)
 </style>
@@ -336,13 +336,13 @@ From the "Design Screen", Create users can select dynamic colours for use within
 
 Replacing:
 
-```
+```html
 /* Typography */<br />body {<br />    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;<br />    color: #686B6E;<br />}<br /><br />a {<br />    color: #54B2FF;<br />}<br /><br />a:hover {<br />    color: #4FA7F0;<br />}<br /><br />/* Layout */<br />body {<br />    background-color: #F5F5F5;<br />}<br /><br />#wrapper {<br />    background-color: #FFFFFF;<br />}<br /><br />header nav {<br />}<br /><br />header nav ul li a {<br /><br />}<br />
 ```
 
 With:
 
-```
+```css
 /* Typography */
 body {
     font-family: <!--WDK:display:font-->;
@@ -379,7 +379,7 @@ header nav ul li a {
 
 We now have our existing webpage compatible with Create's WDK. Heres a final overview of our index.html file.
 
-```
+```html
 <!doctype html>
 <!--WDK:header:start-->
 <html>

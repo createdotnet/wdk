@@ -8,7 +8,7 @@ last-updated: 03-03-2013
 
 The Create footer section is opened with `<!--WDK:footer:start-->` and starts directly after your `<!--WDK:header:end-->` tag. 
 
-The footer section is closed after your </html> tag using `<!--WDK:footer:end-->`.
+The footer section is closed after your `</html>` tag using `<!--WDK:footer:end-->`.
 
 Between these you should close any divs, tables or elements previously left open in the header section. You must also include the `<!--WDK:display:sitefooter-->` tag. 
 
@@ -20,7 +20,7 @@ If you do not put this tag in, it will automatically inserted immediately after 
 
 Following on from our example template we started in the header tutorial. Let's finish up the template:
 
-```
+```html
           <!--WDK:footer:start-->
 
         </div><!-- /.content -->
@@ -49,10 +49,15 @@ Next the site footer is displayed and finally our remaining `</div>`, `</body>` 
 Links & Further Reading
 
 Tag: `<!--WDK:footer:start-->`
+
 Tag: `<!--WDK:column:start:right-->`
+
 Tag: `<!--WDK:column:end:right-->`
+
 Tag: `<!--WDK:display:sitefooter-->`
+
 Tag: `<!--WDK:footer:end-->`
+
 Tutorial: The Basics
 Tutorial: The Header
 Tutorial: Creating Side Columns

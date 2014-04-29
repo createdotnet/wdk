@@ -20,7 +20,7 @@ Use this tag to return the current page title as defined on the "Page Options" s
 
 In this example we're displaying the current page title within a H1 tag.
 
-```
+```html
 <div id="title">
   <h1><!--WDK:display:pagetitle--></h1>
 </div>
