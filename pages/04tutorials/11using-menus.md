@@ -26,7 +26,7 @@ Also, sub pages, as they are set up on the Create account, will be not be proces
 ###Example
 In the following example, we are creating a menu loop with a `<ul> <li>` structure.
 
-``` html
+```html
 <nav>
   <ul>
     <!--WDK:menu:start-->
@@ -46,7 +46,7 @@ In our loop we are using `<!--WDK:menu:id-->` to obtain a unique id for each men
 
 If there were 5 items in the menu: Home, About, Shop, Services & Contact, the markup would be returned like this:
 
-``` html
+```html
 <nav>
   <ul>
     <li id="menu-item-1" class="menu-item">
@@ -84,7 +84,7 @@ There are a few extra conditional tags which can allow for further functionality
 Another useful conditional tag is `<!--WDK:if:currentMenuItem-->`. This tag can be used to check if the current menu item in the loop, is the current page being viewed.
 In the example below we're using these checks to apply additional classes to the `<li>`.
 
-``` html
+```html
 <nav>
   <ul>
     <!--WDK:menu:start-->
@@ -116,7 +116,7 @@ In the example below we're using these checks to apply additional classes to the
 
 So, as before, for example there are 5 items in the menu and if the user is now viewing the shop page, the markup would be returned like this:
 
-``` html
+```html
 <nav>
   <ul>
     <li id="menu-item-1" class="menu-item first">
@@ -190,7 +190,7 @@ The final tag you will need to use is `<!--WDK:display:navigation-->` which shou
 
 ###Example
 
-``` html
+```html
 <head>
   <!--WDK:javascript:jquery-->
   <!--WDK:templateoption:dropdownMenu:[top]-->
@@ -203,7 +203,7 @@ The final tag you will need to use is `<!--WDK:display:navigation-->` which shou
 
 If there were 5 items in the menu: Home, About, Services, Shop & Contact, with Services as a sub page of About, the markup would be returned like this:
 
-``` html
+```html
 <nav>
   <ul class="wdk_menu-ul wdk_tier_1">
 
@@ -247,7 +247,7 @@ Drop down menus work by placing the second `<ul>` within it's parent `<li>`, usi
 
 For a basic example:
 
-``` html
+```html
 <ul>
   <li>
     Main Menu Item
