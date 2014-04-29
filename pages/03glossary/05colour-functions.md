@@ -2,14 +2,44 @@
 layout: layout
 title: Colour Functions
 group: glossary
+last-updated: 12-02-2013
 ---
 
 
-We have made two of our own templates available for you to download.
+###Tag
 
-You can use these to see how a template is constructed and get an idea of how the WDK tags are, and can be, used.
+```
+<!--WDK:color:darken:colour:amount-->
+```
 
-The following templates use HTML 5 and include the corresponding style sheets and javascript file.
+###Description
 
-Click here to download an example side menu template.
-Click here to download an example top menu template.
+Return = `#<HEX>`
+This tag creates a darker version of a colour by a specified amount.
+
+To use this tag, replace "colour" with a hex reference. Or, you can draw in a selected colour from the "Colours" menu on the Design screen of the Create account.
+
+You can do this with any of the following variables:
+[bodybg] - Body Background
+[bodytxt] - Body Text
+[bodylink] - Body Link
+[pagebg] - Page Background
+[menubg] - Menu Background
+[menutxt] - Menu Text
+
+Then the "amount" is an intensity level between 1 and 255 to select the darkness increase of the colour.
+
+###Example
+
+In the example below we are using Create's dynamic colours. We are using the [bodylink] to generate a darker colour to use as a border.
+
+```
+<head>
+  <style type="text/css">
+    a {
+      color: <!--WDK:display:bodylink-->;
+      border-bottom: 1px solid <!--WDK:color:darken:[bodylink]:100-->;
+    }
+  </style>
+</head>
+```

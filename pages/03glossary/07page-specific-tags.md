@@ -2,14 +2,26 @@
 layout: layout
 title: Page Specific Tags
 group: glossary
+last-updated: 08-02-2013
 ---
 
+###Tag
 
-We have made two of our own templates available for you to download.
+```
+<!--WDK:display:pagetitle-->
+```
 
-You can use these to see how a template is constructed and get an idea of how the WDK tags are, and can be, used.
+###Description
 
-The following templates use HTML 5 and include the corresponding style sheets and javascript file.
+Return `<String(HTML)>`
+Use this tag to return the current page title as defined on the "Page Options" screen from within your Create account. This may contain HTML.
 
-Click here to download an example side menu template.
-Click here to download an example top menu template.
+###Example
+
+In this example we're displaying the current page title within a H1 tag.
+
+```
+<div id="title">
+  <h1><!--WDK:display:pagetitle--></h1>
+</div>
+```

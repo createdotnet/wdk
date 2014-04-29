@@ -2,14 +2,25 @@
 layout: layout
 title: Path Tags
 group: glossary
+last-updated: 07-02-2013
 ---
 
 
-We have made two of our own templates available for you to download.
+###Tag
 
-You can use these to see how a template is constructed and get an idea of how the WDK tags are, and can be, used.
+```
+<!--WDK:path:images-->
+```
 
-The following templates use HTML 5 and include the corresponding style sheets and javascript file.
+###Description
 
-Click here to download an example side menu template.
-Click here to download an example top menu template.
+Return `<String>`
+Use this tag to retreive the full relative path to your images directory.
+
+###Example
+
+In this example we're using the tag to include an image previously uploaded named 'logo.png'.
+
+```
+<img alt="Company Logo" src="<!--WDK:path:images-->logo.png" />
+```

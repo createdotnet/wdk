@@ -2,14 +2,32 @@
 layout: layout
 title: Using jQuery
 group: tutorials
+last-updated: 05-04-2013
 ---
 
 
-We have made two of our own templates available for you to download.
+Create websites utilise the Javascript library jQuery for various dynamic features. 
 
-You can use these to see how a template is constructed and get an idea of how the WDK tags are, and can be, used.
+In the `<!--WDK:display:headstuff-->` tag is a `<script>` tag loading in "loader.js" which is what we use to include jQuery in the page.
 
-The following templates use HTML 5 and include the corresponding style sheets and javascript file.
+/include/js/loader.js
 
-Click here to download an example side menu template.
-Click here to download an example top menu template.
+```
+function jsload( src ) {
+	document.write(unescape('%3Cscript src="' + src + '"%3E%3C/script%3E'));
+}
+
+var jqv = "1.9.1";
+if (typeof jQuery == "undefined") {
+	jsload('//ajax.googleapis.com/ajax/libs/jquery/' + jqv + '/jquery.min.js');
+	jsload('http://code.jquery.com/jquery-migrate-1.1.1.js');
+}
+```
+
+If you need to use jQuery in your own template, you should not include it again, simply use it normally below the headstuff WDK tag.
+
+##Versions
+
+You can check the current version of jQuery that your Create is using by looking at loader.js and referring to the jqv variable.
+
+If you need to use a different version of jQuery, you will need to namespace it and  include is above the headstuff WDK tag. You can do this using jQuery's built in noConflict method. Read more...

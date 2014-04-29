@@ -2,14 +2,37 @@
 layout: layout
 title: Menus
 group: glossary
+last-updated: 13-02-2013
 ---
 
 
-We have made two of our own templates available for you to download.
+###Tag
 
-You can use these to see how a template is constructed and get an idea of how the WDK tags are, and can be, used.
+```
+<!--WDK:menu:text-->
+```
 
-The following templates use HTML 5 and include the corresponding style sheets and javascript file.
+###Description
 
-Click here to download an example side menu template.
-Click here to download an example top menu template.
+Returns `<String>`
+This tag returns the text of the current menu item within the loop.
+
+###Example
+
+In the following example we are using the tag to display each menu items text within a link.
+
+```
+<header>
+  <nav>
+    <ul>
+      <!--WDK:menu:start-->
+        <li id="menu-item-<!--WDK:menu:id-->">
+          <a href="<!--WDK:menu:link-->">
+            <!--WDK:menu:text-->
+          </a>
+        </li>
+      <!--WDK:menu:end-->
+    </ul>
+  </nav>
+</header>
+```

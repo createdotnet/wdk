@@ -2,20 +2,27 @@
 layout: layout
 title: Header Images
 group: glossary
+last-updated: 07-02-2013
 ---
 
 
+###Tag
 
-A template made using the WDK requires only 1 file, index.html. However, you may wish include other separate files such as: style sheets, javascript libraries, images and flash.
+```
+<!--WDK:display:header-->
+```
 
-The index.html is used for all page layouts and is the only file you can include WDK tags on.
+###Description
 
-The WDK uses tags to determine dynamic content on your page. Tags are HTML comments which instruct our system to "do" or "fetch" information.
+Return = `<String(HTML)>`
+This tag returns a complete header image tag for header3. Alternatively it will return a table with both header1 and header2 images together, depending on what is selected on the 'Add, Update or Remove Your Company Logos' screen.
 
-For example, if you wanted to place the page title within a HTML heading, you would do the following:
+###Example
 
-`<h1><!--WDK:display:pagetitle--></h1>`
+In this example, we output our header image within a designated div for our image.
 
-Automatically, the WDK reads this tag and shows the relevant page title within the HTML heading.
-
-This documentation will talk you through with some tutorials of using the WDK tags effectively, as well as listing the tags in a glossary. Please use the left hand navigation to read through the documentation.
+```
+<div id="header">
+  <!--WDK:display:header-->
+</div>
+```

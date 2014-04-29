@@ -2,40 +2,100 @@
 layout: layout
 title: Side Columns & Content Width
 group: tutorials
+last-updated: 03-03-2013
 ---
 
 
-You can write or insert a pre-written WDK template on to your Create account using our WDK Editor. 
-You can also set a thumbnail for it on the template selector on the Design screen.
+Create supports 2 side columns. To use these in your WDK template, you'll need to write a loop.
 
-##Uploading a new Template
+Side columns must be opened and closed with `<!--WDK:column:start-->` and `<!--WDK:column:end-->` respectively. Looping through items with `<!--WDK:column:item:start-->` and `<!--WDK:column:item:end-->`.
 
-To use your WDK template on your Create account, please follow the steps below:
+##Example
 
-1. Log on to your Create account.
-2. Click on "Design"Â  from the Top Menu
-3. Click on WDK from the design menu.
-4. This will open the WDK editor on the left hand side of the Design screen.
-5. Hover over the down arrow icon and select "New Template"
-6. Write in your template's name and click " Create Template".
+The example below is suitable markup for the left side column.
 
-Using the same down arrow, you can open, upload and create additional external files to use with your template.
+```
+<!--WDK:column:start:left-->
+  <!--WDK:column:width:150-->
+  <aside class="sidebar left">
 
-##Customising the WDK Editor
+    <!--WDK:column:item:start-->
+      <div id="column-item-<!--WDK:column:item:id-->" class="column-item column-item-n-<!--WDK:column:item:nth-->">
+        <h5><!--WDK:column:item:title--></h5>
+        <!--WDK:column:item:content-->
+      </div>
+    <!--WDK:column:item:end-->
 
-The WKD editor can then be used to write and amend your template at any time. You can customise the way the editor looks for your code writing preference.
+  </aside>
+<!--WDK:column:end:left-->
+```
 
-You can customise the following:
+After opening our side column we're using `<!--WDK:column:width-->` to set the width of the side column to 150px. Between the starting and ending tags we have our `<aside>` container. Within our `<aside>` tag we indicate the start and end of our loop. The code between these tags is our loop used to process every time in the column.
 
-Syntax Highlighting. You can chose from a variety of themes with aÂ  great range of colour schemes.
-Font Size. Adapt the size of your mark up to suit your preference and screen size.
-Line wrapping. Specify if you want your lines to wrap for less scrolling, or stay as they are.
-You can make these customisations, simply by opening the editor from your Design screen, and then clicking the "flower" icon from the top right of the editor screen. This will drop down with: theme, font size and line wrapping options.
+If we had 2 items in our side columns, a product search and shopping basket the markup returned would be (the widget contents have been shortened):
 
-If you want to close the editor on your Design screen at any time, simply press the 'cross' icon from the top right of the editor screen.
+```
+<aside class="sidebar left">
 
-##Template Thumbnail
+  <div id="column-item-id-1" class="column-item column-item-n-1">
+    <h5>Product Search</h5>
+    <div class="wdk_sidecolumn-type-shopsearch"> </div>
+  </div>
 
-Once you have created your template, it will appear from the "Templates" drop down on the design screen under "custom". You can upload your own thumbnail for your template that is seen here.
+  <div id="column-item-id-2" class="column-item column-item-n-2">
+    <h5>Shopping Basket</h5>
+    <div class="wdk_sidecolumn-type-basket"> </div>
+  </div>
 
-To set your template's thumbnail, simply upload an image file that is named "thumb.jpg" that is a size of 80 x 60 px using the WDK editor external file uploader as mentioned above.
+</aside>
+```
+
+We're using the tag `<!--WDK:column:item:id-->` to create a unique id for each menu item. `<!--WDK:column:item:nth-->` is used to give each side column item the nth number of item, please take note that this applies the same number to both left and right side columns items. E.g. providing we used the same markup for both side columns, the first item on the left and right side column would be given the class column-item-n-1.
+
+##Content Width
+
+The Create WDK has a tag to return the number of side columns being used. This is useful in making sure your content is the appropriate width. A simplified version of our markup would be:
+
+```
+<div id="main">
+  <aside class="sidebar left"> </aside>
+
+  <div id="content" class="column-count-<!--WDK:column:count-->"> </div>
+
+  <aside class="sidebar right"> </aside>
+</div>
+```
+
+If the user had no side columns, the markup returned would be:
+
+`<div id="content" class="column-count-0"> </div>`
+If the user had one side column, the markup returned would be:
+
+`<div id="content" class="column-count-1"> </div>`
+If the user had two side columns, the markup returned would be:
+
+`<div id="content" class="column-count-2"> </div>`
+If our template is 1000px wide and the sidebars are 150px each, heres how we could set the width by using the .column-count- classes.
+
+```
+div#content {<br />}<br /><br />div.column-count-0 {<br />  width:1000px;<br />}<br /><br />div.column-count-1 {<br /> width:850px;<br />}<br /><br />div.column-count-2 {<br /> width:700px;<br />}
+```
+
+All other styling for this should be applied to our #content. The `<aside>` and content `<div>` could be displayed inline or floated so they sit next to each other.
+
+```
+aside.sidebar, div#content {<br />  float:left;<br />}<br /><br />aside.sidebar, div#content {<br />  display:inline;<br />}
+```
+
+##Links & Further Reading
+
+Tag: `<!--WDK:column:start-->`
+Tag: `<!--WDK:column:end-->`
+Tag: `<!--WDK:column:width-->`
+Tag: `<!--WDK:column:item:start-->`
+Tag: `<!--WDK:column:item:end-->`
+Tag: `<!--WDK:column:item:id-->`
+Tag: `<!--WDK:column:item:nth-->`
+Tag: `<!--WDK:column:item:title-->`
+Tag: `<!--WDK:column:item:content-->`
+Tag: `<!--WDK:column:count-->`

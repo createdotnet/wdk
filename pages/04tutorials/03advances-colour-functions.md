@@ -2,40 +2,134 @@
 layout: layout
 title: Advanced Colour Functions
 group: tutorials
+last-updated: 03-03-2013
 ---
 
 
-You can write or insert a pre-written WDK template on to your Create account using our WDK Editor. 
-You can also set a thumbnail for it on the template selector on the Design screen.
+Create's system offers dynamic colours, which enables users to customise their templates. These colours can be pulled into your template for use with CSS and is covered in the *LINK*Dynamic Styling Tutorial. The WDK also has a series of useful tags used to modify these dynamic or any other colours.
 
-##Uploading a new Template
+For each of these tag you may use a hex colour, or a colour variable. The colour variables are written as follows:
 
-To use your WDK template on your Create account, please follow the steps below:
+[bodybg] - Body background colour
+[bodytxt] - Body text Colour
+[bodylink] - Body link colour
+[pagebg] - Page background colour
+[menubg] - Menu background colour
+[menutxt] - Menu text colour
 
-1. Log on to your Create account.
-2. Click on "Design"Â  from the Top Menu
-3. Click on WDK from the design menu.
-4. This will open the WDK editor on the left hand side of the Design screen.
-5. Hover over the down arrow icon and select "New Template"
-6. Write in your template's name and click " Create Template".
+##Tags
 
-Using the same down arrow, you can open, upload and create additional external files to use with your template.
+###Tint
+This tag returns a hex reference that is a mix of colour1 and colour 2 at amount % (0 - 100).
 
-##Customising the WDK Editor
+`<!--WDK:color:tint:colour1:colour2:amount-->`
+This tag could be used for heading titles, mixing the text and background colour.
 
-The WKD editor can then be used to write and amend your template at any time. You can customise the way the editor looks for your code writing preference.
+```
+<style type="text/css">
+  body {
+    background-color:<!--WDK:display:bodybg-->;
+    color:<!--WDK:display:bodytxt-->;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color:<!--WDK:color:tint:[bodybg]:[bodytxt]:50-->;
+  }
+</style>
+```
 
-You can customise the following:
+###Highlight
 
-Syntax Highlighting. You can chose from a variety of themes with aÂ  great range of colour schemes.
-Font Size. Adapt the size of your mark up to suit your preference and screen size.
-Line wrapping. Specify if you want your lines to wrap for less scrolling, or stay as they are.
-You can make these customisations, simply by opening the editor from your Design screen, and then clicking the "flower" icon from the top right of the editor screen. This will drop down with: theme, font size and line wrapping options.
+This tag returns a hex reference that is a highlighted version of a colour by a specified amount. If the supplied colour can't be highlighted by the specified amount, it will be darkened instead. Amount should be integer between 0 - 255.
 
-If you want to close the editor on your Design screen at any time, simply press the 'cross' icon from the top right of the editor screen.
+`<!--WDK:color:highlight:colour:amount-->`
+This tag could be useful for creating highlighted hover states for links.
 
-##Template Thumbnail
+```
+<style type="text/css">
+  a {
+    color:<!--WDK:display:bodylink-->;
+  }
+  a:hover {
+    color:<!--WDK:color:highlight:[bodylink]:50-->;
+  }
+</style>
+```
 
-Once you have created your template, it will appear from the "Templates" drop down on the design screen under "custom". You can upload your own thumbnail for your template that is seen here.
+###Invert
+This tag returns a hex reference that is an inverted version of the supplied colour.
 
-To set your template's thumbnail, simply upload an image file that is named "thumb.jpg" that is a size of 80 x 60 px using the WDK editor external file uploader as mentioned above.
+`<!--WDK:color:invert:colour-->`
+This tag is useful for generating colours that stand out. Here we're using it for setting the colours of heading tags from the background.
+
+```
+<style type="text/css">
+  body {
+    background-color: <!--WDK:display:bodybg-->;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: <!--WDK:color:invert:[bodybg]-->;
+  }
+</style>
+```
+
+###Brighten
+
+This tag returns a hex reference that is a brighten version of supplied colour. Amount should be integer between 0 - 255.
+
+`<!--WDK:color:brighten:colour:amount-->`
+This tag could be used to create an outer glow around links.
+
+```
+<style type="text/css">
+  a {
+    color: <!--WDK:display:bodylink-->;
+    text-shadow: 0px 0px 5px <!--WDK:color:brighten:[bodylink]:50-->;
+  }
+</style>
+```
+
+Please note 'text-shadow' is a CSS3 property and is currently not supported in Internet Explorer.
+
+###Darken
+
+This tag returns a hex reference that is a darkened version of supplied colour. Amount should be integer between 0 - 255.
+
+`<!--WDK:color:darken:colour:amount-->`
+This tag could be used to create a drop shadow on headings.
+
+```
+<style type="text/css">
+  h1, h2, h3, h4, h5, h6 {
+    color: <!--WDK:display:bodytext-->;
+    text-shadow: 1px 1px 3px <!--WDK:color:darken:[bodytxt]:50-->;
+  }
+</style>
+```
+
+Please note 'text-shadow' is a CSS3 property and is currently not supported in Internet Explorer.
+
+###Best Visible
+
+This tag returns a hex reference that is the bets visible colour for reading text on the supplied colour.
+
+`<!--WDK:color:bestvisible:colour-->`
+If in your template you only allow the user to select a background colour, this tag could generate the best colour for the text.
+
+```
+<style type="text/css">
+  body {
+    background-color:<!--WDK:display:bodybg-->;
+    color:<!--WDK:color:bestvisible:[bodybg]-->;
+  }
+</style>
+```
+
+###Links & Further Reading
+
+Tag: `<!--WDK:color:tint-->`
+Tag: `<!--WDK:color:highlight-->`
+Tag: `<!--WDK:color:invert-->`
+Tag: `<!--WDK:color:brighten-->`
+Tag: `<!--WDK:color:darken-->`
+Tag: `<!--WDK:color:bestvisible-->`
+Tutorial: Dynamic Styling

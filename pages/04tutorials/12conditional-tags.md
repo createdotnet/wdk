@@ -2,20 +2,83 @@
 layout: layout
 title: Conditional Tags
 group: tutorials
+last-updated: 03-03-2013
 ---
 
 
+Creates WDK offers conditional tags equivalent to php if statements.
 
-A template made using the WDK requires only 1 file, index.html. However, you may wish include other separate files such as: style sheets, javascript libraries, images and flash.
+```
+<!--WDK:if-->
+<!--WDK:else-->
+<!--WDK:endif-->
+```
 
-The index.html is used for all page layouts and is the only file you can include WDK tags on.
+PHP equivalent:
+`if () {<br />} else {<br />}`
 
-The WDK uses tags to determine dynamic content on your page. Tags are HTML comments which instruct our system to "do" or "fetch" information.
+##Usage
 
-For example, if you wanted to place the page title within a HTML heading, you would do the following:
+Here is a list of the ways you may use our tags and their pseudo equivalents.
 
-`<h1><!--WDK:display:pagetitle--></h1>`
+```
+<!--WDK:if:statement-->
 
-Automatically, the WDK reads this tag and shows the relevant page title within the HTML heading.
+if (statement) {
+```
 
-This documentation will talk you through with some tutorials of using the WDK tags effectively, as well as listing the tags in a glossary. Please use the left hand navigation to read through the documentation.
+```
+<!--WDK:ifnot-->
+
+if (!statement) {
+```
+
+ 
+```
+<!--WDK:else-->
+
+} else {
+```
+
+```
+<!--WDK:elseif:statement-->
+
+} elseif (statement) {
+```
+
+```
+<!--WDK:elseifnot:statement-->
+
+} elseif (!statement) {
+```
+
+```
+<!--WDK:endif-->
+
+}
+```
+
+##Complete Conditional Tag List
+
+Tag: `<!--WDK:if:pageFilenameIs:value-->`
+Tag: `<!--WDK:if:pageFilenameStartsWith:value-->`
+Tag: `<!--WDK:if:pageFilenameEndsWith:value-->`
+Tag: `<!--WDK:if:pageFilenameContains:value-->`
+Tag: `<!--WDK:if:firstMenuItem-->`
+Tag: `<!--WDK:if:currentMenuItem-->`
+Tag: `<!--WDK:if:lastMenuItem-->`
+Tag: `<!--WDK:if:menuItemPageType:value-->`
+Tag: `<!--WDK:if:headerX-->`
+Tag: `<!--WDK:if:headerX:isPng-->`
+Tag: `<!--WDK:if:headerX:isJpg-->`
+Tag: `<!--WDK:if:headerX:isGif-->`
+Tag: `<!--WDK:if:hasShop-->`
+Tag: `<!--WDK:else-->`
+Tag: `<!--WDK:endif-->`
+Website User Conditional Tags
+
+The following tags are used to check if a user is logged in. These tags cannot be closed with the above `<!--WDK:else-->` and `<!--WDK:endif-->` tags.
+
+Tag: `<!--WDK:isloggedin:start-->`
+Tag: `<!--WDK:isloggedin:else-->`
+Tag: `<!--WDK:isloggedin:end-->`

@@ -2,40 +2,78 @@
 layout: layout
 title: Requirements & Restrictions
 group: tutorials
+last-updated: 03-03-2013
 ---
 
+###Files
 
-You can write or insert a pre-written WDK template on to your Create account using our WDK Editor. 
-You can also set a thumbnail for it on the template selector on the Design screen.
+Building a website using the WDK requires only 1 file - index.html. 
 
-##Uploading a new Template
+This file is used for all page layouts and is the only file you can process any `<!--WDK-->` tags on.
 
-To use your WDK template on your Create account, please follow the steps below:
+Although you can use external stylesheets for styling, any CSS selectors that use `<!--WDK-->` tags must be declared within the `<head>` section of index.html.
 
-1. Log on to your Create account.
-2. Click on "Design"Â  from the Top Menu
-3. Click on WDK from the design menu.
-4. This will open the WDK editor on the left hand side of the Design screen.
-5. Hover over the down arrow icon and select "New Template"
-6. Write in your template's name and click " Create Template".
+Permitted File Types
 
-Using the same down arrow, you can open, upload and create additional external files to use with your template.
+You are permitted to use other files outside of index.html. These can be Stylesheets, Javascript or jQuery libraries, flash (swf) files and xml sheets.
 
-##Customising the WDK Editor
+###Permitted extensions are:
 
-The WKD editor can then be used to write and amend your template at any time. You can customise the way the editor looks for your code writing preference.
+.png 
+.jpg 
+.gif 
+.css 
+.js 
+.swf 
+.xml
+To use external files or images you will need to use the following path tags:
 
-You can customise the following:
+Tag: `<!--WDK:path:template-->`
+Tag: `<!--WDK:path:images-->`
+Tag: `<!--WDK:path:file-->`
 
-Syntax Highlighting. You can chose from a variety of themes with aÂ  great range of colour schemes.
-Font Size. Adapt the size of your mark up to suit your preference and screen size.
-Line wrapping. Specify if you want your lines to wrap for less scrolling, or stay as they are.
-You can make these customisations, simply by opening the editor from your Design screen, and then clicking the "flower" icon from the top right of the editor screen. This will drop down with: theme, font size and line wrapping options.
+###Required Tags
 
-If you want to close the editor on your Design screen at any time, simply press the 'cross' icon from the top right of the editor screen.
+There are a few tags that are required in order for your template to be processed correctly. 
+These are listed below.
 
-##Template Thumbnail
+Header & Footer
+Your index.html file must contain all of the header and footer tags. These tags help us to identify your templates layout and instruct us where to put the main page content. 
 
-Once you have created your template, it will appear from the "Templates" drop down on the design screen under "custom". You can upload your own thumbnail for your template that is seen here.
+These tags are:
 
-To set your template's thumbnail, simply upload an image file that is named "thumb.jpg" that is a size of 80 x 60 px using the WDK editor external file uploader as mentioned above.
+Tag: `<!--WDK:header:start-->`
+Tag: `<!--WDK:header:end-->`
+Tag: `<!--WDK:footer:start-->`
+Tag: `<!--WDK:footer:end-->`
+For more information please see the basics tutorial.
+
+Display Site Footer
+This tag may be placed anywhere within the header or footer tags, if you leave it out, it will automatically be placed at the opening of your footer tag.
+
+Tag: `<!--WDK:display:sitefooter-->`
+For more information please see the footer tutorial.
+
+Menu Loops
+We offer 2 methods for creating menus: our drop down menu tag returns a full `<ul> <li>` structure, however we also offer a manual method for creating your own menu loops. 
+
+If you opt to build your own, you must include the `<!--WDK:menu:start-->` and `<!--WDK:menu:end-->` tags.
+
+Tag: `<!--WDK:menu:start-->`
+Tag: `<!--WDK:menu:end-->`
+Please see the glossary for examples on individual tags and for more information please read the tutorial on creating menu loops.
+
+Side Column Loops
+Similar to menu loops, when writing a side column, you must include the `<!--WDK:column:start-->` and `<!--WDK:column:end-->` tags.
+
+Tag: `<!--WDK:column:start-->`
+Tag: `<!--WDK:column:end-->`
+For more information please see the Creating Side Columns tutorial.
+
+Conditional Tags
+The WDK supports conditional statements. Any `<!--WDK:if-->` tag must be ended with `<!--WDK:endif-->`.
+
+Tag: `<!--WDK:if-->`
+Tag: `<!--WDK:else-->`
+Tag: `<!--WDK:endif-->`
+For more information, please read the Using Conditional Tags tutorial.
