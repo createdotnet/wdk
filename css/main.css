@@ -116,9 +116,14 @@ header a {
 /* Content Styling */
 
 pre {
-	background-color: #f5f2f0;
 	padding: 0px 10px 15px;
 }
+
+pre, code {
+	background-color: #f5f2f0;
+	overflow: scroll;
+}
+
 
 main ol, 
 main ul {
