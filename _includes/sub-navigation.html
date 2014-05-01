@@ -1,0 +1,12 @@
+
+{% assign group = 'Widgets' %}
+  
+  <h2>{{group}}</h2> <!--display name of group as text-->
+    <ul>
+        {% assign sorted_pages = site.pages | sort:"name" %} <!-- sorts by file name -->
+        {% for node in sorted_pages %}
+          {% if group == node.group %} <!-- lists all pages with 'getting-started' as the group name -->
+            <li><a href="{{node.url}}">{{node.title}}</a></li>
+          {% endif %}
+        {% endfor %}
+    </ul>
