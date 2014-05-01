@@ -1,7 +1,7 @@
 ---
-layout: layout
+layout: main
 title: Dynamic Styling
-group: tutorials
+group: Tutorials
 last-updated:  24-03-2013
 ---
 

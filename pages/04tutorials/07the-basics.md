@@ -1,7 +1,7 @@
 ---
-layout: layout
+layout: main
 title: The Basics
-group: tutorials
+group: Tutorials
 last-updated: 08-03-2013
 ---
 

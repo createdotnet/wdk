@@ -1,7 +1,7 @@
 ---
-layout: layout
+layout: main
 title: Converting to WDK
-group: tutorials
+group: Tutorials
 last-updated: 25-03-2013
 ---
 

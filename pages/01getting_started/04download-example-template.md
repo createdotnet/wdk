@@ -1,7 +1,7 @@
 ---
-layout: layout
+layout: main
 title: Download Example Template
-group: getting-started
+group: Getting Started
 last-updated: 31-07-2013
 ---
 

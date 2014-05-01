@@ -1,7 +1,7 @@
 ---
-layout: layout
+layout: main
 title: Using Menus
-group: tutorials
+group: Tutorials
 last-updated: 31-05-2013
 ---
 

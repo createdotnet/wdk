@@ -1,7 +1,7 @@
 ---
-layout: layout
+layout: main
 title: How it Works
-group: getting-started
+group: Getting Started
 last-updated: 03-04-2012
 ---
 

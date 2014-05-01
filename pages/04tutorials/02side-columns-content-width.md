@@ -1,7 +1,7 @@
 ---
-layout: layout
+layout: main
 title: Side Columns & Content Width
-group: tutorials
+group: Tutorials
 last-updated: 03-03-2013
 ---
 

@@ -1,27 +1,8 @@
 ---
-layout: layout
+layout: page-specific-tags
 title: Page Specific Tags
-group: glossary
+group: Glossary
 last-updated: 08-02-2013
 ---
 
-###Tag
-
-```
-<!--WDK:display:pagetitle-->
-```
-
-###Description
-
-Return `<String(HTML)>`
-Use this tag to return the current page title as defined on the "Page Options" screen from within your Create account. This may contain HTML.
-
-###Example
-
-In this example we're displaying the current page title within a H1 tag.
-
-```html
-<div id="title">
-  <h1><!--WDK:display:pagetitle--></h1>
-</div>
-```
+An introduction

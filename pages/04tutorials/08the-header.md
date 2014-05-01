@@ -1,7 +1,7 @@
 ---
-layout: layout
+layout: main
 title: The Header
-group: tutorials
+group: Tutorials
 last-updated: 03-03-2013
 ---
 

@@ -1,7 +1,7 @@
 ---
-layout: layout
+layout: main
 title: Using jQuery
-group: tutorials
+group: Tutorials
 last-updated: 05-04-2013
 ---
 
