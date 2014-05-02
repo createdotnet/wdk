@@ -6,85 +6,15 @@
   </div>
 </header>
 
-<div class="container">
-
-<nav class="side-nav" role="navigation">
-
-<!-- This navigation bar creates seperate unordered lists containing all pages in each catergory. Each page has a 'group' assigned to it in its header, this determines which catergory of the navigation it appears in. -->
-<!-- By default, the pages order by last saved. For this reason, each list is sorted by "name" or filename. Hence why each page title is preceeded by a number. In order to over right this name in the final site, we can change the permalink in the head of each page. -->
-
-
-
-{% assign group = 'Getting Started' %}
-  
-  <h2>{{group}}</h2> <!--display name of group as text-->
-    <ul>
-        {% assign sorted_pages = site.pages | sort:"name" %} <!-- sorts by file name -->
-        {% for node in sorted_pages %}
-          {% if group == node.group %} <!-- lists all pages with 'getting-started' as the group name -->
-                {% if page.url == node.url %} <!-- adds 'active' class if the page url and current url are the same -->
-                    <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
-                    {% else %}
-                    <li><a href="{{node.url}}">{{node.title}}</a></li>
-                {% endif %}
-          {% endif %}
-        {% endfor %}
-    </ul>
-
-
-
-{% assign group = 'Support' %}
-  
-  <h2>{{group}}</h2> <!--display name of group as text-->
-    <ul>
-        {% assign sorted_pages = site.pages | sort:"name" %} <!-- sorts by file name -->
-        {% for node in sorted_pages %}
-          {% if group == node.group %} <!-- lists all pages with 'getting-started' as the group name -->
-                {% if page.url == node.url %} <!-- adds 'active' class if the page url and current url are the same -->
-                    <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
-                    {% else %}
-                    <li><a href="{{node.url}}">{{node.title}}</a></li>
-                {% endif %}
-          {% endif %}
-        {% endfor %}
-    </ul>
-
-
-
-
-{% assign group = 'Glossary' %}
-  
-  <h2>{{group}}</h2> <!--display name of group as text-->
-    <ul>
-        {% assign sorted_pages = site.pages | sort:"name" %} <!-- sorts by file name -->
-        {% for node in sorted_pages %}
-          {% if group == node.group %} <!-- lists all pages with 'getting-started' as the group name -->
-                {% if page.url == node.url %} <!-- adds 'active' class if the page url and current url are the same -->
-                    <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
-                    {% else %}
-                    <li><a href="{{node.url}}">{{node.title}}</a></li>
-                {% endif %}
-          {% endif %}
-        {% endfor %}
-    </ul>
-
-
-
-{% assign group = 'Tutorials' %}
-  
-  <h2>{{group}}</h2> <!--display name of group as text-->
-    <ul>
-        {% assign sorted_pages = site.pages | sort:"name" %} <!-- sorts by file name -->
-        {% for node in sorted_pages %}
-          {% if group == node.group %} <!-- lists all pages with 'getting-started' as the group name -->
-                {% if page.url == node.url %} <!-- adds 'active' class if the page url and current url are the same -->
-                    <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
-                    {% else %}
-                    <li><a href="{{node.url}}">{{node.title}}</a></li>
-                {% endif %}
-          {% endif %}
-        {% endfor %}
-    </ul>
-
-
+<nav class="top-nav">
+  <ul>
+    <li><a href="/pages/getting_started/wdk-introduction.html">Getting Started</a></li>
+    <li><a href="/pages/support/help-centre.html">Support</a></li>
+    <li><a href="/pages/glossary/glossary.html">Glossary</a></li>
+    <li><a href="/pages/tutorials/tutorials.html">Tutorials</a></li>
+  </ul>
 </nav>
+
+
+
+<div class="container">
