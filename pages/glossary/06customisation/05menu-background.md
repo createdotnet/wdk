@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Display - Dynamic Colour - Menu Background
+title: Dynamic Colour - Menu Background
 group: Customisation
 last-updated: 31-07-2013
 ---

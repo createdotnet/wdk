@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Colour - Darken
+title: Darken
 group: Colour Functions
 last-updated: 31-07-2013
 ---

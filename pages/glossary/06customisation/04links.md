@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Display - Dynamic Colour - Links
+title: Dynamic Colour - Links
 group: Customisation
 last-updated: 31-07-2013
 ---

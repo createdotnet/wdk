@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Colour - Brighten
+title: Brighten
 group: Colour Functions
 last-updated: 31-07-2013
 ---

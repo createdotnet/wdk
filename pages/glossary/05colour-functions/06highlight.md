@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Colour - Highlight
+title: Highlight
 group: Colour Functions
 last-updated: 31-07-2013
 ---

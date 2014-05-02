@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Colour - Best Visable
+title: Best Visable
 group: Colour Functions
 last-updated: 31-07-2013
 ---

@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Colour - Tint
+title: Tint
 group: Colour Functions
 last-updated: 31-07-2013
 ---

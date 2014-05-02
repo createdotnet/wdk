@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Display - Dynamic Colour - Body
+title: Dynamic Colour - Body
 group: Customisation
 last-updated: 31-07-2013
 ---

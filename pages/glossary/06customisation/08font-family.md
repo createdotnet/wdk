@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Display - Dynamic Font - Font Family
+title: Dynamic Font - Font Family
 group: Customisation
 last-updated: 31-07-2013
 ---
