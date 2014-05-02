@@ -1,0 +1,51 @@
+{% include head.html %}
+{% include navigation-bars.html %}
+
+
+<nav class="sub-menu">
+	{% assign group = 'Glossary' %} <!--Wherever the word group is used, its being replaced with Glossary. To create a sub menu page for another catorgory, just change glossary to the group name. eg support, or tutorials -->
+
+  	<h2>{{group}}</h2> <!--display name of group as text-->
+    
+    <ul>
+        {% assign sorted_pages = site.pages | sort:"name" %} <!-- creates a new tag called sorted_pages which is every page in the site sorted buy file name (numerical in our case as they are all numbered) -->
+
+
+        {% for node in sorted_pages %}
+          {% if group == node.group %} <!-- lists only pages with 'glossary' as the group name -->
+
+                {% assign sub_group_title = node.title %} <!-- assigns the group name to sub_group_title so that it can be re-used -->
+
+                <li><a href="#">{{sub_group_title}} <!-- creates the top level navigation names -->
+                  
+
+                    <ul class="sub-menu__nest"> <!-- this unorderd list is the sub menu items, it repeats the above code with a few tweaks to selec different items -->
+                        {% for node in sorted_pages %}
+                            {% if node.group == sub_group_title %} <!-- if the group of the sub page is the same as the sub_group_title we defined earlier, it will be displayed under here -->
+                                <li><a href="{{node.url}}">{{node.title}}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+
+
+                </a></li>
+
+          {% endif %}
+        {% endfor %}
+    </ul>
+</nav>
+
+
+
+	<main class="language-markup">
+
+    	<h2>{{ page.title }}</h2>
+    	<p>Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
+    	<hr>
+    	<br>
+		{{ content }}
+
+	</main>
+
+
+{% include foot.html %}

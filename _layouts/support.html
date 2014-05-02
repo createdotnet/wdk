@@ -1,0 +1,36 @@
+{% include head.html %}
+{% include navigation-bars.html %}
+
+
+<nav class="sub-menu">
+	{% assign group = 'Support' %}
+  	<h2>{{group}}</h2> <!--display name of group as text-->
+    
+    <ul>
+        {% assign sorted_pages = site.pages | sort:"name" %} <!-- sorts by file name -->
+        {% for node in sorted_pages %}
+          {% if group == node.group %} <!-- lists all pages with 'getting-started' as the group name -->
+            {% if page.url == node.url %} <!-- adds 'active' class if the page url and current url are the same -->
+                <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+                {% else %}
+                <li><a href="{{node.url}}">{{node.title}}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+    </ul>
+</nav>
+
+
+
+	<main class="language-markup">
+
+    	<h2>{{ page.title }}</h2>
+    	<p>Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
+    	<hr>
+    	<br>
+		{{ content }}
+
+	</main>
+
+
+{% include foot.html %}
