@@ -13,6 +13,7 @@ body {
 
 .container {
 	max-width: 960px;
+	min-width: 440px;
 	margin: auto;
 }
 
@@ -42,10 +43,18 @@ p {
 	padding: 10px 0px;
 }
 
+a {
+	color: #4560A2;
+}
+
+.center {
+	text-align: center;
+}
 
 
 
-/* Header */
+
+/* Site Header / Banner */
 
 header {
 	width: 100%;
@@ -68,6 +77,14 @@ header {
 	margin-top: 15px;
 }
 
+.banner__inner a {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
 
 
 /* Main / Top Navigation Bar */
@@ -75,7 +92,6 @@ header {
 .top-nav {
 	background-color: gray;
 	width: 100%;
-	box-styling: border-box;
 }
 
 .top-nav h1 {
@@ -86,31 +102,36 @@ header {
 .top-nav ul {
 	list-style-type: none;
 	max-width: 960px;
+	font-size: 0px;
 	margin: auto;
 }
 
 .top-nav li {
 	display: inline-block;
-	height: 40px;
-	width: 24%;
+	width: 25%;
 	border: 1px solid black;
 	text-align: center;
 }
 
 .top-nav a {
 	display: block;
-	color: #4560A2;
 	text-decoration: none;
-	line-height: 3;
+	font-size: 16px;
+	line-height: 2;
 }
 
 .top-nav li:hover {
-	background-color: #5f7bbf;
+	background-color: #3A4356;
 }
 
 .top-nav li:hover a{
 	color: white;
 }
+
+
+
+
+
 
 
 /* Side Navigation Bar */
@@ -152,6 +173,35 @@ header {
 	margin-left: 20px;
 	margin-bottom: 5px;
 }
+
+details summary::-webkit-details-marker { 
+	display:none; 
+}
+
+summary {
+	color: #4560A2;
+	cursor: pointer;
+	outline: none;
+}
+
+
+
+
+
+/* Page Header (Page Title and Last Updated)  */
+
+.page-header {
+	margin: 10px 0px 20px;
+}
+
+.page-title {
+	
+}
+
+.last-updated {
+
+}
+
 
 
 
