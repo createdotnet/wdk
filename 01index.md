@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: index
 title: WDK Introduction
 last-updated: 31-07-2013
 permalink: "index.html"
