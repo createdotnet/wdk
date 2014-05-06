@@ -1,5 +1,5 @@
 {% include head.html %}
-{% include navigation-bars.html %}
+{% include top-navigation-bars.html %}
 
 <div class="container">
     
@@ -19,14 +19,25 @@
                     
 
 
-                    <details open> <!-- Liquid if and else cant be used to apply this open class as liquid is exporting it all as html. the if and else are gone by the time it gets to the browser.... -->
-                        <summary>{{sub_group_title}}</summary> <!-- creates the top level navigation names -->
-                      
+                        {% if sub_group_title == page.group %} <!-- keeps the sub-menu open on any page within the same catergory -->
+                        <details open="open">
+                            {% else %}
+                        <details>
+                        {% endif %}
 
+                        <summary>{{sub_group_title}}</summary> <!-- Displays the group name, opens the sub menu when clicked -->
+                        
+                      
                         <ul class="sub-menu__nest"> <!-- this unorderd list is the sub menu items, it repeats the above code with a few tweaks to selec different items -->
                             {% for node in sorted_pages %}
                                 {% if node.group == sub_group_title %} <!-- if the group of the sub page is the same as the sub_group_title we defined earlier, it will be displayed under here -->
-                                    <li><a href="{{node.url}}">{{node.title}}</a></li>
+
+                                    {% if page.url == node.url %} <!-- adds 'active' class if the page url and current url are the same -->
+                                        <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
+                                        {% else %}
+                                        <li><a href="{{node.url}}">{{node.title}}</a></li>
+                                    {% endif %}
+
                                 {% endif %}
                             {% endfor %}
                         </ul>
@@ -54,4 +65,5 @@
 	</main>
 
 </div> <!-- end container -->
+{% include footer.html %}
 {% include foot.html %}
