@@ -63,26 +63,18 @@ Within our main content `<div>` we are using `<!--WDK:display:pagetitle-->` to d
 
 As the dynamic page content is automatically inserted between the `<!--WDK:header:end-->` tag and `<!--WDK:footer:start-->` tag, we have left the main content `<div>` open as this will be closed later in the `<footer>`.
 
-Links & Further Reading
+##Links & Further Reading
 
-Tag: `<!--WDK:header:start-->`
-
-Tag: `<!--WDK:display:headinfo-->`
-
-Tag: `<!--WDK:path:template-->`
-
-Tag: `<!--WDK:column:start:left-->`
-
-Tag: `<!--WDK:column:end:left-->`
-
-Tag: `<!--WDK:column:count-->`
-
-Tag: `<!--WDK:display:pagetitle-->`
-
-Tag: `<!--WDK:header:end-->`
-
-Tutorial: The Basics
-Tutorial: Create's Dynamic Styling
-Tutorial: Logos, Banners & Header Images
-Tutorial: Creating Side Columns
-Tutorial: The Footer
+- Tag: `<!--WDK:header:start-->`
+- Tag: `<!--WDK:display:headinfo-->`
+- Tag: `<!--WDK:path:template-->`
+- Tag: `<!--WDK:column:start:left-->`
+- Tag: `<!--WDK:column:end:left-->`
+- Tag: `<!--WDK:column:count-->`
+- Tag: `<!--WDK:display:pagetitle-->`
+- Tag: `<!--WDK:header:end-->`
+- Tutorial: [The Basics](07the-basics.html)
+- Tutorial: [Create's Dynamic Styling](05dynamic-styling.html)
+- Tutorial: [Logos, Banners & Header Images](/pages/glossary/08header-images/01header-image.html)
+- Tutorial: [Creating Side Columns](/pages/glossary/03side-columns/01id.html)
+- Tutorial: [The Footer](09the-footer.html)

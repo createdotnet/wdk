@@ -5,9 +5,6 @@ group: Tutorials
 last-updated:  24-03-2013
 ---
 
-
-##Dynamic Styling
-
 From the the "Design" screen, Create users can customise their website's look by editing colour shemes, fonts backgrounds and more.
 
 You'll need to use our WDK Tags to make your template compatible with Create's dynamic styling.

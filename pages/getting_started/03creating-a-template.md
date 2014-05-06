@@ -14,7 +14,7 @@ You can also set a thumbnail for it on the template selector on the Design scree
 To use your WDK template on your Create account, please follow the steps below:
 
 1. Log on to your Create account.
-2. Click on "Design"Â  from the Top Menu
+2. Click on "Design" from the Top Menu
 3. Click on WDK from the design menu.
 4. This will open the WDK editor on the left hand side of the Design screen.
 5. Hover over the down arrow icon and select "New Template"

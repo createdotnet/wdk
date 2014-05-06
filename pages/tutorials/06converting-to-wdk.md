@@ -9,13 +9,13 @@ The tutorial aims to help you convert a previous HTML page layout to be used wit
 
 Firstly, here is our complete code, file structure and screenshots to illustrate our existing page.
 
-###Files:
-index.html
-style.css
-reset.css
-images/logo.png
+####Files:
+- index.html
+- style.css
+- reset.css
+- images/logo.png
 
-###Markup:
+####Markup:
 index.html
 
 <!doctype html>
@@ -116,7 +116,9 @@ reset.css
 
 Screenshot
 
-Existing Webpage Screenshot
+![alt text](/images/converting_to_wdk_screenshot.png "Site Screenshot")
+
+
 
 ##WDK Basics
 
@@ -284,7 +286,7 @@ With:
 
 ##Sidebars
 
-Sidebar content is managed using Side Columns from the "Design Screen". Sidebars work in a similar way to Menus using loops to cycle through items, so we will only have to write the code for one item, which will be applied to all. For more informtaion, view our Side Columns & Content Width tutorial.
+Sidebar content is managed using Side Columns from the "Design Screen". Sidebars work in a similar way to Menus using loops to cycle through items, so we will only have to write the code for one item, which will be applied to all. For more informtaion, view our [Side Columns & Content Width](02side-columns-content-width.html) tutorial.
 
 Replacing:
 
@@ -332,7 +334,7 @@ With:
 </style>
 ```
 
-From the "Design Screen", Create users can select dynamic colours for use within their template. To make our existing page compatible with this, we'll need to use a few tags to set the styles. Please see our tutorials for a more in depth look at Dynamic Colours and Advanced Colour Functions.
+From the "Design Screen", Create users can select dynamic colours for use within their template. To make our existing page compatible with this, we'll need to use a few tags to set the styles. Please see our tutorials for a more in depth look at [Dynamic Styling](05dynamic-styling.html) and [Advanced Colour](03advanced-colour-functions.html) Functions.
 
 Replacing:
 

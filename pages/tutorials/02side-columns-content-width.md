@@ -67,14 +67,14 @@ The Create WDK has a tag to return the number of side columns being used. This i
 ```
 
 If the user had no side columns, the markup returned would be:
-
 `<div id="content" class="column-count-0"> </div>`
+
 If the user had one side column, the markup returned would be:
-
 `<div id="content" class="column-count-1"> </div>`
-If the user had two side columns, the markup returned would be:
 
+If the user had two side columns, the markup returned would be:
 `<div id="content" class="column-count-2"> </div>`
+
 If our template is 1000px wide and the sidebars are 150px each, heres how we could set the width by using the .column-count- classes.
 
 ```html
@@ -89,22 +89,13 @@ aside.sidebar, div#content {<br />  float:left;<br />}<br /><br />aside.sidebar,
 
 ##Links & Further Reading
 
-Tag: `<!--WDK:column:start-->`
-
-Tag: `<!--WDK:column:end-->`
-
-Tag: `<!--WDK:column:width-->`
-
-Tag: `<!--WDK:column:item:start-->`
-
-Tag: `<!--WDK:column:item:end-->`
-
-Tag: `<!--WDK:column:item:id-->`
-
-Tag: `<!--WDK:column:item:nth-->`
-
-Tag: `<!--WDK:column:item:title-->`
-
-Tag: `<!--WDK:column:item:content-->`
-
-Tag: `<!--WDK:column:count-->`
+- Tag: `<!--WDK:column:start-->`
+- Tag: `<!--WDK:column:end-->`
+- Tag: `<!--WDK:column:width-->`
+- Tag: `<!--WDK:column:item:start-->`
+- Tag: `<!--WDK:column:item:end-->`
+- Tag: `<!--WDK:column:item:id-->`
+- Tag: `<!--WDK:column:item:nth-->`
+- Tag: `<!--WDK:column:item:title-->`
+- Tag: `<!--WDK:column:item:cont- ent-->`
+- Tag: `<!--WDK:column:count-->`

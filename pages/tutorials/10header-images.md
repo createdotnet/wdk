@@ -75,7 +75,7 @@ Using `<!--WDK:if:headerX-->` you may check to see if a specific header image is
 
 As you may have noticed above, we have used and "If" and "ElseIf" tag. For more information please read the tutorial on Conditional Tags.
 
-###Flash
+####Flash
 Create users can have flash files for header images. 
 
 We have conditional tags which can be used to determine this, which helps you to avoid putting a flash file url in an image source tag.
@@ -101,39 +101,25 @@ In the example below we have a conditional check to see if header 3 is a flash f
 </div>
 ```
 
-###File Type Checks
+####File Type Checks
 As you can check to see if a specific header image is a flash file, you may also check for file type, using the following tags, replacing "X" with your desired header number.
 
-`<!--WDK:if:headerX:isPng-->`
+-`<!--WDK:if:headerX:isPng-->`
+-`<!--WDK:if:headerX:isJpg-->`
+-`<!--WDK:if:headerX:isGif-->`
 
-`<!--WDK:if:headerX:isJpg-->`
 
-`<!--WDK:if:headerX:isGif-->`
-
-Links & Further Reading
-
-Tag: `<!--WDK:display:header-->`
-
-Tag: `<!--WDK:display:headerX-->`
-
-Tag: `<!--WDK:display:headerXsrc-->`
-
-Tag: `<!--WDK:display:headerXwidth-->`
-
-Tag: `<!--WDK:display:headerXheight-->`
-
-Tag: `<!--WDK:else-->`
-
-Tag: `<!--WDK:endif-->`
-
-Tag: `<!--WDK:if:headerX-->`
-
-Tag: `<!--WDK:if:header3:isFlash-->`
-
-Tag: `<!--WDK:if:headerX:isPng-->`
-
-Tag: `<!--WDK:if:headerX:isJpg-->`
-
-Tag: `<!--WDK:if:headerX:isGif-->`
-
-Tutorial: Conditional Tags
+##Links & Further Reading
+- Tag: `<!--WDK:display:header-->`
+- Tag: `<!--WDK:display:headerX-->`
+- Tag: `<!--WDK:display:headerXsrc-->`
+- Tag: `<!--WDK:display:headerXwidth-->`
+- Tag: `<!--WDK:display:headerXheight-->`
+- Tag: `<!--WDK:else-->`
+- Tag: `<!--WDK:endif-->`
+- Tag: `<!--WDK:if:headerX-->`
+- Tag: `<!--WDK:if:header3:isFlash-->`
+- Tag: `<!--WDK:if:headerX:isPng-->`
+- Tag: `<!--WDK:if:headerX:isJpg-->`
+- Tag: `<!--WDK:if:headerX:isGif-->`
+- Tutorial: [Conditional Tags](12conditional-tags.html)

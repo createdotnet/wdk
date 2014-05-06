@@ -6,13 +6,13 @@ last-updated: 05-04-2013
 ---
 
 
-Create websites utilise the Javascript library jQuery for various dynamic features. 
+Create websites utilise the Javascript library [jQuery](http://jquery.com/) for various dynamic features. 
 
-In the `<!--WDK:display:headstuff-->` tag is a `<script>` tag loading in "loader.js" which is what we use to include jQuery in the page.
+In the `<!--WDK:display:headstuff-->` tag is a `<script>` tag loading in "**loader.js**" which is what we use to include jQuery in the page.
 
 /include/js/loader.js
 
-```javascript
+```
 function jsload( src ) {
 	document.write(unescape('%3Cscript src="' + src + '"%3E%3C/script%3E'));
 }
@@ -28,6 +28,6 @@ If you need to use jQuery in your own template, you should not include it again,
 
 ##Versions
 
-You can check the current version of jQuery that your Create is using by looking at loader.js and referring to the jqv variable.
+You can check the current version of jQuery that your Create is using by looking at **loader.js** and referring to the jqv variable.
 
-If you need to use a different version of jQuery, you will need to namespace it and  include is above the headstuff WDK tag. You can do this using jQuery's built in noConflict method. Read more...
+If you need to use a different version of jQuery, you will need to namespace it and  include is above the headstuff WDK tag. You can do this using jQuery's built in noConflict method. [Read more.](http://api.jquery.com/jQuery.noConflict/)

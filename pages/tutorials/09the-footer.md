@@ -18,7 +18,7 @@ If you do not put this tag in, it will automatically inserted immediately after 
 
 ##Example
 
-Following on from our example template we started in the header tutorial. Let's finish up the template:
+Following on from our example template we started in the [Header Tutorial](08the-header.html), let's finish up the template:
 
 ```html
           <!--WDK:footer:start-->
@@ -46,19 +46,14 @@ After opening our footer, we close the `</div>` thats holding the main page cont
 
 Next the site footer is displayed and finally our remaining `</div>`, `</body>` and `</html>` tags are closed, along with the `<!--WDK:footer:end-->` tag.
 
-Links & Further Reading
+##Links & Further Reading
 
-Tag: `<!--WDK:footer:start-->`
-
-Tag: `<!--WDK:column:start:right-->`
-
-Tag: `<!--WDK:column:end:right-->`
-
-Tag: `<!--WDK:display:sitefooter-->`
-
-Tag: `<!--WDK:footer:end-->`
-
-Tutorial: The Basics
-Tutorial: The Header
-Tutorial: Creating Side Columns
-Tutorial: Requirements & Restrictions
+- Tag: `<!--WDK:footer:start-->`
+- Tag: `<!--WDK:column:start:right-->`
+- Tag: `<!--WDK:column:end:right-->`
+- Tag: `<!--WDK:display:sitefooter-->`
+- Tag: `<!--WDK:footer:end-->`
+- Tutorial: [Requirements & Restrictions](01requirements-restrictions.html)
+- Tutorial: [The Basics](07the-basics.html)
+- Tutorial: [Creating Side Columns](/pages/glossary/03side-columns/01id.html)
+- Tutorial: [The Header](08the-header.html)

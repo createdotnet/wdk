@@ -6,9 +6,9 @@ last-updated: 03-04-2012
 ---
 
 
-A template made using the WDK requires only 1 file, index.html. However, you may wish include other separate files such as: style sheets, javascript libraries, images and flash.
+A template made using the WDK requires only 1 file, **index.html**. However, you may wish include other separate files such as: style sheets, javascript libraries, images and flash.
 
-The index.html is used for all page layouts and is the only file you can include WDK tags on.
+The **index.html** is used for all page layouts and is the only file you can include WDK tags on.
 
 The WDK uses tags to determine dynamic content on your page. Tags are HTML comments which instruct our system to "do" or "fetch" information.
 

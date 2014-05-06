@@ -29,15 +29,10 @@ The footer is opened with `<!--WDK:footer:start-->`, signifying the end of your 
 
 ##Links & Further Reading
 
-Tag: `<!--WDK:header:start-->`
-
-Tag: `<!--WDK:header:end-->`
-
-Tag: `<!--WDK:footer:start-->`
-
-Tag: `<!--WDK:footer:end-->`
-
-Tag: `<!--WDK:display:sitefooter-->`
-
-Tutorial: The Header
-Tutorial: The Footer
+- Tag: `<!--WDK:header:start-->`
+- Tag: `<!--WDK:header:end-->`
+- Tag: `<!--WDK:footer:start-->`
+- Tag: `<!--WDK:footer:end-->`
+- Tag: `<!--WDK:display:sitefooter-->`
+- Tutorial: [The Header](08the-header.html)
+- Tutorial: [The Footer](09the-footer.html)
