@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+header, section, footer, aside, nav, main, article, figure, details, summary
+{ 
+display: block; 
+}
+
+
 body {
 	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
@@ -11,16 +17,35 @@ body {
 	color: #7b7c7f;
 }
 
-.container {
+footer, header {
+	background-color: #3a4150;
+}
+
+.container, .footer-inner, .nav-inner {
 	max-width: 960px;
 	min-width: 440px;
 	margin: auto;
 }
 
+.nav-inner {
+	height: 80px;
+}
+
+.logo {
+	float: left;
+	margin: 22px 0px 0px 0px;
+}
+
+.footer-inner {
+	height: 185px;
+}
+
 main {
 	margin-left: 250px;
 	padding: 20px 10px;
+	min-height: 500px;
 }
+
 
 
 
@@ -56,7 +81,7 @@ a {
 
 /* Site Header / Banner */
 
-header {
+.banner {
 	width: 100%;
 	background-color: #3A4356;
 	background: linear-gradient(to bottom, #1a1d25 0%,#282e3d 100%);
@@ -90,7 +115,7 @@ header {
 /* Main / Top Navigation Bar */
 
 .top-nav {
-	background-color: gray;
+	background-color: #bebebe;
 	width: 100%;
 }
 
@@ -178,10 +203,14 @@ details summary::-webkit-details-marker {
 	display:none; 
 }
 
-summary {
+details summary {
 	color: #4560A2;
 	cursor: pointer;
 	outline: none;
+}
+
+details[open] summary {
+    font-weight:bold;
 }
 
 
@@ -207,15 +236,21 @@ summary {
 
 
 
-/* Content Styling */
+/* Code Block Styling - Overide styles in prism.css */
 
-pre {
-	padding: 0px 10px 15px;
+pre[class*="language-"] {
+	padding: 1em;
+	padding-top: 0;
+	margin: 1em;
 }
 
 pre, code {
 	background-color: #f5f2f0;
 	overflow: scroll;
+}
+
+.token.comment {
+	color: #dbb112;
 }
 
 
