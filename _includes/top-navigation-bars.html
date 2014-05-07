@@ -1,21 +1,21 @@
 <header>
-  <div class="nav-inner">
+  <div class="nav__inner">
 
         <div class="logo">
           <a href="/"><img src="/images/logo.png" title="Create Ecommerce" alt="Create Ecommerce" width="152" height="32"></a>
         </div>
 
         <!-- <a style="float: right; margin-top: 25px" class="trial_button-dk button" href="/signup.phtml"><span>Sign Up</span></a> -->
-        <a style="float: right; margin-top: 19px; margin-left: 4px;" class="yellow-btn" href="/signup.phtml">Free Trial</a>
+        <a style="float: right; margin-top: 19px; margin-left: 4px;" class="yellow-btn" href="http://www.create.net/signup.phtml">Free Trial</a>
 
         <nav id="menu">
           <ul>
-            <li id="li_home" class="home"><a id="menu_home" class="menu_item" href="/index.phtml">Home</a></li>
-            <li id="li_features" class="features"><a id="menu_features" class="menu_item" href="/features-pricing.phtml">Features &amp; Pricing</a></li>
-            <li id="li_examples" class="examples"><a id="menu_examples" class="menu_item" href="/examples.phtml">Examples</a></li>
-            <li id="li_who" class="who"><a id="menu_who" class="menu_item" href="/who.phtml">Who We Are</a></li>
-            <li id="li_blog" class="blog"><a id="menu_blog" class="menu_item" href="/blog.phtml">Blog</a></li>
-            <li id="li_contact" class="contact"><a id="menu_contact" class="menu_item" href="/contact.phtml">Contact</a></li>
+            <li id="li_home" class="home"><a id="menu_home" class="menu_item" href="http://www.create.net/">Home</a></li>
+            <li id="li_features" class="features"><a id="menu_features" class="menu_item" href="http://www.create.net/features-pricing.phtml">Features &amp; Pricing</a></li>
+            <li id="li_examples" class="examples"><a id="menu_examples" class="menu_item" href="http://www.create.net/examples.phtml">Examples</a></li>
+            <li id="li_who" class="who"><a id="menu_who" class="menu_item" href="http://www.create.net/who.phtml">Who We Are</a></li>
+            <li id="li_blog" class="blog"><a id="menu_blog" class="menu_item" href="http://www.create.net/blog.phtml">Blog</a></li>
+            <li id="li_contact" class="contact"><a id="menu_contact" class="menu_item" href="http://www.create.net/contact.phtml">Contact</a></li>
             <li id="li_login" class="login accountLogin last"><a id="menu_login" class="menu_item" href="https://login.create.net/login.phtml" onclick="trackOutboundLink(this, 'Outbound Link', 'Login'); return false;"><span>Account Login</span></a></li>
           </ul>
         </nav><!--/nav#menu-->
@@ -35,9 +35,32 @@
 
 <nav class="top-nav">
   <ul>
-    <li><a href="/index.html">Getting Started</a></li>
-    <li><a href="/pages/tutorials/tutorials.html">Tutorials</a></li>
-    <li><a href="/pages/glossary/glossary.html">Glossary</a></li>
-    <li><a href="/pages/support/help-centre.html">Support</a></li>
+    
+    {% if page.url  contains "pages/getting_started" or page.url  contains "/index.html" %}
+        <li class="active"><a href="/index.html">Getting Started</a></li>
+        {% else %}
+        <li><a href="/index.html">Getting Started</a></li>
+    {% endif %}
+
+    {% if page.url  contains "pages/tutorials" %}
+        <li class="active"><a href="/pages/tutorials/tutorials.html">Tutorials</a></li>
+        {% else %}
+        <li><a href="/pages/tutorials/tutorials.html">Tutorials</a></li>
+    {% endif %}
+
+    {% if page.url  contains "pages/glossary" %}
+        <li class="active"><a href="/pages/glossary/glossary.html">Glossary</a></li>
+        {% else %}
+        <li><a href="/pages/glossary/glossary.html">Glossary</a></li>
+    {% endif %}
+
+    {% if page.url  contains "pages/support" %}
+        <li class="active"><a href="/pages/support/help-centre.html">Support</a></li>
+        {% else %}
+        <li><a href="/pages/support/help-centre.html">Support</a></li>
+    {% endif %}
+    
   </ul>
 </nav>
+
+
