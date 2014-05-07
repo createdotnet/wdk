@@ -5,4 +5,4 @@ group: Glossary
 last-updated: 14-02-2013
 ---
 
-An introduction to side columns.
+<!-- This Page exists for the creation of the sub-menu only and is not displayed on the site -->

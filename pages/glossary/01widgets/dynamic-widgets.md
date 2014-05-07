@@ -5,13 +5,13 @@ group: Widgets
 last-updated: 31-07-2013
 ---
 
-{{ page.title }}
-
 ##Tag
+
+`<!--WDK:dynamic:type:id-->`
+
 
 ##Description
 
-type , id 
 This tag can be used to place dynamic content such as a widgets within your template.
 
 The "type" can be any of the following:
@@ -21,7 +21,8 @@ The "type" can be any of the following:
 -gallery
 -customform
 -htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+
+The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
 
 ##Example
 

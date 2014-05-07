@@ -2,37 +2,46 @@
 layout: glossary
 title: Current Menu Item
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 03-03-2013
 ---
 
 
 ##Tag
 
+`<!--WDK:if:currentMenuItem-->`
+
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditional tag checks to see if the current menu item (within the menu loop) is the current page.
+For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
 
-The "type" can be any of the following:
-
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`/>if ( menuitem.link == currentpage.link ) {`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example our standard menu items use white text on a black background. We are using this tag to add a class to the current menu item we are viewing. This class then makes the background white and the text black, indicating to the viewer which page they are currently viewing.
 
 ```
+<style type="text/css">
+	li.menu-item {
+		background-color:#000;
+		color:#fff;
+	}
+	li.current {
+		background-color:#fff;
+		color:#000;
+	}
+</style>
+
 <header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
+	<nav>
+		<ul>
+			<!--WDK:menu:start-->
+			<li class="menu-item <!--WDK:if:currentMenuItem--> current <!--WDK:endif-->">
+				<a href="<!--WDK:menu:link-->"><!--WDK:menu:text--></a>
+			</li>
+			<!--WDK:menu:end-->
+		</ul>
+	</nav>
 </header>
 ```

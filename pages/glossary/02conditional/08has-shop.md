@@ -2,37 +2,29 @@
 layout: glossary
 title: Has Shop
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 01-03-2013
 ---
 
 
 ##Tag
 
+`<!--WDK:if:hasShop-->`
+
 ##Description
+This conditional tag does a check that returns true if a shop exists and the account level allows it.
+For more information, [please see the tutorial on conditional tags here.](http://www.create.net/wdk?p=ne---conditional---header-x-is-gif)
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
-
-The "type" can be any of the following:
-
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`if ( shop_exists() && allowed_shop() ) {`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example we are using the tag to determine if the site has a shop, then displaying a shop search widget that was previously created on the Site Content > "Widgets" screen.
 
 ```
 <header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
+	<div id="logo"> </div>
+	<!--WDK:if:hasShop-->
+		<div class="widget"><!--WDK:dynamic:widget:134534--></div>
+	<!--WDK:endif-->
 </header>
 ```

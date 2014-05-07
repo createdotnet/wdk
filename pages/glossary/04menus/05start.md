@@ -5,32 +5,58 @@ group: Menus
 last-updated: 31-07-2013
 ---
 
-{{ page.title }}
-
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:menu:start(start,end)-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+Use this tag to start a loop through the site's menu items. 
+You can optionally specify a range to include in the loop so that it beings at the nth(start) item and ends at the nth(end) item. 
+
+The parameters are optional, you can just use: `<!--WDK:menu:start-->` to list all menu items.
+
+`<!--WDK:menu:start(4)-->` will list all items after and including the 4th.
+
+Pseudo Equivalent:
+`foreach ( i = start; i < end; i++ ) {`
+
+Please note that this tag must be ended with `<!--WDK:menu:end-->` to end the loop.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we are looping through all of the menu items using a `<ul> <li>` structure.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
+<header>
+  <nav>
+    <ul>
+      <!--WDK:menu:start-->
+        <li id="menu-item-<!--WDK:menu:id-->">
+          <a href="<!--WDK:menu:link-->">
+            <!--WDK:menu:text-->
+          </a>
+        </li>
+      <!--WDK:menu:end-->
+    </ul>
+  </nav>
+</header>
+```
 
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
+In the following example we are displaying items 2-8 from the menu.
 
-</aside>
-<!--WDK:column:end:left-->
+```
+<header>
+  <nav>
+    <ul>
+      <!--WDK:menu:start(2,8)-->
+        <li id="menu-item-<!--WDK:menu:id-->">
+          <a href="<!--WDK:menu:link-->">
+            <!--WDK:menu:text-->
+          </a>
+        </li>
+      <!--WDK:menu:end-->
+    </ul>
+  </nav>
+</header>
 ```

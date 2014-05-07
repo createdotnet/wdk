@@ -8,31 +8,29 @@ last-updated: 31-07-2013
 
 ##Tag
 
+`<!--WDK:if:firstMenuItem-->`
+
 ##Description
+This conditional tag checks to see if the current menu item (within the menu loop) is the first item.
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+For more information, [please see the tutorial on conditional tags here.](http://www.create.net/wdk?p=conditional---header-x-is-gif) 
 
-The "type" can be any of the following:
-
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`if ( menuitem.id == 1 ) {`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example we have created 1px borders on the left of each menu item as a seperator. We are using the tag to apply another class to the first menu item which removes the left border.
 
 ```
 <header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
+	<nav>
+		<ul>
+			<!--WDK:menu:start-->
+			<li class="menu-item <!--WDK:if:firstMenuItem--> first <!--WDK:endif-->">
+				<a href="<!--WDK:menu:link-->"><!--WDK:menu:text--></a>
+			</li>
+			<!--WDK:menu:end-->
+		</ul>
+	</nav>
 </header>
 ```

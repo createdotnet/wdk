@@ -2,37 +2,29 @@
 layout: glossary
 title: Else
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 01-03-2013
 ---
 
 
 ##Tag
+`<!--WDK:else-->`
 
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditional tag is for optional use between `<!--WDK:if-->` and `<!--WDK:endif-->` which can be used if the initial condition is false.
 
-The "type" can be any of the following:
+For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
 
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`} else {`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+This is a basic example of how If statements are constucted. Please view each conditional tag in the glossary for a full description and the <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank"> tutorial on conditional tags</a> for more detail.
 
 ```
-<header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
-</header>
+<!--WDK:if-->
+Do Something
+<!--WDK:else-->
+Do something else
+<!--WDK:endif-->
 ```

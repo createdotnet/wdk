@@ -15,7 +15,9 @@ Creates WDK offers conditional tags equivalent to php if statements.
 ```
 
 PHP equivalent:
-`if () {<br />} else {<br />}`
+```
+if () {<br />} else {<br />}
+```
 
 ##Usage
 
@@ -60,42 +62,25 @@ if (!statement) {
 
 ##Complete Conditional Tag List
 
-Tag: `<!--WDK:if:pageFilenameIs:value-->`
+- Tag: `<!--WDK:if:pageFilenameIs:value-->`
+- Tag: `<!--WDK:if:pageFilenameStartsWith:value-->`
+- Tag: `<!--WDK:if:pageFilenameEndsWith:value-->`
+- Tag: `<!--WDK:if:pageFilenameContains:value-->`
+- Tag: `<!--WDK:if:firstMenuItem-->`
+- Tag: `<!--WDK:if:currentMenuItem-->`
+- Tag: `<!--WDK:if:lastMenuItem-->`
+- Tag: `<!--WDK:if:menuItemPageType:value-->`
+- Tag: `<!--WDK:if:headerX-->`
+- Tag: `<!--WDK:if:headerX:isPng-->`
+- Tag: `<!--WDK:if:headerX:isJpg-->`
+- Tag: `<!--WDK:if:headerX:isGif-->`
+- Tag: `<!--WDK:if:hasShop-->`
+- Tag: `<!--WDK:else-->`
+- Tag: `<!--WDK:endif-->`
 
-Tag: `<!--WDK:if:pageFilenameStartsWith:value-->`
+##Website User Conditional Tags
 
-Tag: `<!--WDK:if:pageFilenameEndsWith:value-->`
-
-Tag: `<!--WDK:if:pageFilenameContains:value-->`
-
-Tag: `<!--WDK:if:firstMenuItem-->`
-
-Tag: `<!--WDK:if:currentMenuItem-->`
-
-Tag: `<!--WDK:if:lastMenuItem-->`
-
-Tag: `<!--WDK:if:menuItemPageType:value-->`
-
-Tag: `<!--WDK:if:headerX-->`
-
-Tag: `<!--WDK:if:headerX:isPng-->`
-
-Tag: `<!--WDK:if:headerX:isJpg-->`
-
-Tag: `<!--WDK:if:headerX:isGif-->`
-
-Tag: `<!--WDK:if:hasShop-->`
-
-Tag: `<!--WDK:else-->`
-
-Tag: `<!--WDK:endif-->`
-
-Website User Conditional Tags
-
-The following tags are used to check if a user is logged in. These tags cannot be closed with the above `<!--WDK:else-->` and `<!--WDK:endif-->` tags.
-
-Tag: `<!--WDK:isloggedin:start-->`
-
-Tag: `<!--WDK:isloggedin:else-->`
-
-Tag: `<!--WDK:isloggedin:end-->`
+The following tags are used to check if a user is logged in. These tags cannot be closed with the above `<!--WDK:else-->` and `<!--WDK:endif-->`tags.
+- Tag: `<!--WDK:isloggedin:start-->`
+- Tag: `<!--WDK:isloggedin:else-->`
+- Tag: `<!--WDK:isloggedin:end-->`

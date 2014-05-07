@@ -2,37 +2,34 @@
 layout: glossary
 title: Header X
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 03-03-2013
 ---
 
 
 ##Tag
 
+`<!--WDK:if:header<strong>X</strong>-->`
+
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditional tag checks that returns true if headerX (<a href="#" target="_blank">header3 or header4</a>) is the selected header.
+For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
 
-The "type" can be any of the following:
-
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`if ( header.selected == headerX ) {`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example we are using the tag to determine which header image is being used, then setting the width of the containing div.
 
 ```
-<header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
-</header>
+<div style="
+	<!--WDK:if:header3--> 
+		width:1000px;
+	<!--WDK:elseif:header4-->
+		width:350px;
+	<!--WDK:else-->
+		width:100%;
+	<!--WDK:endif-->
+	">
+</div>
 ```

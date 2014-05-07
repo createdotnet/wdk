@@ -2,35 +2,39 @@
 layout: glossary
 title: Dynamic Colour - Menu Text
 group: Customisation
-last-updated: 31-07-2013
+last-updated: 08-03-2013
 ---
-
-{{ page.title }}
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:menutxt-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+Return `#<HEX>`
+Use this tag to return a hex value of the menu text colour as specified on the "Colours" section on your Create "Design" screen.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we're using the tag to set the `<a>` link colour of a menu using CSS set in the `<head>`.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
+<head>
+  <style type="text/css">
+    #menu {
+      background-color:<!--WDK:display:menubg-->;
+    }
+    #menu a {
+      color:<!--WDK:display:menutxt-->;
+    }
+  </style>
+</head>
 
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
+<body>
+  <div id="menu">
+    <ul>
+      <li><a href="URL">Menu Text</a></li>
+    </ul>
   </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+</body>
 ```

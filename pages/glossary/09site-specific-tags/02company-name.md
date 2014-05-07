@@ -2,35 +2,23 @@
 layout: glossary
 title: Display - Company Name
 group: Site Specific Tags
-last-updated: 31-07-2013
+last-updated: 07-02-2013
 ---
-
-{{ page.title }}
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:company_name-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+Use this tag to display your company name as set on the "Edit Site Information" screen from within your Create accout.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example, we use the tag to display the company name in a HTML heading.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
-
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+<div id="logo">
+  <h1><!--WDK:display:company_name--></h1>
+</div>
 ```

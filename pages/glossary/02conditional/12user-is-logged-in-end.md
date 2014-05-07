@@ -2,37 +2,30 @@
 layout: glossary
 title: User Is logged In End
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 01-03-2013
 ---
 
 
 ##Tag
 
+`<!--WDK:isloggedin:end-->`
+
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditional tag will end the "if" that checks whether a website user is logged in.
+Please note that this tag must only end `<!--WDK:isloggedin:start-->`.
+For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
 
-The "type" can be any of the following:
-
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`/>}`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In this example we're using the tag to end the logged in condition.
 
 ```
-<header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
-</header>
+<!--WDK:isloggedin:start-->
+	<p>Welcome back, <a href"#">view your account</a>.</p>
+	<!--WDK:isloggedin:else-->
+	<p>Please <a href="#">sign in</a>, to view your account.</p>
+<!--WDK:isloggedin:end-->
 ```

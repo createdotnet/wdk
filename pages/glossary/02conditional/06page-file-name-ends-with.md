@@ -2,37 +2,39 @@
 layout: glossary
 title: Page File Name Ends With
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 01-08-2013
 ---
 
 
 ##Tag
 
+`<!--WDK:if:pageFilenameEndsWith:<strong>value</strong>-->`
+
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditional tag checks to see if the page filename ends with the specified value.
 
-The "type" can be any of the following:
+For more information, [please see the tutorial on conditional tags here.](http://www.create.net/wdk?p=conditional---header-x-is-gif) 
 
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`if ( Right(pageFilename, Length(value)) == value )  {`
 
 ##Example
+In this example, we are using the tag to check for page file names ending with '-full'. We are then using it to create full width pages by not displaying side columns. We would then name our desired full width pages like about-full.html or gallery-full.html.
 
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+####Example CSS in the `<head>`.
 
 ```
-<header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
-</header>
+<!--WDK:if:pageFilenameEndsWith:-full--><!--WDK:endif-->
+```
+
+####Example HTML Markup
+```
+<header> </header>
+<div id="main">
+	<aside class="sidebar left"> </aside>
+	<div id="content"> </div>
+	<aside class="sidebar right"> </aside>
+</div>
+<footer> </footer>
 ```

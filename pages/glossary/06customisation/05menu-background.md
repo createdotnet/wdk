@@ -5,32 +5,33 @@ group: Customisation
 last-updated: 31-07-2013
 ---
 
-{{ page.title }}
-
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:menubg-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+Return `#<HEX>`
+Use this tag to return a hex value of the menu background colour as specified on the "Colours" section on your Create "Design" screen.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we're using the tag to set the a background colour for a div using CSS set in the `<head>`.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
+<head>
+  <style type="text/css">
+    #menu {
+      background-color:<!--WDK:display:menubg-->;
+    }
+  </style>
+</head>
 
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
+<body>
+  <div id="menu">
+    <ul>
+      <li></li>
+    </ul>
   </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+</body>
 ```

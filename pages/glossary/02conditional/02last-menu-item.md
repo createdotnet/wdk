@@ -2,37 +2,36 @@
 layout: glossary
 title: Else
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 30-07-2013
 ---
 
 
 ##Tag
 
+`<!--WDK:if:lastMenuItem-->`
+
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditional tag checks to see if the current menu item (within the menu loop) is the current page.
 
-The "type" can be any of the following:
+For more information,
 
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`if ( menuitem.id == menuitems.count ) {`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example we have created 1px borders on the right of each menu item as a seperator. We are using the tag to apply another class (named 'last') to the last menu item which removes the right border.
 
 ```
 <header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
+	<nav>
+		<ul>
+			<!--WDK:menu:start-->
+			<li class="menu-item <!--WDK:if:lastMenuItem-->last<!--WDK:endif--> "/>
+				<a href="<!--WDK:menu:link-->"><!--WDK:menu:text--></a>
+			</li>
+			<!--WDK:menu:end-->
+		</ul>
+	</nav>
 </header>
 ```

@@ -2,21 +2,20 @@
 layout: glossary
 title: Side Column Item - Content
 group: Side Columns
-last-updated: 31-07-2013
+last-updated: 14-02-2013
 ---
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:column:item:content-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+This tag returns the content of the current side column item.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In the following example we are displaying each side column item's content within a `<p>` tag.
 
 ```
 <!--WDK:column:start:left-->

@@ -2,35 +2,23 @@
 layout: glossary
 title: Page Title Tag
 group: Page Specific Tags
-last-updated: 31-07-2013
+last-updated: 08-02-2013
 ---
-
-{{ page.title }}
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:titletag-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+Use this tag to return the current page's meta `<title>` tag, as defined on the "Page Options" screen in your Create account.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we're using the tag to set the title in the `<head>` section of the document.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
-
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+<head>
+  <title><!--WDK:display:titletag--></title>
+</head>
 ```

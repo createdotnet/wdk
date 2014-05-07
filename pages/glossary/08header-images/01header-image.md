@@ -5,32 +5,20 @@ group: Header Images
 last-updated: 31-07-2013
 ---
 
-{{ page.title }}
-
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:header-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+This tag returns a complete header image tag for header3. Alternatively it will return a table with both header1 and header2 images together, depending on what is selected on the 'Add, Update or Remove Your Company Logos' screen.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example, we output our header image within a designated div for our image.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
-
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+<div id="header">
+  <!--WDK:display:header-->
+</div>
 ```

@@ -1,14 +1,11 @@
 ---
 layout: support
-title: HelpCentre
+title: Support
 group: Support
 last-updated: 31-07-2013
 permalink: "help-centre.html"
 ---
 
-
-
-##Need Help?
 
 Email support regarding the WDK can only be answered if it is relating to a malfunction of the WDK system, as our support team can only advise on code that is written or approved by our own developers.
 

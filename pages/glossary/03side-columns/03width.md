@@ -7,28 +7,27 @@ last-updated: 31-07-2013
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+This tag sets the internal width of current columns content.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we're using the tag directly after the side column opening tag to set the width to 150px.
 
 ```
 <!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
-
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
-
-</aside>
+	<!--WDK:column:width:150-->
+	<aside id="sidebar-left" class="sidebar">
+		<!--WDK:column:item:start-->
+		<div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth-->">
+			<h3><!--WDK:column:item:title--></h3>
+			<p><!--WDK:column:item:content--></p>
+		</div>
+		<!--WDK:column:item:end-->
+	</aside>
 <!--WDK:column:end:left-->
 ```
+
+Please note, you can set the width to "none" if you do not want a fixed pixel width on your side column items.

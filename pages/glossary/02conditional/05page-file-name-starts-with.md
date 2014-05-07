@@ -2,37 +2,33 @@
 layout: glossary
 title: Page File Name Starts With
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 08-03-2013
 ---
 
 
 ##Tag
 
+`<!--WDK:if:pageFilenameStartsWith:<strong>value</strong>-->`
+
 ##Description
+This conditional tag checks to see if the page filename starts with the specified value.
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
 
-The "type" can be any of the following:
-
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`if ( Left(pageFilename, Length(value)) == value ) {`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example we are using the tag to check for page file names beginning with 'male' or 'female'. We are then using this to change our background colour to pink and blue.
 
 ```
-<header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
-</header>
+<!--WDK:if:pageFilenameStartsWith:female-->
+	<style type="text/css">
+		body { background-color: #F7A8C8;}
+	</style>
+<!--WDK:elseif:pageFilenameStartsWith:male-->
+	<style type="text/css">
+		body { background-color: #B5BEFF;}
+	</style><br />
+<!--WDK:endif-->
 ```

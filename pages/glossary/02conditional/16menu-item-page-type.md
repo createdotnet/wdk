@@ -2,37 +2,31 @@
 layout: glossary
 title: Menu Item Page Type
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 03-03-2013
 ---
 
 
 ##Tag
 
+`<!--WDK:if:menuItemPageType:value-->`
+
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditional tag can only be used inside of a `<!--WDK:menu:start-->` and `<!--WDK:menu:end-->`. It  will return true if the current menu item's page type equals the value you specify.
 
-The "type" can be any of the following:
-
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example we are using the tag to check if we're on a shop page then if true, list the shop categories.
 
 ```
 <header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
+	<nav>
+		<!--WDK:menu:start-->
+			<!--WDK:if:menuItemPageType:shop-->
+				<!--WDK:display:shopCategoryList-->
+			<!--WDK:endif-->
+		<!--WDK:menu:end-->
+	</nav>
 </header>
 ```

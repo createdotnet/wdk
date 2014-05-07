@@ -2,35 +2,30 @@
 layout: glossary
 title: Dynamic Image - Background Image
 group: Customisation
-last-updated: 31-07-2013
+last-updated: 08-03-2013
 ---
-
-{{ page.title }}
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:bgimage-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+Use this tag to return the URL of the background image specified on the "Wallpaper" section on your Create "Design" screen.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we're using the tag to set the background image of the `<body>` tag using CSS set in the `<head>`.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
+<head>
+  <style type="text/css">
+    body {
+      background-image: url('<!--WDK:display:bgimage-->');
+    }
+  </style>
+</head>
 
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+<body>
+</body>
 ```

@@ -2,35 +2,36 @@
 layout: glossary
 title: Menu - End
 group: Menus
-last-updated: 31-07-2013
+last-updated: 13-02-2013
 ---
-
-{{ page.title }}
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:menu:end-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+ This tag is used to end a menu loop. You must use this if you have used the `<!--WDK:menu:start-->` tag.
+
+Pseudo Equivalent:
+`}`
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In the following example we are closing the loop tag.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
-
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+<header>
+  <nav>
+    <ul>
+      <!--WDK:menu:start-->
+        <li id="menu-item-<!--WDK:menu:id-->">
+          <a href="<!--WDK:menu:link-->">
+            <!--WDK:menu:text-->
+          </a>
+        </li>
+      <!--WDK:menu:end-->
+    </ul>
+  </nav>
+</header>
 ```

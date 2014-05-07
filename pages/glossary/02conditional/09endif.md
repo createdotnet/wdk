@@ -2,37 +2,29 @@
 layout: glossary
 title: Endif
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 31-05-2013
 ---
 
 
 ##Tag
 
+`<!--WDK:endif-->`
+
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditional tag is used to close any if statement. This tag must be used to close those statements.
+For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
 
-The "type" can be any of the following:
-
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`}`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+This is a basic example of how If statements are constucted. Please view each tag in the glossary for a full description and example.
 
 ```
-<header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
-</header>
+<!--WDK:if-->
+	Do Something
+<!--WDK:else-->
+	Do something else
+<!--WDK:endif-->
 ```

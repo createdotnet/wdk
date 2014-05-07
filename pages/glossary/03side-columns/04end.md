@@ -2,21 +2,20 @@
 layout: glossary
 title: Side Column - End
 group: Side Columns
-last-updated: 31-07-2013
+last-updated: 14-02-2013
 ---
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:column:end:value-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+This tag will end the column loop. This tag must be included if `<!--WDK:column:start:value-->` is used.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In the example below we are closing the left side column.
 
 ```
 <!--WDK:column:start:left-->

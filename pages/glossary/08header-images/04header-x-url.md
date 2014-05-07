@@ -5,32 +5,20 @@ group: Header Images
 last-updated: 31-07-2013
 ---
 
-{{ page.title }}
-
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:headerXsrc-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+Use this tag to return the full url of a specific header (1, 2 or 3). To find out more, please read our Logos & Headers tutorial.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we're using the tag to provide the url for an image tag within a div.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
-
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+<div id="logo">
+  <img src="<!--WDK:display:header1src-->" alt="Company Logo" />
+</div>
 ```

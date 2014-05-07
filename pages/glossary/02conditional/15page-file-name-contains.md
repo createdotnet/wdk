@@ -2,37 +2,26 @@
 layout: glossary
 title: Page File Name Contains
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 31-05-2013
 ---
 
 
 ##Tag
 
+``<!--WDK:if:pageFilenameContains:<strong>value</strong>-->``
+
 ##Description
+This conditional tag checks to see if the page filename contains the specified value.
+For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
-
-The "type" can be any of the following:
-
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`/>if ( InString(pageFilename, value) ) {`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example we're checking to see if we're on a page named contact, and including a div for a map
 
 ```
-<header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
-</header>
+<!--WDK:if:pageFilenameContains:contact-->
+<!--WDK:dynamic:widget:map-->
+<!--WDK:endif-->
 ```

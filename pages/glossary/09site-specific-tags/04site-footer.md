@@ -5,32 +5,20 @@ group: Site Specific Tags
 last-updated: 31-07-2013
 ---
 
-{{ page.title }}
-
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:sitefooter-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+This tag returns the "Footer" which can be found on the "Edit Site Information" screen from within your Create account.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we output the 'Site Footer' within a designated div.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
-
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+<div id="footer">
+  <!--WDK:display:sitefooter-->
+</div>
 ```

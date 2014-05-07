@@ -2,21 +2,20 @@
 layout: glossary
 title: Side Column Item - Start
 group: Side Columns
-last-updated: 31-07-2013
+last-updated: 14-02-2013
 ---
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:column:item:start-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+This tag starts the side column item loop. This must be used with <!--WDK:column:item:end-->. Between these tags you can create the structure for a side column item, this will then be applied to all side column items.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In the example below the tag starts off the loop for repeating items.
 
 ```
 <!--WDK:column:start:left-->

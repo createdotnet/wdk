@@ -8,31 +8,27 @@ last-updated: 31-07-2013
 
 ##Tag
 
+`<!--WDK:if:pageFilenameIs:value-->`
+
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditonal tag checks to see if the page filename is the specified value.
 
-The "type" can be any of the following:
+For more information, [please see the tutorial on conditional tags here.](18header-x-is-gif.html)
 
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent: 
+`if ( pageFilename == value ) {`
 
 ##Example
 
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example we're checking to see if we're on a page named contact, and then including a div for a map.
 
 ```
-<header>
-	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
-	</div>
-</header>
+<!--WDK:if:pageFilenameIs:contact-->
+	<div id="map"></div>
+<!--WDK:endif-->
 ```
+
+It is also worth noting that you can use a list of comma separated items.
+
+`<!--WDK:if:pageFilenameIs:contact,home,about-->`

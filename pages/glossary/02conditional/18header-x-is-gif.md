@@ -2,37 +2,35 @@
 layout: glossary
 title: Header X Is Gif
 group: Conditional
-last-updated: 31-07-2013
+last-updated: 03-03-2013
 ---
-
 
 ##Tag
 
+`<!--WDK:if:headerX:isGif-->`
+
 ##Description
 
-type , id 
-This tag can be used to place dynamic content such as a widgets within your template.
+This conditional tag returns true if <a href="#">header 3</a> or <a href="#">header 4</a> is a Gif file.
 
-The "type" can be any of the following:
+For more information, <a href="#" target="_blank">please see the tutorial on conditional tags here.</a>
 
--widget
--slideshow
--gallery
--customform
--htmlfragment
--The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
+Pseudo Equivalent:
+`/>if ( headerX.type == "gif" ) {`
 
 ##Example
-
-In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
+In the following example, we are using the tag to determine if header 3 is a gif, if it is it will show as an image in the header area.
 
 ```
 <header>
 	<div id="logo">
-		<!--WDK:display:header-->
-	</div>
-	<div class="widget">
-		<!--WDK:dynamic:widget:49857-->
+		<!--WDK:if:header3:isGif-->
+		<img src="<!--WDK:display:header3src-->" alt="Logo Image" />
+		<!--WDK:elseif:header3:isFlash-->
+		<object data="<!--WDK:display:header3src-->" type="application/x-shockwave-flash" width="" height="">
+			<param name="movie" value="<!--WDK:display:header1src-->"><br />
+		</object>
+		<!--WDK:endif-->
 	</div>
 </header>
 ```

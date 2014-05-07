@@ -36,8 +36,9 @@ For example we may wish to include a shopping basket in our header, next to the 
 When using widget a type, you may also use a secondary type, instead of an id. In the next example we're using the tag to display a YouTube widget.
 
 `<!--WDK:dynamic:widget:youtube-->`
-Links & Further Reading
 
-Tag: `<!--WDK:dynamic:type:id-->`
 
-Tag: `<!--WDK:dynamic:widget:youtube-->`
+##Links & Further Reading
+
+- Tag: `<!--WDK:dynamic:type:id-->`
+- Tag: `<!--WDK:dynamic:widget:youtube-->`

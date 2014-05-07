@@ -5,32 +5,25 @@ group: Header Images
 last-updated: 31-07-2013
 ---
 
-{{ page.title }}
-
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:headerXheight-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+Use this tag to return the height of a specific header (1, 2 or 3). To find out more, please read our Logos & Headers tutorial.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we're using three tags to return the url, width and height of header 1.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
-
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
-  </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+<div id="logo">
+  <img
+    src="<!--WDK:display:header1src-->"
+    alt="Company Logo"
+    width="<!--WDK:display:header1width-->"
+    height="<!--WDK:display:header1height-->"
+  />
+</div>
 ```

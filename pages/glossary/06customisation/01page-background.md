@@ -2,35 +2,38 @@
 layout: glossary
 title: Dynamic Colour - Page Background
 group: Customisation
-last-updated: 31-07-2013
+last-updated: 08-03-2013
 ---
-
-{{ page.title }}
 
 ##Tag
 
-`<!--WDK:column:item:id-->`
+`<!--WDK:display:pagebg-->`
 
 ##Description
 
-Returns `<Integer>`
-This tag returns the actual ID of the current side column item. This is useful for giving unique ID's or classes to side column items.
+Return `#<HEX>`
+Use this tag to return a hex value of the page background colour as specified on the "Colours" section on your Create "Design" screen.
 
 ##Example
 
-In the following example we using the tag to give each side column item a unique class.
+In this example we're using the tag to set the a background colour for a div using CSS set in the `<head>`. This would allow us to have different page and body background colours.
 
 ```
-<!--WDK:column:start:left-->
-<aside id="sidebar-left" class="sidebar">
+<head>
+  <style type="text/css">
+    body {
+      background-color:<!--WDK:display:bodybg-->;
+    }
+    #page {
+      background-color:<!--WDK:display:pagebg-->;
+      width:1000px;
+      margin:0 auto;
+    }
+  </style>
+</head>
 
-  <!--WDK:column:item:start-->
-  <div class="item-<!--WDK:column:item:id--> item-n-<!--WDK:column:item:nth--> ">
-    <h3><!--WDK:column:item:title--></h3>
-    <p><!--WDK:column:item:content--></p>
+<body>
+  <div id="page">
   </div>
-  <!--WDK:column:item:end-->
-
-</aside>
-<!--WDK:column:end:left-->
+</body>
 ```
