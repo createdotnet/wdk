@@ -98,7 +98,7 @@ footer, header {
 }
 
 ul#social_icons li a {
-background-image: url('/mages/create_social-footer.png');
+background-image: url('/images/create_social-footer.png');
 }
 
 
@@ -160,8 +160,8 @@ background-image: url('/mages/create_social-footer.png');
 .top-nav li {
 	display: inline-block;
 	width: 25%;
-/*	border-left: 1px solid  #49556d;
-	border-right: 1px solid  #49556d;*/
+/*	border-left: 1px dotted  #49556d;
+	border-right: 1px dotted  #49556d;*/
 	text-align: center;
 }
 
@@ -298,4 +298,7 @@ hr {
 	border-top: 1px dotted #b6b8ba;
 }
 
+.support {
+	max-width: 700px;
+}
 
