@@ -48,11 +48,11 @@ p {	padding: 10px 0px; }
 
 ul { list-style-type: none; }
 
-/*.container ol, 
+.container ol, 
 .container ul {
 	padding-left: 20px;
 }
-*/
+
 
 
 /*Header and Footer */
@@ -98,8 +98,9 @@ footer, header {
 }
 
 ul#social_icons li a {
-background-image: url('/images/create_social-footer.png');
+background-image: url('/mages/create_social-footer.png');
 }
+
 
 
 /* Site Header / Banner */
@@ -114,7 +115,6 @@ background-image: url('/images/create_social-footer.png');
 	color: white;
 	margin: auto;
 	padding: 50px 20px;
-	border-bottom: 5px solid #FFC731;
 }
 
 .banner__inner h1 {
@@ -142,6 +142,7 @@ background-image: url('/images/create_social-footer.png');
 .top-nav {
 	background-color: #A1A9BC;
 	width: 100%;
+	border-top: 5px solid #FFC731;
 }
 
 .top-nav h1 {
@@ -159,7 +160,8 @@ background-image: url('/images/create_social-footer.png');
 .top-nav li {
 	display: inline-block;
 	width: 25%;
-	border: 1px solid black;
+/*	border-left: 1px solid  #49556d;
+	border-right: 1px solid  #49556d;*/
 	text-align: center;
 }
 
@@ -168,6 +170,7 @@ background-image: url('/images/create_social-footer.png');
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 2;
+	color: #49556d;
 }
 
 .top-nav .active {
