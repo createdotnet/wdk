@@ -10,6 +10,7 @@ display: block;
 }
 
 
+
 body {
 	background-color: white;
 	font-family: Arial, Helvetica, sans-serif;
@@ -27,11 +28,12 @@ body {
 	margin: auto;
 }
 
+
 main {
 	margin-left: 25%;
 	padding-left: 20px;
 	padding-top: 20px;
-	min-height: 500px;
+	padding-bottom: 50px;
 }
 
 
@@ -55,14 +57,13 @@ ul { list-style-type: none; }
 
 
 
+
+
+
 /*Header and Footer */
 
 footer, header {
 	background-color: #3a4150;
-}
-
-.header__inner {
-	/*height: 80px;*/
 }
 
 .header__inner .logo {
@@ -106,12 +107,32 @@ footer, header {
 	}
 }
 
+/*sticky footer */
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  margin-bottom: -155px; /* equal to footer height */
+  margin-top: -119px; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
+  padding-top: 119px; /*see above note*/
+}
+.container:after {
+  content: "";
+  display: block;
+}
+footer, .container:after {
+  /* .push must be the same height as footer */
+  height: 155px;
+}
+
+
 
 
 .footer__inner {
-	min-height: 185px;
-	margin-top: 30px;
-	padding: 25px 10px 10px;
+	padding: 15px 0px 10px;
 	color: #a1a9bc;
 }
 .footer__inner a {
@@ -121,14 +142,19 @@ footer, header {
 .footer__inner a:hover {
 	color: white;
 }
-.footer__inner ul {
-	padding-left: 0px;
-}
 
 ul#social_icons li a {
 background-image: url('/images/create_social-footer.png');
 }
 
+.footer__inner .footer-links {
+	padding-left: 0px;
+	margin-bottom: 30px;
+}
+	.footer__inner .footer-links li {
+		display: inline;
+		margin-right: 40px;
+	}
 
 
 
@@ -306,6 +332,7 @@ hr {
 
 .support {
 	max-width: 700px;
-	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
