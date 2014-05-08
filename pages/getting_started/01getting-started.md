@@ -3,7 +3,6 @@ layout: getting-started
 title: WDK Introduction
 group: Getting Started
 last-updated: 31-07-2013
-permalink: "index.html"
 ---
 
 

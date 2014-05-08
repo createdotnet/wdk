@@ -1,6 +1,7 @@
 ---
 layout: tutorials
 permalink: "tutorials.html"
+title: Tutorials
 last-updated: 00-00-0000
 ---
 
