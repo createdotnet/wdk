@@ -21,18 +21,20 @@
     </nav>
 
 
+    <main class="language-markup">
+                {% if page.last-updated == '00-00-0000' %}
+                    <div></div>
+                    {% else %}
+                    <div class="page-header">
+                        <h2 class="page-title">{{ page.title }}</h2>
+                        <p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
+                        <hr>
+                    <div>
+                {% endif %}
 
-	<main class="language-markup">
-        
-        <div class="page-header">
-        	<h2 class="page-title">{{ page.title }}</h2>
-        	<p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
-        	<hr>
-        <div>
+        {{ content }}
 
-		{{ content }}
-
-	</main>
+    </main>
 
 </div> <!-- end container -->
 {% include footer.html %}
