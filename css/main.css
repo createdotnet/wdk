@@ -20,8 +20,7 @@ body {
 
 .container,
 .footer__inner,
-.nav__inner,
-.banner__inner,
+.header__inner,
 .top-nav ul {
 	max-width: 960px;
 	min-width: 440px;
@@ -29,8 +28,9 @@ body {
 }
 
 main {
-	margin-left: 250px;
-	padding: 20px;
+	margin-left: 25%;
+	padding-left: 20px;
+	padding-top: 20px;
 	min-height: 500px;
 }
 
@@ -61,23 +61,51 @@ footer, header {
 	background-color: #3a4150;
 }
 
-.nav__inner {
-	height: 80px;
+.header__inner {
+	/*height: 80px;*/
 }
 
-.nav__inner .logo {
+.header__inner .logo {
+	padding: 26px 20px 0px 0px;
+	margin: 0px;
 	float: left;
-	margin: 22px 0px 0px 0px;
 }
+
+.header__inner .title {
+	max-width: 500px;
+	padding: 26px 0px;
+	margin: auto;
+	text-align: center;
+}
+	.header__inner .title a {
+		font-size: 2.1em;
+		color: white;
+	}
+
+.header__inner .yellow-btn {
+	float: right;
+	margin-top: -60px;
+}
+
 
 @media (max-width: 980px) {
-	.nav__inner .logo {
-		margin: 22px 0px 0px 20px;
+	.header__inner .logo {
+		padding-left: 20px;
 	}
-	.nav__inner .yellow-btn {
+	.header__inner .yellow-btn {
 		margin-right: 20px;
 	}
 }
+
+@media (max-width: 880px) {
+	.header__inner .logo {
+		margin-top: 15px;
+	}
+	.header__inner .yellow-btn {
+		margin-top: -80px;
+	}
+}
+
 
 
 .footer__inner {
@@ -103,35 +131,6 @@ background-image: url('/images/create_social-footer.png');
 
 
 
-/* Site Header / Banner */
-
-.banner {
-	width: 100%;
-	background-color: #3A4356;
-	background: linear-gradient(to bottom, #1a1d25 0%,#282e3d 100%);
-}
-
-.banner__inner {
-	color: white;
-	margin: auto;
-	padding: 50px 20px;
-}
-
-.banner__inner h1 {
-	font-family: , serif;
-	font-family: RockwellRegular, 'Kreon' ,Arial, sans-serif; 
-	font-weight: normal;
-    color: #fff;
-    font-size: 3.692em;
-	margin-top: 15px;
-}
-
-.banner__inner a {
-	color: white;
-	text-decoration: none;
-}
-
-
 
 
 
@@ -143,6 +142,7 @@ background-image: url('/images/create_social-footer.png');
 	background-color: #A1A9BC;
 	width: 100%;
 	border-top: 5px solid #FFC731;
+	margin-bottom: 20px;
 }
 
 .top-nav h1 {
@@ -196,7 +196,7 @@ background-image: url('/images/create_social-footer.png');
 
 .sub-menu {
 	float: left;
-	width: 235px;
+	width: 25%;
 	padding: 0px 5px 0px 10px;
 	margin: 30px 0px;
 	background-color: white;
@@ -261,11 +261,11 @@ details[open] summary {
 }
 
 .page-title {
-	
+	margin-bottom: 0px;	
 }
 
 .last-updated {
-
+	padding-top: 5px;
 }
 
 
@@ -288,9 +288,15 @@ pre, code {
 	overflow: scroll;
 }
 
+/*for comment tags, such as the WDK tags*/
 .token.comment {
 	color: #dbb112;
 }
+
+
+
+
+
 
 
 hr {
@@ -300,5 +306,6 @@ hr {
 
 .support {
 	max-width: 700px;
+	padding: 20px;
 }
 
