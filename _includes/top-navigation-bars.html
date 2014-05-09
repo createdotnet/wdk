@@ -14,14 +14,14 @@
 
 
 
-
+<!-- When updating or changing these links, remeber to change both the 'if' and the 'else' address. They should always be the same! -->
 <nav class="top-nav">
   <ul>
     
     {% if page.url  contains "pages/getting_started" %}
-        <li class="active"><a href="/pages/getting_started/01getting-started.html">Getting Started</a></li>
+        <li class="active"><a href="/pages/getting_started/01before-you-start.html">Getting Started</a></li>
         {% else %}
-        <li><a href="/pages/getting_started/01getting-started.html">Getting Started</a></li>
+        <li><a href="/pages/getting_started/01before-you-start.html">Getting Started</a></li>
     {% endif %}
 
     {% if page.url  contains "pages/tutorials" %}
