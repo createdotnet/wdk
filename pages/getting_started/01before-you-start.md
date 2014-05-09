@@ -1,18 +1,9 @@
 ---
 layout: getting-started
-title: WDK Introduction
+title: Before You Start
 group: Getting Started
 last-updated: 31-07-2013
 ---
-
-
-The Web Designer's Kit (or WDK), is a framework that allows designers to build custom templates to use with Create.
-
-It enables access to a range of features on the Create system to make your template not only have dynamic content, but also user selectable colours, styles, menus, widgets and side columns. You can develop a new template from scratch, or edit a pre-made design making it compatible with our system.
-
-In this documentation, you will be equipped with all the information you need to know to get started with out WDK. Navigate using the left hand menu, pick a tutorial to get started or view the glossary for a complete list of tags.
-
-##Before you get started.
 
 Building a template requires that you have existing knowledge of HTML and CSS. We also recommend that you spend some time familiarising yourself with Create to understand its full capabilities. You can sign up for a [free 30 day trial](http://www.create.net/signup.phtml) to do this.
 
