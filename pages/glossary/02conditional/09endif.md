@@ -13,7 +13,7 @@ last-updated: 31-05-2013
 ##Description
 
 This conditional tag is used to close any if statement. This tag must be used to close those statements.
-For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
+For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `}`

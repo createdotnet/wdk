@@ -13,7 +13,7 @@ last-updated: 03-03-2013
 
 This conditional tag returns true if <a href="#">header 3</a> or <a href="#">header 4</a> is a Gif file.
 
-For more information, <a href="#" target="_blank">please see the tutorial on conditional tags here.</a>
+For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `/>if ( headerX.type == "gif" ) {`

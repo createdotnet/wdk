@@ -13,7 +13,7 @@ last-updated: 03-03-2013
 ##Description
 
 This conditional tag checks that returns true if headerX (<a href="#" target="_blank">header3 or header4</a>) is the selected header.
-For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
+For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( header.selected == headerX ) {`

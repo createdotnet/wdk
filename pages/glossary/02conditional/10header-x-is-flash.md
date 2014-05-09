@@ -14,7 +14,7 @@ last-updated: 03-03-2013
 
 This conditional tag checks to see if header<span style="text-decoration: underline;">X</span> (<a href="#" target="_blank">header3, header4</a>) is a flash file.
 
-For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
+For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( headerX.type == "swf" ) {`

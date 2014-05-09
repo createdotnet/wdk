@@ -14,7 +14,7 @@ last-updated: 03-03-2013
 
 This conditional tag checks to see if headerX (<a href="http://www.create.net/newwdk_documentation.phtml?p=conditional---header-x-is-jpg" target="_blank">header3, header4</a>) is a png file.
 
-For more information, <a href="http://www.create.net/wdk?p=conditional---header-x-is-gif" target="_blank">please see the tutorial on conditional tags here.</a>
+For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( headerX.type == "png" ) {`
