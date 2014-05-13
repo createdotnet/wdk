@@ -25,6 +25,7 @@ body {
 .footer__inner,
 .header__inner,
 .top-nav ul {
+	width: 100%; /*just a fix for browsers that dont support max/min-width*/
 	max-width: 980px;
 	min-width: 440px;
 	margin: auto;
