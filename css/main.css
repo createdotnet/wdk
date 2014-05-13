@@ -25,8 +25,9 @@ body {
 .footer__inner,
 .header__inner,
 .top-nav ul {
+	width: 100%;
 	max-width: 980px;
-	min-width: 440px;
+	min-width: 480px;
 	margin: auto;
 	padding: 0px 20px;
 }
@@ -91,6 +92,9 @@ main h4 {
 footer, header {
 	background-color: #3a4150;
 }
+.header__inner {
+	position: relative;
+}
 
 .header__inner .logo {
 	padding: 26px 20px 0px 0px;
@@ -110,19 +114,19 @@ footer, header {
 	}
 
 .header__inner .yellow-btn {
-	float: right;
-	margin-top: -60px;
+	position: absolute;
+	top: 25px;
+	right: 20px;
 }
 
 
-@media (max-width: 880px) {
-	.header__inner .logo {
-		margin-top: 15px;
-	}
-	.header__inner .yellow-btn {
-		margin-top: -80px;
+@media (max-width: 650px) {
+	.header__inner .title {
+		font-size: .8em;
+		padding-top: 100px;
 	}
 }
+
 
 /*sticky footer */
 
@@ -132,7 +136,7 @@ html, body {
 
 .container {
   min-height: 100%;
-  margin-bottom: -155px; /* equal to footer height */
+  margin-bottom: -195px; /* equal to footer height */
   margin-top: -139px; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
   padding-top: 139px; /*see above note*/
 }
@@ -142,7 +146,7 @@ html, body {
 }
 footer, .container:after {
   /* .push must be the same height as footer */
-  height: 155px;
+  height: 195px;
 }
 
 footer {
@@ -168,11 +172,11 @@ background-image: url('/images/create_social-footer.png');
 
 .footer__inner .footer-links {
 	padding-left: 0px;
-	margin-bottom: 30px;
+	margin: 0px 0px 30px;
 }
 	.footer__inner .footer-links li {
-		display: inline;
-		margin-right: 40px;
+		display: inline-block;
+		margin: 15px 40px 0px 0px;
 	}
 
 
@@ -357,5 +361,5 @@ hr {
 }
 
 .copyright {
-	float: right;
+	float: left;
 }
