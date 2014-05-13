@@ -176,6 +176,8 @@ background-image: url('/images/create_social-footer.png');
 }
 	.footer__inner .footer-links li {
 		display: inline-block;
+		zoom: 1;
+    	*display: inline;
 		margin: 15px 40px 0px 0px;
 	}
 
@@ -208,6 +210,8 @@ background-image: url('/images/create_social-footer.png');
 
 .top-nav li {
 	display: inline-block;
+	zoom: 1;
+    *display: inline;
 	width: 25%;
 /*	border-left: 1px dotted  #49556d;
 	border-right: 1px dotted  #49556d;*/
