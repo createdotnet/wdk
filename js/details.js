@@ -1,9 +1,10 @@
 /**
  * Note that this script is intended to be included at the *end* of the document, before </body>
 
- downloaded from https://gist.github.com/remy/370590
+ https://gist.github.com/remy/370590
+
  */ 
- 
+
 (function (window, document) {
 if ('open' in document.createElement('details')) return; 
  
