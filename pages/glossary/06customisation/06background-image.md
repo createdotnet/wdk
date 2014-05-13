@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Dynamic Image - Background Image
+title: Background Image
 group: Customisation
 last-updated: 08-03-2013
 ---

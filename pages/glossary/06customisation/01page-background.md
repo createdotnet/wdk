@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Dynamic Colour - Page Background
+title: Page Background Colour
 group: Customisation
 last-updated: 08-03-2013
 ---

@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Display - Head Information
+title: Head Information
 group: Site Specific Tags
 last-updated: 07-02-2013
 ---

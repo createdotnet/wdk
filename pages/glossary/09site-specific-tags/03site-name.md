@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Display - Site Name
+title: Site Name
 group: Site Specific Tags
 last-updated: 31-07-2013
 ---

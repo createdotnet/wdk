@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Display - Site Footer
+title: Site Footer
 group: Site Specific Tags
 last-updated: 31-07-2013
 ---

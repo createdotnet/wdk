@@ -1,6 +1,6 @@
 ---
 layout: glossary
-title: Display - Company Name
+title: Company Name
 group: Site Specific Tags
 last-updated: 07-02-2013
 ---
