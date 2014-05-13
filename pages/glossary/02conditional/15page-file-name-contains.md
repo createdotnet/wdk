@@ -8,7 +8,7 @@ last-updated: 31-05-2013
 
 ##Tag
 
-``<!--WDK:if:pageFilenameContains:<strong>value</strong>-->``
+``<!--WDK:if:pageFilenameContains:value-->``
 
 ##Description
 This conditional tag checks to see if the page filename contains the specified value.

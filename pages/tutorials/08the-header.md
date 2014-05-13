@@ -24,7 +24,10 @@ Below is a simplified version of a header.
 
     <meta charset="UTF-8">
 
-    <!-- Styling -->
+    <!-- Base Styling -->
+    <!--WDK:base:assets-->
+    
+    <!-- Custom Styling -->
     <link rel="stylesheet" type="text/css" media="screen" href="<!--WDK:path:template-->style.css" />
 
     <!-- Create dynamic colours -->

@@ -4,7 +4,7 @@ title: Home
 ---
 
 
-##Welcome!
+#Welcome!
 
 The Web Designer’s Kit (or WDK), is a framework that allows designers to build custom templates to use with Create.
 It enables access to a range of features on the Create system to make your template not only have dynamic content, but also user selectable colours, styles, menus, widgets and side columns. You can develop a new template from scratch, or edit a pre-made design making it compatible with our system.

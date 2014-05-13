@@ -8,7 +8,7 @@ last-updated: 08-03-2013
 
 ##Tag
 
-`<!--WDK:if:pageFilenameStartsWith:<strong>value</strong>-->`
+`<!--WDK:if:pageFilenameStartsWith:value-->`
 
 ##Description
 This conditional tag checks to see if the page filename starts with the specified value.

@@ -8,11 +8,11 @@ last-updated: 03-03-2013
 
 ##Tag
 
-`<!--WDK:if:header<strong>X</strong>:isPng-->`
+`<!--WDK:if:headerX:isPng-->`
 
 ##Description
 
-This conditional tag checks to see if headerX (<a href="http://www.create.net/newwdk_documentation.phtml?p=conditional---header-x-is-jpg" target="_blank">header3, header4</a>) is a png file.
+This conditional tag checks to see if headerX ([header3, header4](13header-x.html)) is a png file.
 
 For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
 

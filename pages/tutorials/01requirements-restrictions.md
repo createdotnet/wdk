@@ -41,6 +41,14 @@ There are a few tags that are required in order for your template to be processe
 These are listed below.
 
 
+####Core Styling
+This tag should be placed in the head of your document in order to import the default CSS stylings. Your custom CSS stylesheet(s) should be placed below this tag.
+
+Tag: `<!--WDK:base:assets-->`
+
+> **Pre-Release info** – Base assets will go live on 24-02-2014, after this date you must re-save your template and re-publish for the changes to take affect. In order to maintain compatibility with new markup for newly WDK’d areas of the site, we would strongly advise including this tag.
+
+
 ####Header & Footer
 Your index.html file must contain all of the header and footer tags. These tags help us to identify your templates layout and instruct us where to put the main page content. 
 
@@ -61,6 +69,7 @@ Tag: `<!--WDK:display:sitefooter-->`
 For more information please see the footer tutorial.
 
 
+
 ####Menu Loops
 We offer 2 methods for creating menus: our drop down menu tag returns a full `<ul> <li>` structure, however we also offer a manual method for creating your own menu loops. 
 
@@ -72,6 +81,7 @@ If you opt to build your own, you must include the `<!--WDK:menu:start-->` and `
 Please see the glossary for examples on individual tags and for more information please read the tutorial on creating menu loops.
 
 
+
 ####Side Column Loops
 Similar to menu loops, when writing a side column, you must include the `<!--WDK:column:start-->` and `<!--WDK:column:end-->` tags.
 
@@ -79,6 +89,7 @@ Similar to menu loops, when writing a side column, you must include the `<!--WDK
 - Tag: `<!--WDK:column:end-->`
 
 For more information please see the Creating Side Columns tutorial.
+
 
 
 ####Conditional Tags

@@ -8,7 +8,7 @@ last-updated: 01-08-2013
 
 ##Tag
 
-`<!--WDK:if:pageFilenameEndsWith:<strong>value</strong>-->`
+`<!--WDK:if:pageFilenameEndsWith:value-->`
 
 ##Description
 

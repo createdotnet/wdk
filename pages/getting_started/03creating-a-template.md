@@ -28,9 +28,11 @@ The WKD editor can then be used to write and amend your template at any time. Yo
 
 You can customise the following:
 
-Syntax Highlighting. You can chose from a variety of themes with aÂ  great range of colour schemes.
-Font Size. Adapt the size of your mark up to suit your preference and screen size.
-Line wrapping. Specify if you want your lines to wrap for less scrolling, or stay as they are.
+- **Syntax Highlighting.** You can chose from a variety of themes with a  great range of colour schemes.
+
+- **Font Size.** Adapt the size of your mark up to suit your preference and screen size.
+
+- **Line wrapping.** Specify if you want your lines to wrap for less scrolling, or stay as they are.
 You can make these customisations, simply by opening the editor from your Design screen, and then clicking the "flower" icon from the top right of the editor screen. This will drop down with: theme, font size and line wrapping options.
 
 If you want to close the editor on your Design screen at any time, simply press the 'cross' icon from the top right of the editor screen.

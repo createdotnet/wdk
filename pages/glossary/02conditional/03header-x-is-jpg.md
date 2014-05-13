@@ -8,7 +8,7 @@ last-updated: 03-03-2013
 
 ##Tag
 
-`<!--WDK:if:header<strong>X</strong>:isJpg-->`
+`<!--WDK:if:headerX:isJpg-->`
 
 ##Description
 

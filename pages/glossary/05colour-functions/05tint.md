@@ -7,7 +7,7 @@ last-updated: 12-02-2013
 
 ##Tag
 
-<!--WDK:color:tint:colour1:colour2:amount-->
+`<!--WDK:color:tint:colour1:colour2:amount-->`
 
 ##Description
 

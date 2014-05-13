@@ -7,7 +7,7 @@ last-updated: 08-02-2013
 
 ##Tag
 
-<!--WDK:display:menutext-->
+`<!--WDK:display:menutext-->`
 
 ##Description
 

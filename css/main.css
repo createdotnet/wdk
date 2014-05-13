@@ -1,10 +1,12 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing:        border-box;
 }
 
-header, section, footer, aside, nav, main, article, figure, details, summary
+header, section, footer, aside, nav, main, article, figure, details, summary, blockquote
 { 
 display: block; 
 }
@@ -41,6 +43,13 @@ img {
 	max-width: 100%;
 }
 
+blockquote {
+	border: 1px solid #FFE05B;
+	background-color: #FFF6BF;
+	padding: 0px 10px;
+}
+
+
 
 
 /* TEXT - most of the defualts are in the global.css stylsheet */
@@ -59,6 +68,19 @@ ul { list-style-type: none; }
 }
 
 
+.container h1 {
+	margin: 15px 0px 0px 0px;
+	color: #3a4356;
+	font-size: 2em;
+}
+
+main h2 {
+	margin: 15px 0px 0px 0px;
+}
+
+main h4 {
+	margin: 15px 0px 0px 15px;
+}
 
 
 
@@ -110,8 +132,8 @@ html, body {
 .container {
   min-height: 100%;
   margin-bottom: -155px; /* equal to footer height */
-  margin-top: -119px; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
-  padding-top: 119px; /*see above note*/
+  margin-top: -139px; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
+  padding-top: 139px; /*see above note*/
 }
 .container:after {
   content: "";
@@ -328,6 +350,9 @@ hr {
 
 .support {
 	max-width: 700px;
+}
+.support .page-header {
+	margin: 40px 0px 20px;
 }
 
 .copyright {

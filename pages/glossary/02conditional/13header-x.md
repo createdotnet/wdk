@@ -8,11 +8,11 @@ last-updated: 03-03-2013
 
 ##Tag
 
-`<!--WDK:if:header<strong>X</strong>-->`
+`<!--WDK:if:headerX-->`
 
 ##Description
 
-This conditional tag checks that returns true if headerX (<a href="#" target="_blank">header3 or header4</a>) is the selected header.
+This conditional tag checks that returns true if headerX (header3 or header4) is the selected header.
 For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
