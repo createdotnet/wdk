@@ -5,17 +5,17 @@ group: Tutorials
 last-updated:  24-03-2013
 ---
 
-From the the "Design" screen, Create users can customise their website's look by editing colour shemes, fonts backgrounds and more.
+From the the Design screen, Create users can customise their website's look by editing colour shemes, fonts backgrounds and more.
 
 You'll need to use our WDK Tags to make your template compatible with Create's dynamic styling.
 
-WDK Tags are only processed on index.html and cannot be placed in a seperate .CSS file. You willll need to declare the CSS in the `<head>` of your document within '<style></style>' tags.
+WDK Tags are only processed on index.html and cannot be placed in a seperate .CSS file. You will need to declare the CSS in the `<head>` of your document within '<style></style>' tags.
 
 ##Example
 
 In this example we declare the styles and elements in the `<head>` and have included the relevant elements in the `<body>` for you to see.
 
-```html
+```
 <head>
   <style type="text/css">
     body {
@@ -66,7 +66,7 @@ In this example we declare the styles and elements in the `<head>` and have incl
 
 Although we are using these tags with selectors such as #menu and #page, they can be applied to anything you like. For example you could use the HTML5 `<nav>` tag with `<!--WDK:display:menubg-->`.
 
-```html
+```
 <head>
   <style type="text/css">
     nav {
