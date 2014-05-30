@@ -9,7 +9,7 @@ From the the "Design" screen, Create users can customise their website's look by
 
 You'll need to use our WDK Tags to make your template compatible with Create's dynamic styling.
 
-WDK Tags are only processed on index.html so you'll need to declare the CSS in the `<head>` of your document.
+WDK Tags are only processed on index.html and cannot be placed in a seperate .CSS file. You willll need to declare the CSS in the `<head>` of your document within '<style></style>' tags.
 
 ##Example
 

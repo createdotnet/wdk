@@ -6,8 +6,7 @@
      box-sizing:        border-box;
 }
 
-header, section, footer, aside, nav, main, article, figure, details, summary, blockquote
-{ 
+header, section, footer, aside, nav, main, article, figure, details, summary, blockquote { 
 display: block; 
 }
 
@@ -176,8 +175,8 @@ background-image: url('/images/create_social-footer.png');
 }
 	.footer__inner .footer-links li {
 		display: inline-block;
-		zoom: 1;
-    	*display: inline;
+		zoom: 1; /*IE7 fix for inline-block */
+    	*display: inline; /*IE7 fix for inline-block */
 		margin: 15px 40px 0px 0px;
 	}
 
@@ -210,11 +209,9 @@ background-image: url('/images/create_social-footer.png');
 
 .top-nav li {
 	display: inline-block;
-	zoom: 1;
-    *display: inline;
+	zoom: 1; /*IE7 fix for inline-block */
+    *display: inline;  /*IE7 fix for inline-block */
 	width: 25%;
-/*	border-left: 1px dotted  #49556d;
-	border-right: 1px dotted  #49556d;*/
 	text-align: center;
 }
 
