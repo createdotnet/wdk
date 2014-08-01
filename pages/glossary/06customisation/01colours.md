@@ -21,33 +21,33 @@ You can set the default using any WDK colour tags or CSS colours as shown below;
 
 
 ### Colour Tags
-```html
+~~~ 
 <!--WDK:color:default:brand_color-->
     <!--WDK:display:color:menubg-->
 <!--WDK:end:color-->
-```
+~~~
 
-```html
+~~~ 
 <!--WDK:color:default:brand_color-->
     <!--WDK:color:invert:[menubg]-->
 <!--WDK:end:color-->
-```
+~~~
 
 ### CSS colours
 Anything put between these tags will be output in the CSS so only use CSS colours. The Hash on a hex colour is optional
 
-```html
+~~~ 
 <!--WDK:color:default:brand_color-->red<!--WDK:end:color-->
-```
+~~~
 
-```html
+~~~ 
 <!--WDK:color:default:brand_color-->#F00<!--WDK:end:color-->
-```
+~~~
 
-```html
+~~~ 
 <!--WDK:color:default:brand_color-->FF0000<!--WDK:end:color-->
-```
+~~~
 
-```html
+~~~
 <!--WDK:color:default:brand_color-->rgba(255,0,0 0.5)<!--WDK:end:color-->
-```
+~~~
