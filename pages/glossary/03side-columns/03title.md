@@ -17,7 +17,7 @@ This tag returns the title of the current side column item.
 
 In the following example we are displaying each side column item's title within a `<h3>` tag.
 
-```
+~~~
 <!--WDK:column:start:left-->
 <aside id="sidebar-left" class="sidebar">
 
@@ -30,4 +30,4 @@ In the following example we are displaying each side column item's title within 
 
 </aside>
 <!--WDK:column:end:left-->
-```
+~~~

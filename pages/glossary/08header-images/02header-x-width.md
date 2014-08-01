@@ -17,7 +17,7 @@ Use this tag to return the width of a specific header (1, 2 or 3). To find out m
 
 In this example we're using three tags to return the url, width and height of header 1.
 
-```
+~~~
 <div id="logo">
   <img
     src="<!--WDK:display:header1src-->"
@@ -26,4 +26,4 @@ In this example we're using three tags to return the url, width and height of he
     height="<!--WDK:display:header1height-->"
   />
 </div>
-```
+~~~

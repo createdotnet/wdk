@@ -20,11 +20,11 @@ Pseudo Equivalent:
 ##Example
 In the following example we are using the tag to determine if the site has a shop, then displaying a shop search widget that was previously created on the Site Content > "Widgets" screen.
 
-```
+~~~
 <header>
 	<div id="logo"> </div>
 	<!--WDK:if:hasShop-->
 		<div class="widget"><!--WDK:dynamic:widget:134534--></div>
 	<!--WDK:endif-->
 </header>
-```
+~~~

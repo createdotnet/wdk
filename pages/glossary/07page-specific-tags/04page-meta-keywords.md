@@ -17,8 +17,8 @@ Use this tag to return the current page's `<meta>` keywords as defined on the "P
 
 In this example we're using the tag to set the meta keywords the `<head>` section of the document.
 
-```
+~~~
 <head>
   <meta name="keywords" content="<!--WDK:display:metakeys-->">
 </head>
-```
+~~~

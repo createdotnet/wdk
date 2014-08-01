@@ -15,6 +15,6 @@ Use this tag to preset the background colour on Create's Design screen.
 
 ##Example
 
-```
+~~~
 <!--WDK:editor:bgcolor:#262626-->
-```
+~~~

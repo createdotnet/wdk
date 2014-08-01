@@ -27,7 +27,7 @@ The "id" can be the id of a specific item, or a specific widget type, for exampl
 
 In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
 
-```
+~~~
 <header>
 	<div id="logo">
 		<!--WDK:display:header-->
@@ -36,4 +36,4 @@ In this example, the Create account has a "Product Search" widget with an id of 
 		<!--WDK:dynamic:widget:49857-->
 	</div>
 </header>
-```
+~~~

@@ -10,7 +10,7 @@ A Create WDK template should be split into three sections: header, content and f
 
 ##Example
 
-```html
+~~~html
 <!doctype html>
 <!--WDK:header:start-->
 <html>
@@ -21,7 +21,7 @@ A Create WDK template should be split into three sections: header, content and f
   </body>
 </html>
 <!--WDK:footer:end-->
-```
+~~~
 
 The header section is opened with `<!--WDK:header:start-->` before the `<html>` tag, and closed with `<!--WDK:header:end-->`. The header section should contain all of your `<head>` information, opening `<body>` tag, site logos, menus and page title. The closing tag is used to initiate your pages dynamic content.
 

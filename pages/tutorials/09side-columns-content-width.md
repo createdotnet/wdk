@@ -14,7 +14,7 @@ Side columns must be opened and closed with `<!--WDK:column:start-->` and `<!--W
 
 The example below is suitable markup for the left side column.
 
-```html
+~~~html
 <!--WDK:column:start:left-->
   <!--WDK:column:width:150-->
   <aside class="sidebar left">
@@ -28,13 +28,13 @@ The example below is suitable markup for the left side column.
 
   </aside>
 <!--WDK:column:end:left-->
-```
+~~~
 
 After opening our side column we're using `<!--WDK:column:width-->` to set the width of the side column to 150px. Between the starting and ending tags we have our `<aside>` container. Within our `<aside>` tag we indicate the start and end of our loop. The code between these tags is our loop used to process every time in the column.
 
 If we had 2 items in our side columns, a product search and shopping basket the markup returned would be (the widget contents have been shortened):
 
-```html
+~~~html
 <aside class="sidebar left">
 
   <div id="column-item-id-1" class="column-item column-item-n-1">
@@ -48,7 +48,7 @@ If we had 2 items in our side columns, a product search and shopping basket the 
   </div>
 
 </aside>
-```
+~~~
 
 We're using the tag `<!--WDK:column:item:id-->` to create a unique id for each menu item. `<!--WDK:column:item:nth-->` is used to give each side column item the nth number of item, please take note that this applies the same number to both left and right side columns items. E.g. providing we used the same markup for both side columns, the first item on the left and right side column would be given the class column-item-n-1.
 
@@ -56,7 +56,7 @@ We're using the tag `<!--WDK:column:item:id-->` to create a unique id for each m
 
 The Create WDK has a tag to return the number of side columns being used. This is useful in making sure your content is the appropriate width. A simplified version of our markup would be:
 
-```html
+~~~html
 <div id="main">
   <aside class="sidebar left"> </aside>
 
@@ -64,7 +64,7 @@ The Create WDK has a tag to return the number of side columns being used. This i
 
   <aside class="sidebar right"> </aside>
 </div>
-```
+~~~
 
 If the user had no side columns, the markup returned would be:
 `<div id="content" class="column-count-0"> </div>`
@@ -77,7 +77,7 @@ If the user had two side columns, the markup returned would be:
 
 If our template is 1000px wide and the sidebars are 150px each, heres how we could set the width by using the .column-count- classes.
 
-```
+~~~
 div#content {
 }
 
@@ -92,11 +92,11 @@ div.column-count-1 {
 div.column-count-2 {
   width:700px;
 }
-```
+~~~
 
 All other styling for this should be applied to our #content. The `<aside>` and content `<div>` could be displayed inline or floated so they sit next to each other.
 
-```
+~~~
 aside.sidebar,
 div#content {
   float:left;
@@ -106,7 +106,7 @@ aside.sidebar,
 div#content {
   display:inline;
 }
-```
+~~~
 
 ##Links & Further Reading
 

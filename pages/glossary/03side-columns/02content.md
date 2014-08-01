@@ -17,7 +17,7 @@ This tag returns the content of the current side column item.
 
 In the following example we are displaying each side column item's content within a `<p>` tag.
 
-```
+~~~
 <!--WDK:column:start:left-->
 <aside id="sidebar-left" class="sidebar">
 
@@ -30,4 +30,4 @@ In the following example we are displaying each side column item's content withi
 
 </aside>
 <!--WDK:column:end:left-->
-```
+~~~

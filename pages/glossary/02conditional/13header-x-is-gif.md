@@ -21,7 +21,7 @@ Pseudo Equivalent:
 ##Example
 In the following example, we are using the tag to determine if header 3 is a gif, if it is it will show as an image in the header area.
 
-```
+~~~
 <header>
 	<div id="logo">
 		<!--WDK:if:header3:isGif-->
@@ -33,4 +33,4 @@ In the following example, we are using the tag to determine if header 3 is a gif
 		<!--WDK:endif-->
 	</div>
 </header>
-```
+~~~

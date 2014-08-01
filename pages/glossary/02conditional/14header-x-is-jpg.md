@@ -22,7 +22,7 @@ Pseudo Equivalent:
 ##Example
 In the following example we are using the tag to determine if header 3 is a jpg file, then if it is it will show as an image in the header area.
 
-```
+~~~
 <header>
 	<div id="logo">
 		<!--WDK:if:header3:isJpg-->
@@ -34,4 +34,4 @@ In the following example we are using the tag to determine if header 3 is a jpg 
 		<!--WDK:endif-->
 	</div>
 </header>
-```
+~~~

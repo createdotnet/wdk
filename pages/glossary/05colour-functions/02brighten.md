@@ -30,7 +30,7 @@ Then the "amount" is an intensity level between 1 and 255 to select the brightne
 
 In the example below we are using Create's dynamic colours. We are using the `bodybg` to generate a brighter colour we can use to set borders on images.
 
-```
+~~~
 <head>
   <style type="text/css">
     body {
@@ -41,4 +41,4 @@ In the example below we are using Create's dynamic colours. We are using the `bo
     }
   </style>
 </head>
-```
+~~~

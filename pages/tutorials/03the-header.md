@@ -14,7 +14,7 @@ It can also optionally contain styling for Create's dynamic colours, side column
 
 Below is a simplified version of a header.
 
-```html
+~~~html
 <!DOCTYPE html>
 <!--WDK:header:start-->
 <html>
@@ -52,7 +52,7 @@ Below is a simplified version of a header.
           <h1><!--WDK:display:pagetitle--></h1>
 
           <!--WDK:header:end-->
-```
+~~~
 
 In this example, we've declared our doctype and opened our `<!--WDK:header:start-->`. In our `<head>` section, we've used `<!--WDK:display:headinfo-->` to display our site meta title and description. We have also linked an external stylesheet and allocated a space for using Create's dynamic styling.
 

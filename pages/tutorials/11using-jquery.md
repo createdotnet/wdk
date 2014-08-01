@@ -12,7 +12,7 @@ In the `<!--WDK:display:headstuff-->` tag is a `<script>` tag loading in "**load
 
 /include/js/loader.js
 
-```
+~~~
 function jsload( src ) {
 	document.write(unescape('%3Cscript src="' + src + '"%3E%3C/script%3E'));
 }
@@ -22,7 +22,7 @@ if (typeof jQuery == "undefined") {
 	jsload('//ajax.googleapis.com/ajax/libs/jquery/' + jqv + '/jquery.min.js');
 	jsload('http://code.jquery.com/jquery-migrate-1.1.1.js');
 }
-```
+~~~
 
 If you need to use jQuery in your own template, you should not include it again, simply use it normally below the headstuff WDK tag.
 

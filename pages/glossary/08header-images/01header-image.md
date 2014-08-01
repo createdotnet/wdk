@@ -17,8 +17,8 @@ This tag returns a complete header image tag for header3. Alternatively it will 
 
 In this example, we output our header image within a designated div for our image.
 
-```
+~~~
 <div id="header">
   <!--WDK:display:header-->
 </div>
-```
+~~~

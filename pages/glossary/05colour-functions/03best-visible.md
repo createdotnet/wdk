@@ -27,7 +27,7 @@ You can do this with any of the following variables:
 
 In the example below we are using Create's dynamic colours. We are using the `pagebg` to generate the best visible colour for use with heading tags.
 
-```
+~~~
 <head>
   <style type="text/css">
     #page {
@@ -38,4 +38,4 @@ In the example below we are using Create's dynamic colours. We are using the `pa
     }
   </style>
 </head>
-```
+~~~

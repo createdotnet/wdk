@@ -30,7 +30,7 @@ You can do this with any of the following variables:
 
 In the example below we are using Create's dynamic colours. We are using `bodybg` to generate an inverted colour to use with heading tags. 
 
-```
+~~~
 <head>
   <style type="text/css">
     body {
@@ -41,4 +41,4 @@ In the example below we are using Create's dynamic colours. We are using `bodybg
     }
   </style>
 </head>
-```
+~~~

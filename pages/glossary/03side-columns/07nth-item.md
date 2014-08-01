@@ -17,7 +17,7 @@ This tag returns the nth number of the current column item 1, 2, 3. This can be 
 
 In the following example we using the tag to give each side column item a number.
 
-```
+~~~
 <!--WDK:column:start:left-->
 <aside id="sidebar-left" class="sidebar">
 
@@ -30,4 +30,4 @@ In the following example we using the tag to give each side column item a number
 
 </aside>
 <!--WDK:column:end:left-->
-```
+~~~

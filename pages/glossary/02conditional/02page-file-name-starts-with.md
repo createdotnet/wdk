@@ -21,7 +21,7 @@ Pseudo Equivalent:
 ##Example
 In the following example we are using the tag to check for page file names beginning with 'male' or 'female'. We are then using this to change our background colour to pink and blue.
 
-```
+~~~
 <!--WDK:if:pageFilenameStartsWith:female-->
 	<style type="text/css">
 		body { background-color: #F7A8C8;}
@@ -31,4 +31,4 @@ In the following example we are using the tag to check for page file names begin
 		body { background-color: #B5BEFF;}
 	</style><br />
 <!--WDK:endif-->
-```
+~~~

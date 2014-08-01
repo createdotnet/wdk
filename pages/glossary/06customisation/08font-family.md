@@ -17,7 +17,7 @@ Use this tag to return the font specified on the "Font" section on your Create "
 
 In this example we're using the tag to set the font family of the `<body>` tag using CSS set in the `<head>`.
 
-```
+~~~
 <head>
   <style type="text/css">
     body {
@@ -28,4 +28,4 @@ In this example we're using the tag to set the font family of the `<body>` tag u
 
 <body>
 </body>
-```
+~~~

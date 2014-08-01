@@ -20,7 +20,7 @@ Pseudo Equivalent:
 
 In the following example we are closing the loop tag.
 
-```
+~~~
 <header>
   <nav>
     <ul>
@@ -34,4 +34,4 @@ In the following example we are closing the loop tag.
     </ul>
   </nav>
 </header>
-```
+~~~

@@ -26,7 +26,7 @@ Also, sub pages, as they are set up on the Create account, will be not be proces
 ####Example
 In the following example, we are creating a menu loop with a `<ul> <li>` structure.
 
-```
+~~~
 <nav>
   <ul>
     <!--WDK:menu:start-->
@@ -40,13 +40,13 @@ In the following example, we are creating a menu loop with a `<ul> <li>` structu
     <!--WDK:menu:end-->
   </ul>
 </nav>
-```
+~~~
 
 In our loop we are using `<!--WDK:menu:id-->` to obtain a unique id for each menu item. `<!--WDK:menu:link-->` is used to provide the URL for the menu item and `<!--WDK:menu:text-->` is used to to display the text for each menu item. 
 
 If there were 5 items in the menu: Home, About, Shop, Services & Contact, the markup would be returned like this:
 
-```
+~~~
 <nav>
   <ul>
     <li id="menu-item-1" class="menu-item">
@@ -76,7 +76,7 @@ If there were 5 items in the menu: Home, About, Shop, Services & Contact, the ma
     </li>
   </ul>
 </nav>
-```
+~~~
 
 ####Further Usage
 There are a few extra conditional tags which can allow for further functionality and styling. Using `<!--WDK:if:firstMenuItem-->` we can determine if the current menu item in the loop is the first. We can also do the same for the last item in the menu with `<!--WDK:if:lastMenuItem-->`. 
@@ -84,7 +84,7 @@ There are a few extra conditional tags which can allow for further functionality
 Another useful conditional tag is `<!--WDK:if:currentMenuItem-->`. This tag can be used to check if the current menu item in the loop, is the current page being viewed.
 In the example below we're using these checks to apply additional classes to the `<li>`.
 
-```
+~~~
 <nav>
   <ul>
     <!--WDK:menu:start-->
@@ -112,11 +112,11 @@ In the example below we're using these checks to apply additional classes to the
     <!--WDK:menu:end-->
   </ul>
 </nav>
-```
+~~~
 
 So, as before, for example there are 5 items in the menu and if the user is now viewing the shop page, the markup would be returned like this:
 
-```
+~~~
 <nav>
   <ul>
     <li id="menu-item-1" class="menu-item first">
@@ -146,7 +146,7 @@ So, as before, for example there are 5 items in the menu and if the user is now 
     </li>
   </ul>
 </nav>
-```
+~~~
 
 ####Example Usage of Additional Classes
 
@@ -157,7 +157,7 @@ The class "first" removes the left border on the first item, so that the borders
 
 The class "current" changes the background colour and text colour, indicating which menu item page the user is currently viewing.
 
-```
+~~~
 <style type="text/css">
   li.menu-item {
     padding: 0 10px;
@@ -176,7 +176,7 @@ The class "current" changes the background colour and text colour, indicating wh
     color:#fff;
   }
 </style>
-```
+~~~
 
 ##Drop Down Menus
 
@@ -190,7 +190,7 @@ The final tag you will need to use is `<!--WDK:display:navigation-->` which shou
 
 ####Example
 
-```
+~~~
 <head>
   <!--WDK:javascript:jquery-->
   <!--WDK:templateoption:dropdownMenu:[top]-->
@@ -199,11 +199,11 @@ The final tag you will need to use is `<!--WDK:display:navigation-->` which shou
 <nav>
   <!--WDK:display:navigation-->
 </nav>
-```
+~~~
 
 If there were 5 items in the menu: Home, About, Services, Shop & Contact, with Services as a sub page of About, the markup would be returned like this:
 
-```
+~~~
 <nav>
   <ul class="wdk_menu-ul wdk_tier_1">
 
@@ -240,14 +240,14 @@ If there were 5 items in the menu: Home, About, Services, Shop & Contact, with S
 
   </ul>
 </nav>
-```
+~~~
 
 ####How Drop Down Menus Work
 Drop down menus work by placing the second `<ul>` within it's parent `<li>`, using CSS to hide and reveal them on hover states. 
 
 For a basic example:
 
-```
+~~~
 <ul>
   <li>
     Main Menu Item
@@ -258,39 +258,39 @@ For a basic example:
     </ul>
   </li>
 </ul>
-```
+~~~
 
 We can style our first menu level as usual with:
 
-```
+~~~
 ul {
 }
 
 ul li {
 }
-```
+~~~
 
 As the second level menu is placed within the `<li>` it can be styled with the following:
-```
+~~~
 ul li ul {
 }
 
 ul li ul li {
   
 }
-```
+~~~
 
 To hide our submenu initially, lets use the CSS property display:none.
-```
+~~~
 ul li ul {
   display:none;
 }
 ul li ul li {
 }
-```
+~~~
 
 We can then make use of the CSS :hover selector to display the hidden `<ul>`.
-```
+~~~
 ul li ul {
   display:none;
 }
@@ -299,7 +299,7 @@ ul li ul li {
 ul li:hover > ul {
 display:block;
 }
-```
+~~~
 
 When the user is hovering over the `<li>` containing the `<ul>`, it will be displayed.
 
@@ -310,50 +310,50 @@ Thats the basic principle into displaying drop down menus. You will also need to
 
 The first level of menu `<ul>` are given the following classes: wdk_menu-ul and wdk_tier_1, and should be styled with:
 
-```
+~~~
 ul.wdk_menu-ul {
 }
 ul.wdk_tier_1 {
 }
-```
+~~~
 
 All first level menu items `<li>` are given the following classes: "wdk_menu-item" and "wdk_level_1".
 
 These should be styled with:
 
-```
+~~~
 ul li.wdk_menu-item {
 }
 ul li.wdk_level_1 {
 }
-```
+~~~
 
 First and last items in the menu are given "wdk_menu-firstitem" and "wdk_menu-lastitem" classes and should be styled with:
 
-```
+~~~
 ul li.wdk_menu-firstitem {
 }
 ul li.wdk_menu-lastitem {
 }
-```
+~~~
 
 The second level of menu `<ul>` are given the following classes: "wdk_sub_menu" and "wdk_tier_2" and should be styled with:
 
-```
+~~~
 ul li ul.wdk_sub_menu {
 }
 ul li ul.wdk_tier_2 {
 }
-```
+~~~
 
 All second level menu items `<li>` are given the following classes: "wdk_menu-item" and "wdk_level_2", and should be styled with:
 
-```
+~~~
 ul li ul li.wdk_menu-item {
 }
 ul li ul li.wdk_level_2 {
 }
-```
+~~~
 
 ##Links & Further Reading
 

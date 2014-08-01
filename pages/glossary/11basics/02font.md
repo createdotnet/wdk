@@ -15,6 +15,6 @@ Use this tag to preset the font on Create's Design screen.
 
 ##Example
 
-```
+~~~
 <!--WDK:editor:font:Georgia, serif-->
-```
+~~~

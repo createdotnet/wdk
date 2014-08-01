@@ -18,7 +18,7 @@ Please note that "levels" is an optional permateter.
 
 This tag returns the shop category menu in the following format:
 
-```
+~~~
 <ul class="wdk-shopCatList wdk-listLevel_1">
   <li class="wdk-shopCatList_li_123">
     <a class="wdk-shopCatList_a_123" href="/ourshop/cat_123-Top-Level.html">Top Level</a>
@@ -37,4 +37,4 @@ This tag returns the shop category menu in the following format:
     </ul>
   </li>
 </ul>
-```
+~~~

@@ -17,7 +17,7 @@ This tag will end the column loop. This tag must be included if `<!--WDK:column:
 
 In the example below we are closing the left side column.
 
-```
+~~~
 <!--WDK:column:start:left-->
 <aside id="sidebar-left" class="sidebar">
 
@@ -30,4 +30,4 @@ In the example below we are closing the left side column.
 
 </aside>
 <!--WDK:column:end:left-->
-```
+~~~

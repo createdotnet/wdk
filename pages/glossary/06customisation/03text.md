@@ -18,7 +18,7 @@ Use this tag to return a hex value of the body text colour as specified on the "
 
 In this example we're using the tag to set the `<p>` text colour using CSS set in the `<head>`.
 
-```
+~~~
 <head>
   <style type="text/css">
     p {
@@ -26,4 +26,4 @@ In this example we're using the tag to set the `<p>` text colour using CSS set i
     }
   </style>
 </head>
-```
+~~~

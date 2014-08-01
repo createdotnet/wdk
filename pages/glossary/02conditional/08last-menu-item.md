@@ -22,7 +22,7 @@ Pseudo Equivalent:
 ##Example
 In the following example we have created 1px borders on the right of each menu item as a seperator. We are using the tag to apply another class (named 'last') to the last menu item which removes the right border.
 
-```
+~~~
 <header>
 	<nav>
 		<ul>
@@ -34,4 +34,4 @@ In the following example we have created 1px borders on the right of each menu i
 		</ul>
 	</nav>
 </header>
-```
+~~~

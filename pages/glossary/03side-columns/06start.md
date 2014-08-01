@@ -17,7 +17,7 @@ This tag starts the side column item loop. This must be used with <!--WDK:column
 
 In the example below the tag starts off the loop for repeating items.
 
-```
+~~~
 <!--WDK:column:start:left-->
 <aside id="sidebar-left" class="sidebar">
 
@@ -30,4 +30,4 @@ In the example below the tag starts off the loop for repeating items.
 
 </aside>
 <!--WDK:column:end:left-->
-```
+~~~

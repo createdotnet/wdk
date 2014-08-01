@@ -19,7 +19,7 @@ For more information, [please see the tutorial on conditional tags here.](/pages
 ##Example
 In the following example we are using the tag to check if we're on a shop page then if true, list the shop categories.
 
-```
+~~~
 <header>
 	<nav>
 		<!--WDK:menu:start-->
@@ -29,4 +29,4 @@ In the following example we are using the tag to check if we're on a shop page t
 		<!--WDK:menu:end-->
 	</nav>
 </header>
-```
+~~~

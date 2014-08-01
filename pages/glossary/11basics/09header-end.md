@@ -17,7 +17,7 @@ For more information, please see the [header tutorial](pages/tutorials/08the-hea
 
 ##Example
 
-```
+~~~
 <!--WDK:header:start-->
 <html>
   <head></head>
@@ -31,4 +31,4 @@ For more information, please see the [header tutorial](pages/tutorials/08the-hea
   </body>
 </html>
 <!--WDK:footer:end-->
-```
+~~~

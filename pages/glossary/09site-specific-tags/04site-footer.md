@@ -17,8 +17,8 @@ This tag returns the "Footer" which can be found on the "Edit Site Information" 
 
 In this example we output the 'Site Footer' within a designated div.
 
-```
+~~~
 <div id="footer">
   <!--WDK:display:sitefooter-->
 </div>
-```
+~~~

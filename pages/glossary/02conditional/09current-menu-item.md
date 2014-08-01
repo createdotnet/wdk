@@ -21,7 +21,7 @@ Pseudo Equivalent:
 ##Example
 In the following example our standard menu items use white text on a black background. We are using this tag to add a class to the current menu item we are viewing. This class then makes the background white and the text black, indicating to the viewer which page they are currently viewing.
 
-```
+~~~
 <style type="text/css">
 	li.menu-item {
 		background-color:#000;
@@ -44,4 +44,4 @@ In the following example our standard menu items use white text on a black backg
 		</ul>
 	</nav>
 </header>
-```
+~~~

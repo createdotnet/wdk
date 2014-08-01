@@ -29,7 +29,7 @@ Then the "amount" is an intensity level between 1 and 255 to select the darkness
 
 In the example below we are using Create's dynamic colours. We are using the `bodylink` to generate a darker colour to use as a border.
 
-```
+~~~
 <head>
   <style type="text/css">
     a {
@@ -38,4 +38,4 @@ In the example below we are using Create's dynamic colours. We are using the `bo
     }
   </style>
 </head>
-```
+~~~

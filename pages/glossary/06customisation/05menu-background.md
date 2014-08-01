@@ -18,7 +18,7 @@ Use this tag to return a hex value of the menu background colour as specified on
 
 In this example we're using the tag to set the a background colour for a div using CSS set in the `<head>`.
 
-```
+~~~
 <head>
   <style type="text/css">
     #menu {
@@ -34,4 +34,4 @@ In this example we're using the tag to set the a background colour for a div usi
     </ul>
   </div>
 </body>
-```
+~~~

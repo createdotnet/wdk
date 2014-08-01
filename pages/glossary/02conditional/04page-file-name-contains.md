@@ -20,8 +20,8 @@ Pseudo Equivalent:
 ##Example
 In the following example we're checking to see if we're on a page named contact, and including a div for a map
 
-```
+~~~
 <!--WDK:if:pageFilenameContains:contact-->
 <!--WDK:dynamic:widget:map-->
 <!--WDK:endif-->
-```
+~~~

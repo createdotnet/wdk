@@ -22,7 +22,7 @@ Please note the difference between these two footer tags. `<!--WDK:footer:start-
 
 Following on from our example template we started in the [Header Tutorial](08the-header.html), let's finish up the template:
 
-```html
+~~~html
 
   <!--WDK:footer:start-->
       
@@ -46,7 +46,7 @@ Following on from our example template we started in the [Header Tutorial](08the
 
 </html>
 <!--WDK:footer:end-->
-```
+~~~
 
 After opening our footer, we close the `</div>` thats holding the main page content. We have then outlined our right side column and closed our main `</div>` for the page.
 
@@ -64,7 +64,7 @@ Each of these can be placed wherever you wish in the footer using the following 
 #### Social Media Icons
 Heres an example of the social profile WDK tags generating an unorder list of the user enabled links. It is contained within some if tags that ensure the code is not outputted if the user has turned the function off.
 
-```
+~~~
 <!--WDK:if:plugin:socialprofile:enabled-->
   <ul class="social-profile">
     <!--WDK:plugin:socialprofile:start-->
@@ -74,12 +74,12 @@ Heres an example of the social profile WDK tags generating an unorder list of th
     <!--WDK:plugin:socialprofile:end-->
   </ul>
 <!--WDK:endif-->
-```
+~~~
 
 #### Accepted Payment Methods
 This markup follows pretty much the same format as the social media markup above.
 
-```
+~~~
 <!--WDK:if:plugin:paymentcards:enabled-->
   <ul>
     <!--WDK:plugin:paymentcards:start-->
@@ -90,12 +90,12 @@ This markup follows pretty much the same format as the social media markup above
   </ul>
 <!--WDK:endif-->
 
-```
+~~~
 
 #### Newsletter Sign Up
 The following code generates the form element with a input and submit button. Feel free to add lables, container divs with styling etc etc.
 
-```
+~~~
 <!--WDK:if:plugin:newsletter:enabled-->
 
     <!--WDK:plugin:newsletter:start-->
@@ -104,15 +104,15 @@ The following code generates the form element with a input and submit button. Fe
     <!--WDK:plugin:newsletter:end-->
 
 <!--WDK:endif-->
-```
+~~~
 
 #### Copyright
 This outputs plain text - "&copy; [company name] 20[XX]". Again, this is contained in an if statement so that it only displays when the users has enabled it.
-```
+~~~
 <!--WDK:if:copyrightEnabled-->
   <!--WDK:display:copyright-->
 <!--WDK:endif-->
-```
+~~~
 
 
 

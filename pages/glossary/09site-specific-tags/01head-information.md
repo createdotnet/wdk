@@ -15,8 +15,8 @@ This tag returns generated HTML `<title>` and `<meta>` tags for use within the `
 
 ##Example
 
-```
+~~~
 <head>
   <!--WDK:display:headinfo-->
 </head>
-```
+~~~

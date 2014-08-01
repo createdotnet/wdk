@@ -15,6 +15,6 @@ Use this tag to preset the text colour on Create's Design screen.
 
 ##Example
 
-```
+~~~
 <!--WDK:editor:txtcolor:#a2a2a2-->
-```
+~~~

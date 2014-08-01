@@ -23,7 +23,7 @@ Pseudo Equivalent:
 ##Example
 In this example we're using the tag to promt a user to log in to view their account if they are not already logged in.
 
-```
+~~~
 <!--WDK:isloggedin:start-->
 		<p>Welcome back, <a href"#">view your account</a>.
 	<!--WDK:isloggedin:else-->

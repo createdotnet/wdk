@@ -25,7 +25,7 @@ This tag returns a hex reference that is a mix of colour1 and colour 2 at amount
 `<!--WDK:color:tint:colour1:colour2:amount-->`
 This tag could be used for heading titles, mixing the text and background colour.
 
-```html
+~~~html
 <style type="text/css">
   body {
     background-color:<!--WDK:display:bodybg-->;
@@ -35,7 +35,7 @@ This tag could be used for heading titles, mixing the text and background colour
     color:<!--WDK:color:tint:[bodybg]:[bodytxt]:50-->;
   }
 </style>
-```
+~~~
 
 ####Highlight
 
@@ -44,7 +44,7 @@ This tag returns a hex reference that is a highlighted version of a colour by a 
 `<!--WDK:color:highlight:colour:amount-->`
 This tag could be useful for creating highlighted hover states for links.
 
-```html
+~~~html
 <style type="text/css">
   a {
     color:<!--WDK:display:bodylink-->;
@@ -53,7 +53,7 @@ This tag could be useful for creating highlighted hover states for links.
     color:<!--WDK:color:highlight:[bodylink]:50-->;
   }
 </style>
-```
+~~~
 
 ####Invert
 
@@ -62,7 +62,7 @@ This tag returns a hex reference that is an inverted version of the supplied col
 `<!--WDK:color:invert:colour-->`
 This tag is useful for generating colours that stand out. Here we're using it for setting the colours of heading tags from the background.
 
-```html
+~~~html
 <style type="text/css">
   body {
     background-color: <!--WDK:display:bodybg-->;
@@ -71,7 +71,7 @@ This tag is useful for generating colours that stand out. Here we're using it fo
     color: <!--WDK:color:invert:[bodybg]-->;
   }
 </style>
-```
+~~~
 
 ####Brighten
 
@@ -80,14 +80,14 @@ This tag returns a hex reference that is a brighten version of supplied colour. 
 `<!--WDK:color:brighten:colour:amount-->`
 This tag could be used to create an outer glow around links.
 
-```html
+~~~html
 <style type="text/css">
   a {
     color: <!--WDK:display:bodylink-->;
     text-shadow: 0px 0px 5px <!--WDK:color:brighten:[bodylink]:50-->;
   }
 </style>
-```
+~~~
 
 Please note 'text-shadow' is a CSS3 property and is currently not supported in Internet Explorer.
 
@@ -99,14 +99,14 @@ This tag returns a hex reference that is a darkened version of supplied colour. 
 `<!--WDK:color:darken:colour:amount-->`
 This tag could be used to create a drop shadow on headings.
 
-```html
+~~~html
 <style type="text/css">
   h1, h2, h3, h4, h5, h6 {
     color: <!--WDK:display:bodytext-->;
     text-shadow: 1px 1px 3px <!--WDK:color:darken:[bodytxt]:50-->;
   }
 </style>
-```
+~~~
 
 Please note 'text-shadow' is a CSS3 property and is currently not supported in Internet Explorer.
 
@@ -117,14 +117,14 @@ This tag returns a hex reference that is the bets visible colour for reading tex
 `<!--WDK:color:bestvisible:colour-->`
 If in your template you only allow the user to select a background colour, this tag could generate the best colour for the text.
 
-```html
+~~~html
 <style type="text/css">
   body {
     background-color:<!--WDK:display:bodybg-->;
     color:<!--WDK:color:bestvisible:[bodybg]-->;
   }
 </style>
-```
+~~~
 
 ###Links & Further Reading
 

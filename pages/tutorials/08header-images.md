@@ -26,11 +26,11 @@ If you wish to only display a specific image, you may use `<!--WDK:display:heade
 
 If you only wanted to display a small logo, in your markup you could simply put:
 
-```html
+~~~html
 <div id="logo">
   <!--WDK:display:header4-->
 </div>
-```
+~~~
 
 You are also able to write the entire logo image code yourself. Using the following tags:
 
@@ -40,7 +40,7 @@ You are also able to write the entire logo image code yourself. Using the follow
 
 Using these tags, you could create the logo to be a link to the home page:
 
-```
+~~~
 <div id="logo">
   <a href="/">
     <img
@@ -51,7 +51,7 @@ Using these tags, you could create the logo to be a link to the home page:
     >
   </a>
 </div>
-```
+~~~
 
 ##Conditional Tags
 
@@ -59,7 +59,7 @@ The Create WDK has some conditional tags which can allow you to apply different 
 
 Using `<!--WDK:if:headerX-->` you may check to see if a specific header image is being used. In the following example, we set the width of the containing `<div>` to be the same width as the image using this tag:
 
-```html
+~~~html
 <div
   <!--WDK:if:header3-->
     style="min-width:750px; max-width:1000px; width:auto;"
@@ -71,7 +71,7 @@ Using `<!--WDK:if:headerX-->` you may check to see if a specific header image is
 >
   <!--WDK:display:header-->
 </div>
-```
+~~~
 
 As you may have noticed above, we have used and "If" and "ElseIf" tag. For more information please read the tutorial on Conditional Tags.
 
@@ -82,7 +82,7 @@ We have conditional tags which can be used to determine this, which helps you to
 
 In the example below we have a conditional check to see if header 3 is a flash file.  If true, we're placing it in a HTML `<object>` tag. If false, the else condition is used and an image is diplayed instead.
 
-```html
+~~~html
 <div id="logo">
   <!--WDK:if:header3:isFlash-->    <object
       data="<!--WDK:display:header3src-->"
@@ -99,7 +99,7 @@ In the example below we have a conditional check to see if header 3 is a flash f
       alt="Logo Image"
     >  <!--WDK:endif-->
 </div>
-```
+~~~
 
 ####File Type Checks
 As you can check to see if a specific header image is a flash file, you may also check for file type, using the following tags, replacing "X" with your desired header number.

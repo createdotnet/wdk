@@ -30,7 +30,7 @@ Then the "amount" is a percentage between 1 and 100 to select the tint between t
 
 In the example below we are using Create's dynamic colours. We are using `bodybg` for the body, the `menubg` colour for the menu and creating a new colour for the header, based on the two.
 
-```
+~~~
 <head>
   <style type="text/css">
     body {
@@ -44,4 +44,4 @@ In the example below we are using Create's dynamic colours. We are using `bodybg
     }
   </style>
 </head>
-```
+~~~

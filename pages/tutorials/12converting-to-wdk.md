@@ -20,7 +20,7 @@ index.html
 
 <!doctype html>
 
-```html
+~~~html
 <html>
 
 <head>
@@ -100,11 +100,11 @@ index.html
 </body>
 
 </html>
-```
+~~~
 
 style.css
 
-```
+~~~
 /* Typography */
 
 body {
@@ -291,11 +291,11 @@ footer nav ul li:first-child {
 .clear {
     clear: both;
   }
-```
+~~~
 
 reset.css
 
-```
+~~~
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -344,7 +344,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
   }
-```
+~~~
 
 Screenshot
 
@@ -362,22 +362,22 @@ Your page content is written within Create's system, and dynamically inserted in
 
 Replacing:
 
-```html
+~~~html
 <article>
   <h1>Welcome to my example website.</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lacus est, sed varius odio. Mauris arcu felis, scelerisque eget congue ut, semper eu enim. Proin sit amet nisi quam, porta fermentum lectus. Sed feugiat semper eros ac dignissim. Fusce elit ipsum, dapibus eget faucibus posuere, blandit non lectus. Sed odio justo, volutpat et tincidunt id, commodo et metus. Cras sit amet felis velit, id ultricies sem. Donec in consequat lorem. Integer orci elit, ultrices eget aliquam ac, luctus in diam. In auctor lacus eu lacus egestas volutpat. Proin eu tellus sed nisl elementum ultricies vitae at mi. Mauris ac sodales quam. Proin et nisi nunc, et gravida tellus.</p>
 </article>
-```
+~~~
 
 With:
 
-```html
+~~~html
 <article>
   <h1>Welcome to my example website.</h1>
   <!--WDK:header:end-->
   <!--WDK:footer:start-->
 </article>
-```
+~~~
 
 At the end of your template you must insert the `<!--WDK:footer:end-->` tag, to close your documents.
 
@@ -385,7 +385,7 @@ The last required tag we must insert is the `<!--WDK:display:sitefooter-->` tag.
 
 Replacing:
 
-```html
+~~~html
 <footer>
   <small>
     &copy; 2013 My Example Website.
@@ -399,15 +399,15 @@ Replacing:
   </nav>
   <div class="clear"></div>
 </footer>
-```
+~~~
 
 With:
 
-```html
+~~~html
 <footer>
   <!--WDK:display:sitefooter-->
 </footer>
-```
+~~~
 
 That is the first step we need to take in order to make our page WDK compatible.
 
@@ -417,11 +417,11 @@ To display our sites meta values, we're going to use the `<!--WDK:display:headin
 
 Replacing:
 
-```html
+~~~html
 <title>Home | My Example Website</title>
 <meta name="description" content="Welcome to my example website.">
 <meta name="keywords" content="My, Keywords, Here">
-```
+~~~
 
 With:
 
@@ -433,17 +433,17 @@ We are linking to a few external stylesheets. We will be uploading these along w
 
 Replacing:
 
-```html
+~~~html
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="style.css">
-```
+~~~
 
 With:
 
-```html
+~~~html
 <link rel="stylesheet" href="<!--WDK:path:template-->reset.css">
 <link rel="stylesheet" href="<!--WDK:path:template-->style.css">
-```
+~~~
 
 ##Logo
 
@@ -451,23 +451,23 @@ We can upload our logo image to the "Design Screen". We can display this using t
 
 Replacing:
 
-```html
+~~~html
 <div id="logo">
   <a href="/">
     <img src="images/logo.png" alt="My Example Logo" width="881" height="142">
   </a>
 </div><!-- /#logo -->
-```
+~~~
 
 With:
 
-```html
+~~~html
 <div id="logo">
   <a href="/">
     <!--WDK:display:header-->
   </a>
 </div><!-- /#logo -->
-```
+~~~
 
 ##Menus
 
@@ -475,7 +475,7 @@ For the navigation, we can write a loop to process all of the menus items on a C
 
 Replacing:
 
-```html
+~~~html
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -486,11 +486,11 @@ Replacing:
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-```
+~~~
 
 With:
 
-```html
+~~~html
 <nav>
   <ul>
     <!--WDK:menu:start-->
@@ -502,7 +502,7 @@ With:
     <!--WDK:menu:end-->
   </ul>
 </nav>
-```
+~~~
 
 ##Page Title
 
@@ -522,7 +522,7 @@ Sidebar content is managed using Side Columns from the "Design Screen". Sidebars
 
 Replacing:
 
-```html
+~~~html
 <aside>
   <div class="widget">
     <h3>Recent Posts</h3>
@@ -533,11 +533,11 @@ Replacing:
     </ul>
   </div><!-- /.widget -->
 </aside>
-```
+~~~
 
 With:
 
-```html
+~~~html
 <!--WDK:column:start:right-->
 <!--WDK:column:width:189-->
 <aside>
@@ -549,7 +549,7 @@ With:
   <!--WDK:column:item:end-->
 </aside>
 <!--WDK:column:end:right-->
-```
+~~~
 
 ##Dynamic Styling
 
@@ -560,17 +560,17 @@ Replacing:
 `<link rel="stylesheet" href="style.css">`
 With:
 
-```html
+~~~html
 <style type="text/css">
     (style.css content here)
 </style>
-```
+~~~
 
 From the "Design Screen", Create users can select dynamic colours for use within their template. To make our existing page compatible with this, we'll need to use a few tags to set the styles. Please see our tutorials for a more in depth look at [Dynamic Styling](05dynamic-styling.html) and [Advanced Colour](03advanced-colour-functions.html) Functions.
 
 Replacing:
 
-```html
+~~~html
 /* Typography */
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -601,11 +601,11 @@ header nav ul li a {
 
 }
 
-```
+~~~
 
 With:
 
-```css
+~~~css
 /* Typography */
 body {
     font-family: <!--WDK:display:font-->;
@@ -636,13 +636,13 @@ header nav {
 header nav ul li a {
     color: <!--WDK:display:menutxt-->;
 }
-```
+~~~
 
 ##The Completed WDK Template
 
 We now have our existing webpage compatible with Create's WDK. Heres a final overview of our index.html file.
 
-```html
+~~~html
 <!doctype html>
 <!--WDK:header:start-->
 <html>
@@ -872,4 +872,4 @@ We now have our existing webpage compatible with Create's WDK. Heres a final ove
 
 </html>
 <!--WDK:footer:end-->
-```
+~~~

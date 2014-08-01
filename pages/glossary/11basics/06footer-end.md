@@ -16,7 +16,7 @@ For more information, please see our footer turorial here.
 
 ##Example
 
-```
+~~~
 <!--WDK:header:start-->
 <html>
   <head></head>
@@ -30,4 +30,4 @@ For more information, please see our footer turorial here.
   </body>
 </html>
 <!--WDK:footer:end-->
-```
+~~~

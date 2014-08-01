@@ -17,7 +17,7 @@ This tag returns the text of the current menu item within the loop.
 
 In the following example we are using the tag to display each menu items text within a link.
 
-```
+~~~
 <header>
   <nav>
     <ul>
@@ -31,4 +31,4 @@ In the following example we are using the tag to display each menu items text wi
     </ul>
   </nav>
 </header>
-```
+~~~

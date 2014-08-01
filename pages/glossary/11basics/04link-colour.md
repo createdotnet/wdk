@@ -15,6 +15,6 @@ Use this tag to preset the link colour on Create's Design screen.
 
 ##Example
 
-```
+~~~
 <!--WDK:editor:linkcolor:#FF0000-->
-```
+~~~

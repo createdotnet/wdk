@@ -20,7 +20,7 @@ The "value" should also be "right" or "left" accordingly.
 
 In the example below we are using the tag twice to start a left side column.
 
-```
+~~~
 <!--WDK:column:start:left-->
 <aside id="sidebar-left" class="sidebar">
 
@@ -33,4 +33,4 @@ In the example below we are using the tag twice to start a left side column.
 
 </aside>
 <!--WDK:column:end:left-->
-```
+~~~

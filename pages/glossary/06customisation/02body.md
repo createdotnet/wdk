@@ -18,7 +18,7 @@ Use this tag to return a hex value of the body background colour as specified on
 
 In this example we're using the tag to set the `<body>` background colour using CSS set in the `<head>`.
 
-```
+~~~
 <head>
   <style type="text/css">
     body {
@@ -26,4 +26,4 @@ In this example we're using the tag to set the `<body>` background colour using 
     }
   </style>
 </head>
-```
+~~~

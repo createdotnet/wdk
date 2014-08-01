@@ -17,7 +17,7 @@ This tag will return the URL of the current menu item within the loop.
 
 In the following example we are using the tag to provide a link to each menu items url.
 
-```
+~~~
 <header>
   <nav>
     <ul>
@@ -31,4 +31,4 @@ In the following example we are using the tag to provide a link to each menu ite
     </ul>
   </nav>
 </header>
-```
+~~~

@@ -16,6 +16,6 @@ Comments will not appear on the published site, but may be useful for your refer
 
 ##Example
 
-```
+~~~
 <!--WDK:comment:The following section is the site's footer.-->
-```
+~~~

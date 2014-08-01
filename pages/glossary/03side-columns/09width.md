@@ -16,7 +16,7 @@ This tag sets the internal width of current columns content.
 
 In this example we're using the tag directly after the side column opening tag to set the width to 150px.
 
-```
+~~~
 <!--WDK:column:start:left-->
 	<!--WDK:column:width:150-->
 	<aside id="sidebar-left" class="sidebar">
@@ -28,6 +28,6 @@ In this example we're using the tag directly after the side column opening tag t
 		<!--WDK:column:item:end-->
 	</aside>
 <!--WDK:column:end:left-->
-```
+~~~
 
 Please note, you can set the width to "none" if you do not want a fixed pixel width on your side column items.

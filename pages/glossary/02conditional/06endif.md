@@ -21,10 +21,10 @@ Pseudo Equivalent:
 ##Example
 This is a basic example of how If statements are constucted. Please view each tag in the glossary for a full description and example.
 
-```
+~~~
 <!--WDK:if-->
 	Do Something
 <!--WDK:else-->
 	Do something else
 <!--WDK:endif-->
-```
+~~~

@@ -23,7 +23,7 @@ Pseudo Equivalent:
 In the following example we are using the tag to determine if header 3 is a flash file, then if it is it will show as a flash animation in the header area.
 
 
-```
+~~~
 <header>
 	<div id="logo">
 		<!--WDK:if:header3:isFlash-->
@@ -35,4 +35,4 @@ In the following example we are using the tag to determine if header 3 is a flas
 		<!--WDK:endif-->
 	</div>
 </header>
-```
+~~~

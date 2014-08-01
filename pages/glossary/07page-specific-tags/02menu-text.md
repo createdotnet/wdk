@@ -18,6 +18,6 @@ Use this tag to return the current page's menu text as defined on the "Page Opti
 
 In this example we're using the tag to display the viewers current location.
 
-```
+~~~
 <p>You are currently browsing <!--WDK:display:menutext--></p>.
-```
+~~~

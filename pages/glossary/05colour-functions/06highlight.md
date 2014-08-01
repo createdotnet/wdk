@@ -32,7 +32,7 @@ Then the "amount" is a intensity between 1 and 255 to select the difference from
 
 In the example below we are using Create's dynamic colours. We are using `bodybg` to generate a highlighted colour to use with heading tags. 
 
-```
+~~~
 <head>
   <style type="text/css">
     body {
@@ -43,4 +43,4 @@ In the example below we are using Create's dynamic colours. We are using `bodybg
     }
   </style>
 </head>
-```
+~~~

@@ -23,11 +23,11 @@ Pseudo Equivalent:
 
 In the following example we're checking to see if we're on a page named contact, and then including a div for a map.
 
-```
+~~~
 <!--WDK:if:pageFilenameIs:contact-->
 	<div id="map"></div>
 <!--WDK:endif-->
-```
+~~~
 
 It is also worth noting that you can use a list of comma separated items.
 

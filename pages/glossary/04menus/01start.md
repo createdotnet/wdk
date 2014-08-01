@@ -27,7 +27,7 @@ Please note that this tag must be ended with `<!--WDK:menu:end-->` to end the lo
 
 In this example we are looping through all of the menu items using a `<ul> <li>` structure.
 
-```
+~~~
 <header>
   <nav>
     <ul>
@@ -41,11 +41,11 @@ In this example we are looping through all of the menu items using a `<ul> <li>`
     </ul>
   </nav>
 </header>
-```
+~~~
 
 In the following example we are displaying items 2-8 from the menu.
 
-```
+~~~
 <header>
   <nav>
     <ul>
@@ -59,4 +59,4 @@ In the following example we are displaying items 2-8 from the menu.
     </ul>
   </nav>
 </header>
-```
+~~~

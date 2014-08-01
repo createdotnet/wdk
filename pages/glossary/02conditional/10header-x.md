@@ -21,7 +21,7 @@ Pseudo Equivalent:
 ##Example
 In the following example we are using the tag to determine which header image is being used, then setting the width of the containing div.
 
-```
+~~~
 <div style="
 	<!--WDK:if:header3--> 
 		width:1000px;
@@ -32,4 +32,4 @@ In the following example we are using the tag to determine which header image is
 	<!--WDK:endif-->
 	">
 </div>
-```
+~~~

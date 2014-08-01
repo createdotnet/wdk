@@ -24,12 +24,12 @@ In this example, we are using the tag to check for page file names ending with '
 
 ####Example CSS in the `<head>`.
 
-```
+~~~
 <!--WDK:if:pageFilenameEndsWith:-full--><!--WDK:endif-->
-```
+~~~
 
 ####Example HTML Markup
-```
+~~~
 <header> </header>
 <div id="main">
 	<aside class="sidebar left"> </aside>
@@ -37,4 +37,4 @@ In this example, we are using the tag to check for page file names ending with '
 	<aside class="sidebar right"> </aside>
 </div>
 <footer> </footer>
-```
+~~~
