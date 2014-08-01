@@ -1,6 +1,6 @@
 ---
 layout: tutorials
-permalink: "tutorials.html"
+permalink: "/pages/tutorials/index.html"
 title: Tutorials
 last-updated: 00-00-0000
 ---
