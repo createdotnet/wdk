@@ -1,6 +1,5 @@
 ---
 layout: glossary
-permalink: "glossary.html"
 title: Glossary
 last-updated: 00-00-0000
 ---
