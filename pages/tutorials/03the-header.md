@@ -14,7 +14,7 @@ It can also optionally contain styling for Create's dynamic colours, side column
 
 Below is a simplified version of a header.
 
-~~~html
+~~~
 <!DOCTYPE html>
 <!--WDK:header:start-->
 <html>

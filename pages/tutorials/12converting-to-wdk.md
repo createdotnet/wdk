@@ -20,7 +20,7 @@ index.html
 
 <!doctype html>
 
-~~~html
+~~~
 <html>
 
 <head>
@@ -362,7 +362,7 @@ Your page content is written within Create's system, and dynamically inserted in
 
 Replacing:
 
-~~~html
+~~~
 <article>
   <h1>Welcome to my example website.</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis lacus est, sed varius odio. Mauris arcu felis, scelerisque eget congue ut, semper eu enim. Proin sit amet nisi quam, porta fermentum lectus. Sed feugiat semper eros ac dignissim. Fusce elit ipsum, dapibus eget faucibus posuere, blandit non lectus. Sed odio justo, volutpat et tincidunt id, commodo et metus. Cras sit amet felis velit, id ultricies sem. Donec in consequat lorem. Integer orci elit, ultrices eget aliquam ac, luctus in diam. In auctor lacus eu lacus egestas volutpat. Proin eu tellus sed nisl elementum ultricies vitae at mi. Mauris ac sodales quam. Proin et nisi nunc, et gravida tellus.</p>
@@ -371,7 +371,7 @@ Replacing:
 
 With:
 
-~~~html
+~~~
 <article>
   <h1>Welcome to my example website.</h1>
   <!--WDK:header:end-->
@@ -385,7 +385,7 @@ The last required tag we must insert is the `<!--WDK:display:sitefooter-->` tag.
 
 Replacing:
 
-~~~html
+~~~
 <footer>
   <small>
     &copy; 2013 My Example Website.
@@ -403,7 +403,7 @@ Replacing:
 
 With:
 
-~~~html
+~~~
 <footer>
   <!--WDK:display:sitefooter-->
 </footer>
@@ -417,7 +417,7 @@ To display our sites meta values, we're going to use the `<!--WDK:display:headin
 
 Replacing:
 
-~~~html
+~~~
 <title>Home | My Example Website</title>
 <meta name="description" content="Welcome to my example website.">
 <meta name="keywords" content="My, Keywords, Here">
@@ -433,14 +433,14 @@ We are linking to a few external stylesheets. We will be uploading these along w
 
 Replacing:
 
-~~~html
+~~~
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="style.css">
 ~~~
 
 With:
 
-~~~html
+~~~
 <link rel="stylesheet" href="<!--WDK:path:template-->reset.css">
 <link rel="stylesheet" href="<!--WDK:path:template-->style.css">
 ~~~
@@ -451,7 +451,7 @@ We can upload our logo image to the "Design Screen". We can display this using t
 
 Replacing:
 
-~~~html
+~~~
 <div id="logo">
   <a href="/">
     <img src="images/logo.png" alt="My Example Logo" width="881" height="142">
@@ -461,7 +461,7 @@ Replacing:
 
 With:
 
-~~~html
+~~~
 <div id="logo">
   <a href="/">
     <!--WDK:display:header-->
@@ -475,7 +475,7 @@ For the navigation, we can write a loop to process all of the menus items on a C
 
 Replacing:
 
-~~~html
+~~~
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -490,7 +490,7 @@ Replacing:
 
 With:
 
-~~~html
+~~~
 <nav>
   <ul>
     <!--WDK:menu:start-->
@@ -522,7 +522,7 @@ Sidebar content is managed using Side Columns from the "Design Screen". Sidebars
 
 Replacing:
 
-~~~html
+~~~
 <aside>
   <div class="widget">
     <h3>Recent Posts</h3>
@@ -537,7 +537,7 @@ Replacing:
 
 With:
 
-~~~html
+~~~
 <!--WDK:column:start:right-->
 <!--WDK:column:width:189-->
 <aside>
@@ -560,7 +560,7 @@ Replacing:
 `<link rel="stylesheet" href="style.css">`
 With:
 
-~~~html
+~~~
 <style type="text/css">
     (style.css content here)
 </style>
@@ -570,7 +570,7 @@ From the "Design Screen", Create users can select dynamic colours for use within
 
 Replacing:
 
-~~~html
+~~~
 /* Typography */
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -642,7 +642,7 @@ header nav ul li a {
 
 We now have our existing webpage compatible with Create's WDK. Heres a final overview of our index.html file.
 
-~~~html
+~~~
 <!doctype html>
 <!--WDK:header:start-->
 <html>

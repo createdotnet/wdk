@@ -14,7 +14,7 @@ Side columns must be opened and closed with `<!--WDK:column:start-->` and `<!--W
 
 The example below is suitable markup for the left side column.
 
-~~~html
+~~~
 <!--WDK:column:start:left-->
   <!--WDK:column:width:150-->
   <aside class="sidebar left">
@@ -34,7 +34,7 @@ After opening our side column we're using `<!--WDK:column:width-->` to set the w
 
 If we had 2 items in our side columns, a product search and shopping basket the markup returned would be (the widget contents have been shortened):
 
-~~~html
+~~~
 <aside class="sidebar left">
 
   <div id="column-item-id-1" class="column-item column-item-n-1">
@@ -56,7 +56,7 @@ We're using the tag `<!--WDK:column:item:id-->` to create a unique id for each m
 
 The Create WDK has a tag to return the number of side columns being used. This is useful in making sure your content is the appropriate width. A simplified version of our markup would be:
 
-~~~html
+~~~
 <div id="main">
   <aside class="sidebar left"> </aside>
 

@@ -10,7 +10,7 @@ A Create WDK template should be split into three sections: header, content and f
 
 ##Example
 
-~~~html
+~~~
 <!doctype html>
 <!--WDK:header:start-->
 <html>

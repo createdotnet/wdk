@@ -22,7 +22,7 @@ Please note the difference between these two footer tags. `<!--WDK:footer:start-
 
 Following on from our example template we started in the [Header Tutorial](08the-header.html), let's finish up the template:
 
-~~~html
+~~~
 
   <!--WDK:footer:start-->
       
