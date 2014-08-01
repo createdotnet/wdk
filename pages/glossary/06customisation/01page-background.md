@@ -18,7 +18,7 @@ Use this tag to return a hex value of the page background colour as specified on
 
 In this example we're using the tag to set the a background colour for a div using CSS set in the `<head>`. This would allow us to have different page and body background colours.
 
-```
+~~~
 <head>
   <style type="text/css">
     body {
@@ -36,4 +36,4 @@ In this example we're using the tag to set the a background colour for a div usi
   <div id="page">
   </div>
 </body>
-```
+~~~
