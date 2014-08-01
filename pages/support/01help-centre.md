@@ -3,7 +3,7 @@ layout: support
 title: Support
 group: Support
 last-updated: 31-07-2013
-permalink: "help-centre.html"
+permalink: "/pages/support/index.html"
 ---
 
 
