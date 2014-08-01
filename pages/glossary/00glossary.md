@@ -1,6 +1,6 @@
 ---
 layout: glossary
-permalink: "/pages/index.html"
+permalink: "/pages/glossary/index.html"
 title: Glossary
 last-updated: 00-00-0000
 ---
