@@ -1,0 +1,14 @@
+# Conversion
+markdown:    kramdown
+
+# Turn on recognition of 'Github Flavored Markdown'
+kramdown:
+  input: GFM
+
+# Backwards-compatibility
+relative_permalinks: false
+
+# Sass
+sass:
+    sass_dir: _sass
+    style: :compressed

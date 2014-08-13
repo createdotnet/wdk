@@ -1,3 +1,14 @@
+---
+---
+
+@import "global.scss";
+@import "prism.scss";
+
+$blue: #49556d;
+$yellow: #FFC731;
+
+
+// RESETS / FALLBACKS
 * {
 	padding: 0px;
 	margin: 0px;
@@ -9,6 +20,8 @@
 header, section, footer, aside, nav, main, article, figure, details, summary, blockquote { 
 display: block; 
 }
+
+
 
 
 
@@ -300,10 +313,6 @@ details[open] summary {
 
 
 
-
-
-
-
 /* Page Header (Page Title and Last Updated)  */
 
 .page-header {
@@ -317,33 +326,6 @@ details[open] summary {
 .last-updated {
 	padding-top: 5px;
 }
-
-
-
-
-
-
-
-
-/* Code Block Styling - Overide styles in prism.css */
-
-pre[class*="language-"] {
-	padding: 1em;
-	padding-top: 0;
-	margin: 1em;
-}
-
-pre, code {
-	background-color: #f5f2f0;
-	overflow: scroll;
-}
-
-/*for comment tags, such as the WDK tags*/
-.token.comment {
-	color: #dbb112;
-}
-
-
 
 
 
