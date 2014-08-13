@@ -4,7 +4,7 @@
 @import "global.scss";
 @import "prism.scss";
 
-$blue: #49556d;
+$blue: $blue;
 $yellow: #FFC731;
 
 
@@ -84,7 +84,7 @@ ul { list-style-type: none; }
 
 .container h1 {
 	margin: 15px 0px 0px 0px;
-	color: #3a4356;
+	color: $blue;
 	font-size: 2em;
 }
 
@@ -99,7 +99,7 @@ main h4 {
 
 
 
-/*Header and Footer */
+/* Header and Footer */
 
 footer, header {
 	background-color: #3a4150;
@@ -140,26 +140,30 @@ footer, header {
 }
 
 
-/*sticky footer */
+/* STICKY FOOTER */
 
-html, body {
-  height: 100%;
+html,
+body {
+	height: 100%;
 }
 
 .container {
-  min-height: 100%;
-  margin-bottom: -195px; /* equal to footer height */
-  margin-top: -139px; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
-  padding-top: 139px; /*see above note*/
+	min-height: 100%;
+	margin-bottom: -195px; /* equal to footer height */
+	margin-top: -139px; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
+	padding-top: 139px; /*see above note*/
+	&:after {
+		content: "";
+		display: block;
+	}
 }
+footer,
 .container:after {
-  content: "";
-  display: block;
-}
-footer, .container:after {
   /* .push must be the same height as footer */
   height: 195px;
 }
+
+
 
 footer {
 	margin-top: 20px;
@@ -173,25 +177,25 @@ footer {
 .footer__inner a {
 	border-bottom: none;
 	color: #E5E7EB;
-}
-.footer__inner a:hover {
-	color: white;
+	&:hover {
+		color: white;
+	}
 }
 
 ul#social_icons li a {
-background-image: url('/images/create_social-footer.png');
+	background-image: url('/images/create_social-footer.png');
 }
 
 .footer__inner .footer-links {
 	padding-left: 0px;
 	margin: 0px 0px 30px;
-}
-	.footer__inner .footer-links li {
+	li {
 		display: inline-block;
 		zoom: 1; /*IE7 fix for inline-block */
     	*display: inline; /*IE7 fix for inline-block */
 		margin: 15px 40px 0px 0px;
 	}
+}
 
 
 
@@ -204,7 +208,7 @@ background-image: url('/images/create_social-footer.png');
 .top-nav {
 	background-color: #A1A9BC;
 	width: 100%;
-	border-top: 5px solid #FFC731;
+	border-top: 5px solid $yellow;
 	margin-bottom: 20px;
 }
 
@@ -226,30 +230,28 @@ background-image: url('/images/create_social-footer.png');
     *display: inline;  /*IE7 fix for inline-block */
 	width: 25%;
 	text-align: center;
+	&:hover {
+		background-color: $blue;
+	}
 }
+
+.top-nav .active {
+	background-color: lighten($blue, 10%);
+}
+
 
 .top-nav a {
 	display: block;
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 2;
-	color: #49556d;
+	color: lighten($blue, 10%);
 }
 
-.top-nav .active {
-	background-color: #49556d;
-}
-
-.top-nav li:hover {
-	background-color: #3A4356;
-}
-
-.top-nav li:hover a, .top-nav .active a {
+.top-nav li:hover a,
+.top-nav .active a {
 	color: white;
 }
-
-
-
 
 
 
@@ -264,6 +266,9 @@ background-image: url('/images/create_social-footer.png');
 	margin: 30px 0px;
 	background-color: white;
 	border-right: 1px dotted #b6b8ba;
+	.active {
+		font-weight:bold;
+	}
 }
 
 .sub-menu h1 {
@@ -280,15 +285,12 @@ background-image: url('/images/create_social-footer.png');
 	color: #4560A2;
 	text-decoration: none;
 	line-height: 1.4;
+	&:hover {
+		color: #5f7bbf;
+	}
 }
 
-.sub-menu a:hover {
-	color: #5f7bbf;
-}
 
-.sub-menu .active {
-	font-weight:bold;
-}
 
 .sub-menu__nest {
 	margin-top: 0px !important;
