@@ -1,0 +1,101 @@
+
+
+// HEADER AND FOOTER
+
+
+
+footer, header {
+    background-color: #3a4150;
+}
+.header__inner {
+    position: relative;
+}
+
+.header__inner .logo {
+    padding: 26px 20px 0px 0px;
+    margin: 0px;
+    float: left;
+}
+
+.header__inner .title {
+    max-width: 500px;
+    padding: 26px 0px;
+    margin: auto;
+    text-align: center;
+}
+    .header__inner .title a {
+        font-size: 2.1em;
+        color: white;
+    }
+
+.header__inner .yellow-btn {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+
+@media (max-width: 650px) {
+    .header__inner .title {
+        font-size: .8em;
+        padding-top: 100px;
+    }
+}
+
+
+/* STICKY FOOTER */
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    margin-bottom: -195px; /* equal to footer height */
+    margin-top: -139px; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
+    padding-top: 139px; /*see above note*/
+    &:after {
+        content: "";
+        display: block;
+    }
+}
+footer,
+.container:after {
+  /* .push must be the same height as footer */
+  height: 195px;
+}
+
+
+
+footer {
+    margin-top: 20px;
+}
+
+.footer__inner {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #a1a9bc;
+}
+.footer__inner a {
+    border-bottom: none;
+    color: #E5E7EB;
+    &:hover {
+        color: white;
+    }
+}
+
+ul#social_icons li a {
+    background-image: url('/images/create_social-footer.png');
+}
+
+.footer__inner .footer-links {
+    padding-left: 0px;
+    margin: 0px 0px 30px;
+    li {
+        display: inline-block;
+        zoom: 1; /*IE7 fix for inline-block */
+        *display: inline; /*IE7 fix for inline-block */
+        margin: 15px 40px 0px 0px;
+    }
+}

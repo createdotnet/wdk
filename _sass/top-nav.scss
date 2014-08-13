@@ -1,0 +1,51 @@
+
+
+// Top Navigation Bar
+
+.top-nav {
+    background-color: #A1A9BC;
+    width: 100%;
+    border-top: 5px solid $yellow;
+    margin-bottom: 20px;
+}
+
+.top-nav h1 {
+    margin: 15px 0;
+    color: #4560A2;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    font-size: 0px;
+    margin: auto;
+    padding: 0px;
+}
+
+.top-nav li {
+    display: inline-block;
+    zoom: 1; /*IE7 fix for inline-block */
+    *display: inline;  /*IE7 fix for inline-block */
+    width: 25%;
+    text-align: center;
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.top-nav .active {
+    background-color: lighten($blue, 10%);
+}
+
+
+.top-nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 2;
+    color: lighten($blue, 10%);
+}
+
+.top-nav li:hover a,
+.top-nav .active a {
+    color: white;
+}
