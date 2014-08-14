@@ -12,18 +12,18 @@ The Create WDK offers two possible methods to display your website's menu:
 
 The Menu loops require manually writing whereas the drop down menu tags return a complete `<ul> <li>` levelled structure.
 
-##Menu Loops
+## Menu Loops
 
 To write a menu, we must use `<!--WDK:menu:start-->` with `<!--WDK:menu:end-->` to start and stop the loop. Between these tags we can write the code to be repeated for each menu item.
 
 Using this method we are able to apply our own id's and classes.
 
-####Restrictions
+#### Restrictions
 It is important to note that if you've included `<!--WDK:templateoption:dropdownMenu:[top]-->` the for drop down menus, your menu loop will not be processed.
 
 Also, sub pages, as they are set up on the Create account, will be not be processed as part of the menu. If you wish to use subpages, the Drop Down Menu tags should be used. Alternatively, you could set up the sub page side column item in the Create account, which will show any current sub pages on the website's side menu.
 
-####Example
+#### Example
 In the following example, we are creating a menu loop with a `<ul> <li>` structure.
 
 ~~~
@@ -42,7 +42,7 @@ In the following example, we are creating a menu loop with a `<ul> <li>` structu
 </nav>
 ~~~
 
-In our loop we are using `<!--WDK:menu:id-->` to obtain a unique id for each menu item. `<!--WDK:menu:link-->` is used to provide the URL for the menu item and `<!--WDK:menu:text-->` is used to to display the text for each menu item. 
+In our loop we are using `<!--WDK:menu:id-->` to obtain a unique id for each menu item. `<!--WDK:menu:link-->` is used to provide the URL for the menu item and `<!--WDK:menu:text-->` is used to to display the text for each menu item.
 
 If there were 5 items in the menu: Home, About, Shop, Services & Contact, the markup would be returned like this:
 
@@ -78,8 +78,8 @@ If there were 5 items in the menu: Home, About, Shop, Services & Contact, the ma
 </nav>
 ~~~
 
-####Further Usage
-There are a few extra conditional tags which can allow for further functionality and styling. Using `<!--WDK:if:firstMenuItem-->` we can determine if the current menu item in the loop is the first. We can also do the same for the last item in the menu with `<!--WDK:if:lastMenuItem-->`. 
+#### Further Usage
+There are a few extra conditional tags which can allow for further functionality and styling. Using `<!--WDK:if:firstMenuItem-->` we can determine if the current menu item in the loop is the first. We can also do the same for the last item in the menu with `<!--WDK:if:lastMenuItem-->`.
 
 Another useful conditional tag is `<!--WDK:if:currentMenuItem-->`. This tag can be used to check if the current menu item in the loop, is the current page being viewed.
 In the example below we're using these checks to apply additional classes to the `<li>`.
@@ -148,12 +148,12 @@ So, as before, for example there are 5 items in the menu and if the user is now 
 </nav>
 ~~~
 
-####Example Usage of Additional Classes
+#### Example Usage of Additional Classes
 
 We can use these additional classes to help style the menu.
-In the following styling we are floating the menu items left so that they display inline. We have also created a left border to look like a separator between the menu text. 
+In the following styling we are floating the menu items left so that they display inline. We have also created a left border to look like a separator between the menu text.
 
-The class "first" removes the left border on the first item, so that the borders/separators only appear between each item. 
+The class "first" removes the left border on the first item, so that the borders/separators only appear between each item.
 
 The class "current" changes the background colour and text colour, indicating which menu item page the user is currently viewing.
 
@@ -178,17 +178,17 @@ The class "current" changes the background colour and text colour, indicating wh
 </style>
 ~~~
 
-##Drop Down Menus
+## Drop Down Menus
 
-The other method of creating menus is using the drop down menu tags. 
+The other method of creating menus is using the drop down menu tags.
 
-You'll only need 3 tags and these include all of the markup required. 
+You'll only need 3 tags and these include all of the markup required.
 
 Firstly you need to insert 2 tags into your `<head>`. You will need to include jQuery using `<!--WDK:javascript:jquery-->` (which you could do from an external source if you so wish) and `<!--WDK:templateoption:dropdownMenu:[top]-->`.
 
 The final tag you will need to use is `<!--WDK:display:navigation-->` which should be placed where you require your menu to appear.
 
-####Example
+#### Example
 
 ~~~
 <head>
@@ -242,8 +242,8 @@ If there were 5 items in the menu: Home, About, Services, Shop & Contact, with S
 </nav>
 ~~~
 
-####How Drop Down Menus Work
-Drop down menus work by placing the second `<ul>` within it's parent `<li>`, using CSS to hide and reveal them on hover states. 
+#### How Drop Down Menus Work
+Drop down menus work by placing the second `<ul>` within it's parent `<li>`, using CSS to hide and reveal them on hover states.
 
 For a basic example:
 
@@ -271,16 +271,18 @@ ul li {
 ~~~
 
 As the second level menu is placed within the `<li>` it can be styled with the following:
+
 ~~~
 ul li ul {
 }
 
 ul li ul li {
-  
+
 }
 ~~~
 
 To hide our submenu initially, lets use the CSS property display:none.
+
 ~~~
 ul li ul {
   display:none;
@@ -290,6 +292,7 @@ ul li ul li {
 ~~~
 
 We can then make use of the CSS :hover selector to display the hidden `<ul>`.
+
 ~~~
 ul li ul {
   display:none;
@@ -306,7 +309,7 @@ When the user is hovering over the `<li>` containing the `<ul>`, it will be disp
 Thats the basic principle into displaying drop down menus. You will also need to use some positioning properties to style your menus, but this will be unique to each design.
 
 
-####Useful Classes
+#### Useful Classes
 
 The first level of menu `<ul>` are given the following classes: wdk_menu-ul and wdk_tier_1, and should be styled with:
 
@@ -355,7 +358,7 @@ ul li ul li.wdk_level_2 {
 }
 ~~~
 
-##Links & Further Reading
+## Links & Further Reading
 
 - Tag: `<!--WDK:menu:start-->`
 - Tag: `<!--WDK:menu:id-->`

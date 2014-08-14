@@ -1,11 +1,11 @@
 {% include head.html %}
 {% include top-navigation-bars.html %}
-<div class="container">
+<div class="inner-constraint page-content">
 
-    <nav class="sub-menu">
+    <nav class="side-menu">
     	{% assign group = 'Getting Started' %}
       	<h2>{{group}}</h2> {% comment %}display name of group as text{% endcomment %}
-        
+
         <ul>
             {% assign sorted_pages = site.pages | sort:"name" %}  {% comment %}sorts by file name {% endcomment %}
             {% for node in sorted_pages %}

@@ -1,14 +1,13 @@
-<header>
-  <div class="header__inner">
+<header class="header">
+  <div class="inner-constraint">
 
-        <div class="logo">
-          <a href="/"><img src="/images/logo.png" title="Create Ecommerce" alt="Create Ecommerce" width="152" height="32"></a>
-        </div>
+    <div class="logo">
+      <a href="/"><img src="/images/logo.png" title="Create Ecommerce" alt="Create Ecommerce" width="152" height="32"></a>
+    </div>
 
-        <h1 class="title"><a href="/">Web Designer's Kit Documentation</a></h1>
-        <a class="yellow-btn" href="https://login.create.net/login.phtml">Login</a>
+    <h1 class="title"><a href="/">Web Designer's Kit Documentation</a></h1>
+    <a class="btn btn--login" href="https://login.create.net/login.phtml">Login</a>
 
- 
   </div>
 </header>
 
@@ -16,8 +15,8 @@
 
 <!-- When updating or changing these links, remeber to change both the 'if' and the 'else' address. They should always be the same! -->
 <nav class="top-nav">
-  <ul>
-    
+  <ul class="inner-constraint">
+
     {% if page.url  contains "pages/getting_started" %}
         <li class="active"><a href="/pages/getting_started/01before-you-start.html">Getting Started</a></li>
         {% else %}
@@ -41,8 +40,6 @@
         {% else %}
         <li><a href="/pages/support/">Support</a></li>
     {% endif %}
-    
+
   </ul>
 </nav>
-
-

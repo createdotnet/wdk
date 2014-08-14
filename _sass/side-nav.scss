@@ -3,51 +3,57 @@
 // Side Navigation Bar
 
 
-.sub-menu {
+.side-menu {
     float: left;
     width: 25%;
     padding: 0px 5px 0px 10px;
     margin: 30px 0px;
     background-color: white;
-    border-right: 1px dotted #b6b8ba;
-    .active {
-        font-weight:bold;
-    }
+    border-right: 1px dotted $body-text-colour;
 }
 
-.sub-menu h1 {
-    margin: 15px 0;
-    color: #4560A2;
-}
 
-.sub-menu ul {
+.side-menu ul {
     list-style-type: none;
     margin-top: 20px;
 }
 
-.sub-menu a {
-    color: #4560A2;
+.side-menu {
+
+  h2 {
+      margin: 15px 0;
+      color: $body-text-colour;
+  }
+
+  a {
+    color: $blue;
     text-decoration: none;
     line-height: 1.4;
     &:hover {
-        color: #5f7bbf;
+        color: lighten($blue, 20%);
     }
+  }
+
+  .active a {
+      font-weight:bold;
+  }
+
 }
 
 
-
-.sub-menu__nest {
+.side-menu__nest {
     margin-top: 0px !important;
     margin-left: 20px;
     margin-bottom: 5px;
 }
 
-details summary::-webkit-details-marker { 
-    display:none; 
+// Remove the browser default drop down marker
+details summary::-webkit-details-marker {
+    display:none;
 }
 
 details summary {
-    color: #4560A2;
+    color: $blue;
     cursor: pointer;
     outline: none;
 }
