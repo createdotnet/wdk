@@ -3,9 +3,9 @@
 // Top Navigation Bar
 
 .top-nav {
-    background-color: #A1A9BC;
-    border-top: 5px solid $yellow;
-    margin-bottom: 20px;
+  position: relative;
+  background-color: lighten($header-background-color, 30%);
+  border-top: 5px solid $yellow;
 }
 
 .top-nav ul {
@@ -22,7 +22,7 @@
     &:hover {
         background-color: $blue;
         a {
-            color: white;
+            color: $header-text-color;
         }
     }
 }
@@ -30,7 +30,7 @@
 .top-nav .active {
     background-color: lighten($blue, 10%);
     a {
-      color: white;
+      color: $header-text-color;
     }
 }
 

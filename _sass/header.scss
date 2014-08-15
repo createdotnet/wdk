@@ -1,43 +1,40 @@
 
-
 // HEADER AND FOOTER
 
-
-
-footer, header {
-    background-color: #3a4150;
-}
-.header .inner-constraint {
-    position: relative;
+.header {
+  position: relative;
+  background-color: $header-background-color;
+  height: $header-height;
 }
 
-.header .inner-constraint .logo {
-    padding: 26px 20px 0px 0px;
-    margin: 0px;
-    float: left;
+.header .logo {
+  padding: 26px 20px 0px 0px;
+  margin: 0px;
+  float: left;
 }
 
-.header .inner-constraint .title {
+.header .title {
     max-width: 500px;
     padding: 26px 0px;
     margin: auto;
     text-align: center;
-}
-    .header .inner-constraint .title a {
-        color: white;
+    a {
+        color: $header-text-color;
         text-decoration: none;
     }
-
-.header .inner-constraint .yellow-btn {
-    position: absolute;
-    top: 25px;
-    right: 20px;
 }
 
-
 @media (max-width: 650px) {
-    .header .inner-constraint .title {
+    .header .title {
         font-size: .8em;
         padding-top: 100px;
     }
+}
+
+
+// Login Button
+.header .btn--login {
+    position: absolute;
+    top: 25px;
+    right: 20px;
 }

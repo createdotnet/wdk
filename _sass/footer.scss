@@ -1,46 +1,19 @@
 
 // FOOTER
 
-
-/* STICKY FOOTER */
-
-html,
-body {
-    height: 100%;
-}
-
-.container {
-    min-height: 100%;
-    margin-bottom: -195px; /* equal to footer height */
-    margin-top: -139px; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
-    padding-top: 139px; /*see above note*/
-    &:after {
-        content: "";
-        display: block;
-    }
-}
-footer,
-.container:after {
-  /* .push must be the same height as footer */
-  height: 195px;
-}
-
-
-
 .footer {
-    margin-top: 20px;
-}
-
-.footer .inner-constraint {
+  background-color: $header-background-color;
+  .inner-constraint {
     padding-top: 15px;
     padding-bottom: 10px;
     color: #a1a9bc;
+  }
 }
 .footer .inner-constraint a {
     border-bottom: none;
-    color: #E5E7EB;
+    color: $body-text-colour;
     &:hover {
-        color: white;
+        color: $header-text-color;
     }
 }
 
@@ -57,4 +30,24 @@ ul#social_icons li a {
         *display: inline; /*IE7 fix for inline-block */
         margin: 15px 40px 0px 0px;
     }
+}
+
+
+// STICKY FOOTER
+html, body { height: 100%;}
+
+.page-content {
+    min-height: 100%;
+    margin-bottom: -$footer-height !important; /* equal to footer height */
+    margin-top: -$header-height !important; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
+    padding-top: $header-height + $base-spacing-unit !important; /*see above note*/
+    &:after {
+        content: "";
+        display: block;
+    }
+}
+.footer,
+.page-content:after {
+  /* .push must be the same height as footer */
+  height: $footer-height;
 }

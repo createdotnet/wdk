@@ -1,9 +1,24 @@
 ---
 ---
+
+// COLOURS
 $blue: #3a4150;
 $yellow: #FFC731;
 $body-text-colour: #7b7c7f;
+$content-background-colour: white;
+$body-background-colour: white;
+$header-background-color: $blue;
+$header-text-color: white;
 
+// SIZING
+$base-spacing-unit: 20px;
+
+$side-menu-width: 25%;
+$header-height: 140px;
+$footer-height: 195px;
+
+
+// IMPORTS
 @import "prism.scss";
 
 @import "header.scss";
@@ -18,8 +33,8 @@ $body-text-colour: #7b7c7f;
 	padding: 0px;
 	margin: 0px;
 	-moz-box-sizing:    border-box;
-    -webkit-box-sizing: border-box;
-     box-sizing:        border-box;
+  -webkit-box-sizing: border-box;
+   box-sizing:        border-box;
 }
 
 header, section, footer, aside, nav, main, article, figure, details, summary, blockquote {
@@ -32,10 +47,10 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.9em;
 	color: $body-text-colour;
+	background-color: $body-background-colour;
 }
 
 .inner-constraint {
-	width: 100%;
 	max-width: 980px;
 	min-width: 480px;
 	margin: auto;
@@ -43,12 +58,14 @@ body {
 }
 
 
-
+.page-content {
+	background-color: $content-background-colour;
+	padding-bottom: $base-spacing-unit * 2;
+}
 main {
-	margin-left: 25%;
-	padding-left: 20px;
-	padding-top: 20px;
-	padding-bottom: 50px;
+	margin-left: $side-menu-width;
+
+	padding-left: $base-spacing-unit;
 }
 
 img {
@@ -80,7 +97,7 @@ ul { list-style-type: none; }
 
 .container ol,
 .container ul {
-	padding-left: 20px;
+	padding-left: $base-spacing-unit;
 }
 
 
@@ -123,9 +140,7 @@ hr {
 .support {
 	max-width: 700px;
 }
-.support .page-header {
-	margin: 40px 0px 20px;
-}
+
 
 .copyright {
 	float: left;
