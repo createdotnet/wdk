@@ -3,9 +3,11 @@
 // Top Navigation Bar
 
 .top-nav {
-  position: relative;
+  position: absolute;
   background-color: lighten($header-background-color, 30%);
   border-top: 5px solid $yellow;
+  bottom: 0;
+  width: 100%;
 }
 
 .top-nav ul {

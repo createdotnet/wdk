@@ -60,11 +60,12 @@ body {
 
 .page-content {
 	background-color: $content-background-colour;
+	padding-top: $base-spacing-unit;
 	padding-bottom: $base-spacing-unit * 2;
 }
+
 main {
 	margin-left: $side-menu-width;
-
 	padding-left: $base-spacing-unit;
 }
 
