@@ -1,41 +1,44 @@
 <div class="sticky-footer-helper">
-<header class="header">
 
-    <div class="header__logo">
-      <a href="/"><img src="images/logo.png" title="Create Ecommerce" alt="Create Ecommerce" width="152" height="32"></a>
-    </div>
+    <header class="header">
 
-    <h1 class="title"><a href="/">Web Designer's Kit Documentation</a></h1>
-    <a class="btn btn--login" href="https://login.create.net/login.phtml">Login</a>
+        <div class="header__logo">
+          <a href="/"><img src="/images/logo.png" title="Create Ecommerce" alt="Create Ecommerce"></a>
+        </div>
 
-  <!-- When updating or changing these links, remeber to change both the 'if' and the 'else' address. They should always be the same! -->
-  <nav class="top-nav">
-    <ul>
+        <a href="/"><h1 class="title">Web Designer's Kit Documentation</h1></a>
+        <a class="btn btn--login" href="https://login.create.net/login.phtml">Login</a>
 
-      {% if page.url  contains "pages/getting_started" %}
-          <li class="active"><a href="/pages/getting_started/01before-you-start.html">Getting Started</a></li>
-          {% else %}
-          <li><a href="/pages/getting_started/01before-you-start.html">Getting Started</a></li>
-      {% endif %}
+    </header>
 
-      {% if page.url  contains "pages/tutorials" %}
-          <li class="active"><a href="/pages/tutorials/index.html">Tutorials</a></li>
-          {% else %}
-          <li><a href="/pages/tutorials/index.html">Tutorials</a></li>
-      {% endif %}
+    <div class="inner-constraint">
+        <!-- When updating or changing these links, remeber to change both the 'if' and the 'else' address. They should always be the same! -->
+        <nav class="top-nav">
+            <ul>
 
-      {% if page.url  contains "pages/glossary" %}
-          <li class="active"><a href="/pages/glossary/index.html">Glossary</a></li>
-          {% else %}
-          <li><a href="/pages/glossary/index.html">Glossary</a></li>
-      {% endif %}
+              {% if page.url  contains "pages/getting_started" %}
+                  <li class="active"><a href="/pages/getting_started/01before-you-start.html">Getting Started</a></li>
+                  {% else %}
+                  <li><a href="/pages/getting_started/01before-you-start.html">Getting Started</a></li>
+              {% endif %}
 
-      {% if page.url  contains "pages/support" %}
-          <li class="active"><a href="/pages/support/index.html">Support</a></li>
-          {% else %}
-          <li><a href="/pages/support/index.html">Support</a></li>
-      {% endif %}
+              {% if page.url  contains "pages/tutorials" %}
+                  <li class="active"><a href="/pages/tutorials/index.html">Tutorials</a></li>
+                  {% else %}
+                  <li><a href="/pages/tutorials/index.html">Tutorials</a></li>
+              {% endif %}
 
-    </ul>
-  </nav>
-</header>
+              {% if page.url  contains "pages/glossary" %}
+                  <li class="active"><a href="/pages/glossary/index.html">Glossary</a></li>
+                  {% else %}
+                  <li><a href="/pages/glossary/index.html">Glossary</a></li>
+              {% endif %}
+
+              {% if page.url  contains "pages/support" %}
+                  <li class="active"><a href="/pages/support/index.html">Support</a></li>
+                  {% else %}
+                  <li><a href="/pages/support/index.html">Support</a></li>
+              {% endif %}
+
+            </ul>
+        </nav>

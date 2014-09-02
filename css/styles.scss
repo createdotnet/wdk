@@ -13,10 +13,12 @@ $yellow: #FFC731;
 $content-background-colour: white;
 //Body colours
 $body-text-colour: #7b7c7f;
-$body-background-colour: $warm-grey;
+$body-background-colour: lighten($warm-grey,3%);
 // Header colours
 $header-background-color: $charcoal;
 $header-text-color: white;
+
+$footer-background-color: $warm-grey;
 
 
 // Spacing
@@ -24,7 +26,7 @@ $base-spacing-unit: 20px;
 
 // Heights and Widths
 $side-menu-width: 25%;
-$header-height: 140px;
+$header-height: 80px;
 $footer-height: 195px;
 
 
@@ -71,7 +73,9 @@ body {
 .page-content {
 	background-color: $content-background-colour;
 	padding-top: $base-spacing-unit;
+	padding-right: $base-spacing-unit;
 	padding-bottom: $base-spacing-unit * 2;
+	padding-left: $base-spacing-unit;
 }
 
 main {

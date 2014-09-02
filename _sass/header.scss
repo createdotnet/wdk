@@ -5,32 +5,31 @@
   position: relative;
   background-color: $header-background-color;
   height: $header-height;
+    a {
+        text-decoration: none;
+    }
 }
 
 .header__logo {
   padding: 0;
   margin: 0;
-  height: 100%;
   width: 174px;
+  height: 100%;
   float: left;
   background-color: $electric-blue;
 }
 .header__logo img {
     margin: auto;
     display: block;
-    margin-top: 35px;
+    margin-top: 24px;
 }
 
 .header .title {
-    max-width: 500px;
-    padding: 26px 0px;
+    padding: 20px 0px;
     padding-left: 174px;
     margin: auto;
     text-align: center;
-    a {
-        color: $header-text-color;
-        text-decoration: none;
-    }
+    color: $header-text-color;
 }
 
 @media (max-width: 650px) {
