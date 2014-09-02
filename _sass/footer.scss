@@ -3,25 +3,16 @@
 
 .footer {
   background-color: $header-background-color;
-  .inner-constraint {
-    padding-top: 15px;
-    padding-bottom: 10px;
-    color: #a1a9bc;
-  }
+  padding: 20px;
 }
-.footer .inner-constraint a {
-    border-bottom: none;
+.footer a {
     color: $body-text-colour;
     &:hover {
         color: $header-text-color;
     }
 }
 
-ul#social_icons li a {
-    background-image: url('/images/create_social-footer.png');
-}
-
-.footer .inner-constraint .footer-links {
+.footer-links {
     padding-left: 0px;
     margin: 0px 0px 30px;
     li {

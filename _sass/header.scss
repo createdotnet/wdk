@@ -7,15 +7,24 @@
   height: $header-height;
 }
 
-.header .logo {
-  padding: 26px 20px 0px 0px;
-  margin: 0px;
+.header__logo {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 174px;
   float: left;
+  background-color: $electric-blue;
+}
+.header__logo img {
+    margin: auto;
+    display: block;
+    margin-top: 35px;
 }
 
 .header .title {
     max-width: 500px;
     padding: 26px 0px;
+    padding-left: 174px;
     margin: auto;
     text-align: center;
     a {
