@@ -2,14 +2,18 @@
 // FOOTER
 
 .footer {
-  background-color: $footer-background-color;
-  padding: 20px;
-}
-.footer a {
-    color: $body-text-colour;
-    &:hover {
-        color: $header-text-color;
+    background-color: $footer-background-color;
+    padding: 20px;
+    a {
+        color: $body-text-colour;
+        &:hover {
+            color: $header-text-color;
+        }
     }
+    .copyright {
+        float: left;
+    }
+
 }
 
 .footer-links {

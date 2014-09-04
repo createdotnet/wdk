@@ -4,20 +4,16 @@
 
 
 .side-menu {
-    float: left;
-    width: $side-menu-width;
-    padding: 0px 5px 0px 10px;
-    margin: 30px 0px;
-    border-right: 1px dotted $body-text-colour;
-}
-
-
-.side-menu ul {
-    list-style-type: none;
-    margin-top: 20px;
-}
-
-.side-menu {
+  float: left;
+  width: $side-menu-width;
+  border-right: 1px dotted $body-text-colour;
+  padding: 0px 5px 0px 10px;
+  @media (max-width: 670px) {
+    float: none;
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
 
   h2 {
       margin: 15px 0;
@@ -25,22 +21,30 @@
   }
 
   a {
-    color: $blue;
+    color: $charcoal;
     text-decoration: none;
     line-height: 1.4;
     &:hover {
-        color: lighten($blue, 20%);
+        color: lighten($charcoal, 20%);
     }
   }
 
   .active a {
-      font-weight:bold;
+      font-weight: bold;
   }
 
 }
 
+main {
+  margin-left: $side-menu-width;
+  padding-left: $base-spacing-unit;
+  @media (max-width: 670px) {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
 
-.side-menu__nest {
+.sub-menu__nest {
     margin-top: 0px !important;
     margin-left: 20px;
     margin-bottom: 5px;
@@ -52,7 +56,7 @@ details summary::-webkit-details-marker {
 }
 
 details summary {
-    color: $blue;
+    color: $charcoal;
     cursor: pointer;
     outline: none;
 }

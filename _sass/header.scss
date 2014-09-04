@@ -4,45 +4,40 @@
 .header {
   position: relative;
   background-color: $header-background-color;
-  height: $header-height;
     a {
         text-decoration: none;
     }
 }
 
-.header__logo {
-  padding: 0;
-  margin: 0;
-  width: 174px;
-  height: 100%;
-  float: left;
-  background-color: $electric-blue;
+.header__logo,
+.header__button {
+  position: absolute;
+  top: 20px;
 }
-.header__logo img {
+.header__logo {
+  left: 20px;
+  img {
     margin: auto;
     display: block;
-    margin-top: 24px;
+  }
+}
+.header__button {
+  right: 20px;
 }
 
-.header .title {
+
+.header__title {
     padding: 20px 0px;
-    padding-left: 174px;
-    margin: auto;
     text-align: center;
-    color: $header-text-color;
-}
-
-@media (max-width: 650px) {
-    .header .title {
-        font-size: .8em;
-        padding-top: 100px;
+    width: 100%;
+    a {
+      color: $header-text-color;
+    }
+    @media (max-width: 850px) {
+      font-size: 1.5em;
+      padding-top: 70px;
     }
 }
 
 
-// Login Button
-.header .btn--login {
-    position: absolute;
-    top: 25px;
-    right: 20px;
-}
+

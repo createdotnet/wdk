@@ -1,10 +1,15 @@
 {% include head.html %}
 {% include top-navigation-bars.html %}
+
+<div class="page-header">
+    <h2 class="page-title">{{ page.title }}</h2>
+</div>
+
 <div class="page-content">
 
     <nav class="side-menu">
-    	{% assign group = 'Getting Started' %}
-      	<h2>{{group}}</h2> {% comment %}display name of group as text{% endcomment %}
+        {% assign group = 'Getting Started' %}
+        <h2>{{group}}</h2> {% comment %}display name of group as text{% endcomment %}
 
         <ul>
             {% assign sorted_pages = site.pages | sort:"name" %}  {% comment %}sorts by file name {% endcomment %}
@@ -20,21 +25,9 @@
         </ul>
     </nav>
 
-
     <main>
-                {% if page.last-updated == '00-00-0000' %}
-                    <br>
-                    <br>
-                    {% else %}
-                    <div class="page-header">
-                        <h2 class="page-title">{{ page.title }}</h2>
-                        <p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
-                        <hr>
-                    </div>
-                {% endif %}
-
         {{ content }}
-
+        <p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
     </main>
 
 </div> <!-- end container -->
