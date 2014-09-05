@@ -40,10 +40,12 @@
 html, body { height: 100%;}
 
 .sticky-footer-helper {
+    background: white;
+    max-width: 1400px;
+    margin: auto;
+
     min-height: 100%;
     margin-bottom: -$footer-height !important; /* equal to footer height */
-    // margin-top: -$header-height !important; /*this is because the header and nav bar are not inside the container and are pushing the footer down by their height*/
-    // padding-top: $header-height + $base-spacing-unit !important; /*see above note*/
     &:after {
         content: "";
         display: block;
