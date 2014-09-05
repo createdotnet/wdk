@@ -5,16 +5,16 @@ group: Customisation
 last-updated: 08-03-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:bodybg-->`
 
-##Description
+## Description
 
 Return `#<HEX>`
 Use this tag to return a hex value of the body background colour as specified on the "Colours" section on your Create "Design" screen.
 
-##Example
+## Example
 
 In this example we're using the tag to set the `<body>` background colour using CSS set in the `<head>`.
 

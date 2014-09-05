@@ -5,15 +5,15 @@ group: Customisation
 last-updated: 08-03-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:font-->`
 
-##Description
+## Description
 
 Use this tag to return the font specified on the "Font" section on your Create "Design" screen.
 
-##Example
+## Example
 
 In this example we're using the tag to set the font family of the `<body>` tag using CSS set in the `<head>`.
 

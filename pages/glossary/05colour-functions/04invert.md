@@ -5,11 +5,11 @@ group: Colour Functions
 last-updated: 12-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:color:invert:colour-->`
 
-##Description
+## Description
 
 Return = `#<HEX>`
 This tag creates a inverted colour version to your specified colour.
@@ -26,7 +26,7 @@ You can do this with any of the following variables:
 - menubg - Menu Background
 - menutxt - Menu Text
 
-##Example
+## Example
 
 In the example below we are using Create's dynamic colours. We are using `bodybg` to generate an inverted colour to use with heading tags. 
 

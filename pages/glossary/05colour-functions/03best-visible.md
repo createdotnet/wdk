@@ -5,11 +5,11 @@ group: Colour Functions
 last-updated: 12-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:color:bestvisible:colour-->`
 
-##Description
+## Description
 
 This tag creates a colour that will be easiest to see when placed over the specifed colour.
 
@@ -23,7 +23,7 @@ You can do this with any of the following variables:
 - menubg - Menu Background
 - menutxt - Menu Text
 
-##Example
+## Example
 
 In the example below we are using Create's dynamic colours. We are using the `pagebg` to generate the best visible colour for use with heading tags.
 

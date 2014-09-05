@@ -5,11 +5,11 @@ group: Colour Functions
 last-updated: 12-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:color:brighten:colour:amount-->`
 
-##Description
+## Description
 
 Return = `#<HEX>`
 This tag create's a brighter version of a colour by a specified amount.
@@ -26,7 +26,7 @@ You can do this with any of the following variables:
 
 Then the "amount" is an intensity level between 1 and 255 to select the brightness increase of the colour.
 
-##Example
+## Example
 
 In the example below we are using Create's dynamic colours. We are using the `bodybg` to generate a brighter colour we can use to set borders on images.
 

@@ -5,11 +5,11 @@ group: Colour Functions
 last-updated: 12-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:color:darken:colour:amount-->`
 
-##Description
+## Description
 
 This tag creates a darker version of a colour by a specified amount.
 
@@ -25,7 +25,7 @@ You can do this with any of the following variables:
 
 Then the "amount" is an intensity level between 1 and 255 to select the darkness increase of the colour.
 
-##Example
+## Example
 
 In the example below we are using Create's dynamic colours. We are using the `bodylink` to generate a darker colour to use as a border.
 

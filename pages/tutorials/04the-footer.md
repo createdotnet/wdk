@@ -108,6 +108,7 @@ The following code generates the form element with a input and submit button. Fe
 
 #### Copyright
 This outputs plain text - "&copy; [company name] 20[XX]". Again, this is contained in an if statement so that it only displays when the users has enabled it.
+
 ~~~
 <!--WDK:if:copyrightEnabled-->
   <!--WDK:display:copyright-->
