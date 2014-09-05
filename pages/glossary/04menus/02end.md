@@ -5,18 +5,18 @@ group: Menus
 last-updated: 13-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:menu:end-->`
 
-##Description
+## Description
 
  This tag is used to end a menu loop. You must use this if you have used the `<!--WDK:menu:start-->` tag.
 
 Pseudo Equivalent:
 `}`
 
-##Example
+## Example
 
 In the following example we are closing the loop tag.
 

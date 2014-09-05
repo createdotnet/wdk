@@ -5,15 +5,15 @@ group: Side Columns
 last-updated: 14-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:column:item:start-->`
 
-##Description
+## Description
 
 This tag starts the side column item loop. This must be used with <!--WDK:column:item:end-->. Between these tags you can create the structure for a side column item, this will then be applied to all side column items.
 
-##Example
+## Example
 
 In the example below the tag starts off the loop for repeating items.
 

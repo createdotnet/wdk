@@ -5,15 +5,15 @@ group: Menus
 last-updated: 13-02-2013
 ---
 
-###Tag
+### Tag
 
 `<!--WDK:menu:text-->`
 
-###Description
+### Description
 
 This tag returns the text of the current menu item within the loop.
 
-###Example
+### Example
 
 In the following example we are using the tag to display each menu items text within a link.
 

@@ -17,9 +17,9 @@ For each of these tag you may use a hex colour, or a colour variable. The colour
 - menubg - Menu background colour
 - menutxt - Menu text colour
 
-##Tags
+## Tags
 
-####Tint
+#### Tint
 This tag returns a hex reference that is a mix of colour1 and colour 2 at amount % (0 - 100).
 
 `<!--WDK:color:tint:colour1:colour2:amount-->`
@@ -37,7 +37,7 @@ This tag could be used for heading titles, mixing the text and background colour
 </style>
 ~~~
 
-####Highlight
+#### Highlight
 
 This tag returns a hex reference that is a highlighted version of a colour by a specified amount. If the supplied colour can't be highlighted by the specified amount, it will be darkened instead. Amount should be integer between 0 - 255.
 
@@ -55,7 +55,7 @@ This tag could be useful for creating highlighted hover states for links.
 </style>
 ~~~
 
-####Invert
+#### Invert
 
 This tag returns a hex reference that is an inverted version of the supplied colour.
 
@@ -73,7 +73,7 @@ This tag is useful for generating colours that stand out. Here we're using it fo
 </style>
 ~~~
 
-####Brighten
+#### Brighten
 
 This tag returns a hex reference that is a brighten version of supplied colour. Amount should be integer between 0 - 255.
 
@@ -92,7 +92,7 @@ This tag could be used to create an outer glow around links.
 Please note 'text-shadow' is a CSS3 property and is currently not supported in Internet Explorer.
 
 
-####Darken
+#### Darken
 
 This tag returns a hex reference that is a darkened version of supplied colour. Amount should be integer between 0 - 255.
 
@@ -110,7 +110,7 @@ This tag could be used to create a drop shadow on headings.
 
 Please note 'text-shadow' is a CSS3 property and is currently not supported in Internet Explorer.
 
-####Best Visible
+#### Best Visible
 
 This tag returns a hex reference that is the bets visible colour for reading text on the supplied colour.
 
@@ -126,7 +126,7 @@ If in your template you only allow the user to select a background colour, this 
 </style>
 ~~~
 
-###Links & Further Reading
+### Links & Further Reading
 
 - Tag: `<!--WDK:color:tint-->`
 - Tag: `<!--WDK:color:highlight-->`

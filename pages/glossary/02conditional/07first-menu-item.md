@@ -6,11 +6,11 @@ last-updated: 31-07-2013
 ---
 
 
-##Tag
+## Tag
 
 `<!--WDK:if:firstMenuItem-->`
 
-##Description
+## Description
 This conditional tag checks to see if the current menu item (within the menu loop) is the first item.
 
 For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
@@ -18,7 +18,7 @@ For more information, [please see the tutorial on conditional tags here.](/pages
 Pseudo Equivalent:
 `if ( menuitem.id == 1 ) {`
 
-##Example
+## Example
 In the following example we have created 1px borders on the left of each menu item as a seperator. We are using the tag to apply another class to the first menu item which removes the left border.
 
 ~~~

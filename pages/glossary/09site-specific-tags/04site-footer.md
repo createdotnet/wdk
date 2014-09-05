@@ -5,15 +5,15 @@ group: Site Specific Tags
 last-updated: 31-07-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:sitefooter-->`
 
-##Description
+## Description
 
 This tag returns the "Footer" which can be found on the "Edit Site Information" screen from within your Create account.
 
-##Example
+## Example
 
 In this example we output the 'Site Footer' within a designated div.
 

@@ -5,16 +5,16 @@ group: Basics
 last-updated: 31-07-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:header:start-->`
 
-##Description
+## Description
 
 This is a required tag that starts the header section of your template.
 For more information, please see the [header tutorial](pages/tutorials/08the-header.html).
 
-##Example
+## Example
 
 ~~~
 <!--WDK:header:start-->

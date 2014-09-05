@@ -5,16 +5,16 @@ group: Menus
 last-updated: 01-03-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:shopCategoryList:levels-->`
 
-##Description
+## Description
 
 Returns a full html `<ul> <li>` structure of the shop category menus. This is great for doing drop-down shop menus.
 Please note that "levels" is an optional permateter. 
 
-##Example
+## Example
 
 This tag returns the shop category menu in the following format:
 

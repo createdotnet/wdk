@@ -19,7 +19,7 @@ PHP equivalent:
 if () {<br />} else {<br />}
 ~~~
 
-##Usage
+## Usage
 
 Here is a list of the ways you may use our tags and their pseudo equivalents.
 
@@ -60,7 +60,7 @@ if (!statement) {
 }
 ~~~
 
-##Complete Conditional Tag List
+## Complete Conditional Tag List
 
 - Tag: `<!--WDK:if:pageFilenameIs:value-->`
 - Tag: `<!--WDK:if:pageFilenameStartsWith:value-->`
@@ -78,7 +78,7 @@ if (!statement) {
 - Tag: `<!--WDK:else-->`
 - Tag: `<!--WDK:endif-->`
 
-##Website User Conditional Tags
+## Website User Conditional Tags
 
 The following tags are used to check if a user is logged in. These tags cannot be closed with the above `<!--WDK:else-->` and `<!--WDK:endif-->`tags.
 - Tag: `<!--WDK:isloggedin:start-->`

@@ -5,15 +5,15 @@ group: Basics
 last-updated: 07-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:editor:linkcolor:#value-->`
 
-##Description
+## Description
 
 Use this tag to preset the link colour on Create's Design screen.
 
-##Example
+## Example
 
 ~~~
 <!--WDK:editor:linkcolor:#FF0000-->

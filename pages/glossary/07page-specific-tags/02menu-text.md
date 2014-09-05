@@ -5,16 +5,16 @@ group: Page Specific Tags
 last-updated: 08-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:menutext-->`
 
-##Description
+## Description
 
 Use this tag to return the current page's menu text as defined on the "Page Options" screen.
 
 
-##Example
+## Example
 
 In this example we're using the tag to display the viewers current location.
 

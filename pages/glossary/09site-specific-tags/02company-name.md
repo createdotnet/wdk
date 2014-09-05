@@ -5,15 +5,15 @@ group: Site Specific Tags
 last-updated: 07-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:company_name-->`
 
-##Description
+## Description
 
 Use this tag to display your company name as set on the "Edit Site Information" screen from within your Create accout.
 
-##Example
+## Example
 
 In this example, we use the tag to display the company name in a HTML heading.
 

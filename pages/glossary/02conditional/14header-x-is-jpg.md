@@ -6,11 +6,11 @@ last-updated: 03-03-2013
 ---
 
 
-##Tag
+## Tag
 
 `<!--WDK:if:headerX:isJpg-->`
 
-##Description
+## Description
 
 This conditional tag checks to see if headerX (header3, header4) is a jpg file.
 
@@ -19,7 +19,7 @@ For more information, [please see the tutorial on conditional tags here.](/pages
 Pseudo Equivalent:
 `if ( headerX.type == "jpg" ) {`
 
-##Example
+## Example
 In the following example we are using the tag to determine if header 3 is a jpg file, then if it is it will show as an image in the header area.
 
 ~~~

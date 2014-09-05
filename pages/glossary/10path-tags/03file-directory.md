@@ -5,15 +5,15 @@ group: Path Tags
 last-updated: 07-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:path:file-->`
 
-##Description
+## Description
 
 Use this tag to retreive the full relative path to your uploaded files directory.
 
-##Example
+## Example
 
 In this example we're using the tag to link to a download of a PDF named 'priceguide.pdf' that was uploaded to the files directory.
 

@@ -8,7 +8,7 @@ last-updated: 08-03-2013
 
 A Create WDK template should be split into three sections: header, content and footer. The absolute minimum required from a template would be the following:
 
-##Example
+## Example
 
 ~~~
 <!doctype html>
@@ -27,7 +27,7 @@ The header section is opened with `<!--WDK:header:start-->` before the `<html>` 
 
 The footer is opened with `<!--WDK:footer:start-->`, signifying the end of your dynamic content. To close the footer use `<!--WDK:footer:end-->` after the `</html>` tag. Between the footer tags `<!--WDK:display:sitefooter-->` must be included. If it is not included, it will automatically be inserted after the `<!--WDK:footer:start-->` tag.
 
-##Links & Further Reading
+## Links & Further Reading
 
 - Tag: `<!--WDK:header:start-->`
 - Tag: `<!--WDK:header:end-->`

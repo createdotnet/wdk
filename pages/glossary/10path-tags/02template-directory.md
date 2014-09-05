@@ -5,15 +5,15 @@ group: Path Tags
 last-updated: 07-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:path:template-->`
 
-##Description
+## Description
 
 Use this tag to retreive the full relative url to your template directory.
 
-##Example
+## Example
 
 In this example we're using the tag to include an external stylesheet named 'style.css', which is located in the same directory as 'index.html'.
 

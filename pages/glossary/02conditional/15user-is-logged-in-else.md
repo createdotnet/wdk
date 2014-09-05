@@ -6,12 +6,12 @@ last-updated: 01-03-2013
 ---
 
 
-##Tag
+## Tag
 
 `<!--WDK:isloggedin:else-->`
 
 
-##Description
+## Description
 
 This conditional tag is the equivelent of the <a href="#">else tags</a> if used (optionally) between `<!--WDK:isloggedin:start-->` and `<!--WDK:isloggedin:end-->`.
 Please note that his tag must only be used be inbetween `<!--WDK:isloggedin:start-->` and `<!--WDK:isloggedin:end-->`
@@ -20,7 +20,7 @@ For more information, [please see the tutorial on conditional tags here.](/pages
 Pseudo Equivalent:
 `} else {`
 
-##Example
+## Example
 In this example we're using the tag to promt a user to log in to view their account if they are not already logged in.
 
 ~~~

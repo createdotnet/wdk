@@ -5,11 +5,11 @@ group: Menus
 last-updated: 31-07-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:menu:start(start,end)-->`
 
-##Description
+## Description
 
 Use this tag to start a loop through the site's menu items. 
 You can optionally specify a range to include in the loop so that it beings at the nth(start) item and ends at the nth(end) item. 
@@ -23,7 +23,7 @@ Pseudo Equivalent:
 
 Please note that this tag must be ended with `<!--WDK:menu:end-->` to end the loop.
 
-##Example
+## Example
 
 In this example we are looping through all of the menu items using a `<ul> <li>` structure.
 

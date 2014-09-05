@@ -8,5 +8,5 @@ It enables access to a range of features on the Create system to make your templ
 
 In this documentation, you will be equipped with all the information you need to know to get started with our WDK. Navigate using the above menu, pick a tutorial to get started or view the glossary for a complete list of tags.
 
-####What is Create?
+### What is Create?
 Create is a platform allowing you to create and manage your own website and online shop from only £3 per month. Its easy to use design screen allows anyone to create and publish a site, regardless of prior knowledge. Find out more and sign up for a 30 day free trial [here](http://www.create.net/)

@@ -5,15 +5,15 @@ group: Side Columns
 last-updated: 14-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:column:item:content-->`
 
-##Description
+## Description
 
 This tag returns the content of the current side column item.
 
-##Example
+## Example
 
 In the following example we are displaying each side column item's content within a `<p>` tag.
 

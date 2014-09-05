@@ -6,11 +6,11 @@ last-updated: 31-07-2013
 ---
 
 
-##Tag
+## Tag
 
 `<!--WDK:if:pageFilenameIs:value-->`
 
-##Description
+## Description
 
 This conditonal tag checks to see if the page filename is the specified value.
 
@@ -19,7 +19,7 @@ For more information, [please see the tutorial on conditional tags here.](/pages
 Pseudo Equivalent: 
 `if ( pageFilename == value ) {`
 
-##Example
+## Example
 
 In the following example we're checking to see if we're on a page named contact, and then including a div for a map.
 

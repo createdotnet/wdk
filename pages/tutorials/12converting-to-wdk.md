@@ -9,13 +9,13 @@ The tutorial aims to help you convert a previous HTML page layout to be used wit
 
 Firstly, here is our complete code, file structure and screenshots to illustrate our existing page.
 
-####Files:
+#### Files:
 - index.html
 - style.css
 - reset.css
 - images/logo.png
 
-####Markup:
+#### Markup:
 index.html
 
 <!doctype html>
@@ -352,7 +352,7 @@ Screenshot
 
 
 
-##WDK Basics
+## WDK Basics
 
 First of all, we must insert our required tags as described in The Basics tutorial.
 
@@ -411,7 +411,7 @@ With:
 
 That is the first step we need to take in order to make our page WDK compatible.
 
-##Meta Title, Description & Keywords
+## Meta Title, Description & Keywords
 
 To display our sites meta values, we're going to use the `<!--WDK:display:headinfo-->` tag, which replaces our `<title>` and `<meta>` keywords and description.
 
@@ -427,7 +427,7 @@ With:
 
 `<!--WDK:display:headinfo-->`
 
-##Linking External Files
+## Linking External Files
 
 We are linking to a few external stylesheets. We will be uploading these along with our index.html, but we'll need to insert some path tags so these link up properly, using the `<!--WDK:path:template-->` tag.
 
@@ -445,7 +445,7 @@ With:
 <link rel="stylesheet" href="<!--WDK:path:template-->style.css">
 ~~~
 
-##Logo
+## Logo
 
 We can upload our logo image to the "Design Screen". We can display this using the `<!--WDK:display:header-->` tag.
 
@@ -469,7 +469,7 @@ With:
 </div><!-- /#logo -->
 ~~~
 
-##Menus
+## Menus
 
 For the navigation, we can write a loop to process all of the menus items on a Create site. We can keep the `<ul> <li>` structure exactly the same, only having to start and stop the loop, insert the menu item text, and the menu link.
 
@@ -504,7 +504,7 @@ With:
 </nav>
 ~~~
 
-##Page Title
+## Page Title
 
 Just as our page content is dynamic, so is the page title. We just need one tag to display this: `<!--WDK:display:pagetitle-->`.
 
@@ -516,7 +516,7 @@ With:
 
 `<h1><!--WDK:display:pagetitle--></h1>`
 
-##Sidebars
+## Sidebars
 
 Sidebar content is managed using Side Columns from the "Design Screen". Sidebars work in a similar way to Menus using loops to cycle through items, so we will only have to write the code for one item, which will be applied to all. For more informtaion, view our [Side Columns & Content Width](02side-columns-content-width.html) tutorial.
 
@@ -551,7 +551,7 @@ With:
 <!--WDK:column:end:right-->
 ~~~
 
-##Dynamic Styling
+## Dynamic Styling
 
 The Create WDK only processes tags on the index.html file. As we'll need to use some of these tags to style our site, let's move the contents of the external style.css sheet, and insert it into the `<head>` section of our page.
 

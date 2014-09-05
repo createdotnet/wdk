@@ -5,15 +5,15 @@ group: Basics
 last-updated: 31-07-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:editor:bgcolor:#value-->`
 
-##Description
+## Description
 
 Use this tag to preset the background colour on Create's Design screen.
 
-##Example
+## Example
 
 ~~~
 <!--WDK:editor:bgcolor:#262626-->

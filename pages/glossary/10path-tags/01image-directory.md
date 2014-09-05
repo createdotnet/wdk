@@ -5,15 +5,15 @@ group: Path Tags
 last-updated: 07-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:path:images-->`
 
-##Description
+## Description
 
 Use this tag to retreive the full relative path to your images directory.
 
-##Example
+## Example
 
 In this example we're using the tag to include an image previously uploaded named 'logo.png'.
 

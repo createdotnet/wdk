@@ -5,15 +5,15 @@ group: Site Specific Tags
 last-updated: 07-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:headinfo-->`
 
-##Description
+## Description
 
 This tag returns generated HTML `<title>` and `<meta>` tags for use within the `<head>` section of the document.
 
-##Example
+## Example
 
 ~~~
 <head>
