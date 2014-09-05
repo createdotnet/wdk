@@ -27,6 +27,7 @@ $base-spacing-unit: 20px;
 // Heights and Widths
 $side-menu-width: 25%;
 $footer-height: 260px;
+$page-width: 1200px;
 
 // Mixins and Helpers
 
@@ -100,7 +101,7 @@ body {
 }
 
 .inner-constraint {
-	max-width: 1400px;
+	max-width: $page-width;
 	margin: auto;
 	@media (max-width: 670px) {
 		padding: 0;
