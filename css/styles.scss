@@ -26,7 +26,26 @@ $base-spacing-unit: 20px;
 
 // Heights and Widths
 $side-menu-width: 25%;
-$footer-height: 195px;
+$footer-height: 260px;
+
+// Mixins and Helpers
+
+.clearfix,
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
 
 
 // IMPORTS
@@ -50,19 +69,6 @@ $footer-height: 195px;
 
 
 
-
-// Mixins and Helpers
-
-.clearfix,
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-}
 
 
 
@@ -119,9 +125,6 @@ blockquote {
 	background-color: #FFF6BF;
 	padding: 0px 10px;
 }
-
-
-
 
 
 .container ol,

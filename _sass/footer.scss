@@ -2,16 +2,24 @@
 // FOOTER
 
 .footer {
+
     background-color: $footer-background-color;
+    background-image: url('/images/screens-white.png');
+    background-repeat: repeat-x;
+    background-position-x: center;
+    background-position-y: 85%;
+
     padding: 20px;
     a {
         color: $body-text-colour;
+        text-decoration: none;
         &:hover {
             color: $header-text-color;
         }
     }
     .copyright {
         float: left;
+        font-size: 0.9em;
     }
 
 }
