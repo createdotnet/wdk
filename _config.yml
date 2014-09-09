@@ -12,3 +12,12 @@ relative_permalinks: false
 sass:
     sass_dir: _sass
     style: :compressed
+
+collections:
+  tutorials:
+    output: true
+  glossary:
+    output: true
+  getting-started:
+    output: true
+    label: Getting Started
