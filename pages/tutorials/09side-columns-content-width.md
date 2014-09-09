@@ -10,7 +10,7 @@ Create supports 2 side columns. To use these in your WDK template, you'll need t
 
 Side columns must be opened and closed with `<!--WDK:column:start-->` and `<!--WDK:column:end-->` respectively. Looping through items with `<!--WDK:column:item:start-->` and `<!--WDK:column:item:end-->`.
 
-##Example
+## Example
 
 The example below is suitable markup for the left side column.
 
@@ -52,7 +52,7 @@ If we had 2 items in our side columns, a product search and shopping basket the 
 
 We're using the tag `<!--WDK:column:item:id-->` to create a unique id for each menu item. `<!--WDK:column:item:nth-->` is used to give each side column item the nth number of item, please take note that this applies the same number to both left and right side columns items. E.g. providing we used the same markup for both side columns, the first item on the left and right side column would be given the class column-item-n-1.
 
-##Content Width
+## Content Width
 
 The Create WDK has a tag to return the number of side columns being used. This is useful in making sure your content is the appropriate width. A simplified version of our markup would be:
 
@@ -108,7 +108,7 @@ div#content {
 }
 ~~~
 
-##Links & Further Reading
+## Links & Further Reading
 
 - Tag: `<!--WDK:column:start-->`
 - Tag: `<!--WDK:column:end-->`

@@ -5,16 +5,16 @@ group: Basics
 last-updated: 31-05-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:footer:end-->`
 
-##Description
+## Description
 
 This is a required tag that ends the footer section of your template.
 For more information, please see our footer turorial here.
 
-##Example
+## Example
 
 ~~~
 <!--WDK:header:start-->

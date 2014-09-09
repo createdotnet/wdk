@@ -5,14 +5,14 @@ group: Side Columns
 last-updated: 31-07-2013
 ---
 
-##Tag
+## Tag
 
 
-##Description
+## Description
 
 This tag sets the internal width of current columns content.
 
-##Example
+## Example
 
 In this example we're using the tag directly after the side column opening tag to set the width to 150px.
 

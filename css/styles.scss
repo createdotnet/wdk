@@ -1,0 +1,133 @@
+---
+---
+
+// COLOURS
+$white: rgb(255, 255, 255);
+$warm-grey: rgb(240, 233, 223);
+$charcoal: rgb(47, 70, 73);
+$electric-blue: rgb(21, 192, 212);
+
+$purple: #5064A0;
+
+
+$content-background-colour: white;
+//Body colours
+$body-text-colour: #7b7c7f;
+$body-background-colour: lighten($warm-grey,3%);
+// Header colours
+$header-background-color: white;
+$header-text-color: $charcoal;
+
+$footer-background-color: $warm-grey;
+
+
+// Spacing
+$base-spacing-unit: 20px;
+
+// Heights and Widths
+$side-menu-width: 25%;
+$footer-height: 260px;
+$page-width: 1200px;
+
+// Mixins and Helpers
+
+.clearfix,
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+
+
+// IMPORTS
+
+// Layout
+@import "header.scss";
+@import "footer.scss";
+@import "side-nav.scss";
+@import "top-nav.scss";
+
+// Objects
+@import "button.scss";
+@import "fonts.scss";
+@import "page-title.scss";
+
+// Pages
+@import "support.scss";
+
+// Plugins
+@import "prism.scss";
+
+
+
+
+
+
+// RESETS / FALLBACKS
+
+* {
+	-moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+   box-sizing:        border-box;
+}
+
+header, section, footer, aside, nav, main, article, figure, details, summary, blockquote {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+
+body {
+	font-size: 15px;
+	line-height: 1.3;
+	color: $body-text-colour;
+	background-color: $body-background-colour;
+	margin: 0;
+}
+
+.inner-constraint {
+	max-width: $page-width;
+	margin: auto;
+	@media (max-width: 670px) {
+		padding: 0;
+	}
+
+}
+
+
+.page-content {
+	background-color: $content-background-colour;
+	padding-top: $base-spacing-unit;
+	padding-right: $base-spacing-unit;
+	padding-bottom: $base-spacing-unit * 2;
+	padding-left: $base-spacing-unit;
+	@extend %clearfix;
+}
+
+
+blockquote {
+	border: 1px solid #FFE05B;
+	background-color: #FFF6BF;
+	padding: 0px 10px;
+}
+
+
+.container ol,
+.container ul {
+    padding-left: $base-spacing-unit;
+}

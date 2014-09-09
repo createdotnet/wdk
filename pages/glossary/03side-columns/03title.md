@@ -5,15 +5,15 @@ group: Side Columns
 last-updated: 14-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:column:item:title-->`
 
-##Description
+## Description
 
 This tag returns the title of the current side column item.
 
-##Example
+## Example
 
 In the following example we are displaying each side column item's title within a `<h3>` tag.
 

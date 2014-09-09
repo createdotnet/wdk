@@ -5,15 +5,15 @@ group: Page Specific Tags
 last-updated: 08-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:metadesc-->`
 
-##Description
+## Description
 
 Use this tag to return the current page's `<meta>` description as defined on the "Page Options" screen.
 
-##Example
+## Example
 
 In this example we're using the tag to set the meta description the `<head>` section of the document.
 

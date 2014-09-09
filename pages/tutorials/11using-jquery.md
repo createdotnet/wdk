@@ -26,7 +26,7 @@ if (typeof jQuery == "undefined") {
 
 If you need to use jQuery in your own template, you should not include it again, simply use it normally below the headstuff WDK tag.
 
-##Versions
+## Versions
 
 You can check the current version of jQuery that your Create is using by looking at **loader.js** and referring to the jqv variable.
 

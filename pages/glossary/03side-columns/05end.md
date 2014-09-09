@@ -5,15 +5,15 @@ group: Side Columns
 last-updated: 14-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:column:end:value-->`
 
-##Description
+## Description
 
 This tag will end the column loop. This tag must be included if `<!--WDK:column:start:value-->` is used.
 
-##Example
+## Example
 
 In the example below we are closing the left side column.
 

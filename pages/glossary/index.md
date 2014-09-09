@@ -1,11 +1,9 @@
 ---
 layout: glossary
 permalink: "/pages/glossary/index.html"
-title: Glossary
-last-updated: 00-00-0000
+title: Glossary - Home
+last-updated: 01-07-2014
 ---
-
-<!-- last-updated must be 00-00-0000 else the title will be repeated on the page (three times!) and the date will display - not required for these landing pages. -->
 
 The glossary is a library of WDK tags, a description of what they do and examples of their uses.
 

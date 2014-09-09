@@ -5,11 +5,11 @@ group: Widgets
 last-updated: 31-07-2013
 ---
 
-##Tag
+## Tag
 `<!--WDK:dynamic:type:id-->`
 
 
-##Description
+## Description
 
 This tag can be used to place dynamic content such as a widgets within your template.
 
@@ -23,7 +23,7 @@ The "type" can be any of the following:
 
 The "id" can be the id of a specific item, or a specific widget type, for example: `<!--WDK:dynamic:widget:youtube-->` or `<!--WDK:dynamic:widget:49857-->`.
 
-##Example
+## Example
 
 In this example, the Create account has a "Product Search" widget with an id of 12567, here we are using the tag to place it in our header along side our logo.
 

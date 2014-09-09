@@ -1,3 +1,25 @@
+/* Code Block Styling - Overide styles in prism.css */
+
+pre[class*="language-"] {
+	padding: 1em;
+	padding-top: 0;
+	margin: 1em;
+}
+
+pre, code {
+	background-color: #f5f2f0;
+	overflow: scroll;
+}
+
+/*for comment tags, such as the WDK tags*/
+.token.comment {
+	color: #dbb112;
+}
+
+
+
+
+
 /* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
 /**
  * prism.js default theme for JavaScript, CSS and HTML

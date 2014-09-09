@@ -5,11 +5,11 @@ group: Colour Functions
 last-updated: 12-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:color:highlight:colour:amount-->`
 
-##Description
+## Description
 
 Return = `#<HEX>`
 This tag creates a highlighted version of a colour by a specified amount. 
@@ -28,7 +28,7 @@ You can do this with any of the following variables:
 
 Then the "amount" is a intensity between 1 and 255 to select the difference from the original colour (this may be darker or lighter depending on the orginial shade).
 
-##Example
+## Example
 
 In the example below we are using Create's dynamic colours. We are using `bodybg` to generate a highlighted colour to use with heading tags. 
 

@@ -6,7 +6,7 @@ last-updated: 03-03-2013
 ---
 
 
-##Images Explained
+## Images Explained
 
 Create users can choose from several ways to display their logo. They may use text, or three different sized images. The image options are as follows:
 
@@ -14,7 +14,7 @@ Create users can choose from several ways to display their logo. They may use te
 - Small Banner - 780 x 120 px (header3)
 - Large Banner - 1000 x 200 px (header3)
 
-##Header Tags
+## Header Tags
 
 Some header image tags allow you to specify a header image. When referring to the images above, the logo is known as 'header4' and both banners as 'header3'.
 
@@ -22,7 +22,7 @@ You may use the WDK tag `<!--WDK:display:header-->` to return a HTML `<h4>` tag 
 
 If you wish to only display a specific image, you may use `<!--WDK:display:headerX-->` where X is the number of the header image you require.
 
-##Basic Examples
+## Basic Examples
 
 If you only wanted to display a small logo, in your markup you could simply put:
 
@@ -53,7 +53,7 @@ Using these tags, you could create the logo to be a link to the home page:
 </div>
 ~~~
 
-##Conditional Tags
+## Conditional Tags
 
 The Create WDK has some conditional tags which can allow you to apply different styles to different types of header images.
 
@@ -75,7 +75,7 @@ Using `<!--WDK:if:headerX-->` you may check to see if a specific header image is
 
 As you may have noticed above, we have used and "If" and "ElseIf" tag. For more information please read the tutorial on Conditional Tags.
 
-####Flash
+#### Flash
 Create users can have flash files for header images. 
 
 We have conditional tags which can be used to determine this, which helps you to avoid putting a flash file url in an image source tag.
@@ -101,7 +101,7 @@ In the example below we have a conditional check to see if header 3 is a flash f
 </div>
 ~~~
 
-####File Type Checks
+#### File Type Checks
 As you can check to see if a specific header image is a flash file, you may also check for file type, using the following tags, replacing "X" with your desired header number.
 
 -`<!--WDK:if:headerX:isPng-->`
@@ -109,7 +109,7 @@ As you can check to see if a specific header image is a flash file, you may also
 -`<!--WDK:if:headerX:isGif-->`
 
 
-##Links & Further Reading
+## Links & Further Reading
 - Tag: `<!--WDK:display:header-->`
 - Tag: `<!--WDK:display:headerX-->`
 - Tag: `<!--WDK:display:headerXsrc-->`

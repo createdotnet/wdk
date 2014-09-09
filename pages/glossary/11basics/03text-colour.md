@@ -5,15 +5,15 @@ group: Basics
 last-updated: 07-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:editor:txtcolor:#value-->`
 
-##Description
+## Description
 
 Use this tag to preset the text colour on Create's Design screen.
 
-##Example
+## Example
 
 ~~~
 <!--WDK:editor:txtcolor:#a2a2a2-->

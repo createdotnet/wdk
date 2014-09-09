@@ -5,18 +5,18 @@ group: Side Columns
 last-updated: 31-05-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:column:start:value-->`
 
-##Description
+## Description
 
 This tag marks the start of a specified side column. This is used to denote the location of the side column item on your site.
 
 This must be used with `<!--WDK:column:end:value-->` tag.
 The "value" should also be "right" or "left" accordingly.
 
-##Example
+## Example
 
 In the example below we are using the tag twice to start a left side column.
 

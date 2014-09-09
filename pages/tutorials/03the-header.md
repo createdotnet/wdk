@@ -10,7 +10,7 @@ Your Header will start your WDK template. It should contain your doctype declara
 
 It can also optionally contain styling for Create's dynamic colours, side columns, widgets and more.
 
-##Example
+## Example
 
 Below is a simplified version of a header.
 
@@ -66,7 +66,7 @@ Within our main content `<div>` we are using `<!--WDK:display:pagetitle-->` to d
 
 As the dynamic page content is automatically inserted between the `<!--WDK:header:end-->` tag and `<!--WDK:footer:start-->` tag, we have left the main content `<div>` open as this will be closed later in the `<footer>`.
 
-##Links & Further Reading
+## Links & Further Reading
 
 - Tag: `<!--WDK:header:start-->`
 - Tag: `<!--WDK:display:headinfo-->`

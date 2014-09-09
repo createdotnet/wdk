@@ -5,15 +5,15 @@ group: Site Specific Tags
 last-updated: 31-07-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:site_name-->`
 
-##Description
+## Description
 
 Use this tag to display the website name as set on the "Edit Site Information" screen from within your Create account.
 
-##Example
+## Example
 
 In this example, we use this tag to display the site name as alternative text on a logo image.
 

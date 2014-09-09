@@ -6,11 +6,11 @@ last-updated: 03-03-2013
 ---
 
 
-##Tag
+## Tag
 
 `<!--WDK:if:headerX-->`
 
-##Description
+## Description
 
 This conditional tag checks that returns true if headerX (header3 or header4) is the selected header.
 For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
@@ -18,7 +18,7 @@ For more information, [please see the tutorial on conditional tags here.](/pages
 Pseudo Equivalent:
 `if ( header.selected == headerX ) {`
 
-##Example
+## Example
 In the following example we are using the tag to determine which header image is being used, then setting the width of the containing div.
 
 ~~~

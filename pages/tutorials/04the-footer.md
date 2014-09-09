@@ -18,7 +18,7 @@ If you do not put this tag in, it will automatically inserted immediately after 
 
 Please note the difference between these two footer tags. `<!--WDK:footer:start-->` marks the end of the pages user customised content, `<!--WDK:display:sitefooter-->` is the site footer that outputs on every page.
 
-##Example
+## Example
 
 Following on from our example template we started in the [Header Tutorial](08the-header.html), let's finish up the template:
 
@@ -108,6 +108,7 @@ The following code generates the form element with a input and submit button. Fe
 
 #### Copyright
 This outputs plain text - "&copy; [company name] 20[XX]". Again, this is contained in an if statement so that it only displays when the users has enabled it.
+
 ~~~
 <!--WDK:if:copyrightEnabled-->
   <!--WDK:display:copyright-->
@@ -116,7 +117,7 @@ This outputs plain text - "&copy; [company name] 20[XX]". Again, this is contain
 
 
 
-##Links & Further Reading
+## Links & Further Reading
 
 - Tag: `<!--WDK:footer:start-->`
 - Tag: `<!--WDK:column:start:right-->`

@@ -5,15 +5,15 @@ group: Customisation
 last-updated: 08-03-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:display:bgimage-->`
 
-##Description
+## Description
 
 Use this tag to return the URL of the background image specified on the "Wallpaper" section on your Create "Design" screen.
 
-##Example
+## Example
 
 In this example we're using the tag to set the background image of the `<body>` tag using CSS set in the `<head>`.
 

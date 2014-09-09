@@ -1,0 +1,65 @@
+
+
+// Side Navigation Bar
+
+
+.side-menu {
+  float: left;
+  width: $side-menu-width;
+  border-right: 1px dotted $body-text-colour;
+  padding: 0px 5px 0px 10px;
+  @media (max-width: 670px) {
+    float: none;
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  h2 {
+      margin: 15px 0;
+  }
+
+  a {
+    color: $charcoal;
+    text-decoration: none;
+    line-height: 1.4;
+    &:hover {
+        color: lighten($charcoal, 20%);
+    }
+  }
+
+  .active a {
+      font-weight: bold;
+  }
+
+}
+
+main {
+  margin-left: $side-menu-width;
+  padding-left: $base-spacing-unit;
+  @media (max-width: 670px) {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+.sub-menu__nest {
+    margin-top: 0px !important;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+// Remove the browser default drop down marker
+details summary::-webkit-details-marker {
+    display:none;
+}
+
+details summary {
+    color: $charcoal;
+    cursor: pointer;
+    outline: none;
+}
+
+details[open] summary {
+    font-weight:bold;
+}

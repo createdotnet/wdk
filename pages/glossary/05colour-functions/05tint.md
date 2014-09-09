@@ -5,11 +5,11 @@ group: Colour Functions
 last-updated: 12-02-2013
 ---
 
-##Tag
+## Tag
 
 `<!--WDK:color:tint:colour1:colour2:amount-->`
 
-##Description
+## Description
 
 Return = `#<HEX>`
 This tag create's a hex colour based on 2 specified colour and an amount.
@@ -26,7 +26,7 @@ You can do this with any of the following variables:
 
 Then the "amount" is a percentage between 1 and 100 to select the tint between the two colours.
 
-##Example
+## Example
 
 In the example below we are using Create's dynamic colours. We are using `bodybg` for the body, the `menubg` colour for the menu and creating a new colour for the header, based on the two.
 

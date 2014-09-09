@@ -11,7 +11,7 @@ You'll need to use our WDK Tags to make your template compatible with Create's d
 
 WDK Tags are only processed on index.html and cannot be placed in a seperate .CSS file. You will need to declare the CSS in the `<head>` of your document within `<style> </style>` tags.
 
-##Example
+## Example
 
 In this example we declare the styles and elements in the `<head>` and have included the relevant elements in the `<body>` for you to see.
 
