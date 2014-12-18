@@ -17,7 +17,7 @@ Pagebuilder will work in all WDK templates that have the `<!--WDK:display:headin
 
 ## Implementation
 On Pagebuilder pages `<!--WDK:display:headinfo-->` will automatically load in a seperate CSS file which handles our basic Pagebuilder dependencies. 
-The `<!--WDK:base:assets-->` tag loads in our **none responsive** CSS grid. As such, Pagebuilder will not be responsive on your site unless you explicitly include our responsive grid.
+The `<!--WDK:base:assets-->` tag loads in our **non-responsive** CSS grid. As such, Pagebuilder will not be responsive on your site unless you explicitly include our responsive grid.
 
 ### Responsive Grid
 Our responsive Grid is available to download [here](...), where you'll also find our break points definitions.
