@@ -5,6 +5,7 @@ group: Tutorials
 last-updated: 03-03-2013
 ---
 
+> This documentation is in need of [review and further clarification](https://github.com/createdotnet/createdotnet.github.io/issues/8).
 
 Create's system offers dynamic colours, which enables users to customise their templates. These colours can be pulled into your template for use with CSS and is covered in the [Dynamic Styling Tutorial](05dynamic-styling.html). The WDK also has a series of useful tags used to modify these dynamic or any other colours.
 
