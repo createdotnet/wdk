@@ -13,7 +13,7 @@ last-updated: 03-03-2013
 
 This conditional tag returns true if [headerX](13header-x.html) is a Gif file.
 
-For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `/>if ( headerX.type == "gif" ) {`

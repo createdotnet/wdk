@@ -78,6 +78,6 @@ As the dynamic page content is automatically inserted between the `<!--WDK:heade
 - Tag: `<!--WDK:header:end-->`
 - Tutorial: [The Basics](07the-basics.html)
 - Tutorial: [Create's Dynamic Styling](05dynamic-styling.html)
-- Tutorial: [Logos, Banners & Header Images](/pages/glossary/08header-images/01header-image.html)
-- Tutorial: [Creating Side Columns](/pages/glossary/03side-columns/01id.html)
+- Tutorial: [Logos, Banners & Header Images]({{ site.baseurl }}/pages/glossary/08header-images/01header-image.html)
+- Tutorial: [Creating Side Columns]({{ site.baseurl }}/pages/glossary/03side-columns/01id.html)
 - Tutorial: [The Footer](09the-footer.html)

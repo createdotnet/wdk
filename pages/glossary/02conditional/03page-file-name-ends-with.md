@@ -14,7 +14,7 @@ last-updated: 01-08-2013
 
 This conditional tag checks to see if the page filename ends with the specified value.
 
-For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( Right(pageFilename, Length(value)) == value )  {`

@@ -12,7 +12,7 @@ last-updated: 01-03-2013
 
 ## Description
 This conditional tag does a check that returns true if a shop exists and the account level allows it.
-For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( shop_exists() && allowed_shop() ) {`

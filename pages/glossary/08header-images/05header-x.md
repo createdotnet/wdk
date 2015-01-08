@@ -11,7 +11,7 @@ last-updated: 08-02-2013
 
 ## Description
 
-Use this tag to return a complete image HTML tag for a specific header (1, 2 or 3). To find out more, [Logos & Headers](/pages/tutorials/10header-images) tutorial.
+Use this tag to return a complete image HTML tag for a specific header (1, 2 or 3). To find out more, [Logos & Headers]({{ site.baseurl }}/pages/tutorials/10header-images) tutorial.
 
 ## Example
 

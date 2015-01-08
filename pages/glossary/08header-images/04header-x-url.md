@@ -11,7 +11,7 @@ last-updated: 31-07-2013
 
 ## Description
 
-Use this tag to return the full url of a specific header (1, 2 or 3). To find out more, please read our [Logos & Headers](/pages/tutorials/10header-images) tutorial.
+Use this tag to return the full url of a specific header (1, 2 or 3). To find out more, please read our [Logos & Headers]({{ site.baseurl }}/pages/tutorials/10header-images) tutorial.
 
 ## Example
 
