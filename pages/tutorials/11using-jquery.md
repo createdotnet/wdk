@@ -5,6 +5,7 @@ group: Tutorials
 last-updated: 05-04-2013
 ---
 
+> This documentation is in need of [review and further clarification](https://github.com/createdotnet/wdk/issues/4).
 
 Create websites utilise the Javascript library <a href="http://jquery.com/" target="_blank">jQuery</a> for various dynamic features. 
 
