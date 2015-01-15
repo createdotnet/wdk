@@ -20,7 +20,7 @@ On Pagebuilder pages `<!--WDK:display:headinfo-->` will automatically load in a 
 The `<!--WDK:base:assets-->` tag loads in our **non-responsive** CSS grid. As such, Pagebuilder will not be responsive on your site unless you explicitly include our responsive grid.
 
 ### Responsive Grid
-Our responsive Grid is available to download [here](...), where you'll also find our break points definitions.
+We use a build of [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) with our system templates and use the responsive HTML classes with all of the new features we build.
 
 ### Class Names
 We are using the following class names on the generated markup for each Pagebuilder page - 
