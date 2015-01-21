@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: Extras & Finishing Touches
-group: Tutorials
 last-updated: 03-03-2013
 ---
 

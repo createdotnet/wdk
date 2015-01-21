@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Links Colour
-group: Customisation
 last-updated: 04-07-2013
+parent: 06customisation
 ---
 
 ## Tag

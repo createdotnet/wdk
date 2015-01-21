@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: Site Specific Tags
-group: Glossary
 last-updated: 07-02-2013
 ---
 

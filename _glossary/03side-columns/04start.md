@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Side Column - Start
-group: Side Columns
 last-updated: 31-05-2013
+parent: 03side-columns
 ---
 
 ## Tag

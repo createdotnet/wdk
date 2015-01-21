@@ -1,7 +1,6 @@
 ---
 title: Support
 layout: index
-group: Support
 last-updated: 31-07-2013
 ---
 

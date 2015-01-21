@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Menu - Link
-group: Menus
 last-updated: 13-02-2013
+parent: 04menus
 ---
 
 ## Tag

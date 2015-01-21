@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Menu - Display Shop Categories
-group: Menus
 last-updated: 01-03-2013
+parent: 04menus
 ---
 
 ## Tag

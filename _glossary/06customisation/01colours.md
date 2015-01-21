@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Colours
-group: Customisation
 last-updated: 01-08-2014
+parent: 06customisation
 ---
 
 ## Tag

@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Background Image
-group: Customisation
 last-updated: 08-03-2013
+parent: 06customisation
 ---
 
 ## Tag

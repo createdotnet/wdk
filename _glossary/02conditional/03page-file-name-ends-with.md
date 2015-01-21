@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Page File Name Ends With
-group: Conditional
 last-updated: 01-08-2013
+parent: 02conditional
 ---
 
 

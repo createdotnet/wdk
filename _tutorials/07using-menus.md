@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: Using Menus
-group: Tutorials
 last-updated: 31-05-2013
 ---
 

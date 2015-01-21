@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: Advanced Colour Functions
-group: Tutorials
 last-updated: 03-03-2013
 ---
 

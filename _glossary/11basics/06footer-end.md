@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Footer - End
-group: Basics
 last-updated: 31-05-2013
+parent: 11basics
 ---
 
 ## Tag

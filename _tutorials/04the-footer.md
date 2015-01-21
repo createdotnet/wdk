@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: The Footer
-group: Tutorials
 last-updated: 30-05-2015
 ---
 

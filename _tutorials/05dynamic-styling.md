@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: Dynamic Styling
-group: Tutorials
 last-updated:  24-03-2013
 ---
 

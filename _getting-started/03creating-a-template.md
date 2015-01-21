@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: Creating a Template
-group: Getting Started
 last-updated: 31-07-2013
 ---
 

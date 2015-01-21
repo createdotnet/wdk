@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Header X Height
-group: Header Images
 last-updated: 31-07-2013
+parent: 08header-images
 ---
 
 ## Tag

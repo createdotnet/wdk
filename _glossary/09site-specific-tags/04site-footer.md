@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Site Footer
-group: Site Specific Tags
 last-updated: 31-07-2013
+parent: 09site-specific-tags
 ---
 
 ## Tag

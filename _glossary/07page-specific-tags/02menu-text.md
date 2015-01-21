@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Menu Text
-group: Page Specific Tags
 last-updated: 08-02-2013
+parent: 07page-specific-tags
 ---
 
 ## Tag

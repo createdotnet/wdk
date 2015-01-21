@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Editor - Background Colour
-group: Basics
 last-updated: 31-07-2013
+parent: 11basics
 ---
 
 ## Tag

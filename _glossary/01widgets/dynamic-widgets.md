@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Dynamic - Widgets, HTML Fragments, Galleries Etc
-group: Widgets
 last-updated: 31-07-2013
+parent: 01widgets
 ---
 
 ## Tag

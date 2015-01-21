@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: Side Columns
-group: Glossary
 last-updated: 14-02-2013
 ---
 

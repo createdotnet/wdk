@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Page Background Colour
-group: Customisation
 last-updated: 08-03-2013
+parent: 06customisation
 ---
 
 ## Tag

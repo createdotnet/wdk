@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: The Basics
-group: Tutorials
 last-updated: 08-03-2013
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: How it Works
-group: Getting Started
 last-updated: 03-04-2012
 ---
 

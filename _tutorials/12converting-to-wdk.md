@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: Converting to WDK
-group: Tutorials
 last-updated: 25-03-2013
 ---
 

@@ -3,64 +3,50 @@
 
 
 <div class="page-header">
-    <h2 class="page-title">{{ page.title }}</h2>
+	<h2 class="page-title">{{ page.title }}</h2>
 </div>
 
 
 <div class="page-content">
 
-    <nav class="side-menu">
-        {% for post in site.glossary %}
-            {% assign collection_title = post.collection %}
-        {% endfor %}
-            
-		<h1>{{ collection_title }}</h1>
+	<nav class="side-menu">
 
-			<ul>
-			    {% for post in site.glossary %}
-					<li>
-						<a href="{{post.url}}">{{ post.title }}</a><p>{{ post.group }}</p>
-					</li>
-			    {% endfor %}
-			</ul>
-
-            {% if post.group != "" %}
-            	<p>{{ post.group }}</p>
-            {% endif %}
-
-				{% assign sub_group_title = node.title %}
-
-				{% if sub_group_title == page.group %} {% comment %}keeps the sub-menu open on any page within the same catergory {% endcomment %}
-				<details open="open">
-				    {% else %}
-				<details>
-				{% endif %}
-
-					<summary>{{sub_group_title}}</summary>
-
-					<ul class="sub-menu__nest">
-					    {% for node in sorted_pages %}
-					        {% if node.group == sub_group_title %} {% comment %}if the group of the sub page is the same as the sub_group_title we defined earlier, it will be displayed under here {% endcomment %}
-
-					            {% if page.url == node.url %} {% comment %}adds 'active' class if the page url and current url are the same {% endcomment %}
-					                <li class="active"><a href="{{node.url}}">{{node.title}}</a></li>
-					                {% else %}
-					                <li><a href="{{node.url}}">{{node.title}}</a></li>
-					            {% endif %}
-
-					        {% endif %}
-					    {% endfor %}
-					</ul>
-
-				</details>
-
+		<!-- Assign posts based on which page we're on and set the navigation title -->
+		{% if page.url contains "glossary" %}
+			{% assign nav-items = site.glossary %}
+			<h1>Glossary</h1>
+		{% elsif page.url contains "tutorials" %}
+			{% assign nav-items = site.tutorials %}
+			<h1>Tutorials</h1>
+		{% endif %}
 			
 
-    </nav>
+		<ul>
+			{% for post in nav-items %}
 
-    <main>
+				{% if post.url contains post.parent %} {% comment %} If the posts contains a parent in its YML that matches with the folder it is in {% endcomment %}
+				<li>
+					{% if page.url == post.url %} {% comment %}adds 'active' class if the page url and current url are the same {% endcomment %}
+						<a href="{{post.url}}" class="nav__sub-item {{ post.parent }} active">{{ post.title }}</a>
+						{% else %}
+						<a href="{{post.url}}" class="nav__sub-item {{ post.parent }}">{{ post.title }}</a>
+					{% endif %}
+				</li>
+
+				{% else %}
+					<a href="{{post.url}}" class="nav__item">{{ post.title }}</a>
+				{% endif %}
+
+			{% endfor %}
+		</ul>
+
+	</nav>
+
+
+
+	<main>
 		{{ content }}
-        <p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
+		<p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
 	</main>
 
 </div> <!--end container-->

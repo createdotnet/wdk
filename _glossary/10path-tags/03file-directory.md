@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: File Directory
-group: Path Tags
 last-updated: 07-02-2013
+parent: 10path-tags
 ---
 
 ## Tag

@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Editor - Link Colour
-group: Basics
 last-updated: 07-02-2013
+parent: 11basics
 ---
 
 ## Tag

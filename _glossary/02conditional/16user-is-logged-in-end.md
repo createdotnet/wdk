@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: User Is logged In End
-group: Conditional
 last-updated: 01-03-2013
+parent: 02conditional
 ---
 
 

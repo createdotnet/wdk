@@ -1,7 +1,6 @@
 ---
 layout: side-nav
 title: Widgets
-group: Glossary
 last-updated: 31-07-2013
 ---
 

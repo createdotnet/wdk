@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Font Family
-group: Customisation
 last-updated: 08-03-2013
+parent: 06customisation
 ---
 
 ## Tag

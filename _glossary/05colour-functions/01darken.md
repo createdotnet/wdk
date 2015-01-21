@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Darken
-group: Colour Functions
 last-updated: 12-02-2013
+parent: 05colour-functions
 ---
 
 ## Tag

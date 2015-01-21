@@ -1,8 +1,8 @@
 ---
 layout: side-nav
 title: Side Column - Width
-group: Side Columns
 last-updated: 31-07-2013
+parent: 03side-columns
 ---
 
 ## Tag
