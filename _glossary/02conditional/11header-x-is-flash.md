@@ -14,7 +14,7 @@ parent: 02conditional
 
 This conditional tag checks to see if header<span style="text-decoration: underline;">X</span> (<a href="#" target="_blank">header3, header4</a>) is a flash file.
 
-For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( headerX.type == "swf" ) {`

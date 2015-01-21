@@ -1,3 +1,5 @@
+baseurl:     "/wdk"
+
 # Conversion
 markdown:    kramdown
 

@@ -18,6 +18,9 @@
 		{% elsif page.url contains "tutorials" %}
 			{% assign nav-items = site.tutorials %}
 			<h1>Tutorials</h1>
+		{% elsif page.url contains "getting-started" %}
+			{% assign nav-items = site.getting-started %}
+			<h1>Getting Started</h1>
 		{% endif %}
 			
 
@@ -25,16 +28,14 @@
 			{% for post in nav-items %}
 
 				{% if post.url contains post.parent %} {% comment %} If the posts contains a parent in its YML that matches with the folder it is in {% endcomment %}
-				<li>
-					{% if page.url == post.url %} {% comment %}adds 'active' class if the page url and current url are the same {% endcomment %}
-						<a href="{{post.url}}" class="nav__sub-item {{ post.parent }} active">{{ post.title }}</a>
-						{% else %}
-						<a href="{{post.url}}" class="nav__sub-item {{ post.parent }}">{{ post.title }}</a>
-					{% endif %}
+				<li>				
+					<a href="{{ site.baseurl }}{{ post.url }}" class="nav__sub-item {{ post.parent }} {% if page.url == post.url %} active{% endif %}">{{ post.title }}</a>
 				</li>
 
 				{% else %}
-					<a href="{{post.url}}" class="nav__item">{{ post.title }}</a>
+				<li>
+					<a href="{{ site.baseurl }}{{ post.url }}" class="nav__item">{{ post.title }}</a>
+				</li>
 				{% endif %}
 
 			{% endfor %}

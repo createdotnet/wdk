@@ -13,7 +13,7 @@ parent: 02conditional
 ## Description
 This conditional tag checks to see if the current menu item (within the menu loop) is the first item.
 
-For more information, [please see the tutorial on conditional tags here.](/pages/tutorials/12conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/pages/tutorials/12conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( menuitem.id == 1 ) {`
