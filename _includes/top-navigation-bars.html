@@ -1,55 +1,28 @@
 <div class="sticky-footer-helper">
 
-    <div class="inner-constraint">
-    
-        <header class="header">
+	<div class="inner-constraint">
+	
+		<header class="header">
 
-            <div class="header__logo">
-              <a href="/"><img src="{{ site.baseurl }}/images/logo.svg" title="Create Ecommerce" alt="Create Ecommerce"></a>
-            </div>
+			<div class="header__logo">
+			  <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" title="Create Ecommerce" alt="Create Ecommerce"></a>
+			</div>
 
-            <h1 class="header__title"><a href="{{ site.baseurl }}">Web Designer's Kit Documentation</a></h1>
-            
-            <div class="header__button">
-              <a class="btn btn--login" href="https://login.create.net/login.phtml">Login</a>
-            </div>
+			<h1 class="header__title"><a href="{{ site.baseurl }}">Web Designer's Kit Documentation</a></h1>
+			
+			<div class="header__button">
+			  <a class="btn btn--login" href="https://login.create.net/login.phtml">Login</a>
+			</div>
 
 
-        </header>
+		</header>
 
-        <!-- When updating or changing these links, remeber to change both the 'if' and the 'else' address. They should always be the same! -->
-        <nav class="top-nav">
-            <ul>
-
-              {% if page.url  contains "pages/getting_started" %}
-                  <li class="active"><a href="{{ site.baseurl }}/pages/getting_started/01before-you-start.html">Getting Started</a></li>
-                  {% else %}
-                  <li><a href="{{ site.baseurl }}/pages/getting_started/01before-you-start.html">Getting Started</a></li>
-              {% endif %}
-
-              {% if page.url  contains "pages/tutorials" %}
-                  <li class="active"><a href="{{ site.baseurl }}/pages/tutorials/index.html">Tutorials</a></li>
-                  {% else %}
-                  <li><a href="{{ site.baseurl }}/pages/tutorials/index.html">Tutorials</a></li>
-              {% endif %}
-
-              {% if page.url  contains "pages/glossary" %}
-                  <li class="active"><a href="{{ site.baseurl }}/pages/glossary/index.html">Glossary</a></li>
-                  {% else %}
-                  <li><a href="{{ site.baseurl }}/pages/glossary/index.html">Glossary</a></li>
-              {% endif %}
-
-              {% if page.url  contains "pages/support" %}
-                  <li class="active"><a href="{{ site.baseurl }}/pages/support/index.html">Support</a></li>
-                  {% else %}
-                  <li><a href="{{ site.baseurl }}/pages/support/index.html">Support</a></li>
-              {% endif %}
-
-              {% if page.url  contains "changelog" %}
-                  <li class="active"><a href="{{ site.baseurl }}/changelog.html">Change Log</a></li>
-                  {% else %}
-                  <li><a href="{{ site.baseurl }}/changelog.html">Change Log</a></li>
-              {% endif %}
-
-            </ul>
-        </nav>
+		<nav class="top-nav">
+			<ul>
+				<li {% if page.url contains "pages/getting_started" %}class="active"{% endif %}><a href="{{ site.baseurl }}/getting-started/01before-you-start.html">Getting Started</a></li>
+				<li {% if page.url  contains "pages/tutorials" %}class="active"{% endif %}><a href="{{ site.baseurl }}/tutorials/index.html">Tutorials</a></li>
+				<li {% if page.url contains "pages/glossary" %}class="active"{% endif %}><a href="{{ site.baseurl }}/glossary/index.html">Glossary</a></li>
+				<li {% if page.url  contains "pages/support" %}class="active"{% endif %}><a href="{{ site.baseurl }}/pages/support.html">Support</a></li>
+				<li {% if page.url  contains "changelog" %}class="active"{% endif %}><a href="{{ site.baseurl }}/changelog.html">Change Log</a></li>
+			</ul>
+		</nav>
