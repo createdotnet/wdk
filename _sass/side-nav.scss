@@ -17,26 +17,34 @@
 		padding: 0;
 	}
 
+	ul {
+		padding-left: 10px;
+	}
+
 	a {
 		color: $charcoal;
 		text-decoration: none;
-		line-height: 1.4;
 		&:hover {
-				color: lighten($charcoal, 20%);
+			color: lighten($charcoal, 20%);
 		}
 	}
 
-	.active {
-			font-weight: bold;
-	}
-
-	.nav__sub-item {
-		margin-left: 20px;
+	.active a {
+		font-weight: bold;
 	}
 
 	.nav__item {
-		font-size: 1.3em;
+		margin-bottom: 10px;
+		font-size: 1.1em;
+		line-height: 1.4em;
 	}
+	.nav__item--sub {
+		list-style-type: none;
+		font-size: .9em;
+		margin-left: 10px;
+		margin-bottom: 7px;
+	}
+
 
 }
 
