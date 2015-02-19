@@ -12,6 +12,7 @@ parent: 11basics
 ## Description
 
 This is a required tag that starts the header section of your template.
+
 For more information, please see the [header tutorial]({{ site.baseurl }}/tutorials/03the-header.html).
 
 ## Example

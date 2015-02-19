@@ -14,7 +14,7 @@ parent: 02conditional
 
 This conditional tag checks to see if headerX (header3, header4) is a jpg file.
 
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/pages/tutorials/12conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/10conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( headerX.type == "jpg" ) {`

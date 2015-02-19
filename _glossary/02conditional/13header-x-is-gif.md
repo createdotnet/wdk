@@ -11,9 +11,9 @@ parent: 02conditional
 
 ## Description
 
-This conditional tag returns true if [headerX](13header-x.html) is a Gif file.
+This conditional tag returns true if [headerX]({{ site.baseurl }}/glossary/02conditional/10header-x.html) is a Gif file.
 
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/pages/tutorials/12conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/10conditional-tags.html)
 
 Pseudo Equivalent:
 `/>if ( headerX.type == "gif" ) {`

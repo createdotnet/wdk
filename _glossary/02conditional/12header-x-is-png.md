@@ -12,7 +12,7 @@ parent: 02conditional
 
 ## Description
 
-This conditional tag checks to see if headerX ([header3, header4](13header-x.html)) is a png file.
+This conditional tag checks to see if headerX ([header3, header4]({{ site.baseurl }}/glossary/02conditional/10header-x.html)) is a png file.
 
 For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/10conditional-tags.html)
 
