@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: The Header
+nav-position: 3
 last-updated: 03-03-2013
 ---
 
@@ -75,8 +76,8 @@ As the dynamic page content is automatically inserted between the `<!--WDK:heade
 - Tag: `<!--WDK:column:count-->`
 - Tag: `<!--WDK:display:pagetitle-->`
 - Tag: `<!--WDK:header:end-->`
-- Tutorial: [The Basics]({{ site.baseurl }}/tutorials/02the-basics.html)
-- Tutorial: [Create's Dynamic Styling]({{ site.baseurl }}/tutorials/05dynamic-styling.html)
-- Tutorial: [The Footer]({{ site.baseurl }}/tutorials/04the-footer.html)
-- Glossary: [Logos, Banners & Header Images]({{ site.baseurl }}/glossary/08header-images/01header-image.html)
-- Glossary: [Creating Side Columns]({{ site.baseurl }}/glossary/03side-columns/01id.html)
+- Tutorial: [The Basics]({{ site.baseurl }}/tutorials/the-basics.html)
+- Tutorial: [Create's Dynamic Styling]({{ site.baseurl }}/tutorials/dynamic-styling.html)
+- Tutorial: [The Footer]({{ site.baseurl }}/tutorials/the-footer.html)
+- Glossary: [Logos, Banners & Header Images]({{ site.baseurl }}/glossary/header-images/01header-image.html)
+- Glossary: [Creating Side Columns]({{ site.baseurl }}/glossary/03side-columns/id.html)

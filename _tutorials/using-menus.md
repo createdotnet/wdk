@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Using Menus
+nav-position: 7
 last-updated: 31-05-2013
 ---
 

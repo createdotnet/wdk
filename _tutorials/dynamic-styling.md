@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Dynamic Styling
+nav-position: 5
 last-updated:  24-03-2013
 ---
 

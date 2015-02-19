@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Requirements & Restrictions
+nav-position: 1
 last-updated: 03-03-2013
 ---
 
@@ -98,4 +99,4 @@ The WDK supports conditional statements. Any `<!--WDK:if-->` tag must be ended w
 - Tag: `<!--WDK:else-->`
 - Tag: `<!--WDK:endif-->`
 
-For more information, please read the [Using Conditional Tags]({{ site.baseurl }}/tutorials/10conditional-tags.html) tutorial.
+For more information, please read the [Using Conditional Tags]({{ site.baseurl }}/tutorials/conditional-tags.html) tutorial.

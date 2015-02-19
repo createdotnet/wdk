@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Using jQuery
+nav-position: 11
 last-updated: 05-04-2013
 ---
 

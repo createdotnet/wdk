@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Side Columns & Content Width
+nav-position: 9
 last-updated: 03-03-2013
 ---
 

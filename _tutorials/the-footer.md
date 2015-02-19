@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: The Footer
+nav-position: 4
 last-updated: 30-05-2015
 ---
 

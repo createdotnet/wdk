@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Header Images
+nav-position: 8
 last-updated: 03-03-2013
 ---
 

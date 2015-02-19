@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Advanced Colour Functions
+nav-position: 6
 last-updated: 03-03-2013
 ---
 

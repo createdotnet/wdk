@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: The Basics
+nav-position: 2
 last-updated: 08-03-2013
 ---
 

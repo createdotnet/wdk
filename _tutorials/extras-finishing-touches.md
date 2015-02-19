@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Extras & Finishing Touches
+nav-position: 13
 last-updated: 03-03-2013
 ---
 

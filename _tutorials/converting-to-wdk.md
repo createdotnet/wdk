@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Converting to WDK
+nav-position: 12
 last-updated: 25-03-2013
 ---
 
