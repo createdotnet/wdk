@@ -1,7 +1,7 @@
 ---
 layout: side-nav
 title: Widgets
-nav-position: 1
+nav-position: 11
 last-updated: 31-07-2013
 ---
 

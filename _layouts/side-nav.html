@@ -13,7 +13,7 @@
 
 		<!-- Assign posts based on which page we're on and set the navigation title -->
 		{% if page.url contains "glossary" %}
-			{% assign nav-items = site.glossary | sort:"nav-position" %}
+			{% assign nav-items = site.glossary %}
 			<h1>Glossary</h1>
 		{% elsif page.url contains "tutorials" %}
 			{% assign nav-items = site.tutorials | sort:"nav-position" %}
@@ -27,15 +27,16 @@
 		<ul>
 			{% for post in nav-items %}
 
-				{% if post.url contains post.parent %} {% comment %} If the posts contains a 'parent' in its YML that matches with the folder it is in {% endcomment %}
-				<li class="nav__item nav__item--sub {{ post.parent }} {% if page.url == post.url %} active{% endif %}">				
-					<a href="{{ site.baseurl }}{{ post.url }}" >{{ post.title }}</a>
-				</li>
+				{% if post.url contains post.parent %}
+					{% comment %} If the posts contains a 'parent' in its YML that matches the folder it is in, it must be a sub menu item {% endcomment %}
+					<li class="nav__item nav__item--sub {{ post.parent }} {% if page.url == post.url %} active{% endif %}">				
+						<a href="{{ site.baseurl }}{{ post.url }}" >{{ post.title }}</a>
+					</li>
 
 				{% else %}
-				<li class="nav__item">
-					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-				</li>
+					<li class="nav__item">
+						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+					</li>
 				{% endif %}
 
 			{% endfor %}

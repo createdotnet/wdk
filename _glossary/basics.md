@@ -1,7 +1,7 @@
 ---
 layout: side-nav
 title: Basics
-nav-position: 11
+nav-position: 1
 last-updated: 07-02-2013
 ---
 
