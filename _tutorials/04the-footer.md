@@ -19,7 +19,7 @@ Please note the difference between these two footer tags. `<!--WDK:footer:start-
 
 ## Example
 
-Following on from our example template we started in the [Header Tutorial](08the-header.html), let's finish up the template:
+Following on from our example template we started in the [Header Tutorial](03the-header.html), let's finish up the template:
 
 ~~~
 
@@ -126,4 +126,4 @@ This outputs plain text - "&copy; [company name] 20[XX]". Again, this is contain
 - Tutorial: [Requirements & Restrictions](01requirements-restrictions.html)
 - Tutorial: [The Basics](07the-basics.html)
 - Tutorial: [Creating Side Columns]({{ site.baseurl }}/pages/glossary/03side-columns/01id.html)
-- Tutorial: [The Header](08the-header.html)
+- Tutorial: [The Header](03the-header.html)

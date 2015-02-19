@@ -13,7 +13,7 @@ parent: 11basics
 
 This is a required tag that ends the header section of your template.
 Create's dynamic content is loaded between `<!--WDK:header:end-->` and `<!--WDK:footer:start-->`.
-For more information, please see the [header tutorial](pages/tutorials/08the-header.html).
+For more information, please see the [header tutorial](pages/tutorials/03the-header.html).
 
 ## Example
 

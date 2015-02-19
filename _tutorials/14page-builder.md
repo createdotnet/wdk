@@ -1,6 +1,6 @@
 ---
+layout: side-nav
 title: Pagebuilder 
-group: Tutorials
 last-updated: 18-12-2014
 ---
 

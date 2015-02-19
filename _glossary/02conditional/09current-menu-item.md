@@ -13,7 +13,7 @@ parent: 02conditional
 ## Description
 
 This conditional tag checks to see if the current menu item (within the menu loop) is the current page.
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/pages/tutorials/12conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/10conditional-tags.html)
 
 Pseudo Equivalent:
 `/>if ( menuitem.link == currentpage.link ) {`

@@ -33,5 +33,5 @@ The footer is opened with `<!--WDK:footer:start-->`, signifying the end of your 
 - Tag: `<!--WDK:footer:start-->`
 - Tag: `<!--WDK:footer:end-->`
 - Tag: `<!--WDK:display:sitefooter-->`
-- Tutorial: [The Header](08the-header.html)
+- Tutorial: [The Header](03the-header.html)
 - Tutorial: [The Footer](09the-footer.html)
