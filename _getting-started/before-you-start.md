@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Before You Start
+nav-position: 1
 last-updated: 31-07-2013
 ---
 

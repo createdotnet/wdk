@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Download Example Template
+nav-position: 4
 last-updated: 31-07-2013
 ---
 

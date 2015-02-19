@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: How it Works
+nav-position: 2
 last-updated: 03-04-2012
 ---
 

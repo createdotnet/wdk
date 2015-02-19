@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Creating a Template
+nav-position: 3
 last-updated: 31-07-2013
 ---
 
