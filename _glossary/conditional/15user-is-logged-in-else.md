@@ -15,7 +15,7 @@ parent: conditional
 
 This conditional tag is the equivelent of the <a href="#">else tags</a> if used (optionally) between `<!--WDK:isloggedin:start-->` and `<!--WDK:isloggedin:end-->`.
 Please note that his tag must only be used be inbetween `<!--WDK:isloggedin:start-->` and `<!--WDK:isloggedin:end-->`
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/10conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)
 
 Pseudo Equivalent:
 `} else {`

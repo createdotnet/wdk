@@ -12,7 +12,7 @@ parent: conditional
 
 ## Description
 This conditional tag does a check that returns true if a shop exists and the account level allows it.
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/10conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( shop_exists() && allowed_shop() ) {`

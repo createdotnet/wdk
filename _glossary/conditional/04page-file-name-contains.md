@@ -12,7 +12,7 @@ parent: conditional
 
 ## Description
 This conditional tag checks to see if the page filename contains the specified value.
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/10conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)
 
 Pseudo Equivalent:
 `/>if ( InString(pageFilename, value) ) {`

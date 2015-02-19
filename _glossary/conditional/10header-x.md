@@ -13,7 +13,7 @@ parent: conditional
 ## Description
 
 This conditional tag checks that returns true if headerX (header3 or header4) is the selected header.
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/10conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)
 
 Pseudo Equivalent:
 `if ( header.selected == headerX ) {`

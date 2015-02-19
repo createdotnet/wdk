@@ -14,7 +14,7 @@ parent: conditional
 
 This conditional tag will end the "if" that checks whether a website user is logged in.
 Please note that this tag must only end `<!--WDK:isloggedin:start-->`.
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/10conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)
 
 Pseudo Equivalent:
 `/>}`

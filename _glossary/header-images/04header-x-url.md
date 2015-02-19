@@ -11,7 +11,7 @@ parent: header-images
 
 ## Description
 
-Use this tag to return the full url of a specific header (1, 2 or 3). To find out more, please read our [Logos & Headers]({{ site.baseurl }}/tutorials/10header-images) tutorial.
+Use this tag to return the full url of a specific header (1, 2 or 3). To find out more, please read our [Logos & Headers]({{ site.baseurl }}/tutorials/header-images) tutorial.
 
 ## Example
 
