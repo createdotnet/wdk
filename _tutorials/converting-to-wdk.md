@@ -518,7 +518,7 @@ With:
 
 ## Sidebars
 
-Sidebar content is managed using Side Columns from the "Design Screen". Sidebars work in a similar way to Menus using loops to cycle through items, so we will only have to write the code for one item, which will be applied to all. For more informtaion, view our [Side Columns & Content Width]({{ site.baseurl }}/tutorials/09side-columns-content-width.html) tutorial.
+Sidebar content is managed using Side Columns from the "Design Screen". Sidebars work in a similar way to Menus using loops to cycle through items, so we will only have to write the code for one item, which will be applied to all. For more informtaion, view our [Side Columns & Content Width]({{ site.baseurl }}/tutorials/side-columns-content-width.html) tutorial.
 
 Replacing:
 
@@ -566,7 +566,7 @@ With:
 </style>
 ~~~
 
-From the "Design Screen", Create users can select dynamic colours for use within their template. To make our existing page compatible with this, we'll need to use a few tags to set the styles. Please see our tutorials for a more in depth look at [Dynamic Styling](05dynamic-styling.html) and [Advanced Colour]({{ site.baseurl }}/tutorials/06advanced-colour-functions.html) Functions.
+From the "Design Screen", Create users can select dynamic colours for use within their template. To make our existing page compatible with this, we'll need to use a few tags to set the styles. Please see our tutorials for a more in depth look at [Dynamic Styling](05dynamic-styling.html) and [Advanced Colour]({{ site.baseurl }}/tutorials/advanced-colour-functions.html) Functions.
 
 Replacing:
 

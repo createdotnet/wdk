@@ -79,5 +79,5 @@ As the dynamic page content is automatically inserted between the `<!--WDK:heade
 - Tutorial: [The Basics]({{ site.baseurl }}/tutorials/the-basics.html)
 - Tutorial: [Create's Dynamic Styling]({{ site.baseurl }}/tutorials/dynamic-styling.html)
 - Tutorial: [The Footer]({{ site.baseurl }}/tutorials/the-footer.html)
-- Glossary: [Logos, Banners & Header Images]({{ site.baseurl }}/glossary/header-images/01header-image.html)
-- Glossary: [Creating Side Columns]({{ site.baseurl }}/glossary/03side-columns/id.html)
+- Glossary: [Logos, Banners & Header Images]({{ site.baseurl }}/glossary/header-images/header-image.html)
+- Glossary: [Creating Side Columns]({{ site.baseurl }}/glossary/side-columns/id.html)
