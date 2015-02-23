@@ -14,7 +14,7 @@ parent: conditional
 ## Description
 
 This conditional tag is used to close any if statement. This tag must be used to close those statements.
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/pages/tutorials/conditional-tags.html)
+For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)
 
 Pseudo Equivalent:
 `}`

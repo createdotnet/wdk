@@ -12,7 +12,7 @@ parent: header-images
 
 ## Description
 
-Use this tag to return the height of a specific header (1, 2 or 3). To find out more, please read our [Logos & Headers]({{ site.baseurl }}/tutorials/header-images) tutorial.
+Use this tag to return the height of a specific header (1, 2 or 3). To find out more, please read our [Logos & Headers]({{ site.baseurl }}/tutorials/header-images.html) tutorial.
 
 ## Example
 

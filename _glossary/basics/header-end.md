@@ -14,7 +14,7 @@ parent: basics
 
 This is a required tag that ends the header section of your template.
 Create's dynamic content is loaded between `<!--WDK:header:end-->` and `<!--WDK:footer:start-->`.
-For more information, please see the [header tutorial](pages/tutorials/the-header.html).
+For more information, please see the [header tutorial]({{ site.baseurl }}/tutorials/the-header.html).
 
 ## Example
 

@@ -124,7 +124,8 @@ This outputs plain text - "&copy; [company name] 20[XX]". Again, this is contain
 - Tag: `<!--WDK:column:end:right-->`
 - Tag: `<!--WDK:display:sitefooter-->`
 - Tag: `<!--WDK:footer:end-->`
-- Tutorial: [Requirements & Restrictions](01requirements-restrictions.html)
-- Tutorial: [The Basics](07the-basics.html)
-- Tutorial: [Creating Side Columns]({{ site.baseurl }}/pages/glossary/side-columns/01id.html)
-- Tutorial: [The Header](03the-header.html)
+- Tutorial: [Requirements & Restrictions](requirements-restrictions.html)
+- Tutorial: [The Basics](the-basics.html)
+- Tutorial: [The Header](the-header.html)
+- Glossary: [Creating Side Columns]({{ site.baseurl }}/glossary/side-columns/id.html)
+
