@@ -566,7 +566,7 @@ With:
 </style>
 ~~~
 
-From the "Design Screen", Create users can select dynamic colours for use within their template. To make our existing page compatible with this, we'll need to use a few tags to set the styles. Please see our tutorials for a more in depth look at [Dynamic Styling](05dynamic-styling.html) and [Advanced Colour]({{ site.baseurl }}/tutorials/advanced-colour-functions.html) Functions.
+From the "Design Screen", Create users can select dynamic colours for use within their template. To make our existing page compatible with this, we'll need to use a few tags to set the styles. Please see our tutorials for a more in depth look at [Dynamic Styling](dynamic-styling.html) and [Advanced Colour]({{ site.baseurl }}/tutorials/advanced-colour-functions.html) Functions.
 
 Replacing:
 

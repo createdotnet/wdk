@@ -372,4 +372,4 @@ ul li ul li.wdk_level_2 {
 - Tag: `<!--WDK:endif-->`
 - Tag: `<!--WDK:javascript:jquery-->`
 - Tag: `<!--WDK:templateoption:dropdownMenu:[top]-->`
-- Tutorial: [Conditional Tags](10conditional-tags.html)
+- Tutorial: [Conditional Tags](conditional-tags.html)

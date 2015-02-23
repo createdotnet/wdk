@@ -135,4 +135,4 @@ If in your template you only allow the user to select a background colour, this 
 - Tag: `<!--WDK:color:brighten-->`
 - Tag: `<!--WDK:color:darken-->`
 - Tag: `<!--WDK:color:bestvisible-->`
-- Tutorial: [Dynamic Styling Tutorial](05dynamic-styling.html)
+- Tutorial: [Dynamic Styling Tutorial](dynamic-styling.html)

@@ -122,4 +122,4 @@ As you can check to see if a specific header image is a flash file, you may also
 - Tag: `<!--WDK:if:headerX:isPng-->`
 - Tag: `<!--WDK:if:headerX:isJpg-->`
 - Tag: `<!--WDK:if:headerX:isGif-->`
-- Tutorial: [Conditional Tags](10conditional-tags.html)
+- Tutorial: [Conditional Tags](conditional-tags.html)
