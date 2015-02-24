@@ -1,0 +1,27 @@
+baseurl:     "/wdk"
+
+# Conversion
+markdown:    kramdown
+
+# Turn on recognition of 'Github Flavored Markdown'
+kramdown:
+  input: GFM
+
+# Backwards-compatibility
+relative_permalinks: false
+
+# Sass
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+collections:
+  - tutorials:
+      output: true
+  - glossary:
+      output: true
+      - cat1:
+      - cat2:
+  - getting-started:
+      output: true
+      label: Getting Started

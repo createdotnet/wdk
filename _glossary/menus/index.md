@@ -3,6 +3,13 @@ layout: side-nav
 title: Menus
 nav-position: 4
 last-updated: 13-02-2013
+sub-pages:
+  - display-shop-categories
+  - end
+  - id
+  - link
+  - start
+  - text
 ---
 
 

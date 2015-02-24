@@ -1,8 +1,12 @@
 ---
 layout: side-nav
-title: Header Images
-nav-position: 8
+title: Path Tags
+nav-position: 10
 last-updated: 07-02-2013
+sub-pages:
+  - file-directory
+  - image-directory
+  - template-directory
 ---
 
 

@@ -1,8 +1,14 @@
 ---
 layout: side-nav
-title: Site Specific Tags
-nav-position: 9
+title: Header Images
+nav-position: 8
 last-updated: 07-02-2013
+sub-pages:
+  - header-image
+  - header-x
+  - header-x-height
+  - header-x-url
+  - header-x-width
 ---
 
 

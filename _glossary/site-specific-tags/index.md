@@ -1,8 +1,13 @@
 ---
 layout: side-nav
-title: Path Tags
-nav-position: 10
+title: Site Specific Tags
+nav-position: 9
 last-updated: 07-02-2013
+sub-pages:
+  - company-name
+  - head-information
+  - site-footer
+  - site-name
 ---
 
 

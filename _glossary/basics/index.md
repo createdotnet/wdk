@@ -3,6 +3,16 @@ layout: side-nav
 title: Basics
 nav-position: 1
 last-updated: 07-02-2013
+sub-pages:
+  - background-colour
+  - comment
+  - font
+  - footer-end
+  - footer-start
+  - header-start
+  - header-end
+  - link-colour
+  - text-colour
 ---
 
 
