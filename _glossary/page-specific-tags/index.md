@@ -10,6 +10,7 @@ sub-pages:
   - page-meta-keywords
   - page-title-tag
   - page-title
+  - page-type
 ---
 
 <!-- This Page exists for the creation of the sub-menu only and is not displayed on the site -->
