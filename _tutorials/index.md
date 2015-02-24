@@ -1,6 +1,6 @@
 ---
 layout: side-nav
-title: Tutorials - Home
+title: Tutorials
 last-updated: 01-07-2014
 ---
 

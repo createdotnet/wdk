@@ -1,6 +1,6 @@
 ---
 layout: side-nav
-title: Glossary - Home
+title: Glossary
 last-updated: 01-07-2014
 ---
 

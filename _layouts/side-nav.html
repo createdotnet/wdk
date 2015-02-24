@@ -14,10 +14,8 @@
 		<!-- Assign posts based on which page we're on and set the navigation title -->
 		{% if page.url contains "glossary" %}
 			{% assign nav-items = site.glossary | sort:"nav-position" %}
-			<h1>Glossary</h1>
 		{% elsif page.url contains "tutorials" %}
 			{% assign nav-items = site.tutorials | sort:"nav-position" %}
-			<h1>Tutorials</h1>
 		{% elsif page.url contains "getting-started" %}
 			{% assign nav-items = site.getting-started | sort:"nav-position" %}
 			<h1>Getting Started</h1>
