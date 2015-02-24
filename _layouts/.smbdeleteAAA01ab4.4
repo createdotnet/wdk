@@ -1,6 +1,12 @@
 {% include head.html %}
 {% include top-navigation-bars.html %}
 
+
+<div class="page-header">
+	<h2 class="page-title">{{ page.title }}</h2>
+</div>
+
+
 <div class="page-content">
 
 	<nav class="side-menu">
@@ -8,46 +14,36 @@
 		<!-- Assign posts based on which page we're on and set the navigation title -->
 		{% if page.url contains "glossary" %}
 			{% assign nav-items = site.glossary | sort:"nav-position" %}
+			<h1>Glossary</h1>
 		{% elsif page.url contains "tutorials" %}
 			{% assign nav-items = site.tutorials | sort:"nav-position" %}
+			<h1>Tutorials</h1>
 		{% elsif page.url contains "getting-started" %}
 			{% assign nav-items = site.getting-started | sort:"nav-position" %}
 			<h1>Getting Started</h1>
 		{% endif %}
 			
 
+		{{ site.collections }}
 		<ul>
 			{% for post in nav-items %}
- 
-					{% if post.url contains "/index.html" %}
-					<li class="nav__item nav__item--has-sub">
-						<h3>{{ post.title }}</h3>
-						<ul>
-							{% for subpage in post.sub-pages %}
-							<li class="nav__item__sub">
-								<a href="{{ site.baseurl }}{{ post.url | remove: '/index.html' }}/{{ subpage }}.html">
-									{{ subpage | replace:'-',' ' | capitalize }}
-								</a>
-							</li>
-							{% endfor %}
-						</ul>
-					{% elsif post.parent == nil %}
+
 					<li class="nav__item">
 						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+					    {% if post.parent != nil %}
+
+					    {% endif %}
 					</li>
-					{% endif %}
- 
+
 			{% endfor %}
 		</ul>
-	
+
 	</nav>
 
+
+
 	<main>
-		<h1 class="">{{ page.title }}</h1>
-		<code class="wdk-tag language-markup">{{ page.tag }}</code>
-
 		{{ content }}
-
 		<p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
 	</main>
 

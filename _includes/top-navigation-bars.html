@@ -19,11 +19,25 @@
 
 		<nav class="top-nav">
 			<ul>
-				<li {% if page.url contains "pages/getting_started" %}class="active"{% endif %}><a href="{{ site.baseurl }}/getting-started/01before-you-start.html">Getting Started</a></li>
-				<li {% if page.url  contains "pages/tutorials" %}class="active"{% endif %}><a href="{{ site.baseurl }}/tutorials/index.html">Tutorials</a></li>
-				<li {% if page.url contains "pages/glossary" %}class="active"{% endif %}><a href="{{ site.baseurl }}/glossary/index.html">Glossary</a></li>
-				<li {% if page.url  contains "pages/support" %}class="active"{% endif %}><a href="{{ site.baseurl }}/support.html">Support</a></li>
-				<li {% if page.url  contains "changelog" %}class="active"{% endif %}><a href="{{ site.baseurl }}/changelog.html">Change Log</a></li>
+				<li {% if page.url contains "pages/getting_started" %}class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/getting-started/before-you-start.html">Getting Started</a>
+				</li>
+				
+				<li {% if page.url contains "/tutorials/" %}class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/tutorials/index.html">Tutorials</a>
+				</li>
+				
+				<li {% if page.url contains "/glossary/" %}class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/glossary/index.html">Glossary</a>
+				</li>
+				
+				<li {% if page.url contains "/support/" %}class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/support.html">Support</a>
+				</li>
+				
+				<li {% if page.url contains "changelog" %}class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/changelog.html">Change Log</a>
+				</li>
 			</ul>
 		</nav>
 
