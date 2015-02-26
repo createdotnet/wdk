@@ -7,7 +7,9 @@
 
 	<main>
 		<h1 class="">{{ page.title }}</h1>
-		<code class="wdk-tag">{{ page.tag }}</code>
+		{% if page.tag != nil %}
+			<code class="wdk-tag">{{ page.tag }}</code>
+		{% endif %}
 
 		{{ content }}
 
