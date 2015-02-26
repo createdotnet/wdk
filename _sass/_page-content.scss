@@ -21,6 +21,6 @@ blockquote {
 
 .wdk-tag {
 	display: block;
-	padding: 20px;
+	padding: 20px !important; // overriding the horrible prism.js css selector
 	margin-bottom: 20px;
 }
