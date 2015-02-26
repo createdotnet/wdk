@@ -4,13 +4,8 @@ title: Header - End
 last-updated: 31-07-2013
 nav-position: 9
 parent: basics
+tag: <!--WDK:header:end-->
 ---
-
-## Tag
-
-`<!--WDK:header:end-->`
-
-## Description
 
 This is a required tag that ends the header section of your template.
 Create's dynamic content is loaded between `<!--WDK:header:end-->` and `<!--WDK:footer:start-->`.

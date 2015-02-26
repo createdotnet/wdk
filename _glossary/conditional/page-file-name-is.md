@@ -3,9 +3,10 @@ layout: side-nav
 title: Page File Name Is
 last-updated: 31-07-2013
 parent: conditional
-tag: <!--WDK:if:pageFilenameIs:value-->
 nav-position: 1
 ---
+
+`<!--WDK:if:pageFilenameIs:value-->`
 
 This conditonal tag checks to see if the page filename is the specified value.
 

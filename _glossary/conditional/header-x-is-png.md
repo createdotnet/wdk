@@ -4,14 +4,8 @@ title: Header X Is Png
 last-updated: 03-03-2013
 nav-position: 12
 parent: conditional
+tag: <!--WDK:if:headerX:isPng-->
 ---
-
-
-## Tag
-
-`<!--WDK:if:headerX:isPng-->`
-
-## Description
 
 This conditional tag checks to see if headerX ([header3, header4]({{ site.baseurl }}/glossary/conditional/header-x.html)) is a png file.
 

@@ -4,14 +4,9 @@ title: Has Shop
 last-updated: 01-03-2013
 nav-position: 17
 parent: conditional
+tag: <!--WDK:if:hasShop-->
 ---
 
-
-## Tag
-
-`<!--WDK:if:hasShop-->`
-
-## Description
 This conditional tag does a check that returns true if a shop exists and the account level allows it.
 For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)
 

@@ -4,13 +4,8 @@ title: Tint
 last-updated: 12-02-2013
 nav-position: 5
 parent: colour-functions
+tag: <!--WDK:color:tint:colour1:colour2:amount-->
 ---
-
-## Tag
-
-`<!--WDK:color:tint:colour1:colour2:amount-->`
-
-## Description
 
 Return = `#<HEX>`
 This tag create's a hex colour based on 2 specified colour and an amount.

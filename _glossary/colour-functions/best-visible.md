@@ -4,13 +4,8 @@ title: Best Visable
 last-updated: 12-02-2013
 nav-position: 3
 parent: colour-functions
+tag: <!--WDK:color:bestvisible:colour-->
 ---
-
-## Tag
-
-`<!--WDK:color:bestvisible:colour-->`
-
-## Description
 
 This tag creates a colour that will be easiest to see when placed over the specifed colour.
 

@@ -4,14 +4,9 @@ title: Page File Name Contains
 last-updated: 31-05-2013
 nav-position: 4
 parent: conditional
+tag: <!--WDK:if:pageFilenameContains:value-->
 ---
-
-
-## Tag
-
-``<!--WDK:if:pageFilenameContains:value-->``
-
-## Description
+ 
 This conditional tag checks to see if the page filename contains the specified value.
 For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)
 

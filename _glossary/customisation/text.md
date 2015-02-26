@@ -4,13 +4,8 @@ title: Text Colour
 last-updated: 31-07-2013
 nav-position: 3
 parent: customisation
+tag: <!--WDK:display:bodytxt-->
 ---
-
-## Tag
-
-`<!--WDK:display:bodytxt-->`
-
-## Description
 
 Return `#<HEX>`
 Use this tag to return a hex value of the body text colour as specified on the "Colours" section on your Create "Design" screen.

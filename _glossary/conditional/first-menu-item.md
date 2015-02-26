@@ -4,14 +4,9 @@ title: First Menu Item
 last-updated: 31-07-2013
 nav-position: 7
 parent: conditional
+tag: <!--WDK:if:firstMenuItem-->
 ---
 
-
-## Tag
-
-`<!--WDK:if:firstMenuItem-->`
-
-## Description
 This conditional tag checks to see if the current menu item (within the menu loop) is the first item.
 
 For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)

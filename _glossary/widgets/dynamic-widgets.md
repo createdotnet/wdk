@@ -3,8 +3,8 @@ layout: side-nav
 title: Dynamic - Widgets, HTML Fragments, Galleries Etc
 last-updated: 31-07-2013
 parent: widgets
-tag: <!--WDK:dynamic:type:id-->
 nav-position: 1
+tag: <!--WDK:dynamic:type:id-->
 ---
 
 This tag can be used to place dynamic content such as a widgets within your template.

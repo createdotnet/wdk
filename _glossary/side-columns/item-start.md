@@ -4,13 +4,8 @@ title: Side Column Item - Start
 last-updated: 14-02-2013
 nav-position: 6
 parent: side-columns
+tag: <!--WDK:column:item:start-->
 ---
-
-## Tag
-
-`<!--WDK:column:item:start-->`
-
-## Description
 
 This tag starts the side column item loop. This must be used with <!--WDK:column:item:end-->. Between these tags you can create the structure for a side column item, this will then be applied to all side column items.
 

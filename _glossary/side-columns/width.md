@@ -6,11 +6,6 @@ nav-position: 8
 parent: side-columns
 ---
 
-## Tag
-
-
-## Description
-
 This tag sets the internal width of current columns content.
 
 ## Example

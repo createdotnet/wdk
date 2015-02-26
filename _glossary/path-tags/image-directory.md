@@ -4,13 +4,8 @@ title: Image Directory
 last-updated: 07-02-2013
 nav-position: 1
 parent: path-tags
+tag: <!--WDK:path:images-->
 ---
-
-## Tag
-
-`<!--WDK:path:images-->`
-
-## Description
 
 Use this tag to retreive the full relative path to your images directory.
 

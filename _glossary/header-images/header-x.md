@@ -4,13 +4,8 @@ title: Header X
 last-updated: 08-02-2013
 nav-position: 5
 parent: header-images
+tag: <!--WDK:display:headerX-->
 ---
-
-## Tag
-
-`<!--WDK:display:headerX-->`
-
-## Description
 
 Use this tag to return a complete image HTML tag for a specific header (1, 2 or 3). To find out more, [Logos & Headers]({{ site.baseurl }}/tutorials/header-images) tutorial.
 

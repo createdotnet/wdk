@@ -4,13 +4,8 @@ title: Page Background Colour
 last-updated: 08-03-2013
 nav-position: 1
 parent: customisation
+tag: <!--WDK:display:pagebg-->
 ---
-
-## Tag
-
-`<!--WDK:display:pagebg-->`
-
-## Description
 
 Return `#<HEX>`
 Use this tag to return a hex value of the page background colour as specified on the "Colours" section on your Create "Design" screen.

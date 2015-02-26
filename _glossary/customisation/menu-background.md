@@ -4,13 +4,8 @@ title: Menu Background Colour
 last-updated: 31-07-2013
 nav-position: 5
 parent: customisation
+tag: <!--WDK:display:menubg-->
 ---
-
-## Tag
-
-`<!--WDK:display:menubg-->`
-
-## Description
 
 Return `#<HEX>`
 Use this tag to return a hex value of the menu background colour as specified on the "Colours" section on your Create "Design" screen.

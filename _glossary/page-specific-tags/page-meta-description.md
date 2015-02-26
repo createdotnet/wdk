@@ -4,13 +4,8 @@ title: Page Meta Description
 last-updated: 08-02-2013
 nav-position: 6
 parent: page-specific-tags
+tag: <!--WDK:display:metadesc-->
 ---
-
-## Tag
-
-`<!--WDK:display:metadesc-->`
-
-## Description
 
 Use this tag to return the current page's `<meta>` description as defined on the "Page Options" screen.
 

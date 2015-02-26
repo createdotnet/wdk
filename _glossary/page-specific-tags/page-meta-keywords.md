@@ -4,13 +4,8 @@ title: Page Meta Keywords
 last-updated: 08-02-2013
 nav-position: 4
 parent: page-specific-tags
+tag: <!--WDK:display:metakeys-->
 ---
-
-## Tag
-
-`<!--WDK:display:metakeys-->`
-
-## Description
 
 Use this tag to return the current page's `<meta>` keywords as defined on the "Page Options" screen from within your Create account.
 

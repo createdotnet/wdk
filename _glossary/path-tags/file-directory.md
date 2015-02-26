@@ -3,13 +3,8 @@ layout: side-nav
 title: File Directory
 last-updated: 07-02-2013
 parent: path-tags
+tag: <!--WDK:path:file-->
 ---
-
-## Tag
-
-`<!--WDK:path:file-->`
-
-## Description
 
 Use this tag to retreive the full relative path to your uploaded files directory.
 
