@@ -5,9 +5,6 @@
 		{% assign nav-items = site.glossary | sort:"nav-position" %}
 	{% elsif page.url contains "tutorials" %}
 		{% assign nav-items = site.tutorials | sort:"nav-position" %}
-	{% elsif page.url contains "getting-started" %}
-		{% assign nav-items = site.getting-started | sort:"nav-position" %}
-		<h1>Getting Started</h1>
 	{% endif %}
 		
 
