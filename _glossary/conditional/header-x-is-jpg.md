@@ -4,14 +4,8 @@ title: Header X Is Jpg
 last-updated: 03-03-2013
 nav-position: 14
 parent: conditional
+tag: <!--WDK:if:headerX:isJpg-->
 ---
-
-
-## Tag
-
-`<!--WDK:if:headerX:isJpg-->`
-
-## Description
 
 This conditional tag checks to see if headerX (header3, header4) is a jpg file.
 

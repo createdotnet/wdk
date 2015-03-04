@@ -4,13 +4,8 @@ title: Menu - Start
 last-updated: 31-07-2013
 nav-position: 1
 parent: menus
+tag: <!--WDK:menu:start(start,end)-->
 ---
-
-## Tag
-
-`<!--WDK:menu:start(start,end)-->`
-
-## Description
 
 Use this tag to start a loop through the site's menu items. 
 You can optionally specify a range to include in the loop so that it beings at the nth(start) item and ends at the nth(end) item. 

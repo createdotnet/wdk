@@ -4,13 +4,8 @@ title: Menu Text Colour
 last-updated: 08-03-2013
 nav-position: 7
 parent: customisation
+tag: <!--WDK:display:menutxt-->
 ---
-
-## Tag
-
-`<!--WDK:display:menutxt-->`
-
-## Description
 
 Return `#<HEX>`
 Use this tag to return a hex value of the menu text colour as specified on the "Colours" section on your Create "Design" screen.

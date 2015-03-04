@@ -1,0 +1,35 @@
+<nav class="side-menu">
+
+	<!-- Assign posts based on which page we're on and set the navigation title -->
+	{% if page.url contains "glossary" %}
+		{% assign nav-items = site.glossary | sort:"nav-position" %}
+	{% elsif page.url contains "tutorials" %}
+		{% assign nav-items = site.tutorials | sort:"nav-position" %}
+	{% endif %}
+		
+
+	<ul>
+		{% for post in nav-items %}
+
+				{% if post.url contains "/index.html" %}
+				<li class="nav__item nav__item--has-sub">
+					<h3>{{ post.title }}</h3>
+					<ul>
+						{% for subpage in post.sub-pages %}
+						<li class="nav__item__sub">
+							<a href="{{ site.baseurl }}{{ post.url | remove: '/index.html' }}/{{ subpage }}.html">
+								{{ subpage | replace:'-',' ' | capitalize }}
+							</a>
+						</li>
+						{% endfor %}
+					</ul>
+				{% elsif post.parent == nil %}
+				<li class="nav__item">
+					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+				</li>
+				{% endif %}
+
+		{% endfor %}
+	</ul>
+
+</nav>

@@ -4,13 +4,8 @@ title: Brighten
 last-updated: 12-02-2013
 nav-position: 2
 parent: colour-functions
+tag: <!--WDK:color:brighten:colour:amount-->
 ---
-
-## Tag
-
-`<!--WDK:color:brighten:colour:amount-->`
-
-## Description
 
 Return = `#<HEX>`
 This tag create's a brighter version of a colour by a specified amount.

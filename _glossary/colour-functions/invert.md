@@ -4,13 +4,8 @@ title: Invert
 last-updated: 12-02-2013
 nav-position: 4
 parent: colour-functions
+tag: <!--WDK:color:invert:colour-->
 ---
-
-## Tag
-
-`<!--WDK:color:invert:colour-->`
-
-## Description
 
 Return = `#<HEX>`
 This tag creates a inverted colour version to your specified colour.

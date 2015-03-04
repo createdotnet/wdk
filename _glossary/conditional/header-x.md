@@ -4,14 +4,8 @@ title: Header X
 last-updated: 03-03-2013
 nav-position: 10
 parent: conditional
+tag: <!--WDK:if:headerX-->
 ---
-
-
-## Tag
-
-`<!--WDK:if:headerX-->`
-
-## Description
 
 This conditional tag checks that returns true if headerX (header3 or header4) is the selected header.
 For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)

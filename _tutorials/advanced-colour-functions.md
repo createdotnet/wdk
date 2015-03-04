@@ -18,7 +18,7 @@ For each of these tag you may use a hex colour, or a colour variable. The colour
 - menubg - Menu background colour
 - menutxt - Menu text colour
 
-## Tags
+
 
 #### Tint
 This tag returns a hex reference that is a mix of colour1 and colour 2 at amount % (0 - 100).

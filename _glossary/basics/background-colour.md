@@ -4,13 +4,8 @@ title: Editor - Background Colour
 last-updated: 31-07-2013
 nav-position: 1
 parent: basics
+tag: <!--WDK:editor:bgcolor:#value-->
 ---
-
-## Tag
-
-`<!--WDK:editor:bgcolor:#value-->`
-
-## Description
 
 Use this tag to preset the background colour on Create's Design screen.
 

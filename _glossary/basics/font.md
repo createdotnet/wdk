@@ -4,13 +4,8 @@ title: Editor - Font
 last-updated: 31-07-2013
 nav-position: 2
 parent: basics
+tag: <!--WDK:editor:font:value-->
 ---
-
-## Tag
-
-`<!--WDK:editor:font:value-->`
-
-## Description
 
 Use this tag to preset the font on Create's Design screen.
 

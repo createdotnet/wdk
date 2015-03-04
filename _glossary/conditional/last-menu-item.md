@@ -4,14 +4,8 @@ title: Else
 last-updated: 30-07-2013
 nav-position: 8
 parent: conditional
+tag: <!--WDK:if:lastMenuItem-->
 ---
-
-
-## Tag
-
-`<!--WDK:if:lastMenuItem-->`
-
-## Description
 
 This conditional tag checks to see if the current menu item (within the menu loop) is the current page.
 

@@ -4,13 +4,8 @@ title: Background Image
 last-updated: 08-03-2013
 nav-position: 6
 parent: customisation
+tag: <!--WDK:display:bgimage-->
 ---
-
-## Tag
-
-`<!--WDK:display:bgimage-->`
-
-## Description
 
 Use this tag to return the URL of the background image specified on the "Wallpaper" section on your Create "Design" screen.
 

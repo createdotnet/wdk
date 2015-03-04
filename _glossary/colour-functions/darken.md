@@ -4,13 +4,8 @@ title: Darken
 last-updated: 12-02-2013
 nav-position: 1
 parent: colour-functions
+tag: <!--WDK:color:darken:colour:amount-->
 ---
-
-## Tag
-
-`<!--WDK:color:darken:colour:amount-->`
-
-## Description
 
 This tag creates a darker version of a colour by a specified amount.
 

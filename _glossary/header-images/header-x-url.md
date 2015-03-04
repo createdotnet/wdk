@@ -4,13 +4,8 @@ title: Header X URL
 last-updated: 31-07-2013
 nav-position: 4
 parent: header-images
+tag: <!--WDK:display:headerXsrc-->
 ---
-
-## Tag
-
-`<!--WDK:display:headerXsrc-->`
-
-## Description
 
 Use this tag to return the full url of a specific header (1, 2 or 3). To find out more, please read our [Logos & Headers]({{ site.baseurl }}/tutorials/header-images) tutorial.
 

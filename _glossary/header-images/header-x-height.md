@@ -4,13 +4,8 @@ title: Header X Height
 last-updated: 31-07-2013
 nav-position: 3
 parent: header-images
+tag: <!--WDK:display:headerXheight-->
 ---
-
-## Tag
-
-`<!--WDK:display:headerXheight-->`
-
-## Description
 
 Use this tag to return the height of a specific header (1, 2 or 3). To find out more, please read our [Logos & Headers]({{ site.baseurl }}/tutorials/header-images.html) tutorial.
 

@@ -4,13 +4,8 @@ title: Else
 last-updated: 01-03-2013
 nav-position: 5
 parent: conditional
+tag: <!--WDK:else-->
 ---
-
-
-## Tag
-`<!--WDK:else-->`
-
-## Description
 
 This conditional tag is for optional use between `<!--WDK:if-->` and `<!--WDK:endif-->` which can be used if the initial condition is false.
 

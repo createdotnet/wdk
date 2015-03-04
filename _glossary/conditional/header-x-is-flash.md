@@ -4,14 +4,8 @@ title: User Is logged In
 last-updated: 03-03-2013
 nav-position: 11
 parent: conditional
+tag: <!--WDK:if:headerX:isFlash-->
 ---
-
-
-## Tag
-
-`<!--WDK:if:headerX:isFlash-->`
-
-## Description
 
 This conditional tag checks to see if header<span style="text-decoration: underline;">X</span> (<a href="#" target="_blank">header3, header4</a>) is a flash file.
 

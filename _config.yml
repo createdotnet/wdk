@@ -20,6 +20,3 @@ collections:
     output: true
   glossary:
     output: true
-  getting-started:
-    output: true
-    label: Getting Started

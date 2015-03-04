@@ -6,11 +6,7 @@ nav-position: 6
 parent: menus
 ---
 
-## Tag
-
 `<!--WDK:display:shopCategoryList:levels-->`
-
-## Description
 
 Returns a full html `<ul> <li>` structure of the shop category menus. This is great for doing drop-down shop menus.
 Please note that "levels" is an optional permateter. 

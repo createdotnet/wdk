@@ -4,13 +4,8 @@ title: Highlight
 last-updated: 12-02-2013
 nav-position: 6
 parent: colour-functions
----
-
-## Tag
-
-`<!--WDK:color:highlight:colour:amount-->`
-
-## Description
+tag: <!--WDK:color:highlight:colour:amount-->
+--- 
 
 Return = `#<HEX>`
 This tag creates a highlighted version of a colour by a specified amount. 

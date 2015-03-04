@@ -4,14 +4,9 @@ title: Page File Name Starts With
 last-updated: 08-03-2013
 nav-position: 2
 parent: conditional
+tag: <!--WDK:if:pageFilenameStartsWith:value-->
 ---
 
-
-## Tag
-
-`<!--WDK:if:pageFilenameStartsWith:value-->`
-
-## Description
 This conditional tag checks to see if the page filename starts with the specified value.
 
 For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)

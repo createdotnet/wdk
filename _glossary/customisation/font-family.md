@@ -4,13 +4,8 @@ title: Font Family
 last-updated: 08-03-2013
 nav-position: 8
 parent: customisation
+tag: <!--WDK:display:font-->
 ---
-
-## Tag
-
-`<!--WDK:display:font-->`
-
-## Description
 
 Use this tag to return the font specified on the "Font" section on your Create "Design" screen.
 

@@ -4,13 +4,8 @@ title: Side Column Item - Content
 last-updated: 14-02-2013
 nav-position: 2
 parent: side-columns
+tag: <!--WDK:column:item:content-->
 ---
-
-## Tag
-
-`<!--WDK:column:item:content-->`
-
-## Description
 
 This tag returns the content of the current side column item.
 

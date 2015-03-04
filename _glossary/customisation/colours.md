@@ -4,10 +4,8 @@ title: Colours
 last-updated: 01-08-2014
 nav-position: 1
 parent: customisation
+tag: <!--WDK:display:color:your_colour-->
 ---
-
-## Tag
-`<!--WDK:display:color:your_colour-->`
 
 ## Colours
 There are currently 6 standard colour tags in use across Create templates. menubg, menutxt, bodybg, bodytxt, bodylink, and pagebg.
