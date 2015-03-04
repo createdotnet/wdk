@@ -66,7 +66,7 @@ A good place to start would be declaring these 6 basic colours, although you are
 
 ### Defaults
 
-You may wish to create default colours for when a user visits your template and hasn't yet cusomised the colours. If this is not included in your index.html file, each colour will default to white and may cause your template to appear broken.
+You may wish to create default colours for when a user visits your template and hasn't yet customised the colours. If this is not included in your index.html file, each colour will default to white and may cause your template to appear broken.
 
 Anything put between these tags will be output in the CSS so only use CSS colours. The Hash on a hex colour is optional. Any of the following will work;
 
