@@ -17,9 +17,9 @@ sub-pages:
   - last-menu-item
   - menu-item-page-type
   - page-file-name-contains
-  - page-file-name-ends-with
   - page-file-name-is
-  - page-file-starts-with
+  - page-file-name-ends-with
+  - page-file-name-starts-with
   - user-is-logged-in-else
   - user-is-logged-in-end
 ---
