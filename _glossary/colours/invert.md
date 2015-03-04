@@ -3,7 +3,7 @@ layout: side-nav
 title: Invert
 last-updated: 12-02-2013
 nav-position: 4
-parent: colour-functions
+parent: colours
 tag: <!--WDK:color:invert:colour-->
 ---
 

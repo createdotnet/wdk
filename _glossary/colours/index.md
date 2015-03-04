@@ -1,6 +1,6 @@
 ---
 layout: side-nav
-title: Colour Functions
+title: Colours
 nav-position: 5
 last-updated: 12-02-2013
 sub-pages:
