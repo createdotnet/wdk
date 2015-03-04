@@ -4,10 +4,13 @@ title: Colour Functions
 nav-position: 5
 last-updated: 12-02-2013
 sub-pages:
-  - best-visible
+  - colours
+  - colour-defaults
   - brighten
   - darken
+  - best-visible
   - highlight
+  - lowlight
   - invert
   - tint
 ---
