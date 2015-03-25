@@ -3,6 +3,9 @@ layout: index
 title: Change Log
 ---
 
+## 4th March 2015 - Colours
+Updates to how colour tags are used as the Design Studio handles these slightly differently to before.
+
 ## 5 January 2015 - Pagebuilder
 Pagebuilder is a new drag and drop interface that allows users to build content. Previously users could only build their content in a TinyMCE editor, with heavy use of tables to set the layout of the page. With Pagebuilder users no longer need to use tables to build the layour of their page, as this is now handled automatically using our responsive grid. 
 [Read more]({{ site.baseurl }}/tutorials/page-builder.html)

@@ -2,23 +2,12 @@
 layout: side-nav
 title: Advanced Colour Functions
 nav-position: 6
-last-updated: 03-03-2013
+last-updated: 04-03-2015
 ---
 
-> This documentation is in need of [review and further clarification](https://github.com/createdotnet/wdk/issues/1).
+The WDK provides a series of tags that allow you to customise the users colours. This may be helpful for creating hover colours for example.
 
-Create's system offers dynamic colours, which enables users to customise their templates. These colours can be pulled into your template for use with CSS and is covered in the [Dynamic Styling Tutorial](dynamic-styling.html). The WDK also has a series of useful tags used to modify these dynamic or any other colours.
-
-For each of these tag you may use a hex colour, or a colour variable. The colour variables are written as follows:
-
-- bodybg - Body background colour
-- bodytxt - Body text Colour
-- bodylink - Body link colour
-- pagebg - Page background colour
-- menubg - Menu background colour
-- menutxt - Menu text colour
-
-
+For each of these tag you may use a hex colour, or a colour variable as created in the [colours tutorial](colours.html).
 
 #### Tint
 This tag returns a hex reference that is a mix of colour1 and colour 2 at amount % (0 - 100).
@@ -55,6 +44,11 @@ This tag could be useful for creating highlighted hover states for links.
   }
 </style>
 ~~~
+
+#### Lowlight
+
+The opposite of Highlight. Useful for when darken does not give the desired effect. 
+`<!--WDK:color:lowlight:colour:amount-->`
 
 #### Invert
 
@@ -131,8 +125,9 @@ If in your template you only allow the user to select a background colour, this 
 
 - Tag: `<!--WDK:color:tint-->`
 - Tag: `<!--WDK:color:highlight-->`
+- Tag: `<!--WDK:color:lowlight-->`
 - Tag: `<!--WDK:color:invert-->`
 - Tag: `<!--WDK:color:brighten-->`
 - Tag: `<!--WDK:color:darken-->`
 - Tag: `<!--WDK:color:bestvisible-->`
-- Tutorial: [Dynamic Styling Tutorial](dynamic-styling.html)
+- Tutorial: [Colours Basics](colours.html)
