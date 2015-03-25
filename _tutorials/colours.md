@@ -25,7 +25,7 @@ A good place to start would be declaring these 6 basic colours, although you are
 - menu_background
 - menu_text
 
-##### Example
+### Example
 ~~~
 <head>
   <style type="text/css">
