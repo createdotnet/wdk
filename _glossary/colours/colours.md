@@ -8,4 +8,4 @@ tag: <!--WDK:display:color:your_colour-->
 ---
 
 ## Further Reading
-Check out the [Colors Tutorial]({{ site.baseurl }}tutorials/colours.html) for more information and a guide to using this tag.
+Check out the [Colors Tutorial]({{ site.baseurl }}/tutorials/colours.html) for more information and a guide to using this tag.
