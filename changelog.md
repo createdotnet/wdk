@@ -3,6 +3,9 @@ layout: index
 title: Change Log
 ---
 
+## 30th March 2015 - Column Count Tag
+Add documentation for `<!--WDK:column:count-->`, required for the default styling of the new re-sizeable category layout.
+
 ## 4th March 2015 - Colours
 Updates to how colour tags are used as the Design Studio handles these slightly differently to before.
 
