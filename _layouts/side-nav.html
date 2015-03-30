@@ -7,9 +7,6 @@
 
 	<main>
 		<h1 class="">{{ page.title }}</h1>
-		{% if page.tag != nil %}
-			<code class="wdk-tag">{{ page.tag | xml_escape }} </code>
-		{% endif %}
 
 		{{ content }}
 

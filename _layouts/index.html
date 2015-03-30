@@ -2,8 +2,21 @@
 {% include top-navigation-bars.html %}
 
 <div class="page-content">
+	
 	<h1 class="">{{ page.title }}</h1>
+	
 	{{ content }}
+
+
+	{% if page.title == "Glossary" %}
+		
+		{% for wdk_tag in site.glossary %}
+			<code class="wdk-tag">{{ page.tag | xml_escape }} </code>
+			{{ content }}
+		{% endfor %}
+
+	{% endif %}
+
 </div> <!-- end container -->
 
 {% include footer.html %}

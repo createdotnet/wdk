@@ -19,4 +19,4 @@ collections:
   tutorials:
     output: true
   glossary:
-    output: true
+    output: false

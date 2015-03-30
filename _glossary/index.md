@@ -1,9 +1,19 @@
 ---
 layout: side-nav
-title: Glossary
-last-updated: 01-07-2014
+title: Basics
+nav-position: 1
+last-updated: 07-02-2013
+sub-pages:
+  - comment
+  - footer-end
+  - footer-start
+  - header-start
+  - header-end
+  - editor-font
+  - editor-link-colour
+  - editor-text-colour
+  - editor-background-colour
 ---
 
-The glossary is a library of WDK tags, a description of what they do and examples of their uses.
 
-For more detailed explanations and examples, see the [Tutorials]({{ site.baseurl }}/tutorials/index.html) page. 
+<!-- This Page exists for the creation of the sub-menu only and is not displayed on the site -->
