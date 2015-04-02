@@ -63,7 +63,7 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 
 #### Grid
 
-We utilize css-wizardry’s grid framework [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) for the Create.net frontend.
+We utilize css-wizardry’s grid framework [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) for the Create.net frontend. See [csswizardry-grids in action](http://csswizardry.com/csswizardry-grids/)
 
 Build settings: the `$gutter` value is set to `24px` by default.
 
