@@ -3,6 +3,9 @@ layout: index
 title: Change Log
 ---
 
+## 2th April 2015 - CSS Grid Framework
+Documentation on [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) we use on the Create.net frontend, relevant tags and markup examples.
+
 ## 4th March 2015 - Colours
 Updates to how colour tags are used as the Design Studio handles these slightly differently to before.
 

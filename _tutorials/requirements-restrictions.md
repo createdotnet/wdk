@@ -63,13 +63,20 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 
 #### Grid
 
+At least one `<!--WDK:base:css:grid:[…]-->` tag must be used unless you want to roll your own CSS grid framework
+
 We utilize css-wizardry’s grid framework [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) for the Create.net frontend. See [csswizardry-grids in action](http://csswizardry.com/csswizardry-grids/)
 
 Build settings: the `$gutter` value is set to `24px` by default.
 
+HTML classes:
+
+* `.grid` - grid wrapper
+* `.grid__item` - grid item, must be direct decedents of the `.grid` item
+
 **N.B.** The framework requires all whitespace to be removed form between `grid__item` elements, the recommended way of doing this is by using HTML comments.
 
-Example:
+HTML example:
 
 ```
 <div class="grid">
