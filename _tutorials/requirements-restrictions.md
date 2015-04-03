@@ -43,7 +43,7 @@ These are listed below.
 
 ### Core Styling
 
-To style the core components, patterns and widgets in the Create.net system we provide a vanilla (un-themed) version of our CSS boilerplate. This tag should be placed in the head of your document in order to import the default CSS styling. Your custom CSS stylesheet(s) should be placed below this tag.
+To style the core Create.net frontend components, patterns and widgets we provide a vanilla (un-themed) version of our CSS boilerplate. This tag should be placed in the head of your document in order to import the default CSS styling. Your custom CSS stylesheet(s) should be placed below this tag.
 
 Tag: `<!--WDK:base:assets-->`
 
