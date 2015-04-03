@@ -5,6 +5,7 @@ last-updated: 01-03-2013
 nav-position: 15
 parent: conditional
 tag: <!--WDK:isloggedin:else-->
+deprecated: 1.1
 ---
 
 This conditional tag is the equivelent of the <a href="#">else tags</a> if used (optionally) between `<!--WDK:isloggedin:start-->` and `<!--WDK:isloggedin:end-->`.

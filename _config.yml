@@ -1,5 +1,8 @@
 baseurl:     "/wdk"
 
+# Latest version for outputting deprecated messages
+wdk_version: "1"
+
 # Conversion
 markdown:    kramdown
 

@@ -3,6 +3,9 @@ layout: index
 title: Change Log
 ---
 
+## Version 1.1
+hello
+
 ## 4th March 2015 - Colours
 Updates to how colour tags are used as the Design Studio handles these slightly differently to before.
 
