@@ -10,7 +10,7 @@
 
 		{% if page.deprecated != nil %}
 			<div class="deprecated">
-				This tag has been deprecated as of version {{ page.deprecated }}. <a href="{{ site.baseurl }}/changelog.html#version{{ page.deprecated }}">See the change log</a>.
+				This tag has been deprecated as of version {{ page.deprecated }}, its use is highly discouraged. <a href="{{ site.baseurl }}/changelog.html#version-{{ page.deprecated | remove:'.' }}">See the change log</a>.
 			</div>
 		{% endif %}
 

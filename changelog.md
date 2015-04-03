@@ -4,7 +4,19 @@ title: Change Log
 ---
 
 ## Version 1.1
-hello
+The following tags have been deprecated and should be phased out of templates.
+
+- `<!--WDK:editor:bgcolor:#value-->`
+- `<!--WDK:editor:linkcolor:#value-->`
+- `<!--WDK:editor:txtcolor:#value-->`
+- `<!--WDK:editor:font:value-->`
+- `<!--WDK:if:headerX:isFlash-->`
+
+The following tags have been deprecated and we advise you use the alternatives instead.
+
+- `<!--WDK:isloggedin:start-->` - alternative: `<!--WDK:if:loggedIn-->`
+- `<!--WDK:isloggedin:else-->` - alternative: `<!--WDK:if:loggedIn-->...<!--WDK:else-->...`
+- `<!--WDK:isloggedin:end-->` -  - alternative: `<!--WDK:if:loggedIn-->...<!--WDK:endif-->`
 
 ## 4th March 2015 - Colours
 Updates to how colour tags are used as the Design Studio handles these slightly differently to before.
