@@ -11,8 +11,10 @@
 	{% if page.title == "Glossary" %}
 		
 		{% for wdk_tag in site.glossary %}
-			<code class="wdk-tag">{{ page.tag | xml_escape }} </code>
-			{{ content }}
+			<section class="glossary__item">
+				<code class="glossary__item__tag wdk-tag">{{ wdk_tag.tag | xml_escape }}</code>
+				{{ wdk_tag.content }}
+			</section>
 		{% endfor %}
 
 	{% endif %}
