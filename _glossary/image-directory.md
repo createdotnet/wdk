@@ -7,12 +7,4 @@ parent: path-tags
 tag: <!--WDK:path:images-->
 ---
 
-Use this tag to retreive the full relative path to your images directory.
-
-## Example
-
-In this example we're using the tag to include an image previously uploaded named 'logo.png'.
-
-~~~
-<img alt="Company Logo" src="<!--WDK:path:images-->logo.png" />
-~~~
+Use this tag to retreive the full relative path to your images directory. e.g. `src="<!--WDK:path:images-->logo.png"`

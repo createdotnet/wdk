@@ -8,11 +8,3 @@ tag: <!--WDK:display:headinfo-->
 ---
 
 This tag returns generated HTML `<title>` and `<meta>` tags for use within the `<head>` section of the document.
-
-## Example
-
-~~~
-<head>
-  <!--WDK:display:headinfo-->
-</head>
-~~~

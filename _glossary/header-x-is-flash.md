@@ -7,27 +7,5 @@ parent: conditional
 tag: <!--WDK:if:headerX:isFlash-->
 ---
 
-This conditional tag checks to see if header<span style="text-decoration: underline;">X</span> (<a href="#" target="_blank">header3, header4</a>) is a flash file.
+This conditional tag checks to see if headerX is a flash file.
 
-For more information, [please see the tutorial on conditional tags here.]({{ site.baseurl }}/tutorials/conditional-tags.html)
-
-Pseudo Equivalent:
-`if ( headerX.type == "swf" ) {`
-
-## Example
-In the following example we are using the tag to determine if header 3 is a flash file, then if it is it will show as a flash animation in the header area.
-
-
-~~~
-<header>
-	<div id="logo">
-		<!--WDK:if:header3:isFlash-->
-			<object data="<!--WDK:display:header3src-->" type="application/x-shockwave-flash" width="" height="">
-				<param name="movie" value="<!--WDK:display:header3src-->">
-			</object>
-		<!--WDK:elseif:header3:isPng-->
-			<img src="<!--WDK:display:header3src-->" alt="Logo Image" />
-		<!--WDK:endif-->
-	</div>
-</header>
-~~~
