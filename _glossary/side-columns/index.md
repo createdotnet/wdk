@@ -7,6 +7,7 @@ sub-pages:
   - content
   - end
   - id
+  - column-count
   - item-start
   - nth-item
   - start
