@@ -1,5 +1,7 @@
 baseurl:     "/wdk"
 
+current-wdk-version: "1.1"
+
 # Conversion
 markdown:    kramdown
 

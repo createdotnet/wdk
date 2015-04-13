@@ -1,7 +1,7 @@
 ---
 layout: side-nav
 title: Colours
-nav-position: 1
+nav-position: 3
 last-updated: 04-03-2015
 ---
 
