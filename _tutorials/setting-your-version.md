@@ -9,4 +9,4 @@ In order to allow upgrades to the WDK withouth breaking live sites, we use a ver
 
 If this tag is not included in you index.html file, the site will default to version 1.0/
 
-The current version is {{ site.current-wdk-version }}.
+The current version is {{ site.wdk_version }}.
