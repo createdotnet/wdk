@@ -5,6 +5,7 @@ last-updated: 01-03-2013
 nav-position: 17
 parent: conditional
 tag: <!--WDK:isloggedin:start-->
+deprecated: 1.1
 ---
 
 This conditional tag will check whether a website user is logged in.
