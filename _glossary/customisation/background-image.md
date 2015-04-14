@@ -6,7 +6,7 @@ nav-position: 6
 parent: customisation
 tag: <!--WDK:display:bgimage-->
 deprecated: 1.1
-useInstead: <!--WDK:templateoption:templatebg-->
+useInstead: WDK:templateoption:templatebg
 useInsteadLink: glossary/customisation/wallpaper.html
 ---
 

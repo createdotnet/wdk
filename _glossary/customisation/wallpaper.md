@@ -15,7 +15,7 @@ Use this tag will return the CSS required to display the wallpaper, select by th
 <head>
   <style type="text/css">
     body {
-      <!--WDK:display:bgimage-->
+      <!--WDK:templateoption:templatebg--> 
     }
   </style>
 </head>
@@ -27,7 +27,7 @@ Use this tag will return the CSS required to display the wallpaper, select by th
 <head>
   <style type="text/css">
     body {
-    	background-image: url('https://create-cdn.net/siteimages/_templates/bg/full-beech.jpg');
+      background-image: url('https://create-cdn.net/siteimages/_templates/bg/full-beech.jpg');
     }
   </style>
 </head>
