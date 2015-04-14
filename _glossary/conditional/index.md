@@ -22,6 +22,8 @@ sub-pages:
   - page-file-name-starts-with
   - user-is-logged-in-else
   - user-is-logged-in-end
+  - side-left
+  - side-right
 ---
 
 
