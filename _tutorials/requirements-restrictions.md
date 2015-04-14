@@ -41,15 +41,69 @@ There are a few tags that are required in order for your template to be processe
 These are listed below.
 
 
-#### Core Styling
-This tag should be placed in the head of your document in order to import the default CSS stylings. Your custom CSS stylesheet(s) should be placed below this tag.
+### Core Styling
+
+To style the core Create.net frontend components, patterns and widgets we provide a vanilla (un-themed) version of our CSS boilerplate. This tag should be placed in the head of your document in order to import the default CSS styling. Your custom CSS stylesheet(s) should be placed below this tag.
 
 Tag: `<!--WDK:base:assets-->`
 
-> **Pre-Release info** – Base assets will go live on 24-02-2014, after this date you must re-save your template and re-publish for the changes to take affect. In order to maintain compatibility with new markup for newly WDK’d areas of the site, we would strongly advise including this tag.
+This file includes a build of the [inuit.css CSS framework](https://github.com/csswizardry/inuit.css/) and includes the following optional components:
 
+* Nav
+* Island
+* Matrix
+* Block list
+* Breadcrumb
+* Link complex
+* Pagination
 
-#### Header & Footer
+> *__N.B.__ We are working toward abstracting these components into separate tags, see __Component Modules__ below*
+
+### Component Modules
+
+#### Grid
+
+At least one `<!--WDK:base:css:grid:[…]-->` tag must be used unless you want to roll your own CSS grid framework
+
+We utilize css-wizardry’s grid framework [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) for the Create.net frontend. See [csswizardry-grids in action](http://csswizardry.com/csswizardry-grids/)
+
+Build settings: the `$gutter` value is set to `24px` by default.
+
+HTML classes:
+
+* `.grid` - grid wrapper
+* `.grid__item` - grid item, must be direct decedents of the `.grid` item
+
+**N.B.** The framework requires all whitespace to be removed form between `grid__item` elements, the recommended way of doing this is by using HTML comments.
+
+HTML example:
+
+```
+<div class="grid">
+	<div class="grid__item">
+		[…]
+	</div><!--
+	--><div class="grid__item">
+		[…]
+	</div>
+</div>
+```
+
+**Fluid build**
+
+Place this tag in the `<head>` before your custom CSS.
+
+Tag: `<!--WDK:base:css:grid:fluid-->`
+
+**Responsive build**
+
+> **N.B.** We will be releasing a default responsive build of csswizardry-grids shortly.
+
+**Custom build**
+
+Alternatively you can upload your own version of [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) that will utilize the responsive classes across the system.
+
+### Header & Footer
 Your index.html file must contain all of the header and footer tags. These tags help us to identify your templates layout and instruct us where to put the main page content. 
 
 These tags are:
@@ -62,7 +116,7 @@ These tags are:
 For more information please see the basics tutorial.
 
 
-#### Display Site Footer
+### Display Site Footer
 This tag may be placed anywhere within the header or footer tags, if you leave it out, it will automatically be placed at the opening of your footer tag.
 
 Tag: `<!--WDK:display:sitefooter-->`
@@ -70,7 +124,7 @@ For more information please see the footer tutorial.
 
 
 
-#### Menu Loops
+### Menu Loops
 We offer 2 methods for creating menus: our drop down menu tag returns a full `<ul> <li>` structure, however we also offer a manual method for creating your own menu loops. 
 
 If you opt to build your own, you must include the `<!--WDK:menu:start-->` and `<!--WDK:menu:end-->` tags.
@@ -82,7 +136,7 @@ Please see the glossary for examples on individual tags and for more information
 
 
 
-#### Side Column Loops
+### Side Column Loops
 Similar to menu loops, when writing a side column, you must include the `<!--WDK:column:start-->` and `<!--WDK:column:end-->` tags.
 
 - Tag: `<!--WDK:column:start-->`
@@ -92,7 +146,7 @@ For more information please see the Creating Side Columns tutorial.
 
 
 
-#### Conditional Tags
+### Conditional Tags
 The WDK supports conditional statements. Any `<!--WDK:if-->` tag must be ended with `<!--WDK:endif-->`.
 
 - Tag: `<!--WDK:if-->`
