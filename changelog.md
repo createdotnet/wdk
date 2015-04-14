@@ -3,7 +3,7 @@ layout: index
 title: Change Log
 ---
 
-## Version 1.1
+## Version 1.1 (15 April 2015)
 
 ### The following tags have been deprecated and should be phased out of templates.
 
@@ -20,6 +20,7 @@ title: Change Log
 - `<!--WDK:isloggedin:end-->` -  alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->...<!--WDK:endif-->`  [(see documentation)]({{ site.baseurl }}/_glossary/conditional/loggedin.html)
 - `<!--WDK:display:font-->` - alternative: `<!--WDK:display:font:content-->` [(see documentation)]({{ site.baseurl }}/glossary/customisation/font-family.html)
 - `<!--WDK:display:bgimage-->` - alternative: `<!--WDK:templateoption:templatebg-->` [(see documentation)]({{ site.baseurl }}/glossary/customisation/wallpaper.html)
+
 
 ### Other changes
 
