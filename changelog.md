@@ -5,7 +5,7 @@ title: Change Log
 
 ## Version 1.1
 
-The following tags have been deprecated and should be phased out of templates.
+### The following tags have been deprecated and should be phased out of templates.
 
 - `<!--WDK:editor:bgcolor:#value-->`
 - `<!--WDK:editor:linkcolor:#value-->`
@@ -13,14 +13,18 @@ The following tags have been deprecated and should be phased out of templates.
 - `<!--WDK:editor:font:value-->`
 - `<!--WDK:if:headerX:isFlash-->`
 
-The following tags have been deprecated and we advise you use the alternatives instead.
+### The following tags have been deprecated and we advise you use the alternatives instead.
 
-- `<!--WDK:isloggedin:start-->` - alternative: `<!--WDK:if:loggedIn-->`
-- `<!--WDK:isloggedin:else-->` - alternative: `<!--WDK:if:loggedIn-->...<!--WDK:else-->...`
-- `<!--WDK:isloggedin:end-->` -  - alternative: `<!--WDK:if:loggedIn-->...<!--WDK:endif-->`
+- `<!--WDK:isloggedin:start-->` - alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->`  [(see documentation)]({{ site.baseurl }}/_glossary/conditional/loggedin.html)
+- `<!--WDK:isloggedin:else-->` - alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->...<!--WDK:else-->...`  [(see documentation)]({{ site.baseurl }}/_glossary/conditional/loggedin.html)
+- `<!--WDK:isloggedin:end-->` -  alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->...<!--WDK:endif-->`  [(see documentation)]({{ site.baseurl }}/_glossary/conditional/loggedin.html)
+- `<!--WDK:display:font-->` - alternative: `<!--WDK:display:font:content-->` [(see documentation)]({{ site.baseurl }}/glossary/customisation/font-family.html)
+- `<!--WDK:display:bgimage-->` - alternative: `<!--WDK:templateoption:templatebg-->` [(see documentation)]({{ site.baseurl }}/glossary/customisation/wallpaper.html)
 
-For users on version 1.1, the shop search results will no longer be styled and will require styling in your css file. This is to allow great flexibilty of the styling of your site.
+### Other changes
 
+- For users on version 1.1, the shop search results will no longer be styled and will require styling in your css file. This is to allow great flexibilty of the styling of your site.
+- Documentation added for the tag `<!--WDK:if:sideLeft-->` and `<!--WDK:if:sideRight-->`
 
 ## 10th April 2015 - Introduce versioning to the WDK
 Introduced a versioning system to allow upgrades to WDK fuctionality without changing existing / live sites. See the tutorial on [setting your version]({{ site.baseurl }}/tutorials/setting-your-version.html).

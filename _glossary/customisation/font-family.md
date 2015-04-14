@@ -11,6 +11,7 @@ tag: <!--WDK:display:font:[logo, heading, content, icon]-->
 
 This tag requires the `<!--WDK:base:css:fonts-->` to be included once in the `<head>` element. 
 This tag creates four classes - `.font--content`, `.font--heading`, `.font--logo` and `.i` which you can add to elements within your template. It also loads in the font files, set by the user in the Design Studio.
+If you do not include this tag or any other `font:...` tag - the user will not see the option to set fonts in the design studio.
 
 ~~~
 <head>
