@@ -5,6 +5,7 @@ nav-position: 6
 last-updated: 08-03-2013
 sub-pages:
   - background-image
+  - wallpaper
   - font-family
 ---
 
