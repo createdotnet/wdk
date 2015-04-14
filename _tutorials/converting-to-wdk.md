@@ -821,7 +821,7 @@ We now have our existing webpage compatible with Create's WDK. Heres a final ove
     </style>
 </head>
 
-<body id="top">
+<body id="top" class="wdk_columnCount_<!--WDK:column:count-->">
     <div id="wrapper">
     
         <header>

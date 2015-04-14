@@ -3,8 +3,11 @@ layout: index
 title: Change Log
 ---
 
-## 2th April 2015 - CSS Grid Framework
+## 14th April 2015 - CSS Grid Framework
 Documentation on [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) we use on the Create.net frontend, relevant tags and markup examples.
+
+## 30th March 2015 - Column Count Tag
+Documentation added for `<!--WDK:column:count-->`, required for the default styling of the new re-sizeable category grid layout.
 
 ## 4th March 2015 - Colours
 Updates to how colour tags are used as the Design Studio handles these slightly differently to before.

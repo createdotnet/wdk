@@ -99,8 +99,8 @@ The following code generates the form element with a input and submit button. Fe
 <!--WDK:if:plugin:newsletter:enabled-->
 
     <!--WDK:plugin:newsletter:start-->
-        <!--WDK:plugin:newsletter:input-->
-        <!--WDK:plugin:newsletter:submit-->
+      <!--WDK:plugin:newsletter:input-->
+      <button type="submit" class="form__submit">Sign Up</button>
     <!--WDK:plugin:newsletter:end-->
 
 <!--WDK:endif-->

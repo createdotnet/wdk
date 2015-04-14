@@ -34,7 +34,7 @@ Below is a simplified version of a header.
     <style type="text/css" media="screen"> </style>
   </head>
 
-  <body>
+  <body class="wdk_columnCount_<!--WDK:column:count-->">
     <div id="site">
 
       <header>
@@ -77,7 +77,6 @@ As the dynamic page content is automatically inserted between the `<!--WDK:heade
 - Tag: `<!--WDK:display:pagetitle-->`
 - Tag: `<!--WDK:header:end-->`
 - Tutorial: [The Basics]({{ site.baseurl }}/tutorials/the-basics.html)
-- Tutorial: [Create's Dynamic Styling]({{ site.baseurl }}/tutorials/dynamic-styling.html)
 - Tutorial: [The Footer]({{ site.baseurl }}/tutorials/the-footer.html)
 - Glossary: [Logos, Banners & Header Images]({{ site.baseurl }}/glossary/header-images/header-image.html)
 - Glossary: [Creating Side Columns]({{ site.baseurl }}/glossary/side-columns/id.html)
