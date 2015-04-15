@@ -3,7 +3,7 @@ layout: index
 title: Change Log
 ---
 
-## Version 1.1 (15 April 2015)
+## 15 April 2015 - Version 1.1
 
 ### The following tags have been deprecated and should be phased out of templates.
 
@@ -27,11 +27,14 @@ title: Change Log
 - For users on version 1.1, the shop search results will no longer be styled and will require styling in your css file. This is to allow great flexibilty of the styling of your site.
 - Documentation added for the tag `<!--WDK:if:sideLeft-->` and `<!--WDK:if:sideRight-->`
 
+## 14th April 2015 - CSS Grid Framework
+Documentation on [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) we use on the Create.net frontend, relevant tags and markup examples.
+
 ## 10th April 2015 - Introduce versioning to the WDK
 Introduced a versioning system to allow upgrades to WDK fuctionality without changing existing / live sites. See the tutorial on [setting your version]({{ site.baseurl }}/tutorials/setting-your-version.html).
 
 ## 30th March 2015 - Column Count Tag
-Add documentation for `<!--WDK:column:count-->`, required for the default styling of the new re-sizeable category grid layout.
+Documentation added for `<!--WDK:column:count-->`, required for the default styling of the new re-sizeable category grid layout.
 
 ## 4th March 2015 - Colours
 Updates to how colour tags are used as the Design Studio handles these slightly differently to before.
