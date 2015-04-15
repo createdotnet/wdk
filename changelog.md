@@ -21,7 +21,7 @@ title: Change Log
 - `<!--WDK:display:font-->` - alternative: `<!--WDK:display:font:content-->` [(see documentation)]({{ site.baseurl }}/glossary/customisation/font-family.html)
 - `<!--WDK:display:bgimage-->` - alternative: `<!--WDK:templateoption:templatebg-->` [(see documentation)]({{ site.baseurl }}/glossary/customisation/wallpaper.html)
 
-###Other changes
+### Other changes
 
 - For users on version 1.1, the shop search results will no longer be styled and will require styling in your css file. This is to allow great flexibilty of the styling of your site.
 - Documentation added for the tag `<!--WDK:if:sideLeft-->` and `<!--WDK:if:sideRight-->`
