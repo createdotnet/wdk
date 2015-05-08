@@ -41,4 +41,4 @@ If you want to close the editor on your Design screen at any time, simply press 
 
 Once you have created your template, it will appear from the "Templates" drop down on the design screen under "custom". You can upload your own thumbnail for your template that is seen here.
 
-To set your template's thumbnail, simply upload an image file that is named "thumb.jpg" that is a size of 80 x 60 px using the WDK editor external file uploader as mentioned above.
+To set your template's thumbnail, simply upload an image file that is named "thumb.jpg" that is a size of 128 x 150 px using the WDK editor external file uploader as mentioned above.
