@@ -3,6 +3,10 @@ layout: index
 title: Change Log
 ---
 
+## 11 May 2015 - Template thumbnails
+Fixed bug where template thumbnails weren't shown in the Design Studio. 
+Thumbnail image dimensions increased to 128x150px.
+
 ## 15 April 2015 - Version 1.1
 
 ### The following tags have been deprecated and should be phased out of templates.
