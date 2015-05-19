@@ -61,6 +61,10 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 
 ### Component Modules
 
+#### Shop
+
+We are providing a selection of base styles for the shop in the `<!--WDK:base:css:shop-->` tag. Although it is not essential that you include these base styles, they are every minimal and are required for some of the shop functionality. It is recomended that you add your own shop CSS to compliment these styles.
+
 #### Grid
 
 At least one `<!--WDK:base:css:grid:[…]-->` tag must be used unless you want to roll your own CSS grid framework
