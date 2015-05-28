@@ -137,6 +137,8 @@ $breakpoints: (
 );
 ```
 
+> **_Please note:_** We have extended the grid responsive grid classes to include one hyphen rather than two e.g. `lap-one-half` instead of the default `lap--one-half`.
+
 **Custom build**
 
 Alternatively you can upload your own version of [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) that will utilize the responsive classes across the system.
