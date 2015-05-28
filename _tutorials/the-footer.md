@@ -113,7 +113,7 @@ These are;
 - `.form--failed`
 - `.form--progress`
 - 
-For out templates, we have three validation messages in the HTML that are hidden with CSS. They are set to display based on the helper class on the form. e.g
+For our templates, we have three validation messages in the HTML that are hidden with CSS. They are set to display based on the helper class on the form. e.g
 ```
 .form__feedback--success,
 .form__feedback--failed {
