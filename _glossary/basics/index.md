@@ -13,6 +13,9 @@ sub-pages:
   - editor-link-colour
   - editor-text-colour
   - editor-background-colour
+  - base-fonts
+  - base-grid
+  - base-shop
 ---
 
 
