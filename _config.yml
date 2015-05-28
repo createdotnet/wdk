@@ -1,5 +1,11 @@
 baseurl:     "/wdk"
 
+# Latest version for outputting deprecated messages
+wdk_version: "1.1"
+
+host: 192.168.3.241
+port: 4012
+
 # Conversion
 markdown:    kramdown
 

@@ -9,6 +9,6 @@ tag: <!--WDK:color:tint:colour1:colour2:amount-->
 
 This tag create's a hex colour based on 2 specified colour and an amount.
 
-## Further Reading
+### Further Reading
 
 Tutorial: [Advanced Colour Functions](advanced-colour-functions.html)

@@ -9,7 +9,7 @@ last-updated: 05-04-2013
 
 Create websites utilise the Javascript library <a href="http://jquery.com/" target="_blank">jQuery</a> for various dynamic features. 
 
-In the `<!--WDK:display:headstuff-->` tag is a `<script>` tag loading in "**loader.js**" which is what we use to include jQuery in the page.
+In the `<!--WDK:display:headinfo-->` tag is a `<script>` tag loading in "**loader.js**" which is what we use to include jQuery in the page.
 
 /include/js/loader.js
 

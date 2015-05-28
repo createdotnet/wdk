@@ -34,7 +34,7 @@ Below is a simplified version of a header.
     <style type="text/css" media="screen"> </style>
   </head>
 
-  <body>
+  <body class="wdk_columnCount_<!--WDK:column:count-->">
     <div id="site">
 
       <header>
