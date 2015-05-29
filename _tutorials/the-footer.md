@@ -107,16 +107,18 @@ The following code generates the form element with a input and submit button. Fe
 ~~~
 
 **Validation**
+
 On submission of the form, one of three classes is added to the `<form>` element. 
 These are;
 - `.form--success`
 - `.form--failed`
 - `.form--progress`
-- 
-For our templates, we have three validation messages in the HTML that are hidden with CSS. They are set to display based on the helper class on the form. e.g
+
+For our templates, we have three validation messages (nested in the form) that are hidden with CSS. They are set to display based on the helper class on the form. e.g.
 ```
 .form__feedback--success,
-.form__feedback--failed {
+.form__feedback--failed,
+.form__feedback--progress {
   display: none;
 }
 .form--success .form__feedback--success,
@@ -125,7 +127,7 @@ For our templates, we have three validation messages in the HTML that are hidden
   display: block;
 }
 ```
-The `.form--failed` and `.form--success` class is added by... and will be included by default.
+The `.form--failed`,  `.form--progress` and `.form--success` classes are added by javascript that is included with the WDK tag.
 
 
 #### Copyright
