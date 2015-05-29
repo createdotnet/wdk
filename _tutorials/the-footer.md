@@ -115,6 +115,7 @@ These are;
 - `.form--progress`
 
 For our templates, we have three validation messages (nested in the form) that are hidden with CSS. They are set to display based on the helper class on the form. e.g.
+
 ~~~
 .form__feedback--success,
 .form__feedback--failed,
@@ -127,6 +128,7 @@ For our templates, we have three validation messages (nested in the form) that a
   display: block;
 }
 ~~~
+
 The `.form--failed`,  `.form--progress` and `.form--success` classes are added by javascript that is included with the WDK tag.
 
 
