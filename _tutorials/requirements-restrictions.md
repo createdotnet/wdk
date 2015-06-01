@@ -96,6 +96,21 @@ HTML example:
 	</div>
 </div>
 ```
+Sizing the grid items is a simple as adding the fractional classes e.g. `one-third`.
+
+HTML example:
+
+```
+<div class="grid">
+	<div class="grid__item one-third">
+		[…]
+	</div><!--
+	--><div class="grid__item two-thirds">
+		[…]
+	</div>
+</div>
+```
+We recommend reading the [csswizardry-grids docs](https://github.com/csswizardry/csswizardry-grids) for more information.
 
 **Fluid build**
 
@@ -105,7 +120,24 @@ Tag: `<!--WDK:base:css:grid:fluid-->`
 
 **Responsive build**
 
-> **N.B.** We will be releasing a default responsive build of csswizardry-grids shortly.
+Tag: `<!--WDK:base:css:grid:responsive-->`
+
+The responsive build has extra classes based on the major breakpoints set in the build. Similar to the above sizing classes, the responsive classes are prefixed to enable you to resize the grid based on the major breakpoints e.g. `lap-one-half` would size the grid item to `width: 50%;` and `desk-one-quarter` would resize to `width: 25%;`.
+
+The major breakpoints values are as follows.
+
+Sass example:
+
+```
+$breakpoints: (
+    'palm' '(max-width: 480px)',
+    'lap' '(min-width: 481px)',
+    'lap-mid' '(min-width: 719px)',
+    'desk' '(min-width: 1024px)'
+);
+```
+
+> **_Please note:_** We have extended the grid responsive grid classes to include one hyphen rather than two e.g. `lap-one-half` instead of the default `lap--one-half`.
 
 **Custom build**
 
