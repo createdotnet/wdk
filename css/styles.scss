@@ -25,7 +25,6 @@ $footer-background-color: $warm-grey;
 $base-spacing-unit: 20px;
 
 // Heights and Widths
-$side-menu-width: 25%;
 $footer-height: 260px;
 $page-width: 1200px;
 
@@ -42,6 +41,12 @@ $page-width: 1200px;
 
 }
 
+.list-reset {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
 @mixin background-opacity($color, $opacity: 0.3) {
     background: $color; /* The Fallback */
     background: rgba($color, $opacity);
@@ -49,31 +54,10 @@ $page-width: 1200px;
 
 
 
-// IMPORTS
+// BASE
 
-// Layout
-@import "header";
-@import "footer";
-@import "side-nav";
-@import "top-nav";
-@import "page-content";
-
-// Objects
-@import "button";
-@import "fonts";
-
-// Pages
-@import "glossary";
-
-// Plugins
-@import "prism";
-
-
-
-
-// RESETS / FALLBACKS
-
-* {
+body,
+body * {
 	-moz-box-sizing:  border-box;
   -webkit-box-sizing: border-box;
    box-sizing:        border-box;
@@ -106,3 +90,34 @@ body {
 	}
 
 }
+
+
+// IMPORTS
+
+
+// Grid
+@import "layout";
+@import "layout-widths";
+
+// Layout
+@import "header";
+@import "footer";
+@import "side-nav";
+@import "top-nav";
+@import "form-inputs";
+@import "page-content";
+
+// Objects
+@import "button";
+@import "fonts";
+@import "filters";
+
+// Pages
+@import "glossary";
+
+// Plugins
+@import "prism";
+
+
+
+

@@ -1,0 +1,16 @@
+
+// Form inputs
+
+.text-input {
+
+	width: 100%;
+	padding: 10px;
+	font-size: 1rem;
+	border: 1px solid $charcoal;
+	
+	&:focus {
+
+		border: 1px solid darken($charcoal, 20%);
+		outline: none;
+	}
+}

@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: glossary
 title: Glossary
 last-updated: 30-03-2015
 ---

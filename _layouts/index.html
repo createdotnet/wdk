@@ -7,32 +7,6 @@
 	
 	{{ content }}
 
-
-	{% if page.title == "Glossary" %}
-		
-		{% for wdk_tag in site.glossary %}
-			<section class="glossary__item">
-				<h1>{{ wdk_tag.title }}</h1>
-
-				{% if wdk_tag.deprecated != nil %}
-					<div class="deprecated">
-						This tag has been deprecated as of version {{ wdk_tag.deprecated }}, its use is highly discouraged. <a href="{{ site.baseurl }}/changelog.html#version-{{ wdk_tag.deprecated | remove:'.' }}">See the change log</a>.
-						{% if wdk_tag.useInstead != nil %}
-							<br />We recommend you use <a href="{{ site.baseurl }}/{{ wdk_tag.useInsteadLink }}">{{ wdk_tag.useInstead | escape }}</a> instead.
-						{% endif %}
-					</div>
-				{% endif %}
-
-				{% if wdk_tag.tag != nil %}
-					<code class="wdk-tag">{{ wdk_tag.tag | xml_escape }} </code>
-				{% endif %}
-
-				{{ wdk_tag.content }}
-			</section>
-		{% endfor %}
-
-	{% endif %}
-
 </div> <!-- end container -->
 
 {% include footer.html %}
