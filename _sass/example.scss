@@ -1,0 +1,33 @@
+
+// Example Page
+
+.page--example .grid {
+
+	position: relative;
+}
+
+.example__tag {
+	
+	padding: 2px;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $warm-grey;
+	}
+
+	// The tags description is in a data attribute on the span. This shows the descirption when the tag is hovered.
+	&:hover:after {
+
+		content: attr(data-info);
+		position: absolute;
+		right: 0;
+		display: block;
+		width: 33%;
+		font-family: sans-serif;
+		font-size: 1rem;
+		top: 0;
+		padding: 20px;
+		box-sizing: border-box;
+		white-space: pre-wrap;
+	}
+}

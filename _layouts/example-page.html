@@ -1,0 +1,46 @@
+{% include head.html %}
+{% include top-navigation-bars.html %}
+
+<div class="page-content page--example">
+	
+	<h1 class="">{{ page.title }}</h1>
+	{{ content }}
+
+	<div class="grid">
+		
+		<div class="grid__item two-thirds">
+			
+
+<pre class="example__markup"><code>
+{% for tag in site.glossary %}{% if tag.title contains "Header - Start" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
+&lt;html&gt;
+	&lt;head&gt;
+
+		{% for tag in site.glossary %}{% if tag.title contains "Base Fonts" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
+		{% for tag in site.glossary %}{% if tag.title contains "Base Grid" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
+		&lt;style&gt;
+			p {
+				color: {% for tag in site.glossary %}{% if tag.title contains "Colours" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
+			}
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	{% for tag in site.glossary %}{% if tag.title contains "Header - End" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
+	{% for tag in site.glossary %}{% if tag.title contains "Footer - Start" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
+	&lt;/body&gt;
+&lt;/html&gt;
+{% for tag in site.glossary %}{% if tag.title contains "Footer - End" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
+</code></pre>
+
+
+		</div><!-- 
+		 --><div class="grid__item one-third">
+			<!-- This is intentionally empty, it creates the space for the helper text to go in -->
+		</div>
+
+	</div>
+
+</div><!-- end container -->
+
+{% include footer.html %}
+{% include foot.html %}
