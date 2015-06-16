@@ -63,7 +63,7 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 
 #### html5shim
 
-* `<!--WDK:base:assets:html5shim-->`
+* `<!--WDK:base:js:html5shim-->`
 
 This script is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer. For more info [view the forked repository on GitHub](https://github.com/createdotnet/html5shiv).
 
