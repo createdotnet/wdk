@@ -61,6 +61,33 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 
 ### Component Modules
 
+#### Modernizr
+
+Tag: `<!--WDK:base:js:modernizr-->`
+
+Modernizr is a feature detection javascript library that enables you to provide fallbacks for modern browser features. It’s important to note that Modernizr doesn’t fix, or polyfill, unsupported features. [Read the Modernizr documentation](http://modernizr.com/docs/)
+
+**What’s included in our custom build**
+
+* Feature Detects
+	* @font-face
+	* Border Radius
+	* CSS Gradients
+	* CSS rgba
+	* details Element
+	* Inline SVG
+	* SVG
+* Extra
+	* Add CSS classes
+* APIs
+	* Modernizr.testStyles()
+	* Modernizr.testProp()
+	* Modernizr.testAllProps()
+	* Modernizr._prefixes
+	* Modernizr._domPrefixes
+
+[View our custom build on the Modernizr site](http://v3.modernizr.com/download/#-borderradius-cssgradients-details-fontface-inlinesvg-rgba-svg-domprefixes-prefixes-testallprops-testprop-teststyles-dontmin)
+
 #### html5shim
 
 * `<!--WDK:base:js:html5shim-->`
