@@ -88,9 +88,15 @@ Modernizr is a feature detection javascript library that enables you to provide 
 
 [View our custom build on the Modernizr site](http://v3.modernizr.com/download/#-borderradius-cssgradients-details-fontface-inlinesvg-rgba-svg-domprefixes-prefixes-testallprops-testprop-teststyles-dontmin)
 
+#### html5shim
+
+* `<!--WDK:base:js:html5shim-->`
+
+This script is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer. For more info [view the forked repository on GitHub](https://github.com/createdotnet/html5shiv).
+
 #### Shop
 
-We are providing a selection of base styles for the shop in the `<!--WDK:base:css:shop-->` tag. Although it is not essential that you include these base styles, they are every minimal and are required for some of the shop functionality. It is recomended that you add your own shop CSS to compliment these styles.
+We are providing a selection of base styles for the shop in the `<!--WDK:base:css:shop-->` tag. Although it is not essential that you include these base styles, they are every minimal and are required for some of the shop functionality. It is recommended that you add your own shop CSS to compliment these styles.
 
 **Included Styles**
 * Tiled Category Layout widths (non-responsive)
@@ -98,7 +104,10 @@ We are providing a selection of base styles for the shop in the `<!--WDK:base:cs
 
 #### Grid
 
-At least one `<!--WDK:base:css:grid:[…]-->` tag must be used unless you want to roll your own CSS grid framework
+* `<!--WDK:base:css:grid:fluid-->`
+* `<!--WDK:base:css:grid:responsive-->`
+
+At least one grid tag must be used with your WDK template, unless you want to roll your own CSS grid framework.
 
 We utilize css-wizardry’s grid framework [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) for the Create.net frontend. See [csswizardry-grids in action](http://csswizardry.com/csswizardry-grids/)
 
