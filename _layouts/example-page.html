@@ -11,13 +11,19 @@
 		<div class="grid__item two-thirds">
 			
 
+
+{% assign headTags = "Base Fonts,Base Grid" | split: "," %}
+
+
 <pre class="example__markup"><code>
 {% for tag in site.glossary %}{% if tag.title contains "Header - Start" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
 &lt;html&gt;
 	&lt;head&gt;
 
-		{% for tag in site.glossary %}{% if tag.title contains "Base Fonts" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
-		{% for tag in site.glossary %}{% if tag.title contains "Base Grid" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
+		{% for item in page.head_tags %}
+		<span class="example__tag" data-info="{{ item.description }}">{{ item.tag | xml_escape }}</span>
+		{% endfor %}
+
 		&lt;style&gt;
 			p {
 				color: {% for tag in site.glossary %}{% if tag.title contains "Colours" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}

@@ -16,6 +16,7 @@
 	}
 
 	// The tags description is in a data attribute on the span. This shows the descirption when the tag is hovered.
+	&:active:after,
 	&:hover:after {
 
 		content: attr(data-info);
