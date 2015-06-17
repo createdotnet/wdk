@@ -12,8 +12,6 @@
 			
 
 
-{% assign headTags = "Base Fonts,Base Grid" | split: "," %}
-
 
 <pre class="example__markup"><code>
 {% for tag in site.glossary %}{% if tag.title contains "Header - Start" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
@@ -21,7 +19,8 @@
 	&lt;head&gt;
 
 		{% for item in page.head_tags %}
-		<span class="example__tag" data-info="{{ item.description }}">{{ item.tag | xml_escape }}</span>
+			{{ [item] }}
+			{% for tag in site.glossary %}{% if tag.title contains "[item]" %}<span class="example__tag" data-info="{{ tag.content | strip_html }}">{{ tag.tag | xml_escape }}</span>{% endif %}{% endfor %}
 		{% endfor %}
 
 		&lt;style&gt;
