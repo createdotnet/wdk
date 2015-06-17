@@ -88,9 +88,9 @@ Modernizr is a feature detection javascript library that enables you to provide 
 
 [View our custom build on the Modernizr site](http://v3.modernizr.com/download/#-borderradius-cssgradients-details-fontface-inlinesvg-rgba-svg-domprefixes-prefixes-testallprops-testprop-teststyles-dontmin)
 
-#### html5shim
+#### html5shiv
 
-* `<!--WDK:base:js:html5shim-->`
+* `<!--WDK:base:js:html5shiv-->`
 
 This script is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer. For more info [view the forked repository on GitHub](https://github.com/createdotnet/html5shiv).
 
