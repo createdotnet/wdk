@@ -93,7 +93,7 @@ This markup follows pretty much the same format as the social media markup above
 ~~~
 
 #### Newsletter Sign Up
-The following code generates the form element with a input and submit button. Feel free to add lables, container divs with styling etc etc.
+The following code generates the form element with a input and submit button. Feel free to add labels, container divs with styling etc etc.
 
 ~~~
 <!--WDK:if:plugin:newsletter:enabled-->
@@ -105,6 +105,32 @@ The following code generates the form element with a input and submit button. Fe
 
 <!--WDK:endif-->
 ~~~
+
+**Validation**
+
+On submission of the form, one of three classes is added to the `<form>` element. 
+These are;
+- `.form--success`
+- `.form--failed`
+- `.form--progress`
+
+For our templates, we have three validation messages (nested in the form) that are hidden with CSS. They are set to display based on the helper class on the form. e.g.
+
+~~~
+.form__feedback--success,
+.form__feedback--failed,
+.form__feedback--progress {
+  display: none;
+}
+.form--success .form__feedback--success,
+.form--failed .form__feedback--failed,
+.form--progress .form__feedback--progress {
+  display: block;
+}
+~~~
+
+The `.form--failed`,  `.form--progress` and `.form--success` classes are added by javascript that is included with the WDK tag.
+
 
 #### Copyright
 This outputs plain text - "&copy; [company name] 20[XX]". Again, this is contained in an if statement so that it only displays when the users has enabled it.

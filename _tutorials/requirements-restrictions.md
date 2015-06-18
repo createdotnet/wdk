@@ -61,9 +61,42 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 
 ### Component Modules
 
+#### Modernizr
+
+Tag: `<!--WDK:base:js:modernizr-->`
+
+Modernizr is a feature detection javascript library that enables you to provide fallbacks for modern browser features. It’s important to note that Modernizr doesn’t fix, or polyfill, unsupported features. [Read the Modernizr documentation](http://modernizr.com/docs/)
+
+**What’s included in our custom build**
+
+* Feature Detects
+	* @font-face
+	* Border Radius
+	* CSS Gradients
+	* CSS rgba
+	* details Element
+	* Inline SVG
+	* SVG
+* Extra
+	* Add CSS classes
+* APIs
+	* Modernizr.testStyles()
+	* Modernizr.testProp()
+	* Modernizr.testAllProps()
+	* Modernizr._prefixes
+	* Modernizr._domPrefixes
+
+[View our custom build on the Modernizr site](http://v3.modernizr.com/download/#-borderradius-cssgradients-details-fontface-inlinesvg-rgba-svg-domprefixes-prefixes-testallprops-testprop-teststyles-dontmin)
+
+#### html5shiv
+
+* `<!--WDK:base:js:html5shiv-->`
+
+This script is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer. For more info [view the forked repository on GitHub](https://github.com/createdotnet/html5shiv).
+
 #### Shop
 
-We are providing a selection of base styles for the shop in the `<!--WDK:base:css:shop-->` tag. Although it is not essential that you include these base styles, they are every minimal and are required for some of the shop functionality. It is recomended that you add your own shop CSS to compliment these styles.
+We are providing a selection of base styles for the shop in the `<!--WDK:base:css:shop-->` tag. Although it is not essential that you include these base styles, they are every minimal and are required for some of the shop functionality. It is recommended that you add your own shop CSS to compliment these styles.
 
 **Included Styles**
 * Tiled Category Layout widths (non-responsive)
@@ -71,7 +104,10 @@ We are providing a selection of base styles for the shop in the `<!--WDK:base:cs
 
 #### Grid
 
-At least one `<!--WDK:base:css:grid:[…]-->` tag must be used unless you want to roll your own CSS grid framework
+* `<!--WDK:base:css:grid:fluid-->`
+* `<!--WDK:base:css:grid:responsive-->`
+
+At least one grid tag must be used with your WDK template, unless you want to roll your own CSS grid framework.
 
 We utilize css-wizardry’s grid framework [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) for the Create.net frontend. See [csswizardry-grids in action](http://csswizardry.com/csswizardry-grids/)
 
@@ -96,6 +132,21 @@ HTML example:
 	</div>
 </div>
 ```
+Sizing the grid items is a simple as adding the fractional classes e.g. `one-third`.
+
+HTML example:
+
+```
+<div class="grid">
+	<div class="grid__item one-third">
+		[…]
+	</div><!--
+	--><div class="grid__item two-thirds">
+		[…]
+	</div>
+</div>
+```
+We recommend reading the [csswizardry-grids docs](https://github.com/csswizardry/csswizardry-grids) for more information.
 
 **Fluid build**
 
@@ -105,7 +156,24 @@ Tag: `<!--WDK:base:css:grid:fluid-->`
 
 **Responsive build**
 
-> **N.B.** We will be releasing a default responsive build of csswizardry-grids shortly.
+Tag: `<!--WDK:base:css:grid:responsive-->`
+
+The responsive build has extra classes based on the major breakpoints set in the build. Similar to the above sizing classes, the responsive classes are prefixed to enable you to resize the grid based on the major breakpoints e.g. `lap-one-half` would size the grid item to `width: 50%;` and `desk-one-quarter` would resize to `width: 25%;`.
+
+The major breakpoints values are as follows.
+
+Sass example:
+
+```
+$breakpoints: (
+    'palm' '(max-width: 480px)',
+    'lap' '(min-width: 481px)',
+    'lap-mid' '(min-width: 719px)',
+    'desk' '(min-width: 1024px)'
+);
+```
+
+> **_Please note:_** We have extended the grid responsive grid classes to include one hyphen rather than two e.g. `lap-one-half` instead of the default `lap--one-half`.
 
 **Custom build**
 
