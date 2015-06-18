@@ -1,0 +1,128 @@
+&lt;!--WDK:header:start--&gt;
+&lt;!--WDK:version:1.1--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        
+        &lt;meta name=&quot;description&quot; content=&quot;&lt;!--WDK:display:metadesc--&gt;&quot;&gt;
+        
+        &lt;title&gt;&lt;!--WDK:display:titletag--&gt;&lt;/title&gt;
+
+        &lt;!--WDK:display:headinfo--&gt;
+        
+        &lt;!-- CSS --&gt;  
+        &lt;!--WDK:base:assets--&gt;
+        &lt;!--WDK:base:css:grid:fluid--&gt;
+        &lt;!--WDK:base:css:shop--&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;&lt;!--WDK:path:template--&gt;wdk-styles.css&quot; /&gt;
+        
+        &lt;style&gt;
+            
+            &lt;!--WDK:base:css:fonts--&gt;
+            
+            &lt;!--WDK:comment: Dynamic Colours - all other styles are in wdk-styles.css --&gt;
+            body {
+                background-color: &lt;!--WDK:display:color:page_background_colour--&gt;;
+                color: &lt;!--WDK:display:color:text_colour--&gt;;
+            }
+            a {
+                color: &lt;!--WDK:display:color:link_colour--&gt;;
+            }
+
+        &lt;/style&gt;
+        
+        &lt;!-- JS --&gt;
+        &lt;!--WDK:base:js:modernizr--&gt;
+        &lt;!--WDK:base:js:html5shiv--&gt;
+        
+    &lt;/head&gt;
+    
+    &lt;body class=&quot;page-type--&lt;!--WDK:display:pagetype--&gt;&quot;&gt;
+        
+        &lt;header&gt;
+
+            &lt;!--WDK:if:hasShop--&gt;
+            &lt;div class=&quot;nav-shop&quot;&gt;
+
+                &lt;div class=&quot;nav-shop__search&quot;&gt;
+                    &lt;form method=&quot;get&quot; action=&quot;/shop/search.php&quot; name=&quot;sideSearchForm&quot;&gt;
+                        &lt;input name=&quot;q&quot;  type=&quot;text&quot; placeholder=&quot;Shop Search...&quot; /&gt;
+                        &lt;button type=&quot;submit&quot; class=&quot;btn--reset&quot;&gt;GO&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;nav-shop__basket&quot;&gt;
+                    &lt;!--WDK:dynamic:widget:basket--&gt;
+                    &lt;a title=&quot;Your Basket&quot; href=&quot;/shop/basket_new.php&quot;&gt;&lt;span class=&quot;i i-basket&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                
+            &lt;/div&gt;
+            &lt;!--WDK:endif--&gt;
+            
+            &lt;h1 class=&quot;header__site-name font--logo&quot;&gt;&lt;!--WDK:display:site_name--&gt;&lt;/h1&gt;
+            
+        &lt;/header&gt;
+        
+        &lt;nav class=&quot;nav-main&quot;&gt;
+                
+            &lt;ul&gt;
+                &lt;!--WDK:menu:start--&gt;
+            
+                  &lt;li id=&quot;menu-item-&lt;!--WDK:menu:id--&gt;&quot;&gt;
+                    &lt;a href=&quot;&lt;!--WDK:menu:link--&gt;&quot;&gt;
+                      &lt;!--WDK:menu:text--&gt;
+                    &lt;/a&gt;
+                  &lt;/li&gt;
+            
+                &lt;!--WDK:menu:end--&gt;
+            &lt;/ul&gt;
+            
+        &lt;/nav&gt;
+        
+        &lt;main&gt;
+            &lt;div class=&quot;inner-constraint&quot;&gt;
+                &lt;!--WDK:header:end--&gt;
+                &lt;!--WDK:footer:start--&gt;
+            &lt;/div&gt;
+        &lt;/main&gt;
+        
+        &lt;footer&gt;
+            
+            &lt;!--WDK:if:plugin:newsletter:enabled--&gt;
+                &lt;h2&gt;Keep in Touch&lt;/h2&gt;
+                &lt;!--WDK:plugin:newsletter:start--&gt;
+                      &lt;!--WDK:plugin:newsletter:input--&gt;
+                      &lt;button type=&quot;submit&quot;&gt;Sign Up&lt;/button&gt;
+                &lt;!--WDK:plugin:newsletter:end--&gt;
+            &lt;!--WDK:endif--&gt;
+            
+            &lt;!--WDK:if:plugin:socialprofile:enabled--&gt;
+                &lt;h2&gt;Social&lt;/h2&gt;
+                &lt;ul class=&quot;list list--inline list--bare&quot;&gt;
+                &lt;!--WDK:plugin:socialprofile:start--&gt;
+                  &lt;li class=&quot;social-profile__item&quot;&gt;
+                      &lt;a href=&quot;&lt;!--WDK:plugin:socialprofile:link--&gt;&quot;&gt;&lt;span class=&quot;i i-&lt;!--WDK:plugin:socialprofile:type--&gt;&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;!--WDK:plugin:socialprofile:end--&gt;
+                &lt;/ul&gt;
+            &lt;!--WDK:endif--&gt;
+                
+            &lt;!--WDK:if:plugin:paymentcards:enabled--&gt;
+                &lt;h2&gt;Accepted Payments&lt;/h2&gt;
+                &lt;ul class=&quot;list list--inline list--bare&quot;&gt;
+                &lt;!--WDK:plugin:paymentcards:start--&gt;
+                    &lt;li&gt;
+                        &lt;img src=&quot;/shop/images/checkout/cards/&lt;!--WDK:plugin:paymentcards:type--&gt;.png&quot; alt=&quot;&lt;!--WDK:plugin:paymentcards:type--&gt;&quot;&gt;
+                    &lt;/li&gt;
+                &lt;!--WDK:plugin:paymentcards:end--&gt;
+                &lt;/ul&gt;
+            &lt;!--WDK:endif--&gt;
+                
+            &lt;!--WDK:display:sitefooter--&gt;
+
+        &lt;/footer&gt;
+        
+    &lt;/body&gt;
+
+&lt;/html&gt;
+&lt;!--WDK:footer:end--&gt;
