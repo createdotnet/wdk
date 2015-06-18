@@ -5,8 +5,6 @@
 
 .side-menu {
 	
-	float: left;
-	width: $side-menu-width;
 	border-right: 1px dotted $body-text-colour;
 	padding: 0px 5px 0px 10px;
 
@@ -49,15 +47,3 @@
 
 
 }
-
-
-// @TODO: This shouldn't be here...
-main {
-	margin-left: $side-menu-width;
-	padding-left: $base-spacing-unit;
-	@media (max-width: 670px) {
-		margin-left: 0;
-		padding-left: 0;
-	}
-}
-

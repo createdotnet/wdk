@@ -1,0 +1,16 @@
+
+// Layout
+
+.layout {
+
+	margin-left: - $base-spacing-unit;
+
+	// E: Layout item
+	&__item {
+
+		display: inline-block;
+		padding-left: $base-spacing-unit;
+		vertical-align: top;
+		width: 100%;
+	}
+}
