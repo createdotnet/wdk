@@ -1,0 +1,87 @@
+{% include head.html %}
+{% include top-navigation-bars.html %}
+
+<div class="page-content">
+	
+	<div class="layout" id="js-glossary">
+
+		<div class="layout__item 1/4 lap-1/1">
+			
+			<div class="filter-controls" id="js-filter-controls">
+				<h3 class="heading">Search Tags</h3>
+				<input class="search text-input" placeholder="Search" />
+				
+				<label for="js-toggle-depreciated">Show depeciated tags</label>
+				<input id="js-toggle-depreciated" type="checkbox">
+			</div>
+
+		</div><!-- 
+		
+		 --><div class="layout__item 3/4 lap-1/1">
+
+			<h1 class="">{{ page.title }}</h1>
+
+			<ul class="list-reset list">
+				
+				{% for wdk_tag in site.glossary %}
+					<li class="glossary__item {% if wdk_tag.deprecated != nil %}glossary__item--depreciated{% endif %}" id="{{ wdk_tag.title | remove:' '}}">
+						
+						<a href="#{{ wdk_tag.title | remove:' '}}" class="section-anchor">#</a>
+						<h2 class="heading js-name">{{ wdk_tag.title }}</h2>
+
+						{% if wdk_tag.deprecated != nil %}
+							<div class="deprecated">
+								This tag has been deprecated as of version {{ wdk_tag.deprecated }}, its use is highly discouraged. <a href="{{ site.baseurl }}/changelog.html#version-{{ wdk_tag.deprecated | remove:'.' }}">See the change log</a>.
+								{% if wdk_tag.useInstead != nil %}
+									<br />We recommend you use <a href="{{ site.baseurl }}/{{ wdk_tag.useInsteadLink }}">{{ wdk_tag.useInstead | escape }}</a> instead.
+								{% endif %}
+							</div>
+						{% endif %}
+
+						{% if wdk_tag.tag != nil %}
+							<code class="wdk-tag">{{ wdk_tag.tag | xml_escape }} </code>
+						{% endif %}
+
+						{{ wdk_tag.content }}
+					</li>
+				{% endfor %}
+
+			</ul>
+
+		</div>
+
+	</div><!-- end .layout -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/js/list.min.js"></script>
+	<script src="{{ site.baseurl }}/js/headerstick.js"></script>
+	<script>
+
+		$(document).ready(function(){
+
+			// Searching
+
+			var searchOptions = {
+				valueNames: [ 'js-name' ]
+			};
+
+			var search = new List('js-glossary', searchOptions);
+
+		
+			// Show / Hide depreciated tags
+
+			$("#js-toggle-depreciated").click(function(){
+				$("body").toggleClass("show-depreciated");
+			});
+
+			// make the filters sticky once scrolled to
+			headerStick(document.querySelector('#js-filter-controls'), {offset: -20, classname: "filter-controls--fixed"})
+
+		});
+
+	</script>
+
+</div> <!-- end container -->
+
+{% include footer.html %}
+{% include foot.html %}
