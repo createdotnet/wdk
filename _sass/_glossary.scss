@@ -6,3 +6,12 @@
 	margin-bottom: 4rem;
 	padding-bottom: 1rem;
 }
+
+.glossary__item--depreciated {
+
+	display: none;
+
+	body.show-depreciated & {
+		display: block;
+	}
+}

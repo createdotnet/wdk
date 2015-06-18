@@ -11,7 +11,7 @@
 				<h3 class="heading">Search</h3>
 				<input class="search text-input" placeholder="Search" />
 				<h3 class="heading">Filter</h3>
-				<button class="btn btn--primary sort" data-sort="js-depreciated">Sort by depreciated</button>
+				<button class="btn btn--primary" id="js-toggle-depreciated">Show depreciated tags</button>
 			</div>
 
 		</div><!-- 
@@ -25,12 +25,12 @@
 			<ul class="list-reset list">
 				
 				{% for wdk_tag in site.glossary %}
-					<li class="glossary__item">
+					<li class="glossary__item {% if wdk_tag.deprecated != nil %}glossary__item--depreciated{% endif %}">
 						<h1 class="js-name">{{ wdk_tag.title }}</h1>
 
 						{% if wdk_tag.deprecated != nil %}
 							<div class="deprecated">
-								This tag has been deprecated as of version <span class="js-depreciated">{{ wdk_tag.deprecated }}</span>, its use is highly discouraged. <a href="{{ site.baseurl }}/changelog.html#version-{{ wdk_tag.deprecated | remove:'.' }}">See the change log</a>.
+								This tag has been deprecated as of version {{ wdk_tag.deprecated }}, its use is highly discouraged. <a href="{{ site.baseurl }}/changelog.html#version-{{ wdk_tag.deprecated | remove:'.' }}">See the change log</a>.
 								{% if wdk_tag.useInstead != nil %}
 									<br />We recommend you use <a href="{{ site.baseurl }}/{{ wdk_tag.useInsteadLink }}">{{ wdk_tag.useInstead | escape }}</a> instead.
 								{% endif %}
@@ -54,11 +54,28 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
 	<script>
-		var searchOptions = {
-			valueNames: [ 'js-name', 'js-depreciated' ]
-		};
 
-		var search = new List('js-glossary', searchOptions);
+		$(document).ready(function(){
+
+			// Searching
+
+			var searchOptions = {
+				valueNames: [ 'js-name' ]
+			};
+
+			var search = new List('js-glossary', searchOptions);
+
+		
+			// Show / Hide depreciated tags
+
+			$("#js-toggle-depreciated").click(function(){
+				$("body").toggleClass("show-depreciated");
+			});
+
+		});
+
+
+
 
 	</script>
 
