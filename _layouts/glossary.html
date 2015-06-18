@@ -5,28 +5,29 @@
 	
 	<div class="layout" id="js-glossary">
 
-		<div class="layout__item 1/4">
+		<div class="layout__item 1/4 lap-1/1">
 			
-			<div class="filter-controls">
-				<h3 class="heading">Search</h3>
+			<div class="filter-controls" id="js-filter-controls">
+				<h3 class="heading">Search Tags</h3>
 				<input class="search text-input" placeholder="Search" />
-				<h3 class="heading">Filter</h3>
-				<button class="btn btn--primary" id="js-toggle-depreciated">Show depreciated tags</button>
+				
+				<label for="js-toggle-depreciated">Show depeciated tags</label>
+				<input id="js-toggle-depreciated" type="checkbox">
 			</div>
 
 		</div><!-- 
 		
-		 --><div class="layout__item 3/4">
+		 --><div class="layout__item 3/4 lap-1/1">
 
 			<h1 class="">{{ page.title }}</h1>
-			
-			{{ content }}
 
 			<ul class="list-reset list">
 				
 				{% for wdk_tag in site.glossary %}
-					<li class="glossary__item {% if wdk_tag.deprecated != nil %}glossary__item--depreciated{% endif %}">
-						<h1 class="js-name">{{ wdk_tag.title }}</h1>
+					<li class="glossary__item {% if wdk_tag.deprecated != nil %}glossary__item--depreciated{% endif %}" id="{{ wdk_tag.title | remove:' '}}">
+						
+						<a href="#{{ wdk_tag.title | remove:' '}}" class="section-anchor">#</a>
+						<h2 class="heading js-name">{{ wdk_tag.title }}</h2>
 
 						{% if wdk_tag.deprecated != nil %}
 							<div class="deprecated">
@@ -52,7 +53,8 @@
 	</div><!-- end .layout -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+	<script src="{{ site.baseurl }}/js/list.min.js"></script>
+	<script src="{{ site.baseurl }}/js/headerstick.js"></script>
 	<script>
 
 		$(document).ready(function(){
@@ -72,10 +74,10 @@
 				$("body").toggleClass("show-depreciated");
 			});
 
+			// make the filters sticky once scrolled to
+			headerStick(document.querySelector('#js-filter-controls'), {offset: -20, classname: "filter-controls--fixed"})
+
 		});
-
-
-
 
 	</script>
 

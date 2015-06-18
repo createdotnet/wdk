@@ -4,16 +4,22 @@
 
 .filter-controls {
 
-	position: fixed;
+	width: 225px;
 	background: $charcoal;
 	padding: $base-spacing-unit;
+	color: white;
 
 	.heading {
 		color: white;
-		margin-top: 0;
 	}
 
 	.search {
 		margin-bottom: $base-spacing-unit;
+	}
+
+	&--fixed {
+
+		position: fixed;
+		top: $base-spacing-unit;
 	}
 }
