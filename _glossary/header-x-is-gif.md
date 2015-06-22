@@ -7,4 +7,4 @@ parent: conditional
 tag: <!--WDK:if:headerX:isGif-->
 ---
 
-This conditional tag returns true if [headerX]({{ site.baseurl }}/glossary/conditional/header-x.html) is a Gif file.
+This conditional tag returns true if `headerX` is a Gif file.

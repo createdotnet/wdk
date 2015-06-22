@@ -9,7 +9,7 @@
 			
 			<div class="filter-controls" id="js-filter-controls">
 				<h3 class="heading">Search Tags</h3>
-				<input class="search text-input" placeholder="Search" />
+				<input class="search text-input" placeholder="Search" autofocus="autofocus"/>
 				
 				<label for="js-toggle-depreciated">Show deprecated tags</label>
 				<input id="js-toggle-depreciated" type="checkbox">
@@ -39,10 +39,12 @@
 						{% endif %}
 
 						{% if wdk_tag.tag != nil %}
-							<code class="wdk-tag">{{ wdk_tag.tag | xml_escape }} </code>
+							<code class="wdk-tag js-tag">{{ wdk_tag.tag | xml_escape }} </code>
 						{% endif %}
-
-						{{ wdk_tag.content }}
+						
+						<span class="js-description">
+							{{ wdk_tag.content }}
+						</span>
 					</li>
 				{% endfor %}
 
@@ -62,7 +64,7 @@
 			// Searching
 
 			var searchOptions = {
-				valueNames: [ 'js-name' ]
+				valueNames: [ 'js-name', 'js-tag', 'js-description' ]
 			};
 
 			var search = new List('js-glossary', searchOptions);

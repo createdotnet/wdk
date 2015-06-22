@@ -11,4 +11,4 @@ This tag creates a colour that will be easiest to see when placed over the speci
 
 ## Further Reading
 
-Tutorial: [Advanced Colour Functions](advanced-colour-functions.html)
+Tutorial: [Advanced Colour Functions]({{ site.baseurl }}/tutorials/advanced-colour-functions.html)
