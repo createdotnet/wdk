@@ -1,0 +1,25 @@
+
+
+// filter-controls
+
+.filter-controls {
+
+	width: 225px;
+	background: $charcoal;
+	padding: $base-spacing-unit;
+	color: white;
+
+	.heading {
+		color: white;
+	}
+
+	.search {
+		margin-bottom: $base-spacing-unit;
+	}
+
+	&--fixed {
+
+		position: fixed;
+		top: $base-spacing-unit;
+	}
+}

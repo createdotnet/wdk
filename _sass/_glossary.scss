@@ -1,0 +1,23 @@
+
+
+
+.glossary__item {
+
+	border-bottom: 1px solid;
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+
+	.heading {
+		display: inline;
+	}
+}
+
+.glossary__item--depreciated {
+
+	// Shown and hidden using js
+	display: none;
+
+	body.show-depreciated & {
+		display: block;
+	}
+}
