@@ -28,7 +28,6 @@ The following file extensions can be uploaded via the WDK editor:
 
 * However, for template specific images we recommend using either the `<!--WDK:display:header-->` for logos [read more »](http://developers.create.net/wdk/glossary.html#HeaderImage) or `<!--WDK:templateoption:templatebg-->` for background images [read more »](http://developers.create.net/wdk/glossary.html#SiteWallpaper).
 
-
 ### Using WDK Uploaded Files
 
 Tag: `<!--WDK:path:template-->`

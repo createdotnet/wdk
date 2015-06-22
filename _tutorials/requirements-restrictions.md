@@ -5,45 +5,21 @@ nav-position: 1
 last-updated: 30-04-2015
 ---
 
-## Files
+## Template HTML File
 
-Building a website using the WDK requires only 1 file - **index.html**. 
+Your starting point for building a website using the WDK is with a index.html.
 
 This file is used for all page layouts and is the only file you can process any `<!--WDK-->` tags on.
 
-Although you can use external stylesheets for styling, any CSS selectors that use `<!--WDK-->` tags must be declared within the `<head>` section of index.html.
-
-## Permitted File Types
-
-You are permitted to use other files outside of index.html. These can be Stylesheets, Javascript or jQuery libraries, flash (swf) files and xml sheets.
-
-Permitted extensions are:
-
-- .png 
-- .jpg 
-- .gif 
-- .css 
-- .js 
-- .swf 
-- .xml
-
-To use external files or images you will need to use the following path tags:
-
-- Tag: `<!--WDK:path:template-->`
-- Tag: `<!--WDK:path:images-->`
-- Tag: `<!--WDK:path:file-->`
-
-
+Although you can use external style sheets for styling, any CSS selectors that use `<!--WDK-->` tags must be declared within the `<head>` section of index.html.
 
 ## Required Tags
 
-There are a few tags that are required in order for your template to be processed correctly. 
-These are listed below.
-
+There are a few tags that are required in order for your template to be processed correctly.
 
 ### Core Styling
 
-To style the core Create.net frontend components, patterns and widgets we provide a vanilla (un-themed) version of our CSS boilerplate. This tag should be placed in the head of your document in order to import the default CSS styling. Your custom CSS stylesheet(s) should be placed below this tag.
+To style the core Create.net frontend components, patterns and widgets we provide a vanilla (un-themed) version of our CSS boilerplate. This tag should be placed in the head of your document in order to import the default CSS styling. Your custom CSS style sheet(s) should be placed below this tag.
 
 Tag: `<!--WDK:base:assets-->`
 
