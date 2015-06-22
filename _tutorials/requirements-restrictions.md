@@ -13,6 +13,8 @@ This file is used for all page layouts and is the only file you can process any 
 
 Although you can use external style sheets for styling, any CSS selectors that use `<!--WDK-->` tags must be declared within the `<head>` section of index.html.
 
+Read more about [uploading and using files](/wdk/tutorials/uploading-using-files.html) with your template.
+
 ## Required Tags
 
 There are a few tags that are required in order for your template to be processed correctly.

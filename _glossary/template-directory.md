@@ -1,10 +1,7 @@
 ---
 layout: side-nav
-title: Template Directory
-last-updated: 07-02-2013
-nav-position: 2
-parent: path-tags
+title: Path - Template
 tag: <!--WDK:path:template-->
 ---
 
-Use this tag to retreive the full relative url to your template directory.
+Use this tag to retrieve the full relative url to your template directory.
