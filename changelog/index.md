@@ -3,6 +3,10 @@ layout: index
 title: Change Log
 ---
 
+## 22 June 2015 - Improve file path documentation.
+
+* Reworded existing file path documentation and added further explanation as to where files are uploaded to and under which context.
+
 ## 11 May 2015 - Template thumbnails
 Fixed bug where template thumbnails weren't shown in the Design Studio. 
 Thumbnail image dimensions increased to 128x150px.
