@@ -38,8 +38,6 @@ To link a style sheet named `global.min.css` uploaded via the WDK editor.
 
 `<link rel="stylesheet" href="<!--WDK:path:template-->/global.min.css">`
 
----
-
 ## Files Area
 
 The [Files area](https://login.create.net/frameset.phtml#site_content_files.phtml) found in `Content > Files` enables the upload of small, non image, file types.
@@ -55,8 +53,6 @@ Example:
 To link to a zip file named `documentation.zip` uploaded via the Files area.
 
 `<a href="<!--WDK:path:files-->/documentation.zip">download the docs</a>`
-
----
 
 ## Images Area
 
