@@ -18,7 +18,7 @@
 		</div><!-- 
 		 --><div class="grid__item one-third">
 
-		 	<div id="js-tag-description"></div>
+		 	<div id="js-tag-description" class="tag-description"></div>
 
 		</div>
 
@@ -31,6 +31,9 @@
 	<div id="tag-{{ tag.tag }}">{{ tag.content | strip_html }}</div>
 {% endfor %}
 </div>
+
+
+{% include footer.html %}
 
 <script>
 
@@ -46,7 +49,10 @@
 		});
 	}
 
+
+	// make the tag description sticky once scrolled to
+	headerStick(document.querySelector('#js-tag-description'), {offset: -20, classname: "tag-description--fixed"})
+
 </script>
 
-{% include footer.html %}
 {% include foot.html %}

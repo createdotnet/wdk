@@ -13,3 +13,16 @@
 
 }
 
+
+
+.tag-description {
+
+	padding: $base-spacing-unit;
+	background-color: $warm-grey;
+	width: 280px;
+
+	&--fixed {
+		position: fixed;
+		top: 0;
+	}
+}
