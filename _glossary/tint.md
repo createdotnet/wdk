@@ -11,4 +11,4 @@ This tag create's a hex colour based on 2 specified colour and an amount.
 
 ### Further Reading
 
-Tutorial: [Advanced Colour Functions](advanced-colour-functions.html)
+Tutorial: [Advanced Colour Functions]({{ site.baseurl }}/tutorials/advanced-colour-functions.html)

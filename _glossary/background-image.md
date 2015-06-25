@@ -7,7 +7,7 @@ parent: customisation
 tag: <!--WDK:display:bgimage-->
 deprecated: 1.1
 useInstead: WDK:templateoption:templatebg
-useInsteadLink: glossary/customisation/wallpaper.html
+useInsteadLink: SiteWallpaper
 ---
 
 Use this tag to return the URL of the background image specified on the "Wallpaper" section on your Create "Design" screen. e.g. `background-image: url('<!--WDK:display:bgimage-->');`

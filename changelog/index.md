@@ -3,6 +3,10 @@ layout: index
 title: Change Log
 ---
 
+## 22 June 2015 - Improve file path documentation.
+
+* Reworded existing file path documentation and added further explanation as to where files are uploaded to and under which context.
+
 ## 11 May 2015 - Template thumbnails
 Fixed bug where template thumbnails weren't shown in the Design Studio. 
 Thumbnail image dimensions increased to 128x150px.
@@ -19,11 +23,11 @@ Thumbnail image dimensions increased to 128x150px.
 
 ### The following tags have been deprecated and we advise you use the alternatives instead.
 
-- `<!--WDK:isloggedin:start-->` - alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->`  [(see documentation)]({{ site.baseurl }}/glossary/conditional/loggedin.html)
-- `<!--WDK:isloggedin:else-->` - alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->...<!--WDK:else-->...`  [(see documentation)]({{ site.baseurl }}/glossary/conditional/loggedin.html)
-- `<!--WDK:isloggedin:end-->` -  alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->...<!--WDK:endif-->`  [(see documentation)]({{ site.baseurl }}/glossary/conditional/loggedin.html)
-- `<!--WDK:display:font-->` - alternative: `<!--WDK:display:font:content-->` [(see documentation)]({{ site.baseurl }}/glossary/customisation/font-family.html)
-- `<!--WDK:display:bgimage-->` - alternative: `<!--WDK:templateoption:templatebg-->` [(see documentation)]({{ site.baseurl }}/glossary/customisation/wallpaper.html)
+- `<!--WDK:isloggedin:start-->` - alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->`  [(see documentation)]({{ site.baseurl }}/tags/index.html)
+- `<!--WDK:isloggedin:else-->` - alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->...<!--WDK:else-->...`  [(see documentation)]({{ site.baseurl }}/tags/index.html)
+- `<!--WDK:isloggedin:end-->` -  alternative: `<!--WDK:if:plugin:useraccount:isloggedin-->...<!--WDK:endif-->`  [(see documentation)]({{ site.baseurl }}/tags/index.html)
+- `<!--WDK:display:font-->` - alternative: `<!--WDK:display:font:content-->` [(see documentation)]({{ site.baseurl }}/tags/index.html)
+- `<!--WDK:display:bgimage-->` - alternative: `<!--WDK:templateoption:templatebg-->` [(see documentation)]({{ site.baseurl }}/tags/index.html)
 
 ### Other changes
 
