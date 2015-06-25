@@ -1,10 +1,16 @@
 
 // Example Page
 
+.example__markup {
+
+	tab-size: 2;
+}
+
 
 .example__markup__tag {
 	
 	padding: 2px;
+	transition: background-color .2s ease-in;
 
 	&:hover {
 		cursor: pointer;
@@ -14,12 +20,12 @@
 }
 
 
-
-.tag-description {
+.example__description {
 
 	padding: $base-spacing-unit;
 	background-color: $warm-grey;
 	width: 280px;
+	font-size: 1.05em;
 
 	// M: added by js - headerstick. Fix it to the top once its been scrolled to.
 	&--fixed {

@@ -16,9 +16,12 @@
 			<pre class="example__markup"><code id="js-markup">{% include example-template.html %}</code></pre>
 
 		</div><!-- 
-		 --><div class="grid__item one-third">
+		 --><div id="js-example__description" class="grid__item one-third">
 
-		 	<div id="js-tag-description" class="tag-description"></div>
+			<aside class="example__description">
+				<h1 id="js-tag-title" class="example__description__tag"></h1>
+			 	<p id="js-tag-description" class="example__description__text"></p>
+			</aside>
 
 		</div>
 
@@ -45,13 +48,13 @@
 	for(var i = 0; i < tags.length; ++i ) { 
 		// Add on mouseover events to each tag to put the tags descrition in the side bar
 		tags[i].addEventListener("mouseover", function() {
+			document.getElementById("js-tag-title").innerHTML = this.dataset.tag;
 			document.getElementById("js-tag-description").innerHTML = document.getElementById("tag-<!--WDK:" + (this.dataset.tag) + "-->").innerHTML;
 		});
 	}
 
-
 	// make the tag description sticky once scrolled to
-	headerStick(document.querySelector('#js-tag-description'), {offset: -20, classname: "tag-description--fixed"})
+	headerStick(document.querySelector('#js-example__description'), {offset: -20, classname: "example__description--fixed"})
 
 </script>
 

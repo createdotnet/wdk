@@ -12,13 +12,12 @@ $purple: #5064A0;
 
 $content-background-colour: white;
 //Body colours
-$body-text-colour: #7b7c7f;
-$body-background-colour: lighten($warm-grey,3%);
+$body-text-colour: #333333;
+$body-background-colour: $warm-grey;
 // Header colours
-$header-background-color: white;
 $header-text-color: $charcoal;
 
-$footer-background-color: $warm-grey;
+$footer-background-color: lighten($warm-grey,3%);
 
 
 // Spacing
@@ -72,7 +71,7 @@ img {
 
 
 body {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.6;
 	color: $body-text-colour;
 	background-color: $body-background-colour;
