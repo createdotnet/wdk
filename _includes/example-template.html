@@ -2,127 +2,127 @@
 <!--WDK:version:1.1-->
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-    &lt;head&gt;
-        
-        &lt;meta name=&quot;description&quot; content=&quot;<!--WDK:display:metadesc-->&quot;&gt;
-        
-        &lt;title&gt;<!--WDK:display:titletag-->&lt;/title&gt;
+	&lt;head&gt;
+				
+		&lt;meta name=&quot;description&quot; content=&quot;<!--WDK:display:metadesc-->&quot;&gt;
+		
+		&lt;title&gt;<!--WDK:display:titletag-->&lt;/title&gt;
 
-        <!--WDK:display:headinfo-->
-        
-        &lt;!-- CSS --&gt;  
-        <!--WDK:base:assets-->
-        <!--WDK:base:css:grid:fluid-->
-        <!--WDK:base:css:shop-->
-        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;<!--WDK:path:template-->wdk-styles.css&quot; /&gt;
-        
-        &lt;style&gt;
-            
-            <!--WDK:base:css:fonts-->
-            
-            <!--WDK:comment: Dynamic Colours - all other styles are in wdk-styles.css -->
-            body {
-                background-color: <!--WDK:display:color:page_background_colour-->;
-                color: <!--WDK:display:color:text_colour-->;
-            }
-            a {
-                color: <!--WDK:display:color:link_colour-->;
-            }
+		<!--WDK:display:headinfo-->
+		
+		&lt;!-- CSS --&gt;  
+		<!--WDK:base:assets-->
+		<!--WDK:base:css:grid:fluid-->
+		<!--WDK:base:css:shop-->
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;<!--WDK:path:template-->wdk-styles.css&quot; /&gt;
+		
+		&lt;style&gt;
+				
+				<!--WDK:base:css:fonts-->
+				
+				<!--WDK:comment: Dynamic Colours - all other styles are in wdk-styles.css -->
+				body {
+						background-color: <!--WDK:display:color:page_background_colour-->;
+						color: <!--WDK:display:color:text_colour-->;
+				}
+				a {
+						color: <!--WDK:display:color:link_colour-->;
+				}
 
-        &lt;/style&gt;
-        
-        &lt;!-- JS --&gt;
-        <!--WDK:base:js:modernizr-->
-        <!--WDK:base:js:html5shiv-->
-        
-    &lt;/head&gt;
-    
-    &lt;body class=&quot;page-type--<!--WDK:display:pagetype-->&quot;&gt;
-        
-        &lt;header&gt;
+		&lt;/style&gt;
+		
+		&lt;!-- JS --&gt;
+		<!--WDK:base:js:modernizr-->
+		<!--WDK:base:js:html5shiv-->
+				
+	&lt;/head&gt;
+		
+		&lt;body class=&quot;page-type--<!--WDK:display:pagetype-->&quot;&gt;
+				
+		&lt;header&gt;
 
-            <!--WDK:if:hasShop-->
-            &lt;div class=&quot;nav-shop&quot;&gt;
+			<!--WDK:if:hasShop-->
+			&lt;div class=&quot;nav-shop&quot;&gt;
 
-                &lt;div class=&quot;nav-shop__search&quot;&gt;
-                    &lt;form method=&quot;get&quot; action=&quot;/shop/search.php&quot; name=&quot;sideSearchForm&quot;&gt;
-                        &lt;input name=&quot;q&quot;  type=&quot;text&quot; placeholder=&quot;Shop Search...&quot; /&gt;
-                        &lt;button type=&quot;submit&quot; class=&quot;btn--reset&quot;&gt;GO&lt;/button&gt;
-                    &lt;/form&gt;
-                &lt;/div&gt;
-                
-                &lt;div class=&quot;nav-shop__basket&quot;&gt;
-                    <!--WDK:dynamic:widget:basket-->
-                    &lt;a title=&quot;Your Basket&quot; href=&quot;/shop/basket_new.php&quot;&gt;&lt;span class=&quot;i i-basket&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-                &lt;/div&gt;
-                
-            &lt;/div&gt;
-            <!--WDK:endif-->
-            
-            &lt;h1 class=&quot;header__site-name font--logo&quot;&gt;<!--WDK:display:site_name-->&lt;/h1&gt;
-            
-        &lt;/header&gt;
-        
-        &lt;nav class=&quot;nav-main&quot;&gt;
-                
-            &lt;ul&gt;
-                <!--WDK:menu:start-->
-            
-                  &lt;li id=&quot;menu-item-<!--WDK:menu:id-->&quot;&gt;
-                    &lt;a href=&quot;<!--WDK:menu:link-->&quot;&gt;
-                      <!--WDK:menu:text-->
-                    &lt;/a&gt;
-                  &lt;/li&gt;
-            
-                <!--WDK:menu:end-->
-            &lt;/ul&gt;
-            
-        &lt;/nav&gt;
-        
-        &lt;main&gt;
-            &lt;div class=&quot;inner-constraint&quot;&gt;
-                <!--WDK:header:end-->
-                <!--WDK:footer:start-->
-            &lt;/div&gt;
-        &lt;/main&gt;
-        
-        &lt;footer&gt;
-            
-            <!--WDK:if:plugin:newsletter:enabled-->
-                &lt;h2&gt;Keep in Touch&lt;/h2&gt;
-                <!--WDK:plugin:newsletter:start-->
-                      <!--WDK:plugin:newsletter:input-->
-                      &lt;button type=&quot;submit&quot;&gt;Sign Up&lt;/button&gt;
-                <!--WDK:plugin:newsletter:end-->
-            <!--WDK:endif-->
-            
-            <!--WDK:if:plugin:socialprofile:enabled-->
-                &lt;h2&gt;Social&lt;/h2&gt;
-                &lt;ul class=&quot;list list--inline list--bare&quot;&gt;
-                <!--WDK:plugin:socialprofile:start-->
-                  &lt;li class=&quot;social-profile__item&quot;&gt;
-                      &lt;a href=&quot;<!--WDK:plugin:socialprofile:link--&gt;&quot;&gt;&lt;span class=&quot;i i-&lt;!--WDK:plugin:socialprofile:type-->&quot;&gt;&lt;/span&gt;&lt;/a&gt;
-                  &lt;/li&gt;
-                <!--WDK:plugin:socialprofile:end-->
-                &lt;/ul&gt;
-            <!--WDK:endif-->
-                
-            <!--WDK:if:plugin:paymentcards:enabled-->
-                &lt;h2&gt;Accepted Payments&lt;/h2&gt;
-                &lt;ul class=&quot;list list--inline list--bare&quot;&gt;
-                <!--WDK:plugin:paymentcards:start-->
-                    &lt;li&gt;
-                        &lt;img src=&quot;/shop/images/checkout/cards/<!--WDK:plugin:paymentcards:type--&gt;.png&quot; alt=&quot;&lt;!--WDK:plugin:paymentcards:type-->&quot;&gt;
-                    &lt;/li&gt;
-                <!--WDK:plugin:paymentcards:end-->
-                &lt;/ul&gt;
-            <!--WDK:endif-->
-                
-            <!--WDK:display:sitefooter-->
+				&lt;div class=&quot;nav-shop__search&quot;&gt;
+					&lt;form method=&quot;get&quot; action=&quot;/shop/search.php&quot; name=&quot;sideSearchForm&quot;&gt;
+						&lt;input name=&quot;q&quot;  type=&quot;text&quot; placeholder=&quot;Shop Search...&quot; /&gt;
+						&lt;button type=&quot;submit&quot; class=&quot;btn--reset&quot;&gt;GO&lt;/button&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+				
+				&lt;div class=&quot;nav-shop__basket&quot;&gt;
+					<!--WDK:dynamic:widget:basket-->
+					&lt;a title=&quot;Your Basket&quot; href=&quot;/shop/basket_new.php&quot;&gt;&lt;span class=&quot;i i-basket&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+				&lt;/div&gt;
+					
+			&lt;/div&gt;
+			<!--WDK:endif-->
+			
+			&lt;h1 class=&quot;header__site-name font--logo&quot;&gt;<!--WDK:display:site_name-->&lt;/h1&gt;
+				
+		&lt;/header&gt;
+		
+		&lt;nav class=&quot;nav-main&quot;&gt;
+						
+			&lt;ul&gt;
+				<!--WDK:menu:start-->
+		
+					&lt;li id=&quot;menu-item-<!--WDK:menu:id-->&quot;&gt;
+						&lt;a href=&quot;<!--WDK:menu:link-->&quot;&gt;
+							<!--WDK:menu:text-->
+						&lt;/a&gt;
+					&lt;/li&gt;
+		
+				<!--WDK:menu:end-->
+			&lt;/ul&gt;
+				
+		&lt;/nav&gt;
+		
+		&lt;main&gt;
+			&lt;div class=&quot;inner-constraint&quot;&gt;
+				<!--WDK:header:end-->
+				<!--WDK:footer:start-->
+			&lt;/div&gt;
+		&lt;/main&gt;
+		
+		&lt;footer&gt;
+				
+			<!--WDK:if:plugin:newsletter:enabled-->
+				&lt;h2&gt;Keep in Touch&lt;/h2&gt;
+				<!--WDK:plugin:newsletter:start-->
+					<!--WDK:plugin:newsletter:input-->
+					&lt;button type=&quot;submit&quot;&gt;Sign Up&lt;/button&gt;
+				<!--WDK:plugin:newsletter:end-->
+			<!--WDK:endif-->
+			
+			<!--WDK:if:plugin:socialprofile:enabled-->
+				&lt;h2&gt;Social&lt;/h2&gt;
+				&lt;ul class=&quot;list list--inline list--bare&quot;&gt;
+				<!--WDK:plugin:socialprofile:start-->
+					&lt;li class=&quot;social-profile__item&quot;&gt;
+						&lt;a href=&quot;<!--WDK:plugin:socialprofile:link--&gt;&quot;&gt;&lt;span class=&quot;i i-&lt;!--WDK:plugin:socialprofile:type-->&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+					&lt;/li&gt;
+				<!--WDK:plugin:socialprofile:end-->
+				&lt;/ul&gt;
+			<!--WDK:endif-->
+					
+			<!--WDK:if:plugin:paymentcards:enabled-->
+				&lt;h2&gt;Accepted Payments&lt;/h2&gt;
+				&lt;ul class=&quot;list list--inline list--bare&quot;&gt;
+				<!--WDK:plugin:paymentcards:start-->
+					&lt;li&gt;
+						&lt;img src=&quot;/shop/images/checkout/cards/<!--WDK:plugin:paymentcards:type--&gt;.png&quot; alt=&quot;&lt;!--WDK:plugin:paymentcards:type-->&quot;&gt;
+					&lt;/li&gt;
+				<!--WDK:plugin:paymentcards:end-->
+				&lt;/ul&gt;
+			<!--WDK:endif-->
+					
+			<!--WDK:display:sitefooter-->
 
-        &lt;/footer&gt;
-        
-    &lt;/body&gt;
+		&lt;/footer&gt;
+				
+	&lt;/body&gt;
 
 &lt;/html&gt;
 <!--WDK:footer:end-->

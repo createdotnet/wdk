@@ -21,8 +21,9 @@
 	background-color: $warm-grey;
 	width: 280px;
 
+	// M: added by js - headerstick. Fix it to the top once its been scrolled to.
 	&--fixed {
 		position: fixed;
-		top: 0;
+		top: $base-spacing-unit;
 	}
 }
