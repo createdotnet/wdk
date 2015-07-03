@@ -84,11 +84,6 @@ body {
 
 // IMPORTS
 
-
-// Grid
-@import "patterns/layout";
-@import "patterns/layout-widths";
-
 // Layout
 @import "patterns/header";
 @import "patterns/footer";
@@ -103,12 +98,8 @@ body {
 @import "patterns/filters";
 
 // Pages
-<<<<<<< HEAD:css/styles.scss
-@import "glossary";
-@import "example";
-=======
+@import "patterns/example";
 @import "patterns/glossary";
->>>>>>> grunt:_src/css/styles.scss
 
 // Plugins
 @import "patterns/prism";
