@@ -1,5 +1,3 @@
----
----
 
 // COLOURS
 $white: rgb(255, 255, 255);
@@ -92,25 +90,25 @@ body {
 
 
 // Grid
-@import "layout";
-@import "layout-widths";
+@import "patterns/layout";
+@import "patterns/layout-widths";
 
 // Layout
-@import "header";
-@import "footer";
-@import "side-nav";
-@import "top-nav";
-@import "form-inputs";
-@import "page-content";
+@import "patterns/header";
+@import "patterns/footer";
+@import "patterns/side-nav";
+@import "patterns/top-nav";
+@import "patterns/form-inputs";
+@import "patterns/page-content";
 
 // Objects
-@import "button";
-@import "fonts";
-@import "filters";
+@import "patterns/button";
+@import "patterns/fonts";
+@import "patterns/filters";
 
 // Pages
-@import "glossary";
+@import "patterns/glossary";
 
 // Plugins
-@import "prism";
+@import "patterns/prism";
 
