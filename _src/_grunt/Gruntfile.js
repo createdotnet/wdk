@@ -21,9 +21,9 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					// Compiled css destination
-					'../../css/styles.css' :
+					'../../assets/css/styles.css' :
 					// Source sass location
-					'../styles/styles.scss'
+					'../css/styles.scss'
 				}
 			}
 		},
@@ -38,9 +38,9 @@ module.exports = function(grunt) {
 					browsers: ['last 5 versions', 'ie 8', 'ie 9']
 				},
 				// Source css location
-				src: '../../css/styles.css',
+				src: '../../assets/css/styles.css',
 				// Autoprefixed css destination
-				dest: '../../css/styles.css'
+				dest: '../../assets/css/styles.css'
 			}
 		},
 
@@ -50,10 +50,10 @@ module.exports = function(grunt) {
 				// Configure destination
 				files: {
 					// Minified css destination
-					'../../css/styles.min.css':
+					'../../assets/css/styles.min.css':
 					// Source css locations (more files can be added - comma separated)
 					[
-						'../../css/styles.css'
+						'../../assets/css/styles.css'
 					]
 				}
 			}
@@ -64,12 +64,12 @@ module.exports = function(grunt) {
 			my_target: {
 				files: {
 					// Destination
-					'../../js/scripts.min.js': 
+					'../../assets/js/scripts.min.js': 
 					// Source
 					[
-						'../scripts/headerstick.js',
-						'../scripts/list.min.js',
-						'../scripts/prism.js'
+						'../js/headerstick.js',
+						'../js/list.min.js',
+						'../js/prism.js'
 					]
 				}
 			}
@@ -79,8 +79,8 @@ module.exports = function(grunt) {
 		watch: {
 			files: [
 				// Watch these files
-				'../styles/styles.scss',
-				'../styles/*/*.scss'
+				'../css/styles.scss',
+				'../css/*/*.scss'
 			],
 			// Perform these tasks
 			tasks: [
@@ -101,6 +101,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	// List the modules to run
-	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin']);
+	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'uglify']);
 
 };
