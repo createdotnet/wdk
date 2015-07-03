@@ -32,4 +32,9 @@
 		position: fixed;
 		top: $base-spacing-unit;
 	}
+
+	&__tag {
+		word-wrap: break-word;
+	}
+	
 }
