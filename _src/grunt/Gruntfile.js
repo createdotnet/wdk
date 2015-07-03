@@ -1,20 +1,5 @@
 /*
-// Grunt Setup: 
-//
-// Note: Do not add the grunt_modules files to git (see the docs on creating a grunt project https://github.com/createdotnet/development_resources/wiki/Grunt)
-//
-// Install:
-// cd development_resources/grunt/public-core
-// npm install
-//
-// Running: Single build
-// cd development_resources/grunt/public-core
-// grunt
-//
-// Running: Watch for changes and build
-// cd development_resources/grunt/public-core
-// grunt watch
-//
+// Grunt Setup:
 */
 
 module.exports = function(grunt) {
@@ -74,6 +59,22 @@ module.exports = function(grunt) {
 			}
 		},
 
+		// Task: Minify and concatenate js
+		uglify: {
+			my_target: {
+				files: {
+					// Destination
+					'../../js/scripts.min.js': 
+					// Source
+					[
+						'../scripts/headerstick.js',
+						'../scripts/list.min.js',
+						'../scripts/prism.js'
+					]
+				}
+			}
+		},
+
 		// Task: Watch
 		watch: {
 			files: [
@@ -90,14 +91,16 @@ module.exports = function(grunt) {
 	});
 
 
-	// Load NPM Modules
+	// CSS
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
+	// JS
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+
 	// List the modules to run
 	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin']);
-
 
 };
