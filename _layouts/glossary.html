@@ -31,9 +31,9 @@
 
 						{% if wdk_tag.deprecated != nil %}
 							<div class="deprecated">
-								This tag has been deprecated as of version {{ wdk_tag.deprecated }}, its use is highly discouraged. <a href="{{ site.baseurl }}/changelog.html#version-{{ wdk_tag.deprecated | remove:'.' }}">See the change log</a>.
+								This tag has been deprecated as of version {{ wdk_tag.deprecated }}, its use is highly discouraged. <a href="{{ site.baseurl }}/changelog/index.html#version-{{ wdk_tag.deprecated | remove:'.' }}">See the change log</a>.
 								{% if wdk_tag.useInstead != nil %}
-									<br />We recommend you use <a href="{{ site.baseurl }}/glossary.html#{{ wdk_tag.useInsteadLink }}">{{ wdk_tag.useInstead | escape }}</a> instead.
+									<br />We recommend you use <a href="{{ site.baseurl }}/glossary/index.html#{{ wdk_tag.useInsteadLink }}">{{ wdk_tag.useInstead | escape }}</a> instead.
 								{% endif %}
 							</div>
 						{% endif %}
