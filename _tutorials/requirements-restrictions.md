@@ -37,6 +37,16 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 
 > *__N.B.__ We are working toward abstracting these components into separate tags, see __Component Modules__ below*
 
+### Body helper classes
+
+Many of the Create features rely on the use of classes on the page `<body` for styling. These classes are dynamic and will change based on what features and settings the user has. There is a WDK tag to output these classes and it should be used like this;
+```
+<body class="<!--WDK:base:helperClasses-->">
+ ...
+</body>
+```
+
+
 ### Component Modules
 
 #### Modernizr
