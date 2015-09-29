@@ -82,13 +82,16 @@ Modernizr is a feature detection javascript library that enables you to provide 
 
 This script is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer. For more info [view the forked repository on GitHub](https://github.com/createdotnet/html5shiv).
 
-#### Shop
+#### Shop Styling
 
-We are providing a selection of base styles for the shop in the `<!--WDK:base:css:shop-->` tag. Although it is not essential that you include these base styles, they are every minimal and are required for some of the shop functionality. It is recommended that you add your own shop CSS to compliment these styles.
+If your template is to be used with a shop, you will find it useful to include the `<!--WDK:base:css:shop-->` tag.
 
-**Included Styles**
-* Tiled Category Layout widths (non-responsive)
+This tag provides the following selection of base shop styles;
+- Category Layout (The included grid widths are not currently responsive)
+- Product Page Layout
+- Product Summary Object (The indivdual product 'cards' that include an image, price and product title).
 
+You may wish to add your own shop CSS to compliment these styles.
 
 #### Grid
 
