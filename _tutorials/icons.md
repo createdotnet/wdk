@@ -6,7 +6,7 @@ last-updated: 17-08-2015
 
 We use icon fonts to display icons.
 
-To display icons on your WDK template you will need to place the following tags in the templates `<head>`;
+To display icons on your WDK template you will need to place the following tags in the template's `<head>`;
 - `<!--WDK:base:css:icons-->`
 - `<!--WDK:base:css:fonts--> `
 
