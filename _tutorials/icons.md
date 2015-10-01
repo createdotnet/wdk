@@ -1,6 +1,7 @@
 ---
 layout: side-nav
 title: Using Icons
+nav-position: 4
 last-updated: 17-08-2015
 ---
 
