@@ -61,7 +61,7 @@ body {
       padding-top: 70px; } }
 
 .footer {
-  width: 1000px;
+  width: 1140px;
   margin: auto;
   padding: 20px;
   background-color: #f5f0e9;
@@ -94,7 +94,7 @@ html, body {
 
 .sticky-footer-helper {
   background: white;
-  width: 1000px;
+  width: 1140px;
   margin: auto;
   min-height: 100%;
   margin-bottom: -260px !important;
@@ -327,8 +327,6 @@ a {
     background-color: #f0e9df; }
 
 .example__description {
-  padding: 20px;
-  background-color: #f0e9df;
   width: 280px;
   font-size: 1.05em; }
   .example__description--fixed {

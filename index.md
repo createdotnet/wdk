@@ -1,6 +1,6 @@
 ---
 title: Example
-layout: example-page
+layout: index
 last-updated: 16-06-2015
 head_tags:
   - tag: <!--WDK:base:css:grid:responsive-->

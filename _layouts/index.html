@@ -1,13 +1,59 @@
 {% include head.html %}
 {% include top-navigation-bars.html %}
 
-<div class="page-content">
+<div class="page-content page--example">
 	
 	<h1 class="">{{ page.title }}</h1>
-	
+
 	{{ content }}
 
-</div> <!-- end container -->
+	<div class="grid">
+		
+		<div class="grid__item two-thirds">
+			
+			<pre class="example__markup"><code class="language-none" id="js-markup">{% include example-template.html %}</code></pre>
+
+		</div><!-- 
+		 --><div id="js-example__description" class="grid__item one-third">
+
+			<aside class="example__description">
+				<h1 id="js-tag-title" class="example__description__tag"></h1>
+			 	<p id="js-tag-description" class="example__description__text"></p>
+			</aside>
+
+		</div>
+
+	</div>
+
+</div><!-- end container -->
+
+<div style="display: none">	
+{% for tag in site.glossary %}
+	<div id="tag-{{ tag.tag }}">{{ tag.content | strip_html }}</div>
+{% endfor %}
+</div>
+
 
 {% include footer.html %}
+
+<script>
+
+	// Regex - WDK tags dont show because they are comments, convert < and > to entities
+	document.getElementById("js-markup").innerHTML = document.getElementById("js-markup").innerHTML.replace(/<!--WDK:(.*)-->/igm, '<span data-tag="$1" class="example__markup__tag">&lt;!--WDK:$1--&gt;</span>');
+
+	// Get all the tags from the hidden divs
+	var tags = document.querySelectorAll("[data-tag]");
+	for(var i = 0; i < tags.length; ++i ) { 
+		// Add on mouseover events to each tag to put the tags descrition in the side bar
+		tags[i].addEventListener("mouseover", function() {
+			document.getElementById("js-tag-title").innerHTML = this.dataset.tag;
+			document.getElementById("js-tag-description").innerHTML = document.getElementById("tag-<!--WDK:" + (this.dataset.tag) + "-->").innerHTML;
+		});
+	}
+
+	// make the tag description sticky once scrolled to
+	headerStick(document.querySelector('#js-example__description'), {offset: -20, classname: "example__description--fixed"})
+
+</script>
+
 {% include foot.html %}
