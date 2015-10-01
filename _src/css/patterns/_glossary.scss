@@ -7,17 +7,17 @@
 	margin-bottom: 2rem;
 	padding-bottom: 1rem;
 
-	.heading {
-		display: inline;
+	.section-anchor {
+		text-decoration: none;
 	}
 }
 
-.glossary__item--depreciated {
+.glossary__item--deprecated {
 
 	// Shown and hidden using js
 	display: none;
 
-	body.show-depreciated & {
+	body.show-deprecated & {
 		display: block;
 	}
 }

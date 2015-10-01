@@ -11,8 +11,8 @@
 				<h3 class="heading">Search Tags</h3>
 				<input class="search text-input" placeholder="Search" autofocus="autofocus"/>
 				
-				<label for="js-toggle-depreciated">Show deprecated tags</label>
-				<input id="js-toggle-depreciated" type="checkbox">
+				<label for="js-toggle-deprecated">Show deprecated tags</label>
+				<input id="js-toggle-deprecated" type="checkbox">
 			</div>
 
 		</div><!-- 
@@ -24,10 +24,11 @@
 			<ul class="list-reset list">
 				
 				{% for wdk_tag in site.glossary %}
-					<li class="glossary__item {% if wdk_tag.deprecated != nil %}glossary__item--depreciated{% endif %}" id="{{ wdk_tag.title | remove:' '}}">
+					<li class="glossary__item {% if wdk_tag.deprecated != nil %}glossary__item--deprecated{% endif %}" id="{{ wdk_tag.title | remove:' '}}">
 						
-						<a href="#{{ wdk_tag.title | remove:' '}}" class="section-anchor">#</a>
-						<h2 class="heading js-name">{{ wdk_tag.title }}</h2>
+						<a href="#{{ wdk_tag.title | remove:' '}}" class="section-anchor">
+							<h2 class="heading js-name">{{ wdk_tag.title }}</h2>
+						</a>
 
 						{% if wdk_tag.deprecated != nil %}
 							<div class="deprecated">
@@ -54,36 +55,30 @@
 
 	</div><!-- end .layout -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="{{ site.baseurl }}/js/list.min.js"></script>
-	<script src="{{ site.baseurl }}/js/headerstick.js"></script>
-	<script>
-
-		$(document).ready(function(){
-
-			// Searching
-
-			var searchOptions = {
-				valueNames: [ 'js-name', 'js-tag', 'js-description' ]
-			};
-
-			var search = new List('js-glossary', searchOptions);
-
-		
-			// Show / Hide depreciated tags
-
-			$("#js-toggle-depreciated").click(function(){
-				$("body").toggleClass("show-depreciated");
-			});
-
-			// make the filters sticky once scrolled to
-			headerStick(document.querySelector('#js-filter-controls'), {offset: -20, classname: "filter-controls--fixed"})
-
-		});
-
-	</script>
 
 </div> <!-- end container -->
 
 {% include footer.html %}
+<script>
+
+	$(document).ready(function(){
+
+		// Searching
+		var searchOptions = {
+			valueNames: [ 'js-name', 'js-tag', 'js-description' ]
+		};
+		var search = new List('js-glossary', searchOptions);
+
+	
+		// Show / Hide deprecated tags
+		$("#js-toggle-deprecated").click(function(){
+			$("body").toggleClass("show-deprecated");
+		});
+
+		// make the filters sticky once scrolled to
+		headerStick(document.querySelector('#js-filter-controls'), {offset: -20, classname: "filter-controls--fixed"})
+
+	});
+
+</script>
 {% include foot.html %}
