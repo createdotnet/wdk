@@ -65,7 +65,7 @@ body {
   margin: auto;
   padding: 20px;
   background-color: #f5f0e9;
-  background-image: url("/images/screens-white.png");
+  background-image: url("../images/screens-white.png");
   background-repeat: repeat-x;
   background-position-x: center;
   background-position-y: 85%; }
@@ -341,12 +341,12 @@ a {
   border-bottom: 1px solid;
   margin-bottom: 2rem;
   padding-bottom: 1rem; }
-  .glossary__item .heading {
-    display: inline; }
+  .glossary__item .section-anchor {
+    text-decoration: none; }
 
-.glossary__item--depreciated {
+.glossary__item--deprecated {
   display: none; }
-  body.show-depreciated .glossary__item--depreciated {
+  body.show-deprecated .glossary__item--deprecated {
     display: block; }
 
 /* Code Block Styling - Overide styles in prism.css */
