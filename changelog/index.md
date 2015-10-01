@@ -3,9 +3,14 @@ layout: index
 title: Change Log
 ---
 
+## 1 October 2015 - Version 1.2
+
+- For users on version 1.2 and higher many of the shop styles will have been removed. You will need to style these in your CSS file or include the `<!--WDK:base:css:shop-->` tag in the `<head>` of your WDK template. This will allow for greater flexibility in the shop styling.
+
+
 ## 22 June 2015 - Improve file path documentation.
 
-* Reworded existing file path documentation and added further explanation as to where files are uploaded to and under which context.
+- Reworded existing file path documentation and added further explanation as to where files are uploaded to and under which context.
 
 ## 11 May 2015 - Template thumbnails
 Fixed bug where template thumbnails weren't shown in the Design Studio. 
