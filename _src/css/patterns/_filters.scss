@@ -23,3 +23,15 @@
 		top: $base-spacing-unit;
 	}
 }
+
+@media (max-width: 1380px) {
+	#js-glossary {
+		> .layout__item {
+			width: 100%;
+		}
+	}
+	.filter-controls {
+		width: 100%;
+		margin-bottom: $base-spacing-unit;
+	}
+}

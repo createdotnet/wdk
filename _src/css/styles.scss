@@ -82,7 +82,7 @@ body {
 }
 
 .inner-constraint {
-    width: $inner-constraint-width;
+    max-width: $inner-constraint-width;
 	margin: auto;
 }
 

@@ -3,10 +3,10 @@
 
 .footer {
 
-    width: $page-width;
+    max-width: $page-width;
     margin: auto;
     padding: 20px;
-    
+
     background-color: $footer-background-color;
     background-image: url('../images/screens-white.png');
     background-repeat: repeat-x;
@@ -44,7 +44,7 @@ html, body { height: 100%;}
 
 .sticky-footer-helper {
     background: white;
-    width: $page-width;
+    max-width: $page-width;
     margin: auto;
 
     min-height: 100%;
