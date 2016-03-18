@@ -10,7 +10,7 @@ $purple: #5064A0;
 
 $content-background-colour: white;
 //Body colours
-$body-text-colour: #7b7c7f;
+$body-text-colour: #2E2E2E;
 $body-background-colour: lighten($warm-grey,3%);
 // Header colours
 $header-background-color: white;
@@ -24,7 +24,8 @@ $base-spacing-unit: 20px;
 
 // Heights and Widths
 $footer-height: 260px;
-$page-width: 1000px;
+$page-width: 1400px;
+$inner-constraint-width: 1000px;
 
 // Mixins and Helpers
 
@@ -73,7 +74,7 @@ img {
 
 
 body {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.6;
 	color: $body-text-colour;
 	background-color: $body-background-colour;
@@ -81,7 +82,7 @@ body {
 }
 
 .inner-constraint {
-	
+    width: $inner-constraint-width;
 	margin: auto;
 }
 
@@ -111,4 +112,3 @@ body {
 
 // Plugins
 @import "patterns/prism";
-

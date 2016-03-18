@@ -40,11 +40,11 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 ### Body helper classes
 
 Many of the Create features rely on the use of classes on the page `<body` for styling. These classes are dynamic and will change based on what features and settings the user has. There is a WDK tag to output these classes and it should be used like this;
-```
+~~~
 <body class="<!--WDK:base:helperClasses-->">
  ...
 </body>
-```
+~~~
 
 
 ### Component Modules
@@ -113,7 +113,7 @@ HTML classes:
 
 HTML example:
 
-```
+~~~
 <div class="grid">
 	<div class="grid__item">
 		[…]
@@ -122,12 +122,12 @@ HTML example:
 		[…]
 	</div>
 </div>
-```
+~~~
 Sizing the grid items is a simple as adding the fractional classes e.g. `one-third`.
 
 HTML example:
 
-```
+~~~
 <div class="grid">
 	<div class="grid__item one-third">
 		[…]
@@ -136,7 +136,7 @@ HTML example:
 		[…]
 	</div>
 </div>
-```
+~~~
 We recommend reading the [csswizardry-grids docs](https://github.com/csswizardry/csswizardry-grids) for more information.
 
 **Fluid build**
@@ -155,14 +155,14 @@ The major breakpoints values are as follows.
 
 Sass example:
 
-```
+~~~
 $breakpoints: (
     'palm' '(max-width: 480px)',
     'lap' '(min-width: 481px)',
     'lap-mid' '(min-width: 719px)',
     'desk' '(min-width: 1024px)'
 );
-```
+~~~
 
 > **_Please note:_** We have extended the grid responsive grid classes to include one hyphen rather than two e.g. `lap-one-half` instead of the default `lap--one-half`.
 

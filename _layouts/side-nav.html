@@ -1,47 +1,38 @@
-{% include head.html %}
-{% include top-navigation-bars.html %}
+---
+layout: base
+---
 
-<div class="page-content">
+<div class="layout">
 
+	<div class="layout__item 1/4">
 
-	<div class="layout">
-	
-		<div class="layout__item 1/4">
-			
-			{% include side-nav.html %}
-		</div><!-- 
-		
-		 --><div class="layout__item 3/4">
+		{% include side-nav.html %}
+	</div><!--
 
-			<main>
+	 --><div class="layout__item 3/4">
 
-				<h1 class="">{{ page.title }}</h1>
+		<main>
+			<h1 class="">{{ page.title }}</h1>
 
-				{% if page.deprecated != nil %}
-					<div class="deprecated">
-						This tag has been deprecated as of version {{ page.deprecated }}, its use is highly discouraged. <a href="{{ site.baseurl }}/changelog.html#version-{{ page.deprecated | remove:'.' }}">See the change log</a>.
-						{% if page.useInstead != nil %}
-							<br />We recommend you use <a href="{{ site.baseurl }}/{{ page.useInsteadLink }}">{{ page.useInstead | escape }}</a> instead.
-						{% endif %}
-					</div>
-				{% endif %}
+			{% if page.deprecated != nil %}
+				<div class="deprecated">
+					This tag has been deprecated as of version {{ page.deprecated }}, its use is highly discouraged. <a href="{{ site.baseurl }}/changelog.html#version-{{ page.deprecated | remove:'.' }}">See the change log</a>.
+					{% if page.useInstead != nil %}
+						<br />We recommend you use <a href="{{ site.baseurl }}/{{ page.useInsteadLink }}">{{ page.useInstead | escape }}</a> instead.
+					{% endif %}
+				</div>
+			{% endif %}
 
-				{% if page.tag != nil %}
-					<code class="wdk-tag">{{ page.tag | xml_escape }} </code>
-				{% endif %}
+			{% if page.tag != nil %}
+				<code class="wdk-tag">{{ page.tag | xml_escape }} </code>
+			{% endif %}
 
-				{{ content }}
+			{{ content }}
 
-				<p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
-			
-			</main>
+			<p class="last-updated">Last Updated: {{ page.last-updated | date: "%-d %B %Y" }}</p>
 
-		</div>
+		</main>
 
 	</div>
 
-
-</div> <!--end container-->
-
-{% include footer.html %}
-{% include foot.html %}
+</div>
