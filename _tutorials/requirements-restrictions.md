@@ -40,12 +40,8 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 ### Body helper classes
 
 Many of the Create features rely on the use of classes on the page `<body` for styling. These classes are dynamic and will change based on what features and settings the user has. There is a WDK tag to output these classes and it should be used like this;
-~~~
-<body class="<!--WDK:base:helperClasses-->">
- ...
-</body>
-~~~
 
+`<body class="<!--WDK:base:helperClasses-->">`
 
 ### Component Modules
 
@@ -171,7 +167,7 @@ $breakpoints: (
 Alternatively you can upload your own version of [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) that will utilize the responsive classes across the system.
 
 ### Header & Footer
-Your index.html file must contain all of the header and footer tags. These tags help us to identify your templates layout and instruct us where to put the main page content. 
+Your index.html file must contain all of the header and footer tags. These tags help us to identify your templates layout and instruct us where to put the main page content.
 
 These tags are:
 
@@ -192,7 +188,7 @@ For more information please see the footer tutorial.
 
 
 ### Menu Loops
-We offer 2 methods for creating menus: our drop down menu tag returns a full `<ul> <li>` structure, however we also offer a manual method for creating your own menu loops. 
+We offer 2 methods for creating menus: our drop down menu tag returns a full `<ul> <li>` structure, however we also offer a manual method for creating your own menu loops.
 
 If you opt to build your own, you must include the `<!--WDK:menu:start-->` and `<!--WDK:menu:end-->` tags.
 
