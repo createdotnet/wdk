@@ -2,7 +2,15 @@
 // HEADER AND FOOTER
 
 .header {
-  position: relative;
+
+    background-color: $header-background-color;
+    padding: $base-spacing-unit;
+    display: flex;
+    align-items: center;
+
+    max-width: $inner-constraint-width;
+    margin: auto;
+
     a {
         text-decoration: none;
     }
@@ -10,34 +18,37 @@
 
 .header__logo,
 .header__button {
-  position: absolute;
-  top: 22px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
 }
+.header__nav {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+
 .header__logo {
-  left: 20px;
-  img {
-    margin: auto;
-    display: block;
-  }
-}
-.header__button {
-  right: 20px;
-}
 
-
-.header__title {
-    padding: 20px 0px;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    a {
-      color: $header-text-color;
+    img {
+        display: block;
     }
-    @media (max-width: 850px) {
-      font-size: 1.5em;
-      padding-top: 70px;
+
+}
+
+
+.hero {
+
+    background-color: $purple;
+    color: white;
+    padding: $base-spacing-unit $base-spacing-unit * 2;
+
+    .heading {
+        color: inherit;
+    }
+
+    .inner-constraint > :last-child {
+        margin-bottom: 0;
     }
 }
-
-
-

@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: constrained
 title: Change Log
 ---
 
@@ -13,7 +13,7 @@ title: Change Log
 - Reworded existing file path documentation and added further explanation as to where files are uploaded to and under which context.
 
 ## 11 May 2015 - Template thumbnails
-Fixed bug where template thumbnails weren't shown in the Design Studio. 
+Fixed bug where template thumbnails weren't shown in the Design Studio.
 Thumbnail image dimensions increased to 128x150px.
 
 ## 15 April 2015 - Version 1.1
@@ -52,7 +52,7 @@ Documentation added for `<!--WDK:column:count-->`, required for the default styl
 Updates to how colour tags are used as the Design Studio handles these slightly differently to before.
 
 ## 5 January 2015 - Pagebuilder
-Pagebuilder is a new drag and drop interface that allows users to build content. Previously users could only build their content in a TinyMCE editor, with heavy use of tables to set the layout of the page. With Pagebuilder users no longer need to use tables to build the layour of their page, as this is now handled automatically using our responsive grid. 
+Pagebuilder is a new drag and drop interface that allows users to build content. Previously users could only build their content in a TinyMCE editor, with heavy use of tables to set the layout of the page. With Pagebuilder users no longer need to use tables to build the layour of their page, as this is now handled automatically using our responsive grid.
 [Read more]({{ site.baseurl }}/tutorials/page-builder.html)
 
 ## 1 October 2014 - Design Studio

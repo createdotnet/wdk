@@ -40,12 +40,8 @@ This file includes a build of the [inuit.css CSS framework](https://github.com/c
 ### Body helper classes
 
 Many of the Create features rely on the use of classes on the page `<body` for styling. These classes are dynamic and will change based on what features and settings the user has. There is a WDK tag to output these classes and it should be used like this;
-```
-<body class="<!--WDK:base:helperClasses-->">
- ...
-</body>
-```
 
+`<body class="<!--WDK:base:helperClasses-->">`
 
 ### Component Modules
 
@@ -113,7 +109,7 @@ HTML classes:
 
 HTML example:
 
-```
+~~~
 <div class="grid">
 	<div class="grid__item">
 		[…]
@@ -122,12 +118,12 @@ HTML example:
 		[…]
 	</div>
 </div>
-```
+~~~
 Sizing the grid items is a simple as adding the fractional classes e.g. `one-third`.
 
 HTML example:
 
-```
+~~~
 <div class="grid">
 	<div class="grid__item one-third">
 		[…]
@@ -136,7 +132,7 @@ HTML example:
 		[…]
 	</div>
 </div>
-```
+~~~
 We recommend reading the [csswizardry-grids docs](https://github.com/csswizardry/csswizardry-grids) for more information.
 
 **Fluid build**
@@ -155,14 +151,14 @@ The major breakpoints values are as follows.
 
 Sass example:
 
-```
+~~~
 $breakpoints: (
     'palm' '(max-width: 480px)',
     'lap' '(min-width: 481px)',
     'lap-mid' '(min-width: 719px)',
     'desk' '(min-width: 1024px)'
 );
-```
+~~~
 
 > **_Please note:_** We have extended the grid responsive grid classes to include one hyphen rather than two e.g. `lap-one-half` instead of the default `lap--one-half`.
 
@@ -171,7 +167,7 @@ $breakpoints: (
 Alternatively you can upload your own version of [csswizardry-grids](https://github.com/csswizardry/csswizardry-grids) that will utilize the responsive classes across the system.
 
 ### Header & Footer
-Your index.html file must contain all of the header and footer tags. These tags help us to identify your templates layout and instruct us where to put the main page content. 
+Your index.html file must contain all of the header and footer tags. These tags help us to identify your templates layout and instruct us where to put the main page content.
 
 These tags are:
 
@@ -192,7 +188,7 @@ For more information please see the footer tutorial.
 
 
 ### Menu Loops
-We offer 2 methods for creating menus: our drop down menu tag returns a full `<ul> <li>` structure, however we also offer a manual method for creating your own menu loops. 
+We offer 2 methods for creating menus: our drop down menu tag returns a full `<ul> <li>` structure, however we also offer a manual method for creating your own menu loops.
 
 If you opt to build your own, you must include the `<!--WDK:menu:start-->` and `<!--WDK:menu:end-->` tags.
 

@@ -1,12 +1,7 @@
 ---
-title: Example
+title: Example Template
 layout: index
 last-updated: 16-06-2015
-head_tags:
-  - tag: <!--WDK:base:css:grid:responsive-->
-    description: Includes a CSS file with a responsive grid. Read the docs [here]().
-  - tag: <!--WDK:base:css:shop--> 
-    description: Includes a CSS file with base shop styling. Not required if you don't have a shop.
 ---
 
 The Web Designer’s Kit (or WDK), is a templating language for making websites on [Create.net](http://www.create.net/)

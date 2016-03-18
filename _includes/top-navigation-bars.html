@@ -1,39 +1,37 @@
 <div class="sticky-footer-helper">
 
-	<div class="inner-constraint">
-	
-		<header class="header">
 
-			<div class="header__logo">
-			  <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/images/logo.svg" title="Create Ecommerce" alt="Create Ecommerce"></a>
-			</div>
+	<header class="header">
 
-			<h1 class="header__title"><a href="{{ site.baseurl }}/">Web Designer's Kit Documentation</a></h1>
-			
-			<div class="header__button">
-			  <a class="btn btn--login" href="https://login.create.net/login.phtml">Login</a>
-			</div>
+		<div class="header__logo">
+			<a href="{{ site.baseurl }}/">
+				<img src="{{ site.baseurl }}/assets/images/logo.svg" title="Create Ecommerce" alt="Create Ecommerce">
+				<span>WDK</span>
+			</a>
+		</div>
 
-
-		</header>
-
-		<nav class="top-nav">
+		<nav class="nav header__nav">
 			<ul>
 				<li {% if page.title == "Getting Started" %}class="active"{% endif %}>
 					<a href="{{ site.baseurl }}/index.html">Getting Started</a>
 				</li>
-				
+
 				<li {% if page.url contains "/tutorials/" %}class="active"{% endif %}>
 					<a href="{{ site.baseurl }}/tutorials/">Tutorials</a>
 				</li>
-				
+
 				<li {% if page.url contains "/glossary.html" %}class="active"{% endif %}>
 					<a href="{{ site.baseurl }}/tags/">Tags</a>
 				</li>
-				
+
 				<li {% if page.title == "Change Log" %}class="active"{% endif %}>
 					<a href="{{ site.baseurl }}/changelog/">Change Log</a>
 				</li>
 			</ul>
 		</nav>
 
+		<div class="header__button">
+			<a class="btn btn--login" href="https://login.create.net/login.phtml">Login</a>
+		</div>
+
+	</header>

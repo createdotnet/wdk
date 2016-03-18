@@ -1,31 +1,28 @@
-{% include head.html %}
-{% include top-navigation-bars.html %}
+---
+layout: base
+---
 
-<div class="page-content">
-	
 	<div class="layout" id="js-glossary">
 
-		<div class="grid__item one-quarter">
-			
+		<div class="layout__item 1/4 lap-1/1">
+
 			<div class="filter-controls" id="js-filter-controls">
 				<h3 class="heading">Search Tags</h3>
 				<input class="search text-input" placeholder="Search" autofocus="autofocus"/>
-				
+
 				<label for="js-toggle-deprecated">Show deprecated tags</label>
 				<input id="js-toggle-deprecated" type="checkbox">
 			</div>
 
 		</div><!-- 
-		
-		 --><div class="grid__item three-quarters">
 
-			<h1 class="">{{ page.title }}</h1>
+		 --><div class="layout__item 3/4 lap-1/1">
 
 			<ul class="list-reset list">
-				
+
 				{% for wdk_tag in site.glossary %}
 					<li class="glossary__item {% if wdk_tag.deprecated != nil %}glossary__item--deprecated{% endif %}" id="{{ wdk_tag.title | remove:' '}}">
-						
+
 						<a href="#{{ wdk_tag.title | remove:' '}}" class="section-anchor">
 							<h2 class="heading js-name">{{ wdk_tag.title }}</h2>
 						</a>
@@ -42,7 +39,7 @@
 						{% if wdk_tag.tag != nil %}
 							<code class="wdk-tag js-tag">{{ wdk_tag.tag | xml_escape }} </code>
 						{% endif %}
-						
+
 						<span class="js-description">
 							{{ wdk_tag.content }}
 						</span>
@@ -56,8 +53,6 @@
 	</div><!-- end .layout -->
 
 </div> <!-- end container -->
-
-{% include footer.html %}
 
 <script>
 
@@ -80,5 +75,3 @@
 	});
 
 </script>
-
-{% include foot.html %}

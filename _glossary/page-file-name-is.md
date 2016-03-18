@@ -7,4 +7,4 @@ nav-position: 1
 tag: <!--WDK:if:pageFilenameIs:value-->
 ---
 
-This conditonal tag checks to see if the page filename is the specified value.
+This conditional tag checks to see if the page filename is the specified value.

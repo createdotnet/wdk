@@ -10,9 +10,10 @@ $purple: #5064A0;
 
 $content-background-colour: white;
 //Body colours
-$body-text-colour: #333333;
-$body-background-colour: $warm-grey;
+$body-text-colour: #2E2E2E;
+$body-background-colour: lighten($warm-grey,3%);
 // Header colours
+$header-background-color: white;
 $header-text-color: $charcoal;
 
 $footer-background-color: lighten($warm-grey,3%);
@@ -23,7 +24,8 @@ $base-spacing-unit: 20px;
 
 // Heights and Widths
 $footer-height: 260px;
-$page-width: 1140px;
+$page-width: 1400px;
+$inner-constraint-width: 1000px;
 
 // Mixins and Helpers
 
@@ -77,7 +79,7 @@ body {
 }
 
 .inner-constraint {
-	
+    max-width: $inner-constraint-width;
 	margin: auto;
 }
 
@@ -97,10 +99,14 @@ body {
 @import "patterns/fonts";
 @import "patterns/filters";
 
+// Layout
+@import "patterns/layout";
+@import "patterns/layout-widths";
+
+
 // Pages
 @import "patterns/example";
 @import "patterns/glossary";
 
 // Plugins
 @import "patterns/prism";
-

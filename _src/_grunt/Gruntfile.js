@@ -3,12 +3,12 @@
 */
 
 module.exports = function(grunt) {
-	
+
 	grunt.initConfig({
 
 		// Include the node modules in the package.json file
 		pkg: grunt.file.readJSON('package.json'),
-		
+
 
 		// Task: Compile the source sass files to css
 		sass: {
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
 			my_target: {
 				files: {
 					// Destination
-					'../../assets/js/scripts.min.js': 
+					'../../assets/js/scripts.min.js':
 					// Source
 					[
 						'../js/headerstick.js',
